@@ -2,8 +2,6 @@ import sqlite3
 import os
 from datetime import datetime
 
-os.makedirs('site', exist_ok=True)
-
 conn = sqlite3.connect('dados/escalacoes.db')
 
 TIMES = ["Flamengo", "Palmeiras", "Corinthians", "São Paulo",
@@ -51,7 +49,8 @@ for time in TIMES:
 html = html.replace("ATUALIZADO_AQUI", datetime.now().strftime("%d/%m/%Y %H:%M"))
 html = html.replace("CONTEUDO_AQUI", corpo)
 
-with open('site/index.html', 'w', encoding='utf-8') as f:
+# SALVA NA RAIZ (não em site/)
+with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
-print("Site gerado com sucesso!")
+print("Site gerado em index.html (raiz)")
