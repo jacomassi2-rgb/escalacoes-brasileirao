@@ -26,6 +26,9 @@ jobs:
       - name: Rodar o coletor
         run: python coletor.py
 
+      - name: Rodar o extrator de escalações
+        run: python extrator.py
+
       - name: Rodar o gerador de site
         run: python gerar_site.py
 
