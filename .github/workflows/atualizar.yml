@@ -23,6 +23,9 @@ jobs:
       - name: Instalar dependências
         run: pip install feedparser
 
+      - name: Limpar banco antigo (teste)
+        run: python limpar.py
+
       - name: Rodar o coletor
         run: python coletor.py
 
