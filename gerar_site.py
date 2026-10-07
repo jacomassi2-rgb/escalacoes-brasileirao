@@ -5,27 +5,32 @@ from config import RODADA_ATUAL, DATA_RODADA, JOGOS_RODADA
 
 conn = sqlite3.connect('dados/escalacoes.db')
 
+TOKEN_LOGODEV = "pk_A_4R97saSLeUXjVT7UOFWg"
+
+def logo(dominio):
+    return f"https://img.logo.dev/{dominio}?token={TOKEN_LOGODEV}&size=80&retina=true"
+
 TIMES = [
-    ("Flamengo", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flamengo_braz_logo.svg/60px-Flamengo_braz_logo.svg.png", "#c8102e"),
-    ("Palmeiras", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/60px-Palmeiras_logo.svg.png", "#006437"),
-    ("Corinthians", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Corinthians_simbolo.png/60px-Corinthians_simbolo.png", "#000000"),
-    ("São Paulo", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Sao_Paulo_FC_logo.png/60px-Sao_Paulo_FC_logo.png", "#e30613"),
-    ("Botafogo", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Botafogo_de_Futebol_e_Regatas_logo.svg/60px-Botafogo_de_Futebol_e_Regatas_logo.svg.png", "#000000"),
-    ("Fluminense", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Fluminense_FC_escudo.png/60px-Fluminense_FC_escudo.png", "#7a0d1d"),
-    ("Vasco", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Clube_de_Regatas_Vasco_da_Gama_logo.svg/60px-Clube_de_Regatas_Vasco_da_Gama_logo.svg.png", "#000000"),
-    ("Grêmio", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Gremio_logo.svg/60px-Gremio_logo.svg.png", "#0d47a1"),
-    ("Internacional", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SC_Internacional_logo.svg/60px-SC_Internacional_logo.svg.png", "#c8102e"),
-    ("Cruzeiro", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Cruzeiro_Esporte_Clube_logo.svg/60px-Cruzeiro_Esporte_Clube_logo.svg.png", "#0d47a1"),
-    ("Atlético Mineiro", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Atletico_Mineiro_logo.svg/60px-Atletico_Mineiro_logo.svg.png", "#000000"),
-    ("Bahia", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Esporte_Clube_Bahia_logo.svg/60px-Esporte_Clube_Bahia_logo.svg.png", "#003399"),
-    ("Vitória", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Esporte_Clube_Vitoria_logo.svg/60px-Esporte_Clube_Vitoria_logo.svg.png", "#c8102e"),
-    ("Fortaleza", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Fortaleza_Esporte_Clube_logo.svg/60px-Fortaleza_Esporte_Clube_logo.svg.png", "#003366"),
-    ("Ceará", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Ceara_Sporting_Club_logo.svg/60px-Ceara_Sporting_Club_logo.svg.png", "#000000"),
-    ("Sport", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Sport_Club_do_Recife_logo.svg/60px-Sport_Club_do_Recife_logo.svg.png", "#c8102e"),
-    ("Juventude", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Esporte_Clube_Juventude_logo.svg/60px-Esporte_Clube_Juventude_logo.svg.png", "#006437"),
-    ("Bragantino", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Red_Bull_Bragantino_logo.svg/60px-Red_Bull_Bragantino_logo.svg.png", "#c8102e"),
-    ("Mirassol", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Mirassol_Futebol_Clube_logo.svg/60px-Mirassol_Futebol_Clube_logo.svg.png", "#006437"),
-    ("Santos", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Santos_Logo.png/60px-Santos_Logo.png", "#000000"),
+    ("Flamengo", logo("flamengo.com.br"), "#c8102e"),
+    ("Palmeiras", logo("palmeiras.com.br"), "#006437"),
+    ("Corinthians", logo("corinthians.com.br"), "#000000"),
+    ("São Paulo", logo("saopaulofc.net"), "#e30613"),
+    ("Botafogo", logo("botafogo.com.br"), "#000000"),
+    ("Fluminense", logo("fluminense.com.br"), "#7a0d1d"),
+    ("Vasco", logo("vasco.com.br"), "#000000"),
+    ("Grêmio", logo("gremio.net"), "#0d47a1"),
+    ("Internacional", logo("internacional.com.br"), "#c8102e"),
+    ("Cruzeiro", logo("cruzeiro.com.br"), "#0d47a1"),
+    ("Atlético Mineiro", logo("atletico.com.br"), "#000000"),
+    ("Bahia", logo("esporteclubebahia.com.br"), "#003399"),
+    ("Vitória", logo("ecvitoria.com.br"), "#c8102e"),
+    ("Fortaleza", logo("fortalezaec.net"), "#003366"),
+    ("Ceará", logo("cearasc.com"), "#000000"),
+    ("Sport", logo("sportrecife.com.br"), "#c8102e"),
+    ("Juventude", logo("esporteclubejuventude.com.br"), "#006437"),
+    ("Bragantino", logo("redbullbragantino.com.br"), "#c8102e"),
+    ("Mirassol", logo("mirassolfc.com.br"), "#006437"),
+    ("Santos", logo("santosfc.com.br"), "#000000"),
 ]
 
 def tempo_relativo(data_str):
@@ -143,7 +148,6 @@ if (localStorage.getItem('tema') === 'escuro') document.body.classList.add('escu
 </body>
 </html>"""
 
-# Monta os jogos da rodada
 if JOGOS_RODADA:
     jogos_html = "".join(
         f'<div class="jogo"><strong>{casa} x {vis}</strong>{dia}</div>'
@@ -153,7 +157,7 @@ else:
     jogos_html = ""
 
 corpo = ""
-for nome, logo, cor in TIMES:
+for nome, logo_url, cor in TIMES:
     linhas = conn.execute(
         "SELECT titulo, link, fonte, publicado_em FROM noticias WHERE time=? ORDER BY coletado_em DESC LIMIT 5",
         (nome,)
@@ -162,13 +166,13 @@ for nome, logo, cor in TIMES:
     if linhas:
         primeiro_link = linhas[0][1]
         corpo += f'''<div class="time-header">
-            <img src="{logo}" alt="{nome}" onerror="this.style.display='none'">
+            <img src="{logo_url}" alt="{nome}" onerror="this.style.display='none'">
             <h2>{nome}</h2>
             <a href="{primeiro_link}" target="_blank" class="btn-escalacao">🟢 Ver escalação</a>
         </div>'''
     else:
         corpo += f'''<div class="time-header">
-            <img src="{logo}" alt="{nome}" onerror="this.style.display='none'">
+            <img src="{logo_url}" alt="{nome}" onerror="this.style.display='none'">
             <h2>{nome}</h2>
         </div>'''
     if linhas:
