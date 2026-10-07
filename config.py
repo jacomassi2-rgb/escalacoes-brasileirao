@@ -4,7 +4,7 @@
 # Atualize este arquivo quando mudar a rodada do Brasileirão
 # ==============================================
 
-RODADA_ATUAL = 30
+RODADA_ATUAL = 29
 
 # Data da rodada (opcional, pode deixar em branco)
-DATA_RODADA = "08 e 09 de outubro de 2026"
+DATA_RODADA = "07 e 08 de outubro de 2026"
