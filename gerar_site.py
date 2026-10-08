@@ -3,7 +3,6 @@ from datetime import datetime
 from email.utils import parsedate_to_datetime
 from config import obter_rodada_e_jogos
 
-# Busca a rodada e os jogos automaticamente da API
 RODADA_ATUAL, DATA_RODADA, JOGOS_RODADA = obter_rodada_e_jogos()
 
 conn = sqlite3.connect('dados/escalacoes.db')
@@ -27,10 +26,10 @@ TIMES = [
     ("Atlético Mineiro", logo("atletico.com.br"), "#000000"),
     ("Bahia", logo("esporteclubebahia.com.br"), "#003399"),
     ("Vitória", logo("ecvitoria.com.br"), "#c8102e"),
-    ("Fortaleza", logo("fortalezaec.net"), "#003366"),
-    ("Ceará", logo("cearasc.com"), "#000000"),
-    ("Sport", logo("sportrecife.com.br"), "#c8102e"),
-    ("Juventude", logo("esporteclubejuventude.com.br"), "#006437"),
+    ("Remo", logo("clubedoremo.com.br"), "#003366"),
+    ("Chapecoense", logo("chapecoense.com.br"), "#006437"),
+    ("Coritiba", logo("coritiba.com.br"), "#006437"),
+    ("Athletico Paranaense", logo("athletico.com.br"), "#c8102e"),
     ("Bragantino", logo("redbullbragantino.com.br"), "#c8102e"),
     ("Mirassol", logo("mirassolfc.com.br"), "#006437"),
     ("Santos", logo("santosfc.com.br"), "#000000"),
@@ -53,7 +52,6 @@ def tempo_relativo(data_str):
         return ""
 
 def tempo_em_horas(data_str):
-    """Retorna quantas horas atrás (pra filtro de 24h)."""
     try:
         dt = parsedate_to_datetime(data_str)
         agora = datetime.now(dt.tzinfo)
@@ -157,14 +155,10 @@ let filtro24h = false;
 
 function filtrar() {
   const termo = document.getElementById('campo-busca').value.toLowerCase();
-  let visiveis = 0;
   document.querySelectorAll('.time').forEach(function(el) {
     const nome = el.getAttribute('data-time').toLowerCase();
-    const bate = nome.includes(termo);
-    el.classList.toggle('oculto', !bate);
-    if (bate) visiveis++;
+    el.classList.toggle('oculto', !nome.includes(termo));
   });
-  atualizarInfoFiltro(visiveis);
 }
 
 function toggle24h() {
@@ -177,22 +171,11 @@ function toggle24h() {
     });
     const visiveis = el.querySelectorAll('.noticia:not(.oculto)').length;
     const vazio = el.querySelector('.vazio-24h');
-    if (vazio) {
-      vazio.classList.toggle('oculto', !filtro24h || visiveis > 0);
-    }
+    if (vazio) vazio.classList.toggle('oculto', !filtro24h || visiveis > 0);
     const temAlguma = visiveis > 0 || (!filtro24h && el.querySelectorAll('.noticia').length > 0);
     el.classList.toggle('oculto', filtro24h && !temAlguma);
   });
-  atualizarInfoFiltro();
-}
-
-function atualizarInfoFiltro(visiveis) {
-  const info = document.getElementById('info-filtro');
-  if (filtro24h) {
-    info.textContent = '🕐 Mostrando apenas notícias das últimas 24 horas';
-  } else {
-    info.textContent = '';
-  }
+  document.getElementById('info-filtro').textContent = filtro24h ? '🕐 Mostrando apenas notícias das últimas 24 horas' : '';
 }
 
 window.addEventListener('scroll', function() {
@@ -247,7 +230,7 @@ for nome, logo_url, cor in TIMES:
             if tempo:
                 meta += f'<span class="tempo">⏱ {tempo}</span>'
             corpo += f'<div class="noticia" data-horas="{horas:.1f}"><a href="{link}" target="_blank">{titulo}</a><div class="meta">{meta}</div></div>'
-        corpo += '<div class="vazio vazio-24h oculto">Nenhuma notícia nas últimas 24h.</div>'
+        corpo += '<div class="vazio vazio-24h oculto">Nenhuma notícia nas últimas 24 horas.</div>'
     else:
         corpo += '<div class="vazio">Nenhuma notícia encontrada.</div>'
     corpo += '</div>'
