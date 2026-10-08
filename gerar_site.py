@@ -1,6 +1,8 @@
 import sqlite3
 import json
 import os
+import re
+import unicodedata
 from datetime import datetime
 from email.utils import parsedate_to_datetime
 from config import obter_rodada_e_jogos, obter_classificacao
@@ -62,6 +64,14 @@ def tempo_em_horas(data_str):
     except:
         return 9999
 
+def normalizar_nome(s):
+    """Remove acentos e deixa minúsculo pra busca."""
+    if not s:
+        return ""
+    s = unicodedata.normalize("NFKD", str(s))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return s.lower().strip()
+
 # ============================================
 # CARREGA MEU TIME
 # ============================================
@@ -71,7 +81,79 @@ if os.path.exists('meu_time.json'):
         MEU_TIME = json.load(f)
 
 # ============================================
-# HTML (idêntico ao anterior)
+# CARREGA SUGESTÃO FATHUR
+# ============================================
+SUGESTAO_FATHUR = {}
+if os.path.exists('sugestao_fathur.json'):
+    with open('sugestao_fathur.json', 'r', encoding='utf-8') as f:
+        SUGESTAO_FATHUR = json.load(f)
+
+# ============================================
+# 🔔 BUSCA ALERTAS NAS NOTÍCIAS
+# ============================================
+def buscar_alertas_jogador(nome_jogador):
+    """Busca notícias que mencionam o jogador + palavras-chave."""
+    if not nome_jogador:
+        return []
+    
+    nome_norm = normalizar_nome(nome_jogador)
+    if len(nome_norm) < 3:
+        return []
+    
+    # Palavras que indicam problema (🔴)
+    negativas = ["lesão", "lesao", "lesionado", "dúvida", "duvida", 
+                 "suspenso", "suspensao", "suspensão", "cortado", "fora",
+                 "poupado", "poupanca", "poupança", "não joga", "nao joga",
+                 "desfalque", "contundido", "machucado", "departamento médico"]
+    
+    # Palavras que indicam OK (🟢)
+    positivas = ["confirmado", "titular", "retorna", "volta", "escalado",
+                 "à disposição", "a disposicao", "disponível", "disponivel",
+                 "recuperado", "pronto", "joga"]
+    
+    try:
+        linhas = conn.execute(
+            "SELECT titulo, link, fonte, publicado_em FROM noticias WHERE lower(titulo) LIKE ? ORDER BY coletado_em DESC LIMIT 10",
+            (f"%{nome_norm}%",)
+        ).fetchall()
+    except:
+        return []
+    
+    alertas = []
+    for titulo, link, fonte, publicado_em in linhas:
+        titulo_norm = normalizar_nome(titulo)
+        
+        # Checa se o nome está realmente no título (evita falsos positivos)
+        if nome_norm not in titulo_norm:
+            continue
+        
+        # Verifica palavras-chave
+        tem_negativa = any(p in titulo_norm for p in negativas)
+        tem_positiva = any(p in titulo_norm for p in positivas)
+        
+        if tem_negativa:
+            alertas.append({
+                "tipo": "negativo",
+                "titulo": titulo,
+                "link": link,
+                "fonte": fonte,
+                "tempo": tempo_relativo(publicado_em)
+            })
+        elif tem_positiva:
+            alertas.append({
+                "tipo": "positivo",
+                "titulo": titulo,
+                "link": link,
+                "fonte": fonte,
+                "tempo": tempo_relativo(publicado_em)
+            })
+    
+    # Retorna o alerta mais recente de cada tipo
+    return alertas[:2]
+
+
+# ============================================
+# HTML
 # ============================================
 html = """<!DOCTYPE html>
 <html lang="pt-BR">
@@ -176,6 +258,49 @@ html = """<!DOCTYPE html>
   .meu-time-vazio .icone { font-size: 3rem; margin-bottom: 1rem; }
   .aviso-api { background: #fef3c7; border-left: 4px solid #f59e0b; padding: .75rem 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: .85rem; color: #78350f; }
   body.escuro .aviso-api { background: #422006; color: #fbbf24; }
+  
+  /* ===== ALERTAS ===== */
+  .alerta-card { display: flex; align-items: flex-start; gap: .75rem; padding: .9rem 1.1rem; border-radius: 10px; margin-bottom: .6rem; text-decoration: none; transition: transform .15s; }
+  .alerta-card:hover { transform: translateY(-1px); }
+  .alerta-card.negativo { background: #fef2f2; border-left: 4px solid #dc2626; color: #7f1d1d; }
+  .alerta-card.positivo { background: #f0fdf4; border-left: 4px solid #16a34a; color: #14532d; }
+  body.escuro .alerta-card.negativo { background: #3f1010; color: #fca5a5; }
+  body.escuro .alerta-card.positivo { background: #0d2a17; color: #86efac; }
+  .alerta-icon { font-size: 1.2rem; flex-shrink: 0; }
+  .alerta-info { flex: 1; min-width: 0; }
+  .alerta-titulo { font-weight: 600; font-size: .9rem; line-height: 1.3; }
+  .alerta-meta { font-size: .75rem; opacity: .8; margin-top: .25rem; }
+  
+  /* ===== COMPARADOR ===== */
+  .comparador-badge { display: inline-flex; align-items: center; gap: .3rem; padding: .15rem .5rem; border-radius: 6px; font-size: .7rem; font-weight: 700; margin-left: .5rem; }
+  .comparador-badge.igual { background: #d1fae5; color: #065f46; }
+  .comparador-badge.diferente { background: #fef3c7; color: #92400e; }
+  .comparador-badge.faltando { background: #fee2e2; color: #991b1b; }
+  body.escuro .comparador-badge.igual { background: #064e3b; color: #6ee7b7; }
+  body.escuro .comparador-badge.diferente { background: #451a03; color: #fcd34d; }
+  body.escuro .comparador-badge.faltando { background: #450a0a; color: #fca5a5; }
+  
+  /* ===== ESTATÍSTICAS ===== */
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .stat-card { background: white; border-radius: 12px; padding: 1.25rem; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  body.escuro .stat-card { background: #1e1e1e; }
+  .stat-card-label { font-size: .75rem; color: #666; text-transform: uppercase; letter-spacing: .5px; font-weight: 600; }
+  body.escuro .stat-card-label { color: #aaa; }
+  .stat-card-val { font-size: 1.8rem; font-weight: 800; color: #0a5c2e; margin-top: .35rem; }
+  body.escuro .stat-card-val { color: #4ade80; }
+  .stat-card-sub { font-size: .75rem; color: #888; margin-top: .25rem; }
+  .acerto-wrap { background: white; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  body.escuro .acerto-wrap { background: #1e1e1e; }
+  .acerto-titulo { font-size: .8rem; font-weight: 700; color: #666; text-transform: uppercase; letter-spacing: .5px; margin-bottom: .75rem; }
+  body.escuro .acerto-titulo { color: #aaa; }
+  .acerto-barra { height: 24px; background: #f0f2f5; border-radius: 12px; overflow: hidden; display: flex; }
+  body.escuro .acerto-barra { background: #2a2a2a; }
+  .acerto-barra-igual { background: linear-gradient(90deg, #16a34a, #22c55e); display: flex; align-items: center; justify-content: center; color: white; font-size: .8rem; font-weight: 700; transition: width .4s; }
+  .acerto-barra-diferente { background: linear-gradient(90deg, #f59e0b, #fbbf24); display: flex; align-items: center; justify-content: center; color: white; font-size: .8rem; font-weight: 700; transition: width .4s; }
+  .acerto-legenda { display: flex; gap: 1rem; margin-top: .75rem; font-size: .8rem; }
+  .acerto-legenda span { display: inline-flex; align-items: center; gap: .4rem; }
+  .acerto-legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  
   @media (max-width: 600px) {
     header h1 { font-size: 1.3rem; }
     .time-header { flex-wrap: wrap; }
@@ -187,6 +312,7 @@ html = """<!DOCTYPE html>
     table.classificacao th, table.classificacao td { padding: .5rem .3rem; }
     table.classificacao .col-v-e-d, table.classificacao .col-gp-gc { display: none; }
     .meu-time-stats { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -399,58 +525,143 @@ else:
 
 
 # ============================================
-# MONTA MEU TIME (capitão ×1.5)
+# MONTA MEU TIME (com alertas + comparador + estatísticas)
 # ============================================
 if MEU_TIME and MEU_TIME.get("jogadores"):
     jogadores = MEU_TIME["jogadores"]
+    
+    # Lista de nomes do Fathur pra comparação
+    nomes_fathur = set()
+    if SUGESTAO_FATHUR and SUGESTAO_FATHUR.get("jogadores"):
+        nomes_fathur = {j["nome"].lower() for j in SUGESTAO_FATHUR["jogadores"]}
+    
+    # Cálculos
     total = 0
     bonus_capitao = 0
     capitao_nome = ""
     capitao_pts_base = 0
+    acertos = 0
     for j in jogadores:
         pts = j.get("pontos", 0) or 0
         total += pts
         if j.get("capitao"):
             capitao_nome = j.get("nome", "")
             capitao_pts_base = pts
-            bonus_capitao = pts * 0.5  # bônus: 0.5 a mais (total efetivo = pts * 1.5)
+            bonus_capitao = pts * 0.5
+        # Conta acertos vs Fathur
+        if j.get("nome", "").lower() in nomes_fathur:
+            acertos += 1
     total_com_capitao = total + bonus_capitao
     media = total_com_capitao / len(jogadores) if jogadores else 0
     
+    # Comparador geral
+    total_fathur = len(nomes_fathur)
+    total_meu = len(jogadores)
+    taxa_acerto = (acertos / total_meu * 100) if total_meu > 0 else 0
+    
+    # ===== ALERTAS =====
+    alertas_html = ""
+    total_alertas = 0
+    for j in jogadores:
+        nome = j.get("nome", "")
+        if not nome:
+            continue
+        alertas = buscar_alertas_jogador(nome)
+        for a in alertas:
+            total_alertas += 1
+            icone = "🔴" if a["tipo"] == "negativo" else "🟢"
+            alertas_html += f'''<a href="{a["link"]}" target="_blank" class="alerta-card {a["tipo"]}">
+                <span class="alerta-icon">{icone}</span>
+                <div class="alerta-info">
+                    <div class="alerta-titulo"><b>{nome}</b> — {a["titulo"]}</div>
+                    <div class="alerta-meta">{a["fonte"]} · {a["tempo"]}</div>
+                </div>
+            </a>'''
+    
+    if total_alertas > 0:
+        alertas_wrap = f'''
+        <div class="acerto-wrap">
+            <div class="acerto-titulo">🔔 Alertas nas notícias ({total_alertas})</div>
+            {alertas_html}
+        </div>
+        '''
+    else:
+        alertas_wrap = '''<div class="acerto-wrap"><div class="acerto-titulo">🔔 Alertas nas notícias</div><div style="color:#888; font-size:.9rem;">Nenhum alerta nas últimas notícias.</div></div>'''
+    
+    # ===== CARDS DOS JOGADORES (com comparador) =====
     cards = ""
     for j in jogadores:
+        nome = j.get("nome", "?")
         pts = j.get("pontos", 0) or 0
         classe_neg = "negativo" if pts < 0 else ""
         badge_cap = '<span class="capitao-badge">👑 CAP</span>' if j.get("capitao") else ""
         exibir_pts = pts * 1.5 if j.get("capitao") else pts
+        
+        # Comparador
+        badge_comp = ""
+        if SUGESTAO_FATHUR and SUGESTAO_FATHUR.get("jogadores"):
+            if nome.lower() in nomes_fathur:
+                badge_comp = '<span class="comparador-badge igual">✓ Fathur</span>'
+            else:
+                badge_comp = '<span class="comparador-badge diferente">⚠ Fathur não</span>'
+        
         cards += f'''<div class="jogador-card">
             <span class="jogador-pos">{j.get("posicao", "?")}</span>
-            <span class="jogador-nome">{j.get("nome", "?")} {badge_cap}
+            <span class="jogador-nome">{nome} {badge_cap} {badge_comp}
                 <small>{j.get("clube", "")}</small>
             </span>
             <span class="jogador-pts {classe_neg}">{exibir_pts:+.1f}</span>
         </div>'''
     
+    # ===== ESTATÍSTICAS =====
+    stats_html = f'''
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-card-label">Total</div>
+            <div class="stat-card-val">{total_com_capitao:.1f}</div>
+            <div class="stat-card-sub">com capitão ×1.5</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-label">Média</div>
+            <div class="stat-card-val">{media:.1f}</div>
+            <div class="stat-card-sub">por jogador</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-label">Capitão</div>
+            <div class="stat-card-val">{capitao_pts_base * 1.5:.1f}</div>
+            <div class="stat-card-sub">{capitao_nome}</div>
+        </div>
+    </div>
+    '''
+    
+    # ===== BARRA DE ACERTO =====
+    if SUGESTAO_FATHUR and total_meu > 0:
+        pct_igual = taxa_acerto
+        pct_diferente = 100 - taxa_acerto
+        barra_html = f'''
+        <div class="acerto-wrap">
+            <div class="acerto-titulo">⚔️ Acordo com o Fathur FC — {acertos}/{total_meu} jogadores</div>
+            <div class="acerto-barra">
+                <div class="acerto-barra-igual" style="width:{pct_igual}%">{pct_igual:.0f}%</div>
+                <div class="acerto-barra-diferente" style="width:{pct_diferente}%">{pct_diferente:.0f}%</div>
+            </div>
+            <div class="acerto-legenda">
+                <span><i style="background:#16a34a"></i> Igual ao Fathur ({acertos})</span>
+                <span><i style="background:#f59e0b"></i> Diferente ({total_meu - acertos})</span>
+            </div>
+        </div>
+        '''
+    else:
+        barra_html = ""
+    
     meu_time_html = f'''
     <div class="meu-time-header">
         <h2>👤 Meu Time</h2>
         <p>Rodada {MEU_TIME.get("rodada", "?")} · {len(jogadores)} jogadores</p>
-        <div class="meu-time-stats">
-            <div class="meu-time-stat">
-                <div class="meu-time-stat-label">Total</div>
-                <div class="meu-time-stat-val">{total_com_capitao:.1f}</div>
-            </div>
-            <div class="meu-time-stat">
-                <div class="meu-time-stat-label">Média</div>
-                <div class="meu-time-stat-val">{media:.1f}</div>
-            </div>
-            <div class="meu-time-stat">
-                <div class="meu-time-stat-label">Capitão ×1.5</div>
-                <div class="meu-time-stat-val">{capitao_pts_base * 1.5:.1f}</div>
-            </div>
-        </div>
-        <p style="margin-top:1rem;font-size:.75rem;opacity:.8;">👑 Capitão: {capitao_nome or "não definido"} · {capitao_pts_base:.1f} pts base → {capitao_pts_base * 1.5:.1f} pts com bônus</p>
     </div>
+    {stats_html}
+    {barra_html}
+    {alertas_wrap}
     {cards}
     '''
 else:
@@ -458,20 +669,7 @@ else:
     <div class="meu-time-vazio">
         <div class="icone">👤</div>
         <h3>Nenhum time cadastrado</h3>
-        <p>Edite o arquivo <code>meu_time.json</code> no repositório<br>
-        e adicione os jogadores do seu time.</p>
-        <p style="margin-top:1.5rem;font-size:.85rem;">
-        <b>Formato:</b><br>
-        <code style="display:block;background:#f0f2f5;padding:.75rem;border-radius:8px;margin-top:.5rem;text-align:left;font-size:.75rem;overflow-x:auto;">
-{<br>
-&nbsp;&nbsp;"rodada": 29,<br>
-&nbsp;&nbsp;"jogadores": [<br>
-&nbsp;&nbsp;&nbsp;&nbsp;{"nome": "Rossi", "clube": "FLA", "posicao": "GOL", "pontos": 8.5, "capitao": false},<br>
-&nbsp;&nbsp;&nbsp;&nbsp;{"nome": "Hulk", "clube": "FLU", "posicao": "ATA", "pontos": 18.7, "capitao": true}<br>
-&nbsp;&nbsp;]<br>
-}
-        </code>
-        </p>
+        <p>Edite o arquivo <code>meu_time.json</code> no repositório.</p>
     </div>
     '''
 
@@ -496,3 +694,4 @@ with open('index.html', 'w', encoding='utf-8') as f:
 print(f"Site gerado - Rodada {RODADA_ATUAL}")
 print(f"Classificação: {len(CLASSIFICACAO)} times")
 print(f"Meu Time: {'OK' if MEU_TIME else 'vazio'}")
+print(f"Alertas gerados: {sum(1 for j in MEU_TIME.get('jogadores', []) if buscar_alertas_jogador(j.get('nome', '')))} jogadores com alerta")
