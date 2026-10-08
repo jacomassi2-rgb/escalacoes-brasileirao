@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
       - name: Baixar o código do repositório
         uses: actions/checkout@v4
@@ -41,21 +43,22 @@ jobs:
 
       - name: Enviar notificação no Telegram
         if: success()
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python -c "
           import os, requests
           from datetime import datetime
           from zoneinfo import ZoneInfo
+          from config import obter_rodada_e_jogos
           
+          rodada, data_rodada, jogos = obter_rodada_e_jogos()
           hora = datetime.now(ZoneInfo('America/Sao_Paulo')).strftime('%d/%m/%Y %H:%M')
+          
           mensagem = f'''🤖 Escalações atualizadas!
-
-          📅 Rodada atual
+          
+          🏆 Rodada {rodada}
+          📅 {data_rodada}
           ⏰ {hora}
-
+          
           🔗 https://jacomassi2-rgb.github.io/escalacoes-brasileirao'''
           
           token = os.environ['TELEGRAM_BOT_TOKEN']
