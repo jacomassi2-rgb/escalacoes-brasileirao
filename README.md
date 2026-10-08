@@ -66,10 +66,7 @@ Pronto! O site vai atualizar em 1-2 minutos.
 
 ## 🔔 Notificações no Telegram
 
-Toda vez que o robô roda, você recebe uma mensagem no Telegram com:
-- Rodada atual
-- Hora da atualização
-- Link do site
+Toda vez que o robô roda, você recebe uma mensagem no Telegram com a rodada atual, a hora da atualização e o link do site.
 
 **Como está configurado:**
 - Bot: `@meu_robo_escalacoes_bot`
@@ -110,3 +107,38 @@ Vá em **Configurações** → **Páginas**:
 ---
 
 ## 📝 Como o site é gerado
+
+A cada execução (3x/dia), o fluxo é:
+
+1. O **coletor.py** roda e busca notícias no Google News, salvando no SQLite (dados/escalacoes.db)
+2. O **gerar_site.py** roda, lê o SQLite e o config.py, e gera o index.html
+3. O Git faz commit do index.html atualizado
+4. O GitHub Pages republica o site automaticamente
+5. O Telegram recebe a notificação
+
+---
+
+## 🎯 Tecnologias usadas
+
+- **Python 3.10** (coleta e geração)
+- **SQLite** (banco de dados local, temporário a cada execução)
+- **feedparser** (leitura de RSS do Google News)
+- **GitHub Actions** (automação, gratuito)
+- **GitHub Pages** (hospedagem, gratuita)
+- **Logo.dev** (escudos dos times)
+- **Telegram Bot API** (notificações)
+
+---
+
+## 👤 Autor
+
+Feito por **Fabio** ([@jacomassi2-rgb](https://github.com/jacomassi2-rgb))
+
+Projeto pessoal, código aberto pra quem quiser usar como base.
+
+---
+
+## 📌 Última atualização
+
+- **Rodada atual:** 29
+- **Última modificação:** Outubro de 2026
