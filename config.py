@@ -1,6 +1,6 @@
 import os
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 FOOTBALL_DATA_TOKEN = os.environ.get("FOOTBALL_DATA_TOKEN", "")
@@ -22,13 +22,55 @@ def obter_rodada_e_jogos():
         print(f"Erro ao consultar API: {e}")
         return 29, "07 e 08 de outubro de 2026", []
     
-    # Encontra a rodada mais recente com jogos agendados ou em andamento
-    rodada_atual = 1
+    agora = datetime.now(ZoneInfo("UTC"))
+    limite = agora + timedelta(days=7)  # Olha até 7 dias pra frente
+    
+    # Estratégia: encontrar a rodada com jogos mais próximos de agora
+    # 1. Primeiro tenta achar jogos EM ANDAMENTO (IN_PLAY, PAUSED)
+    # 2. Depois jogos AGENDADOS para os próximos 7 dias
+    # 3. Por último, jogos FINALIZADOS recentemente (últimos 3 dias)
+    
+    rodada_atual = None
+    
+    # Prioridade 1: jogos ao vivo
     for match in data.get("matches", []):
-        md = match.get("matchday", 1)
-        if match.get("status") in ("SCHEDULED", "TIMED", "IN_PLAY", "PAUSED"):
-            if md > rodada_atual:
-                rodada_atual = md
+        if match.get("status") in ("IN_PLAY", "PAUSED"):
+            rodada_atual = match.get("matchday")
+            break
+    
+    # Prioridade 2: jogos agendados nos próximos 7 dias
+    if rodada_atual is None:
+        for match in data.get("matches", []):
+            if match.get("status") in ("SCHEDULED", "TIMED"):
+                utc_date = match.get("utcDate", "")
+                if utc_date:
+                    try:
+                        dt = datetime.fromisoformat(utc_date.replace("Z", "+00:00"))
+                        if agora <= dt <= limite:
+                            md = match.get("matchday")
+                            if rodada_atual is None or md < rodada_atual:
+                                rodada_atual = md
+                    except:
+                        pass
+    
+    # Prioridade 3: jogos finalizados nos últimos 3 dias
+    if rodada_atual is None:
+        limite_passado = agora - timedelta(days=3)
+        for match in data.get("matches", []):
+            if match.get("status") == "FINISHED":
+                utc_date = match.get("utcDate", "")
+                if utc_date:
+                    try:
+                        dt = datetime.fromisoformat(utc_date.replace("Z", "+00:00"))
+                        if limite_passado <= dt <= agora:
+                            md = match.get("matchday")
+                            if rodada_atual is None or md > rodada_atual:
+                                rodada_atual = md
+                    except:
+                        pass
+    
+    if rodada_atual is None:
+        rodada_atual = 29  # Fallback
     
     # Pega os jogos dessa rodada
     jogos = []
