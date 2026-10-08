@@ -49,6 +49,15 @@ def tempo_relativo(data_str):
     except:
         return ""
 
+def tempo_em_horas(data_str):
+    """Retorna quantas horas atrás (pra filtro de 24h)."""
+    try:
+        dt = parsedate_to_datetime(data_str)
+        agora = datetime.now(dt.tzinfo)
+        return (agora - dt).total_seconds() / 3600
+    except:
+        return 9999
+
 html = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -65,13 +74,17 @@ html = """<!DOCTYPE html>
   .btn-tema:hover { background: rgba(255,255,255,.3); }
   .rodada-badge { display: inline-block; background: rgba(255,255,255,.2); color: white; padding: .35rem 1rem; border-radius: 20px; font-size: .85rem; font-weight: 600; margin-top: .75rem; letter-spacing: .5px; }
   header p { margin: .5rem 0 0; opacity: .85; font-size: .9rem; }
-  .jogos { max-width: 900px; margin: 1.5rem auto 0; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .5rem; }
+  .jogos { max-width: 900px; margin: 1.5rem auto 0; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .5rem; }
   .jogo { background: rgba(255,255,255,.15); color: white; padding: .5rem .8rem; border-radius: 8px; font-size: .8rem; text-align: center; }
   .jogo strong { display: block; font-size: .9rem; margin-bottom: .2rem; }
-  .busca { max-width: 900px; margin: 1rem auto 2rem; padding: 0 1rem; position: relative; z-index: 10; }
-  .busca input { width: 100%; padding: 1rem 1.2rem; font-size: 1rem; border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.1); outline: none; background: white; color: inherit; }
-  body.escuro .busca input { background: #1e1e1e; color: #e0e0e0; }
-  .busca input:focus { box-shadow: 0 4px 16px rgba(10,92,46,.3); }
+  .controles { max-width: 900px; margin: 1rem auto 2rem; padding: 0 1rem; display: flex; gap: .5rem; position: relative; z-index: 10; }
+  .controles input { flex: 1; padding: 1rem 1.2rem; font-size: 1rem; border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.1); outline: none; background: white; color: inherit; }
+  body.escuro .controles input { background: #1e1e1e; color: #e0e0e0; }
+  .controles input:focus { box-shadow: 0 4px 16px rgba(10,92,46,.3); }
+  .btn-filtro { background: white; border: none; padding: 0 1.2rem; border-radius: 12px; font-size: .85rem; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.1); color: #0a5c2e; white-space: nowrap; transition: all .2s; }
+  body.escuro .btn-filtro { background: #1e1e1e; color: #4ade80; }
+  .btn-filtro.ativo { background: #0a5c2e; color: white; }
+  body.escuro .btn-filtro.ativo { background: #0d7a3f; color: white; }
   .container { max-width: 900px; margin: 0 auto; padding: 0 1rem 3rem; }
   .time { background: white; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); border-left: 5px solid #0a5c2e; }
   body.escuro .time { background: #1e1e1e; box-shadow: 0 1px 4px rgba(0,0,0,.3); }
@@ -80,6 +93,8 @@ html = """<!DOCTYPE html>
   .time-header img { width: 44px; height: 44px; object-fit: contain; }
   .time-header h2 { margin: 0; font-size: 1.15rem; color: #0a5c2e; flex: 1; }
   body.escuro .time-header h2 { color: #4ade80; }
+  .contador { background: #f0f2f5; color: #666; padding: .2rem .6rem; border-radius: 20px; font-size: .75rem; font-weight: 600; }
+  body.escuro .contador { background: #2a2a2a; color: #aaa; }
   .btn-escalacao { display: inline-block; background: #0a5c2e; color: white; text-decoration: none; padding: .5rem 1rem; border-radius: 8px; font-size: .85rem; font-weight: 600; white-space: nowrap; }
   .btn-escalacao:hover { background: #0d7a3f; }
   .noticia { padding: .75rem 1.5rem; border-top: 1px solid #f5f5f5; }
@@ -95,12 +110,15 @@ html = """<!DOCTYPE html>
   footer { text-align: center; padding: 2rem 1rem; color: #888; font-size: .85rem; }
   #btn-topo { position: fixed; bottom: 2rem; right: 2rem; background: #0a5c2e; color: white; border: none; width: 48px; height: 48px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.2); display: none; z-index: 100; }
   #btn-topo:hover { background: #0d7a3f; }
+  .info-filtro { max-width: 900px; margin: -.5rem auto 1rem; padding: 0 1rem; font-size: .85rem; color: #666; }
+  body.escuro .info-filtro { color: #aaa; }
   @media (max-width: 600px) {
     header h1 { font-size: 1.3rem; }
     .time-header { flex-wrap: wrap; }
-    .time-header h2 { font-size: 1rem; width: 100%; }
-    .btn-escalacao { width: 100%; text-align: center; }
+    .time-header h2 { font-size: 1rem; }
+    .btn-escalacao { width: 100%; text-align: center; margin-top: .5rem; }
     #btn-topo { bottom: 1rem; right: 1rem; }
+    .controles { flex-direction: column; }
   }
 </style>
 </head>
@@ -113,9 +131,12 @@ html = """<!DOCTYPE html>
   <div class="jogos">JOGOS_AQUI</div>
 </header>
 
-<div class="busca">
+<div class="controles">
   <input type="text" id="campo-busca" placeholder="🔍 Buscar time..." oninput="filtrar()">
+  <button class="btn-filtro" id="btn-24h" onclick="toggle24h()">🕐 Últimas 24h</button>
 </div>
+
+<div class="info-filtro" id="info-filtro"></div>
 
 <div class="container">
 CONTEUDO_AQUI
@@ -129,16 +150,54 @@ CONTEUDO_AQUI
 <button id="btn-topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script>
+let filtro24h = false;
+
 function filtrar() {
   const termo = document.getElementById('campo-busca').value.toLowerCase();
+  let visiveis = 0;
   document.querySelectorAll('.time').forEach(function(el) {
     const nome = el.getAttribute('data-time').toLowerCase();
-    el.classList.toggle('oculto', !nome.includes(termo));
+    const bate = nome.includes(termo);
+    el.classList.toggle('oculto', !bate);
+    if (bate) visiveis++;
   });
+  atualizarInfoFiltro(visiveis);
 }
+
+function toggle24h() {
+  filtro24h = !filtro24h;
+  document.getElementById('btn-24h').classList.toggle('ativo', filtro24h);
+  document.querySelectorAll('.time').forEach(function(el) {
+    el.querySelectorAll('.noticia').forEach(function(n) {
+      const horas = parseFloat(n.getAttribute('data-horas') || 9999);
+      n.classList.toggle('oculto', filtro24h && horas > 24);
+    });
+    // Se todas as notícias sumiram, mostra mensagem
+    const visiveis = el.querySelectorAll('.noticia:not(.oculto)').length;
+    const vazio = el.querySelector('.vazio-24h');
+    if (vazio) {
+      vazio.classList.toggle('oculto', !filtro24h || visiveis > 0);
+    }
+    // Esconde o card do time se não tem notícia visível no filtro
+    const temAlguma = visiveis > 0 || (!filtro24h && el.querySelectorAll('.noticia').length > 0);
+    el.classList.toggle('oculto', filtro24h && !temAlguma);
+  });
+  atualizarInfoFiltro();
+}
+
+function atualizarInfoFiltro(visiveis) {
+  const info = document.getElementById('info-filtro');
+  if (filtro24h) {
+    info.textContent = '🕐 Mostrando apenas notícias das últimas 24 horas';
+  } else {
+    info.textContent = '';
+  }
+}
+
 window.addEventListener('scroll', function() {
   document.getElementById('btn-topo').style.display = window.scrollY > 400 ? 'block' : 'none';
 });
+
 function alternarTema() {
   document.body.classList.toggle('escuro');
   localStorage.setItem('tema', document.body.classList.contains('escuro') ? 'escuro' : 'claro');
@@ -163,11 +222,14 @@ for nome, logo_url, cor in TIMES:
         (nome,)
     ).fetchall()
     corpo += f'<div class="time" data-time="{nome}" style="border-left-color:{cor}">'
+    
     if linhas:
         primeiro_link = linhas[0][1]
+        qtd = len(linhas)
         corpo += f'''<div class="time-header">
             <img src="{logo_url}" alt="{nome}" onerror="this.style.display='none'">
             <h2>{nome}</h2>
+            <span class="contador">{qtd} notícias</span>
             <a href="{primeiro_link}" target="_blank" class="btn-escalacao">🟢 Ver escalação</a>
         </div>'''
     else:
@@ -175,13 +237,17 @@ for nome, logo_url, cor in TIMES:
             <img src="{logo_url}" alt="{nome}" onerror="this.style.display='none'">
             <h2>{nome}</h2>
         </div>'''
+    
     if linhas:
         for titulo, link, fonte, publicado_em in linhas:
             tempo = tempo_relativo(publicado_em)
+            horas = tempo_em_horas(publicado_em)
             meta = f'<span>{fonte}</span>'
             if tempo:
                 meta += f'<span class="tempo">⏱ {tempo}</span>'
-            corpo += f'<div class="noticia"><a href="{link}" target="_blank">{titulo}</a><div class="meta">{meta}</div></div>'
+            corpo += f'<div class="noticia" data-horas="{horas:.1f}"><a href="{link}" target="_blank">{titulo}</a><div class="meta">{meta}</div></div>'
+        # Mensagem quando filtro 24h esconde tudo
+        corpo += '<div class="vazio vazio-24h oculto">Nenhuma notícia nas últimas 24h.</div>'
     else:
         corpo += '<div class="vazio">Nenhuma notícia encontrada.</div>'
     corpo += '</div>'
