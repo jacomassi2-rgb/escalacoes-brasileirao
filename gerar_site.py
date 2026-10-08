@@ -1,9 +1,10 @@
 import sqlite3
 from datetime import datetime
 from email.utils import parsedate_to_datetime
-from config import obter_rodada_e_jogos
+from config import obter_rodada_e_jogos, obter_classificacao
 
 RODADA_ATUAL, DATA_RODADA, JOGOS_RODADA = obter_rodada_e_jogos()
+CLASSIFICACAO = obter_classificacao()
 
 conn = sqlite3.connect('dados/escalacoes.db')
 
@@ -59,6 +60,10 @@ def tempo_em_horas(data_str):
     except:
         return 9999
 
+
+# ============================================
+# HTML
+# ============================================
 html = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -78,14 +83,19 @@ html = """<!DOCTYPE html>
   .jogos { max-width: 900px; margin: 1.5rem auto 0; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .5rem; }
   .jogo { background: rgba(255,255,255,.15); color: white; padding: .5rem .8rem; border-radius: 8px; font-size: .8rem; text-align: center; }
   .jogo strong { display: block; font-size: .9rem; margin-bottom: .2rem; }
-  .controles { max-width: 900px; margin: 1rem auto 2rem; padding: 0 1rem; display: flex; gap: .5rem; position: relative; z-index: 10; }
+  .abas { max-width: 900px; margin: 1rem auto 0; padding: 0 1rem; display: flex; gap: .5rem; }
+  .aba-btn { flex: 1; padding: .8rem 1rem; background: white; border: 2px solid transparent; border-radius: 12px; font-size: .9rem; font-weight: 700; cursor: pointer; color: #0a5c2e; box-shadow: 0 2px 6px rgba(0,0,0,.05); transition: all .2s; }
+  body.escuro .aba-btn { background: #1e1e1e; color: #4ade80; }
+  .aba-btn.ativo { background: #0a5c2e; color: white; border-color: #0a5c2e; }
+  body.escuro .aba-btn.ativo { background: #0d7a3f; color: white; }
+  .aba-conteudo { display: none; }
+  .aba-conteudo.ativo { display: block; }
+  .controles { max-width: 900px; margin: 1rem auto 2rem; padding: 0 1rem; display: flex; gap: .5rem; }
   .controles input { flex: 1; padding: 1rem 1.2rem; font-size: 1rem; border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.1); outline: none; background: white; color: inherit; }
   body.escuro .controles input { background: #1e1e1e; color: #e0e0e0; }
-  .controles input:focus { box-shadow: 0 4px 16px rgba(10,92,46,.3); }
-  .btn-filtro { background: white; border: none; padding: 0 1.2rem; border-radius: 12px; font-size: .85rem; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.1); color: #0a5c2e; white-space: nowrap; transition: all .2s; }
+  .btn-filtro { background: white; border: none; padding: 0 1.2rem; border-radius: 12px; font-size: .85rem; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.1); color: #0a5c2e; white-space: nowrap; }
   body.escuro .btn-filtro { background: #1e1e1e; color: #4ade80; }
   .btn-filtro.ativo { background: #0a5c2e; color: white; }
-  body.escuro .btn-filtro.ativo { background: #0d7a3f; color: white; }
   .container { max-width: 900px; margin: 0 auto; padding: 0 1rem 3rem; }
   .time { background: white; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); border-left: 5px solid #0a5c2e; }
   body.escuro .time { background: #1e1e1e; box-shadow: 0 1px 4px rgba(0,0,0,.3); }
@@ -113,6 +123,32 @@ html = """<!DOCTYPE html>
   #btn-topo:hover { background: #0d7a3f; }
   .info-filtro { max-width: 900px; margin: -.5rem auto 1rem; padding: 0 1rem; font-size: .85rem; color: #666; }
   body.escuro .info-filtro { color: #aaa; }
+  
+  /* ===== TABELA DE CLASSIFICAÇÃO ===== */
+  .tabela-wrap { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  body.escuro .tabela-wrap { background: #1e1e1e; }
+  table.classificacao { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  table.classificacao thead { background: #0a5c2e; color: white; }
+  table.classificacao th { padding: .75rem .5rem; text-align: left; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+  table.classificacao th.num { text-align: center; }
+  table.classificacao td { padding: .65rem .5rem; border-bottom: 1px solid #f0f0f0; }
+  body.escuro table.classificacao td { border-bottom-color: #2a2a2a; }
+  table.classificacao tr:last-child td { border-bottom: none; }
+  table.classificacao td.num { text-align: center; font-variant-numeric: tabular-nums; }
+  table.classificacao .pos { font-weight: 700; width: 40px; text-align: center; border-radius: 6px; padding: .35rem 0; display: inline-block; min-width: 32px; }
+  table.classificacao .time-nome { font-weight: 600; }
+  table.classificacao tr.g4 .pos { background: #0a5c2e; color: white; }
+  table.classificacao tr.g5-g8 .pos { background: #3b82f6; color: white; }
+  table.classificacao tr.g9-g16 .pos { background: #e5e7eb; color: #333; }
+  table.classificacao tr.z4 .pos { background: #dc2626; color: white; }
+  table.classificacao tr.libertadores { background: rgba(10, 92, 46, .04); }
+  table.classificacao tr.pre-libertadores { background: rgba(59, 130, 246, .04); }
+  table.classificacao tr.rebaixamento { background: rgba(220, 38, 38, .04); }
+  .legenda { max-width: 900px; margin: 1rem auto; padding: 0 1rem; display: flex; gap: 1rem; flex-wrap: wrap; font-size: .8rem; color: #666; }
+  body.escuro .legenda { color: #aaa; }
+  .legenda span { display: inline-flex; align-items: center; gap: .4rem; }
+  .legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  
   @media (max-width: 600px) {
     header h1 { font-size: 1.3rem; }
     .time-header { flex-wrap: wrap; }
@@ -120,6 +156,9 @@ html = """<!DOCTYPE html>
     .btn-escalacao { width: 100%; text-align: center; margin-top: .5rem; }
     #btn-topo { bottom: 1rem; right: 1rem; }
     .controles { flex-direction: column; }
+    table.classificacao { font-size: .8rem; }
+    table.classificacao th, table.classificacao td { padding: .5rem .3rem; }
+    table.classificacao .col-v-e-d, table.classificacao .col-gp-gc { display: none; }
   }
 </style>
 </head>
@@ -132,15 +171,34 @@ html = """<!DOCTYPE html>
   <div class="jogos">JOGOS_AQUI</div>
 </header>
 
-<div class="controles">
-  <input type="text" id="campo-busca" placeholder="🔍 Buscar time..." oninput="filtrar()">
-  <button class="btn-filtro" id="btn-24h" onclick="toggle24h()">🕐 Últimas 24h</button>
+<div class="abas">
+  <button class="aba-btn ativo" data-aba="noticias" onclick="mudarAba('noticias')">📰 Notícias</button>
+  <button class="aba-btn" data-aba="classificacao" onclick="mudarAba('classificacao')">🏆 Classificação</button>
 </div>
 
-<div class="info-filtro" id="info-filtro"></div>
+<!-- ABA NOTÍCIAS -->
+<div class="aba-conteudo ativo" id="aba-noticias">
+  <div class="controles">
+    <input type="text" id="campo-busca" placeholder="🔍 Buscar time..." oninput="filtrar()">
+    <button class="btn-filtro" id="btn-24h" onclick="toggle24h()">🕐 Últimas 24h</button>
+  </div>
+  <div class="info-filtro" id="info-filtro"></div>
+  <div class="container">
+    CONTEUDO_AQUI
+  </div>
+</div>
 
-<div class="container">
-CONTEUDO_AQUI
+<!-- ABA CLASSIFICAÇÃO -->
+<div class="aba-conteudo" id="aba-classificacao">
+  <div class="container">
+    <div class="tabela-wrap">TABELA_AQUI</div>
+    <div class="legenda">
+      <span><i style="background:#0a5c2e"></i> G4 (Libertadores)</span>
+      <span><i style="background:#3b82f6"></i> G5-G8 (Pré-Libertadores)</span>
+      <span><i style="background:#e5e7eb"></i> Meio da tabela</span>
+      <span><i style="background:#dc2626"></i> Z4 (Rebaixamento)</span>
+    </div>
+  </div>
 </div>
 
 <footer>
@@ -153,9 +211,14 @@ CONTEUDO_AQUI
 <script>
 let filtro24h = false;
 
+function mudarAba(nome) {
+  document.querySelectorAll('.aba-btn').forEach(b => b.classList.toggle('ativo', b.dataset.aba === nome));
+  document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.toggle('ativo', c.id === 'aba-' + nome));
+}
+
 function filtrar() {
   const termo = document.getElementById('campo-busca').value.toLowerCase();
-  document.querySelectorAll('.time').forEach(function(el) {
+  document.querySelectorAll('#aba-noticias .time').forEach(function(el) {
     const nome = el.getAttribute('data-time').toLowerCase();
     el.classList.toggle('oculto', !nome.includes(termo));
   });
@@ -164,7 +227,7 @@ function filtrar() {
 function toggle24h() {
   filtro24h = !filtro24h;
   document.getElementById('btn-24h').classList.toggle('ativo', filtro24h);
-  document.querySelectorAll('.time').forEach(function(el) {
+  document.querySelectorAll('#aba-noticias .time').forEach(function(el) {
     el.querySelectorAll('.noticia').forEach(function(n) {
       const horas = parseFloat(n.getAttribute('data-horas') || 9999);
       n.classList.toggle('oculto', filtro24h && horas > 24);
@@ -191,6 +254,10 @@ if (localStorage.getItem('tema') === 'escuro') document.body.classList.add('escu
 </body>
 </html>"""
 
+
+# ============================================
+# MONTA JOGOS
+# ============================================
 if JOGOS_RODADA:
     jogos_html = "".join(
         f'<div class="jogo"><strong>{casa} x {vis}</strong>{dia}</div>'
@@ -199,6 +266,10 @@ if JOGOS_RODADA:
 else:
     jogos_html = ""
 
+
+# ============================================
+# MONTA NOTÍCIAS
+# ============================================
 corpo = ""
 for nome, logo_url, cor in TIMES:
     linhas = conn.execute(
@@ -235,6 +306,62 @@ for nome, logo_url, cor in TIMES:
         corpo += '<div class="vazio">Nenhuma notícia encontrada.</div>'
     corpo += '</div>'
 
+
+# ============================================
+# MONTA TABELA DE CLASSIFICAÇÃO
+# ============================================
+if CLASSIFICACAO:
+    linhas_tabela = ""
+    for t in CLASSIFICACAO:
+        pos = t["posicao"]
+        if pos <= 4:
+            classe = "g4 libertadores"
+        elif pos <= 8:
+            classe = "g5-g8 pre-libertadores"
+        elif pos <= 16:
+            classe = "g9-g16"
+        else:
+            classe = "z4 rebaixamento"
+        
+        linhas_tabela += f'''<tr class="{classe}">
+            <td><span class="pos">{pos}</span></td>
+            <td><span class="time-nome">{t["time"]}</span></td>
+            <td class="num"><b>{t["pontos"]}</b></td>
+            <td class="num">{t["jogos"]}</td>
+            <td class="num col-v-e-d">{t["vitorias"]}</td>
+            <td class="num col-v-e-d">{t["empates"]}</td>
+            <td class="num col-v-e-d">{t["derrotas"]}</td>
+            <td class="num col-gp-gc">{t["gols_pro"]}</td>
+            <td class="num col-gp-gc">{t["gols_contra"]}</td>
+            <td class="num">{t["saldo"]:+d}</td>
+        </tr>'''
+    
+    tabela_html = f'''<table class="classificacao">
+        <thead>
+            <tr>
+                <th style="width:40px;">#</th>
+                <th>Time</th>
+                <th class="num">Pts</th>
+                <th class="num">J</th>
+                <th class="num col-v-e-d">V</th>
+                <th class="num col-v-e-d">E</th>
+                <th class="num col-v-e-d">D</th>
+                <th class="num col-gp-gc">GP</th>
+                <th class="num col-gp-gc">GC</th>
+                <th class="num">SG</th>
+            </tr>
+        </thead>
+        <tbody>
+            {linhas_tabela}
+        </tbody>
+    </table>'''
+else:
+    tabela_html = '<div style="padding:2rem; text-align:center; color:#888;">Classificação não disponível no momento. A API pode estar fora do ar.</div>'
+
+
+# ============================================
+# MONTA HTML FINAL
+# ============================================
 badge = f"🏆 Rodada {RODADA_ATUAL}"
 if DATA_RODADA:
     badge += f" • {DATA_RODADA}"
@@ -243,8 +370,10 @@ html = html.replace("RODADA_BADGE", badge)
 html = html.replace("JOGOS_AQUI", jogos_html)
 html = html.replace("ATUALIZADO_AQUI", datetime.now().strftime("%d/%m/%Y %H:%M"))
 html = html.replace("CONTEUDO_AQUI", corpo)
+html = html.replace("TABELA_AQUI", tabela_html)
 
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
 print(f"Site gerado - Rodada {RODADA_ATUAL}")
+print(f"Classificação: {len(CLASSIFICACAO)} times")
