@@ -63,7 +63,7 @@ def tempo_em_horas(data_str):
         return 9999
 
 # ============================================
-# CARREGA MEU TIME (se existir)
+# CARREGA MEU TIME
 # ============================================
 MEU_TIME = {}
 if os.path.exists('meu_time.json'):
@@ -71,7 +71,7 @@ if os.path.exists('meu_time.json'):
         MEU_TIME = json.load(f)
 
 # ============================================
-# HTML
+# HTML (idêntico ao anterior)
 # ============================================
 html = """<!DOCTYPE html>
 <html lang="pt-BR">
@@ -105,10 +105,6 @@ html = """<!DOCTYPE html>
   .btn-filtro { background: white; border: none; padding: .8rem 1.2rem; border-radius: 12px; font-size: .85rem; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.1); color: #0a5c2e; white-space: nowrap; }
   body.escuro .btn-filtro { background: #1e1e1e; color: #4ade80; }
   .btn-filtro.ativo { background: #0a5c2e; color: white; }
-  .btn-primario { background: #0a5c2e; color: white; border: none; padding: .8rem 1.5rem; border-radius: 10px; font-size: .95rem; font-weight: 700; cursor: pointer; transition: all .2s; }
-  .btn-primario:hover { background: #0d7a3f; }
-  .btn-secundario { background: transparent; color: #0a5c2e; border: 2px solid #0a5c2e; padding: .6rem 1.2rem; border-radius: 10px; font-size: .9rem; font-weight: 700; cursor: pointer; }
-  body.escuro .btn-secundario { color: #4ade80; border-color: #4ade80; }
   .container { max-width: 900px; margin: 0 auto; padding: 0 1rem 3rem; }
   .time { background: white; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); border-left: 5px solid #0a5c2e; }
   body.escuro .time { background: #1e1e1e; box-shadow: 0 1px 4px rgba(0,0,0,.3); }
@@ -136,8 +132,6 @@ html = """<!DOCTYPE html>
   #btn-topo:hover { background: #0d7a3f; }
   .info-filtro { max-width: 900px; margin: -.5rem auto 1rem; padding: 0 1rem; font-size: .85rem; color: #666; }
   body.escuro .info-filtro { color: #aaa; }
-  
-  /* ===== TABELA DE CLASSIFICAÇÃO ===== */
   .tabela-wrap { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
   body.escuro .tabela-wrap { background: #1e1e1e; }
   table.classificacao { width: 100%; border-collapse: collapse; font-size: .9rem; }
@@ -161,8 +155,6 @@ html = """<!DOCTYPE html>
   body.escuro .legenda { color: #aaa; }
   .legenda span { display: inline-flex; align-items: center; gap: .4rem; }
   .legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-  
-  /* ===== MEU TIME ===== */
   .meu-time-header { background: linear-gradient(135deg, #0a5c2e, #0d7a3f); color: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; }
   .meu-time-header h2 { margin: 0 0 .5rem 0; font-size: 1.2rem; }
   .meu-time-header p { margin: 0; opacity: .9; font-size: .9rem; }
@@ -182,14 +174,8 @@ html = """<!DOCTYPE html>
   .capitao-badge { background: #f59e0b; color: white; padding: .2rem .5rem; border-radius: 6px; font-size: .65rem; font-weight: 800; }
   .meu-time-vazio { text-align: center; padding: 3rem 1rem; color: #888; }
   .meu-time-vazio .icone { font-size: 3rem; margin-bottom: 1rem; }
-  .form-add { background: white; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-  body.escuro .form-add { background: #1e1e1e; }
-  .form-linha { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: .5rem; }
-  .form-linha input, .form-linha select { flex: 1; min-width: 100px; padding: .7rem .9rem; border: 1px solid #e0e0e0; border-radius: 8px; font-size: .9rem; background: white; color: #1a1a1a; }
-  body.escuro .form-linha input, body.escuro .form-linha select { background: #2a2a2a; border-color: #333; color: #e0e0e0; }
   .aviso-api { background: #fef3c7; border-left: 4px solid #f59e0b; padding: .75rem 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: .85rem; color: #78350f; }
   body.escuro .aviso-api { background: #422006; color: #fbbf24; }
-  
   @media (max-width: 600px) {
     header h1 { font-size: 1.3rem; }
     .time-header { flex-wrap: wrap; }
@@ -219,7 +205,6 @@ html = """<!DOCTYPE html>
   <button class="aba-btn" data-aba="meu-time" onclick="mudarAba('meu-time')">👤 Meu Time</button>
 </div>
 
-<!-- ABA NOTÍCIAS -->
 <div class="aba-conteudo ativo" id="aba-noticias">
   <div class="controles">
     <input type="text" id="campo-busca" placeholder="🔍 Buscar time..." oninput="filtrar()">
@@ -231,7 +216,6 @@ html = """<!DOCTYPE html>
   </div>
 </div>
 
-<!-- ABA CLASSIFICAÇÃO -->
 <div class="aba-conteudo" id="aba-classificacao">
   <div class="container">
     <div class="tabela-wrap">TABELA_AQUI</div>
@@ -244,14 +228,12 @@ html = """<!DOCTYPE html>
   </div>
 </div>
 
-<!-- ABA MEU TIME -->
 <div class="aba-conteudo" id="aba-meu-time">
   <div class="container">
     <div class="aviso-api">
-      ⚠️ <b>Modo manual:</b> Por enquanto, você cadastra os jogadores e digita a pontuação depois da rodada.
-      A integração automática com a API do Cartola virá numa próxima atualização.
+      ⚠️ <b>Modo manual:</b> Edite o arquivo <code>meu_time.json</code> no GitHub para cadastrar seu time e a pontuação de cada jogador.
+      👑 O capitão tem pontuação <b>×1.5</b>.
     </div>
-    
     <div id="meu-time-conteudo">
       MEU_TIME_AQUI
     </div>
@@ -413,37 +395,40 @@ if CLASSIFICACAO:
         </tbody>
     </table>'''
 else:
-    tabela_html = '<div style="padding:2rem; text-align:center; color:#888;">Classificação não disponível no momento.</div>'
+    tabela_html = '<div style="padding:2rem; text-align:center; color:#888;">Classificação não disponível.</div>'
 
 
 # ============================================
-# MONTA MEU TIME
+# MONTA MEU TIME (capitão ×1.5)
 # ============================================
 if MEU_TIME and MEU_TIME.get("jogadores"):
     jogadores = MEU_TIME["jogadores"]
     total = 0
-    capitao_pts = 0
+    bonus_capitao = 0
     capitao_nome = ""
+    capitao_pts_base = 0
     for j in jogadores:
         pts = j.get("pontos", 0) or 0
-        if j.get("capitao"):
-            capitao_pts = pts * 2
-            capitao_nome = j.get("nome", "")
         total += pts
-    total_com_capitao = total + capitao_pts  # adiciona o bônus do capitão
-    media = total / len(jogadores) if jogadores else 0
+        if j.get("capitao"):
+            capitao_nome = j.get("nome", "")
+            capitao_pts_base = pts
+            bonus_capitao = pts * 0.5  # bônus: 0.5 a mais (total efetivo = pts * 1.5)
+    total_com_capitao = total + bonus_capitao
+    media = total_com_capitao / len(jogadores) if jogadores else 0
     
     cards = ""
     for j in jogadores:
         pts = j.get("pontos", 0) or 0
         classe_neg = "negativo" if pts < 0 else ""
         badge_cap = '<span class="capitao-badge">👑 CAP</span>' if j.get("capitao") else ""
+        exibir_pts = pts * 1.5 if j.get("capitao") else pts
         cards += f'''<div class="jogador-card">
             <span class="jogador-pos">{j.get("posicao", "?")}</span>
             <span class="jogador-nome">{j.get("nome", "?")} {badge_cap}
                 <small>{j.get("clube", "")}</small>
             </span>
-            <span class="jogador-pts {classe_neg}">{pts:+.1f}</span>
+            <span class="jogador-pts {classe_neg}">{exibir_pts:+.1f}</span>
         </div>'''
     
     meu_time_html = f'''
@@ -460,11 +445,11 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
                 <div class="meu-time-stat-val">{media:.1f}</div>
             </div>
             <div class="meu-time-stat">
-                <div class="meu-time-stat-label">Capitão</div>
-                <div class="meu-time-stat-val">{capitao_pts:.1f}</div>
+                <div class="meu-time-stat-label">Capitão ×1.5</div>
+                <div class="meu-time-stat-val">{capitao_pts_base * 1.5:.1f}</div>
             </div>
         </div>
-        <p style="margin-top:1rem;font-size:.75rem;opacity:.8;">👑 Capitão: {capitao_nome or "não definido"} · pontuação ×2</p>
+        <p style="margin-top:1rem;font-size:.75rem;opacity:.8;">👑 Capitão: {capitao_nome or "não definido"} · {capitao_pts_base:.1f} pts base → {capitao_pts_base * 1.5:.1f} pts com bônus</p>
     </div>
     {cards}
     '''
@@ -473,7 +458,7 @@ else:
     <div class="meu-time-vazio">
         <div class="icone">👤</div>
         <h3>Nenhum time cadastrado</h3>
-        <p>Para começar, edite o arquivo <code>meu_time.json</code> no repositório<br>
+        <p>Edite o arquivo <code>meu_time.json</code> no repositório<br>
         e adicione os jogadores do seu time.</p>
         <p style="margin-top:1.5rem;font-size:.85rem;">
         <b>Formato:</b><br>
