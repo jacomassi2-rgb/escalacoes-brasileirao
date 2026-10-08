@@ -1,4 +1,6 @@
 import sqlite3
+import json
+import os
 from datetime import datetime
 from email.utils import parsedate_to_datetime
 from config import obter_rodada_e_jogos, obter_classificacao
@@ -60,6 +62,13 @@ def tempo_em_horas(data_str):
     except:
         return 9999
 
+# ============================================
+# CARREGA MEU TIME (se existir)
+# ============================================
+MEU_TIME = {}
+if os.path.exists('meu_time.json'):
+    with open('meu_time.json', 'r', encoding='utf-8') as f:
+        MEU_TIME = json.load(f)
 
 # ============================================
 # HTML
@@ -83,19 +92,23 @@ html = """<!DOCTYPE html>
   .jogos { max-width: 900px; margin: 1.5rem auto 0; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .5rem; }
   .jogo { background: rgba(255,255,255,.15); color: white; padding: .5rem .8rem; border-radius: 8px; font-size: .8rem; text-align: center; }
   .jogo strong { display: block; font-size: .9rem; margin-bottom: .2rem; }
-  .abas { max-width: 900px; margin: 1rem auto 0; padding: 0 1rem; display: flex; gap: .5rem; }
-  .aba-btn { flex: 1; padding: .8rem 1rem; background: white; border: 2px solid transparent; border-radius: 12px; font-size: .9rem; font-weight: 700; cursor: pointer; color: #0a5c2e; box-shadow: 0 2px 6px rgba(0,0,0,.05); transition: all .2s; }
+  .abas { max-width: 900px; margin: 1rem auto 0; padding: 0 1rem; display: flex; gap: .5rem; flex-wrap: wrap; }
+  .aba-btn { flex: 1; min-width: 140px; padding: .8rem 1rem; background: white; border: 2px solid transparent; border-radius: 12px; font-size: .9rem; font-weight: 700; cursor: pointer; color: #0a5c2e; box-shadow: 0 2px 6px rgba(0,0,0,.05); transition: all .2s; }
   body.escuro .aba-btn { background: #1e1e1e; color: #4ade80; }
   .aba-btn.ativo { background: #0a5c2e; color: white; border-color: #0a5c2e; }
   body.escuro .aba-btn.ativo { background: #0d7a3f; color: white; }
   .aba-conteudo { display: none; }
   .aba-conteudo.ativo { display: block; }
-  .controles { max-width: 900px; margin: 1rem auto 2rem; padding: 0 1rem; display: flex; gap: .5rem; }
-  .controles input { flex: 1; padding: 1rem 1.2rem; font-size: 1rem; border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.1); outline: none; background: white; color: inherit; }
+  .controles { max-width: 900px; margin: 1rem auto 2rem; padding: 0 1rem; display: flex; gap: .5rem; flex-wrap: wrap; }
+  .controles input { flex: 1; min-width: 200px; padding: 1rem 1.2rem; font-size: 1rem; border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.1); outline: none; background: white; color: inherit; }
   body.escuro .controles input { background: #1e1e1e; color: #e0e0e0; }
-  .btn-filtro { background: white; border: none; padding: 0 1.2rem; border-radius: 12px; font-size: .85rem; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.1); color: #0a5c2e; white-space: nowrap; }
+  .btn-filtro { background: white; border: none; padding: .8rem 1.2rem; border-radius: 12px; font-size: .85rem; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.1); color: #0a5c2e; white-space: nowrap; }
   body.escuro .btn-filtro { background: #1e1e1e; color: #4ade80; }
   .btn-filtro.ativo { background: #0a5c2e; color: white; }
+  .btn-primario { background: #0a5c2e; color: white; border: none; padding: .8rem 1.5rem; border-radius: 10px; font-size: .95rem; font-weight: 700; cursor: pointer; transition: all .2s; }
+  .btn-primario:hover { background: #0d7a3f; }
+  .btn-secundario { background: transparent; color: #0a5c2e; border: 2px solid #0a5c2e; padding: .6rem 1.2rem; border-radius: 10px; font-size: .9rem; font-weight: 700; cursor: pointer; }
+  body.escuro .btn-secundario { color: #4ade80; border-color: #4ade80; }
   .container { max-width: 900px; margin: 0 auto; padding: 0 1rem 3rem; }
   .time { background: white; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); border-left: 5px solid #0a5c2e; }
   body.escuro .time { background: #1e1e1e; box-shadow: 0 1px 4px rgba(0,0,0,.3); }
@@ -149,6 +162,34 @@ html = """<!DOCTYPE html>
   .legenda span { display: inline-flex; align-items: center; gap: .4rem; }
   .legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
   
+  /* ===== MEU TIME ===== */
+  .meu-time-header { background: linear-gradient(135deg, #0a5c2e, #0d7a3f); color: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; }
+  .meu-time-header h2 { margin: 0 0 .5rem 0; font-size: 1.2rem; }
+  .meu-time-header p { margin: 0; opacity: .9; font-size: .9rem; }
+  .meu-time-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+  .meu-time-stat { text-align: center; }
+  .meu-time-stat-label { font-size: .75rem; opacity: .85; text-transform: uppercase; letter-spacing: .5px; }
+  .meu-time-stat-val { font-size: 1.6rem; font-weight: 800; margin-top: .25rem; }
+  .jogador-card { background: white; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: .75rem; display: flex; align-items: center; gap: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); border-left: 4px solid #0a5c2e; }
+  body.escuro .jogador-card { background: #1e1e1e; }
+  .jogador-pos { background: #f0f2f5; color: #666; padding: .3rem .6rem; border-radius: 6px; font-size: .7rem; font-weight: 800; text-transform: uppercase; }
+  body.escuro .jogador-pos { background: #2a2a2a; color: #aaa; }
+  .jogador-nome { flex: 1; font-weight: 700; font-size: 1rem; }
+  .jogador-nome small { display: block; font-weight: 400; color: #888; font-size: .75rem; margin-top: .15rem; }
+  .jogador-pts { font-size: 1.3rem; font-weight: 800; color: #0a5c2e; min-width: 60px; text-align: right; }
+  body.escuro .jogador-pts { color: #4ade80; }
+  .jogador-pts.negativo { color: #dc2626; }
+  .capitao-badge { background: #f59e0b; color: white; padding: .2rem .5rem; border-radius: 6px; font-size: .65rem; font-weight: 800; }
+  .meu-time-vazio { text-align: center; padding: 3rem 1rem; color: #888; }
+  .meu-time-vazio .icone { font-size: 3rem; margin-bottom: 1rem; }
+  .form-add { background: white; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  body.escuro .form-add { background: #1e1e1e; }
+  .form-linha { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: .5rem; }
+  .form-linha input, .form-linha select { flex: 1; min-width: 100px; padding: .7rem .9rem; border: 1px solid #e0e0e0; border-radius: 8px; font-size: .9rem; background: white; color: #1a1a1a; }
+  body.escuro .form-linha input, body.escuro .form-linha select { background: #2a2a2a; border-color: #333; color: #e0e0e0; }
+  .aviso-api { background: #fef3c7; border-left: 4px solid #f59e0b; padding: .75rem 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: .85rem; color: #78350f; }
+  body.escuro .aviso-api { background: #422006; color: #fbbf24; }
+  
   @media (max-width: 600px) {
     header h1 { font-size: 1.3rem; }
     .time-header { flex-wrap: wrap; }
@@ -159,6 +200,7 @@ html = """<!DOCTYPE html>
     table.classificacao { font-size: .8rem; }
     table.classificacao th, table.classificacao td { padding: .5rem .3rem; }
     table.classificacao .col-v-e-d, table.classificacao .col-gp-gc { display: none; }
+    .meu-time-stats { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -174,6 +216,7 @@ html = """<!DOCTYPE html>
 <div class="abas">
   <button class="aba-btn ativo" data-aba="noticias" onclick="mudarAba('noticias')">📰 Notícias</button>
   <button class="aba-btn" data-aba="classificacao" onclick="mudarAba('classificacao')">🏆 Classificação</button>
+  <button class="aba-btn" data-aba="meu-time" onclick="mudarAba('meu-time')">👤 Meu Time</button>
 </div>
 
 <!-- ABA NOTÍCIAS -->
@@ -197,6 +240,20 @@ html = """<!DOCTYPE html>
       <span><i style="background:#3b82f6"></i> G5-G8 (Pré-Libertadores)</span>
       <span><i style="background:#e5e7eb"></i> Meio da tabela</span>
       <span><i style="background:#dc2626"></i> Z4 (Rebaixamento)</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABA MEU TIME -->
+<div class="aba-conteudo" id="aba-meu-time">
+  <div class="container">
+    <div class="aviso-api">
+      ⚠️ <b>Modo manual:</b> Por enquanto, você cadastra os jogadores e digita a pontuação depois da rodada.
+      A integração automática com a API do Cartola virá numa próxima atualização.
+    </div>
+    
+    <div id="meu-time-conteudo">
+      MEU_TIME_AQUI
     </div>
   </div>
 </div>
@@ -308,7 +365,7 @@ for nome, logo_url, cor in TIMES:
 
 
 # ============================================
-# MONTA TABELA DE CLASSIFICAÇÃO
+# MONTA TABELA
 # ============================================
 if CLASSIFICACAO:
     linhas_tabela = ""
@@ -356,7 +413,82 @@ if CLASSIFICACAO:
         </tbody>
     </table>'''
 else:
-    tabela_html = '<div style="padding:2rem; text-align:center; color:#888;">Classificação não disponível no momento. A API pode estar fora do ar.</div>'
+    tabela_html = '<div style="padding:2rem; text-align:center; color:#888;">Classificação não disponível no momento.</div>'
+
+
+# ============================================
+# MONTA MEU TIME
+# ============================================
+if MEU_TIME and MEU_TIME.get("jogadores"):
+    jogadores = MEU_TIME["jogadores"]
+    total = 0
+    capitao_pts = 0
+    capitao_nome = ""
+    for j in jogadores:
+        pts = j.get("pontos", 0) or 0
+        if j.get("capitao"):
+            capitao_pts = pts * 2
+            capitao_nome = j.get("nome", "")
+        total += pts
+    total_com_capitao = total + capitao_pts  # adiciona o bônus do capitão
+    media = total / len(jogadores) if jogadores else 0
+    
+    cards = ""
+    for j in jogadores:
+        pts = j.get("pontos", 0) or 0
+        classe_neg = "negativo" if pts < 0 else ""
+        badge_cap = '<span class="capitao-badge">👑 CAP</span>' if j.get("capitao") else ""
+        cards += f'''<div class="jogador-card">
+            <span class="jogador-pos">{j.get("posicao", "?")}</span>
+            <span class="jogador-nome">{j.get("nome", "?")} {badge_cap}
+                <small>{j.get("clube", "")}</small>
+            </span>
+            <span class="jogador-pts {classe_neg}">{pts:+.1f}</span>
+        </div>'''
+    
+    meu_time_html = f'''
+    <div class="meu-time-header">
+        <h2>👤 Meu Time</h2>
+        <p>Rodada {MEU_TIME.get("rodada", "?")} · {len(jogadores)} jogadores</p>
+        <div class="meu-time-stats">
+            <div class="meu-time-stat">
+                <div class="meu-time-stat-label">Total</div>
+                <div class="meu-time-stat-val">{total_com_capitao:.1f}</div>
+            </div>
+            <div class="meu-time-stat">
+                <div class="meu-time-stat-label">Média</div>
+                <div class="meu-time-stat-val">{media:.1f}</div>
+            </div>
+            <div class="meu-time-stat">
+                <div class="meu-time-stat-label">Capitão</div>
+                <div class="meu-time-stat-val">{capitao_pts:.1f}</div>
+            </div>
+        </div>
+        <p style="margin-top:1rem;font-size:.75rem;opacity:.8;">👑 Capitão: {capitao_nome or "não definido"} · pontuação ×2</p>
+    </div>
+    {cards}
+    '''
+else:
+    meu_time_html = '''
+    <div class="meu-time-vazio">
+        <div class="icone">👤</div>
+        <h3>Nenhum time cadastrado</h3>
+        <p>Para começar, edite o arquivo <code>meu_time.json</code> no repositório<br>
+        e adicione os jogadores do seu time.</p>
+        <p style="margin-top:1.5rem;font-size:.85rem;">
+        <b>Formato:</b><br>
+        <code style="display:block;background:#f0f2f5;padding:.75rem;border-radius:8px;margin-top:.5rem;text-align:left;font-size:.75rem;overflow-x:auto;">
+{<br>
+&nbsp;&nbsp;"rodada": 29,<br>
+&nbsp;&nbsp;"jogadores": [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{"nome": "Rossi", "clube": "FLA", "posicao": "GOL", "pontos": 8.5, "capitao": false},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{"nome": "Hulk", "clube": "FLU", "posicao": "ATA", "pontos": 18.7, "capitao": true}<br>
+&nbsp;&nbsp;]<br>
+}
+        </code>
+        </p>
+    </div>
+    '''
 
 
 # ============================================
@@ -371,9 +503,11 @@ html = html.replace("JOGOS_AQUI", jogos_html)
 html = html.replace("ATUALIZADO_AQUI", datetime.now().strftime("%d/%m/%Y %H:%M"))
 html = html.replace("CONTEUDO_AQUI", corpo)
 html = html.replace("TABELA_AQUI", tabela_html)
+html = html.replace("MEU_TIME_AQUI", meu_time_html)
 
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
 print(f"Site gerado - Rodada {RODADA_ATUAL}")
 print(f"Classificação: {len(CLASSIFICACAO)} times")
+print(f"Meu Time: {'OK' if MEU_TIME else 'vazio'}")
