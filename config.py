@@ -1,7 +1,7 @@
 # ==============================================
 # CONFIGURAÇÕES DO SITE
 # ==============================================
-# Busca rodada e jogos automaticamente da API
+# Busca rodada, jogos e classificação via API
 # Fallback pra dados manuais se API falhar
 # ==============================================
 
@@ -28,25 +28,71 @@ JOGOS_FALLBACK = [
     ("Fluminense", "Coritiba", "08/10 20:00"),
 ]
 
+CLASSIFICACAO_FALLBACK = []  # Preenchida automaticamente quando a API funciona
+
+
+def _headers():
+    return {"X-Auth-Token": FOOTBALL_DATA_TOKEN}
+
 
 def _buscar_api():
-    """Consulta a API do football-data.org."""
+    """Consulta a API do football-data.org (partidas)."""
     if not FOOTBALL_DATA_TOKEN:
         print("⚠️  FOOTBALL_DATA_TOKEN não configurado. Usando fallback.")
         return None
     
-    headers = {"X-Auth-Token": FOOTBALL_DATA_TOKEN}
     url = "https://api.football-data.org/v4/competitions/BSA/matches"
     params = {"season": 2026}
     
     try:
-        r = requests.get(url, headers=headers, params=params, timeout=10)
+        r = requests.get(url, headers=_headers(), params=params, timeout=10)
         if r.status_code != 200:
-            print(f"⚠️  API retornou {r.status_code}. Usando fallback.")
+            print(f"⚠️  API matches retornou {r.status_code}. Usando fallback.")
             return None
         return r.json()
     except Exception as e:
-        print(f"⚠️  Erro ao consultar API: {e}. Usando fallback.")
+        print(f"⚠️  Erro API matches: {e}. Usando fallback.")
+        return None
+
+
+def _buscar_classificacao():
+    """Consulta a classificação atual do Brasileirão."""
+    if not FOOTBALL_DATA_TOKEN:
+        return None
+    
+    url = "https://api.football-data.org/v4/competitions/BSA/standings"
+    params = {"season": 2026}
+    
+    try:
+        r = requests.get(url, headers=_headers(), params=params, timeout=10)
+        if r.status_code != 200:
+            print(f"⚠️  API standings retornou {r.status_code}")
+            return None
+        data = r.json()
+    except Exception as e:
+        print(f"⚠️  Erro API standings: {e}")
+        return None
+    
+    try:
+        tabela = data["standings"][0]["table"]
+        resultado = []
+        for t in tabela:
+            time_nome = t["team"].get("shortName") or t["team"]["name"]
+            resultado.append({
+                "posicao": t["position"],
+                "time": time_nome,
+                "pontos": t["points"],
+                "jogos": t["playedGames"],
+                "vitorias": t["won"],
+                "empates": t["draw"],
+                "derrotas": t["lost"],
+                "gols_pro": t["goalsFor"],
+                "gols_contra": t["goalsAgainst"],
+                "saldo": t["goalDifference"],
+            })
+        return resultado
+    except Exception as e:
+        print(f"⚠️  Erro ao processar standings: {e}")
         return None
 
 
@@ -56,12 +102,10 @@ def _encontrar_rodada_atual(matches):
     limite_futuro = agora + timedelta(days=7)
     limite_passado = agora - timedelta(days=3)
     
-    # Prioridade 1: jogos AO VIVO
     for m in matches:
         if m.get("status") in ("IN_PLAY", "PAUSED"):
             return m.get("matchday")
     
-    # Prioridade 2: próximos 7 dias
     rodadas_futuras = set()
     for m in matches:
         if m.get("status") in ("SCHEDULED", "TIMED"):
@@ -76,7 +120,6 @@ def _encontrar_rodada_atual(matches):
     if rodadas_futuras:
         return min(rodadas_futuras)
     
-    # Prioridade 3: últimos 3 dias
     rodadas_passadas = set()
     for m in matches:
         if m.get("status") == "FINISHED":
@@ -112,10 +155,7 @@ def _formatar_jogo(match):
 
 
 def obter_rodada_e_jogos():
-    """
-    Retorna (rodada, data_rodada, jogos).
-    Tenta API primeiro; se falhar, usa fallback.
-    """
+    """Retorna (rodada, data_rodada, jogos)."""
     data = _buscar_api()
     
     if data is None:
@@ -129,10 +169,9 @@ def obter_rodada_e_jogos():
     
     rodada = _encontrar_rodada_atual(matches)
     if rodada is None:
-        print(f"📦 Não consegui detectar rodada. Usando fallback: {RODADA_FALLBACK}")
+        print(f"📦 Rodada não detectada. Usando fallback: {RODADA_FALLBACK}")
         return RODADA_FALLBACK, DATA_FALLBACK, JOGOS_FALLBACK
     
-    # Pega os jogos dessa rodada
     jogos = []
     for m in matches:
         if m.get("matchday") == rodada:
@@ -140,7 +179,6 @@ def obter_rodada_e_jogos():
     
     jogos.sort(key=lambda x: x[2])
     
-    # Data da rodada (primeiro ao último dia)
     datas = [j[2].split()[0] for j in jogos if j[2] != "A definir"]
     if datas:
         data_rodada = datas[0] if datas[0] == datas[-1] else f"{datas[0]} a {datas[-1]}"
@@ -149,3 +187,14 @@ def obter_rodada_e_jogos():
     
     print(f"✅ API OK: Rodada {rodada} com {len(jogos)} jogos ({data_rodada})")
     return rodada, data_rodada, jogos
+
+
+def obter_classificacao():
+    """Retorna lista de dicts com a classificação atual."""
+    data = _buscar_classificacao()
+    if data is None:
+        print("📦 Classificação via fallback (vazia)")
+        return CLASSIFICACAO_FALLBACK
+    
+    print(f"✅ Classificação OK: {len(data)} times")
+    return data
