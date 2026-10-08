@@ -1,0 +1,20 @@
+{
+  "rodada": 29,
+  "capitao": "Hulk",
+  "reserva_luxo": "Serna",
+  "jogadores": [
+    {"nome": "Rossi", "clube": "FLA", "posicao": "GOL"},
+    {"nome": "Juninho Capixaba", "clube": "RBB", "posicao": "LAT"},
+    {"nome": "Igor Formiga", "clube": "MIR", "posicao": "LAT"},
+    {"nome": "Gustavo Gómez", "clube": "PAL", "posicao": "ZAG"},
+    {"nome": "Jonathan Jesus", "clube": "CRU", "posicao": "ZAG"},
+    {"nome": "Lucas Paquetá", "clube": "FLA", "posicao": "MEI"},
+    {"nome": "Matheus Pereira", "clube": "CRU", "posicao": "MEI"},
+    {"nome": "Andreas Pereira", "clube": "PAL", "posicao": "MEI"},
+    {"nome": "Vitor Roque", "clube": "PAL", "posicao": "ATA"},
+    {"nome": "Hulk", "clube": "FLU", "posicao": "ATA"},
+    {"nome": "Samuel Lino", "clube": "FLA", "posicao": "ATA"},
+    {"nome": "Marcão", "clube": "FLU", "posicao": "TEC"},
+    {"nome": "Serna", "clube": "FLU", "posicao": "ATA"}
+  ]
+}
