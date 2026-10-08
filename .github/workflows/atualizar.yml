@@ -11,6 +11,8 @@ permissions:
 jobs:
   construir_e_publicar:
     runs-on: ubuntu-latest
+    env:
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
     steps:
       - name: Baixar o código do repositório
         uses: actions/checkout@v4
@@ -51,7 +53,7 @@ jobs:
           hora = datetime.now(ZoneInfo('America/Sao_Paulo')).strftime('%d/%m/%Y %H:%M')
           mensagem = f'''🤖 Escalações atualizadas!
 
-          📅 Rodada 29
+          📅 Rodada atual
           ⏰ {hora}
 
           🔗 https://jacomassi2-rgb.github.io/escalacoes-brasileirao'''
