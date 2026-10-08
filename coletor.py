@@ -20,11 +20,13 @@ conn.execute("""
 """)
 conn.commit()
 
-TIMES = ["Flamengo", "Palmeiras", "Corinthians", "São Paulo",
+TIMES = [
+    "Flamengo", "Palmeiras", "Corinthians", "São Paulo",
     "Botafogo", "Fluminense", "Vasco", "Grêmio",
     "Internacional", "Cruzeiro", "Atlético Mineiro", "Bahia",
-    "Vitória", "Fortaleza", "Ceará", "Sport",
-    "Juventude", "Bragantino", "Mirassol", "Santos"]
+    "Vitória", "Remo", "Chapecoense", "Coritiba",
+    "Athletico Paranaense", "Bragantino", "Mirassol", "Santos"
+]
 
 def buscar(time):
     termo = f"provável escalação {time}"
@@ -45,4 +47,5 @@ def buscar(time):
 print("Iniciando coleta...")
 for time in TIMES:
     buscar(time)
+    print(f"  {time}: coletado")
 print("Coleta finalizada!")
