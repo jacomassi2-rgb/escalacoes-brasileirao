@@ -1,7 +1,10 @@
 import sqlite3
 from datetime import datetime
 from email.utils import parsedate_to_datetime
-from config import RODADA_ATUAL, DATA_RODADA, JOGOS_RODADA
+from config import obter_rodada_e_jogos
+
+# Busca a rodada e os jogos automaticamente da API
+RODADA_ATUAL, DATA_RODADA, JOGOS_RODADA = obter_rodada_e_jogos()
 
 conn = sqlite3.connect('dados/escalacoes.db')
 
@@ -172,13 +175,11 @@ function toggle24h() {
       const horas = parseFloat(n.getAttribute('data-horas') || 9999);
       n.classList.toggle('oculto', filtro24h && horas > 24);
     });
-    // Se todas as notícias sumiram, mostra mensagem
     const visiveis = el.querySelectorAll('.noticia:not(.oculto)').length;
     const vazio = el.querySelector('.vazio-24h');
     if (vazio) {
       vazio.classList.toggle('oculto', !filtro24h || visiveis > 0);
     }
-    // Esconde o card do time se não tem notícia visível no filtro
     const temAlguma = visiveis > 0 || (!filtro24h && el.querySelectorAll('.noticia').length > 0);
     el.classList.toggle('oculto', filtro24h && !temAlguma);
   });
@@ -246,7 +247,6 @@ for nome, logo_url, cor in TIMES:
             if tempo:
                 meta += f'<span class="tempo">⏱ {tempo}</span>'
             corpo += f'<div class="noticia" data-horas="{horas:.1f}"><a href="{link}" target="_blank">{titulo}</a><div class="meta">{meta}</div></div>'
-        # Mensagem quando filtro 24h esconde tudo
         corpo += '<div class="vazio vazio-24h oculto">Nenhuma notícia nas últimas 24h.</div>'
     else:
         corpo += '<div class="vazio">Nenhuma notícia encontrada.</div>'
