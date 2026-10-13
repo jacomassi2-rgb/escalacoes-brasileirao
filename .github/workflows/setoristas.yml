@@ -2,7 +2,6 @@ name: Notícias dos Setoristas
 
 on:
   schedule:
-    # Roda 2x ao dia: 9h e 21h (horário de Brasília)
     - cron: '0 12,0 * * *'
   workflow_dispatch:
 
@@ -25,7 +24,7 @@ jobs:
         run: pip install requests beautifulsoup4 lxml
 
       - name: Rodar coletor de setoristas
-        run: python teste_nitter.py
+        run: python setoristas.py
 
       - name: Salvar no repositório
         run: |
