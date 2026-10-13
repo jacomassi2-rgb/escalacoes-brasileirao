@@ -1,14 +1,13 @@
 {
   "Flamengo": ["luizasabg", "nevesmarcello", "tdellima"],
-  "Palmeiras": ["_VitorPalhares", "DiegoFirmino"],
+  "Palmeiras": ["_VitorPalhares"],
   "Corinthians": ["AlexandreSilvestre"],
-  "São Paulo": ["EduardoAffonso", "giovannichacon"],
-  "Santos": ["BrunoLima", "EltonCarvalho"],
+  "São Paulo": ["giovannichacon"],
+  "Santos": ["BrunoLima"],
   "Fluminense": ["VictorLessa"],
   "Vasco": ["PedroCobalea"],
   "Grêmio": ["BrunoSoares"],
-  "Athletico-PR": ["furlanvs", "LeandroBernardi"],
-  "Chapecoense": ["rangelreporter"],
+  "Athletico-PR": ["furlanvs"],
   "Coritiba": ["RogerioScarione"],
   "Mirassol": ["GustavoVilla"],
   "Atlético-MG": ["LucasTanaka"],
@@ -16,6 +15,6 @@
   "Ceará": ["JeanDantas"],
   "Fortaleza": ["JeanDantas"],
   "Juventude": ["PedroPetrucci"],
-  "Bragantino": ["LucasRangel"],
+  "Bragantino": ["LucasRanger"],
   "Sport": ["alearditti"]
 }
