@@ -62,25 +62,16 @@ def tempo_em_horas(data_str):
     except:
         return 9999
 
-# ============================================
-# CARREGA MEU TIME
-# ============================================
 MEU_TIME = {}
 if os.path.exists('meu_time.json'):
     with open('meu_time.json', 'r', encoding='utf-8') as f:
         MEU_TIME = json.load(f)
 
-# ============================================
-# CARREGA SUGESTÃO FATHUR
-# ============================================
 SUGESTAO_FATHUR = {}
 if os.path.exists('sugestao_fathur.json'):
     with open('sugestao_fathur.json', 'r', encoding='utf-8') as f:
         SUGESTAO_FATHUR = json.load(f)
 
-# ============================================
-# HTML (COM CSS DAS PARCIAIS)
-# ============================================
 html = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -140,8 +131,6 @@ html = """<!DOCTYPE html>
   #btn-topo:hover { background: #0d7a3f; }
   .info-filtro { max-width: 900px; margin: -.5rem auto 1rem; padding: 0 1rem; font-size: .85rem; color: #666; }
   body.escuro .info-filtro { color: #aaa; }
-
-  /* Tabela de classificação */
   .tabela-wrap { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
   body.escuro .tabela-wrap { background: #1e1e1e; }
   table.classificacao { width: 100%; border-collapse: collapse; font-size: .9rem; }
@@ -165,8 +154,6 @@ html = """<!DOCTYPE html>
   body.escuro .legenda { color: #aaa; }
   .legenda span { display: inline-flex; align-items: center; gap: .4rem; }
   .legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-
-  /* Meu Time */
   .meu-time-header { background: linear-gradient(135deg, #0a5c2e, #0d7a3f); color: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; }
   .meu-time-header h2 { margin: 0 0 .5rem 0; font-size: 1.2rem; }
   .meu-time-header p { margin: 0; opacity: .9; font-size: .9rem; }
@@ -188,29 +175,11 @@ html = """<!DOCTYPE html>
   .meu-time-vazio .icone { font-size: 3rem; margin-bottom: 1rem; }
   .aviso-api { background: #fef3c7; border-left: 4px solid #f59e0b; padding: .75rem 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: .85rem; color: #78350f; }
   body.escuro .aviso-api { background: #422006; color: #fbbf24; }
-
-  /* Alertas */
-  .alerta-card { display: flex; align-items: flex-start; gap: .75rem; padding: .9rem 1.1rem; border-radius: 10px; margin-bottom: .6rem; text-decoration: none; transition: transform .15s; }
-  .alerta-card:hover { transform: translateY(-1px); }
-  .alerta-card.negativo { background: #fef2f2; border-left: 4px solid #dc2626; color: #7f1d1d; }
-  .alerta-card.positivo { background: #f0fdf4; border-left: 4px solid #16a34a; color: #14532d; }
-  body.escuro .alerta-card.negativo { background: #3f1010; color: #fca5a5; }
-  body.escuro .alerta-card.positivo { background: #0d2a17; color: #86efac; }
-  .alerta-icon { font-size: 1.2rem; flex-shrink: 0; }
-  .alerta-info { flex: 1; min-width: 0; }
-  .alerta-titulo { font-weight: 600; font-size: .9rem; line-height: 1.3; }
-  .alerta-meta { font-size: .75rem; opacity: .8; margin-top: .25rem; }
-
-  /* Comparador */
   .comparador-badge { display: inline-flex; align-items: center; gap: .3rem; padding: .15rem .5rem; border-radius: 6px; font-size: .7rem; font-weight: 700; margin-left: .5rem; }
   .comparador-badge.igual { background: #d1fae5; color: #065f46; }
   .comparador-badge.diferente { background: #fef3c7; color: #92400e; }
-  .comparador-badge.faltando { background: #fee2e2; color: #991b1b; }
   body.escuro .comparador-badge.igual { background: #064e3b; color: #6ee7b7; }
   body.escuro .comparador-badge.diferente { background: #451a03; color: #fcd34d; }
-  body.escuro .comparador-badge.faltando { background: #450a0a; color: #fca5a5; }
-
-  /* Estatísticas */
   .stats-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
   .stat-card { background: white; border-radius: 12px; padding: 1.25rem; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
   body.escuro .stat-card { background: #1e1e1e; }
@@ -225,113 +194,29 @@ html = """<!DOCTYPE html>
   body.escuro .acerto-titulo { color: #aaa; }
   .acerto-barra { height: 24px; background: #f0f2f5; border-radius: 12px; overflow: hidden; display: flex; }
   body.escuro .acerto-barra { background: #2a2a2a; }
-  .acerto-barra-igual { background: linear-gradient(90deg, #16a34a, #22c55e); display: flex; align-items: center; justify-content: center; color: white; font-size: .8rem; font-weight: 700; transition: width .4s; }
-  .acerto-barra-diferente { background: linear-gradient(90deg, #f59e0b, #fbbf24); display: flex; align-items: center; justify-content: center; color: white; font-size: .8rem; font-weight: 700; transition: width .4s; }
+  .acerto-barra-igual { background: linear-gradient(90deg, #16a34a, #22c55e); display: flex; align-items: center; justify-content: center; color: white; font-size: .8rem; font-weight: 700; }
+  .acerto-barra-diferente { background: linear-gradient(90deg, #f59e0b, #fbbf24); display: flex; align-items: center; justify-content: center; color: white; font-size: .8rem; font-weight: 700; }
   .acerto-legenda { display: flex; gap: 1rem; margin-top: .75rem; font-size: .8rem; }
   .acerto-legenda span { display: inline-flex; align-items: center; gap: .4rem; }
   .acerto-legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-
-  /* ===== PARCIAIS AO VIVO ===== */
-  .parciais-container {
-    max-width: 900px;
-    margin: 1rem auto 3rem;
-    padding: 0 1rem;
-  }
-  .parciais-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(135deg, #dc2626, #ef4444);
-    color: white;
-    padding: .75rem 1rem;
-    border-radius: 12px 12px 0 0;
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  .parciais-ts {
-    font-size: .75rem;
-    opacity: .85;
-  }
-  .parcial-jogo {
-    background: white;
-    border-bottom: 1px solid #f0f0f0;
-  }
-  body.escuro .parcial-jogo {
-    background: #1e1e1e;
-    border-bottom-color: #2a2a2a;
-  }
-  .parcial-jogo:last-child {
-    border-radius: 0 0 12px 12px;
-  }
-  .parcial-jogo-header {
-    display: flex;
-    justify-content: space-between;
-    padding: .6rem 1rem;
-    background: #f8f9fa;
-    font-size: .85rem;
-    font-weight: 700;
-    color: #0a5c2e;
-  }
-  body.escuro .parcial-jogo-header {
-    background: #252525;
-    color: #4ade80;
-  }
-  .parcial-jogo-status {
-    font-size: .75rem;
-    color: #888;
-    font-weight: 500;
-  }
-  .parcial-jogo-corpo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5rem;
-    padding: .5rem;
-  }
-  .parcial-jogo-lado {
-    min-width: 0;
-  }
-  .parcial-jogador {
-    display: flex;
-    align-items: center;
-    gap: .4rem;
-    padding: .35rem .5rem;
-    font-size: .8rem;
-    border-radius: 6px;
-  }
-  .parcial-jogador:nth-child(odd) {
-    background: #fafafa;
-  }
-  body.escuro .parcial-jogador:nth-child(odd) {
-    background: #2a2a2a;
-  }
-  .parcial-nome {
-    flex: 1;
-    font-weight: 600;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .parcial-scouts {
-    font-size: .7rem;
-    color: #888;
-    max-width: 80px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .parcial-pts {
-    font-weight: 800;
-    color: #16a34a;
-    min-width: 40px;
-    text-align: right;
-  }
-  .parcial-vazio {
-    padding: .5rem;
-    font-size: .8rem;
-    color: #999;
-    font-style: italic;
-  }
-
+  .parciais-container { max-width: 900px; margin: 1rem auto 3rem; padding: 0 1rem; }
+  .parciais-header { display: flex; justify-content: space-between; align-items: center; background: linear-gradient(135deg, #dc2626, #ef4444); color: white; padding: .75rem 1rem; border-radius: 12px 12px 0 0; font-weight: 700; font-size: 1rem; }
+  .parciais-ts { font-size: .75rem; opacity: .85; }
+  .parcial-jogo { background: white; border-bottom: 1px solid #f0f0f0; }
+  body.escuro .parcial-jogo { background: #1e1e1e; border-bottom-color: #2a2a2a; }
+  .parcial-jogo:last-child { border-radius: 0 0 12px 12px; }
+  .parcial-jogo-header { display: flex; justify-content: space-between; padding: .6rem 1rem; background: #f8f9fa; font-size: .85rem; font-weight: 700; color: #0a5c2e; }
+  body.escuro .parcial-jogo-header { background: #252525; color: #4ade80; }
+  .parcial-jogo-status { font-size: .75rem; color: #888; font-weight: 500; }
+  .parcial-jogo-corpo { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; padding: .5rem; }
+  .parcial-jogo-lado { min-width: 0; }
+  .parcial-jogador { display: flex; align-items: center; gap: .4rem; padding: .35rem .5rem; font-size: .8rem; border-radius: 6px; }
+  .parcial-jogador:nth-child(odd) { background: #fafafa; }
+  body.escuro .parcial-jogador:nth-child(odd) { background: #2a2a2a; }
+  .parcial-nome { flex: 1; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .parcial-scouts { font-size: .7rem; color: #888; max-width: 80px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .parcial-pts { font-weight: 800; color: #16a34a; min-width: 40px; text-align: right; }
+  .parcial-vazio { padding: .5rem; font-size: .8rem; color: #999; font-style: italic; }
   @media (max-width: 600px) {
     header h1 { font-size: 1.3rem; }
     .time-header { flex-wrap: wrap; }
@@ -390,7 +275,7 @@ html = """<!DOCTYPE html>
 <div class="aba-conteudo" id="aba-meu-time">
   <div class="container">
     <div class="aviso-api">
-      ⚠️ <b>Modo manual:</b> Edite o arquivo <code>meu_time.json</code> no GitHub para cadastrar seu time e a pontuação de cada jogador.
+      ⚠️ <b>Modo manual:</b> Edite o arquivo <code>meu_time.json</code> no GitHub.
       👑 O capitão tem pontuação <b>×1.5</b>.
     </div>
     <div id="meu-time-conteudo">
@@ -458,10 +343,6 @@ if (localStorage.getItem('tema') === 'escuro') document.body.classList.add('escu
 </body>
 </html>"""
 
-
-# ============================================
-# MONTA JOGOS
-# ============================================
 if JOGOS_RODADA:
     jogos_html = "".join(
         f'<div class="jogo"><strong>{casa} x {vis}</strong>{dia}</div>'
@@ -470,10 +351,6 @@ if JOGOS_RODADA:
 else:
     jogos_html = ""
 
-
-# ============================================
-# MONTA NOTÍCIAS
-# ============================================
 corpo = ""
 for nome, logo_url, cor in TIMES:
     linhas = conn.execute(
@@ -481,7 +358,6 @@ for nome, logo_url, cor in TIMES:
         (nome,)
     ).fetchall()
     corpo += f'<div class="time" data-time="{nome}" style="border-left-color:{cor}">'
-
     if linhas:
         primeiro_link = linhas[0][1]
         qtd = len(linhas)
@@ -496,7 +372,6 @@ for nome, logo_url, cor in TIMES:
             <img src="{logo_url}" alt="{nome}" onerror="this.style.display='none'">
             <h2>{nome}</h2>
         </div>'''
-
     if linhas:
         for titulo, link, fonte, publicado_em in linhas:
             tempo = tempo_relativo(publicado_em)
@@ -510,10 +385,6 @@ for nome, logo_url, cor in TIMES:
         corpo += '<div class="vazio">Nenhuma notícia encontrada.</div>'
     corpo += '</div>'
 
-
-# ============================================
-# MONTA TABELA
-# ============================================
 if CLASSIFICACAO:
     linhas_tabela = ""
     for t in CLASSIFICACAO:
@@ -526,7 +397,6 @@ if CLASSIFICACAO:
             classe = "g9-g16"
         else:
             classe = "z4 rebaixamento"
-
         linhas_tabela += f'''<tr class="{classe}">
             <td><span class="pos">{pos}</span></td>
             <td><span class="time-nome">{t["time"]}</span></td>
@@ -539,7 +409,6 @@ if CLASSIFICACAO:
             <td class="num col-gp-gc">{t["gols_contra"]}</td>
             <td class="num">{t["saldo"]:+d}</td>
         </tr>'''
-
     tabela_html = f'''<table class="classificacao">
         <thead>
             <tr>
@@ -562,17 +431,11 @@ if CLASSIFICACAO:
 else:
     tabela_html = '<div style="padding:2rem; text-align:center; color:#888;">Classificação não disponível.</div>'
 
-
-# ============================================
-# MONTA MEU TIME
-# ============================================
 if MEU_TIME and MEU_TIME.get("jogadores"):
     jogadores = MEU_TIME["jogadores"]
-
     nomes_fathur = set()
     if SUGESTAO_FATHUR and SUGESTAO_FATHUR.get("jogadores"):
         nomes_fathur = {j["nome"].lower() for j in SUGESTAO_FATHUR["jogadores"]}
-
     total = 0
     bonus_capitao = 0
     capitao_nome = ""
@@ -589,21 +452,8 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
             acertos += 1
     total_com_capitao = total + bonus_capitao
     media = total_com_capitao / len(jogadores) if jogadores else 0
-
     total_meu = len(jogadores)
     taxa_acerto = (acertos / total_meu * 100) if total_meu > 0 else 0
-
-    # Alertas
-    alertas_html = ""
-    total_alertas = 0
-    for j in jogadores:
-        nome = j.get("nome", "")
-        if not nome:
-            continue
-        # (aqui entra a lógica de busca de alertas, mantida do código anterior)
-    alertas_wrap = ''
-
-    # Cards
     cards = ""
     for j in jogadores:
         nome = j.get("nome", "?")
@@ -611,14 +461,12 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
         classe_neg = "negativo" if pts < 0 else ""
         badge_cap = '<span class="capitao-badge">👑 CAP</span>' if j.get("capitao") else ""
         exibir_pts = pts * 1.5 if j.get("capitao") else pts
-
         badge_comp = ""
         if SUGESTAO_FATHUR and SUGESTAO_FATHUR.get("jogadores"):
             if nome.lower() in nomes_fathur:
                 badge_comp = '<span class="comparador-badge igual">✓ Fathur</span>'
             else:
                 badge_comp = '<span class="comparador-badge diferente">⚠ Fathur não</span>'
-
         cards += f'''<div class="jogador-card">
             <span class="jogador-pos">{j.get("posicao", "?")}</span>
             <span class="jogador-nome">{nome} {badge_cap} {badge_comp}
@@ -626,27 +474,13 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
             </span>
             <span class="jogador-pts {classe_neg}">{exibir_pts:+.1f}</span>
         </div>'''
-
     stats_html = f'''
     <div class="stats-grid">
-        <div class="stat-card">
-            <div class="stat-card-label">Total</div>
-            <div class="stat-card-val">{total_com_capitao:.1f}</div>
-            <div class="stat-card-sub">com capitão ×1.5</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-card-label">Média</div>
-            <div class="stat-card-val">{media:.1f}</div>
-            <div class="stat-card-sub">por jogador</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-card-label">Capitão</div>
-            <div class="stat-card-val">{capitao_pts_base * 1.5:.1f}</div>
-            <div class="stat-card-sub">{capitao_nome}</div>
-        </div>
+        <div class="stat-card"><div class="stat-card-label">Total</div><div class="stat-card-val">{total_com_capitao:.1f}</div><div class="stat-card-sub">com capitão ×1.5</div></div>
+        <div class="stat-card"><div class="stat-card-label">Média</div><div class="stat-card-val">{media:.1f}</div><div class="stat-card-sub">por jogador</div></div>
+        <div class="stat-card"><div class="stat-card-label">Capitão</div><div class="stat-card-val">{capitao_pts_base * 1.5:.1f}</div><div class="stat-card-sub">{capitao_nome}</div></div>
     </div>
     '''
-
     if SUGESTAO_FATHUR and total_meu > 0:
         pct_igual = taxa_acerto
         pct_diferente = 100 - taxa_acerto
@@ -665,7 +499,6 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
         '''
     else:
         barra_html = ""
-
     meu_time_html = f'''
     <div class="meu-time-header">
         <h2>👤 Meu Time</h2>
@@ -673,7 +506,6 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
     </div>
     {stats_html}
     {barra_html}
-    {alertas_wrap}
     {cards}
     '''
 else:
@@ -685,10 +517,6 @@ else:
     </div>
     '''
 
-
-# ============================================
-# MONTA HTML FINAL
-# ============================================
 badge = f"🏆 Rodada {RODADA_ATUAL}"
 if DATA_RODADA:
     badge += f" • {DATA_RODADA}"
