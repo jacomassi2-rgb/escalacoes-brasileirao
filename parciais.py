@@ -4,7 +4,6 @@ import os
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-# ===== CONFIGURAÇÃO =====
 API_PONTUADOS = "https://api.cartolafc.globo.com/atletas/pontuados"
 API_PARTIDAS = "https://api.cartolafc.globo.com/partidas"
 
@@ -14,20 +13,14 @@ ARQUIVO_ANTERIOR = "parciais_anterior.json"
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
-# Scouts que disparam notificação imediata
-SCOUTS_HOT = ["G", "A", "SG", "DP", "FT", "GC", "CV", "PS", "PP", "DE", "DS"]
-
 
 def buscar_dados():
-    """Busca pontuações e partidas da API do Cartola."""
     resultado = {
         "ts": datetime.now(ZoneInfo("America/Sao_Paulo")).isoformat(),
         "rodada": None,
         "atletas": {},
         "partidas": [],
     }
-
-    # 1. Todos os atletas que já pontuaram
     try:
         r = requests.get(API_PONTUADOS, timeout=15)
         if r.status_code == 200:
@@ -39,7 +32,6 @@ def buscar_dados():
     except Exception as e:
         print(f"ERRO ao buscar pontuados: {e}")
 
-    # 2. Partidas da rodada (com placar e clubes)
     try:
         r2 = requests.get(API_PARTIDAS, timeout=15)
         if r2.status_code == 200:
@@ -54,7 +46,6 @@ def buscar_dados():
 
 
 def carregar_anterior():
-    """Carrega o estado da execução anterior."""
     if os.path.exists(ARQUIVO_ANTERIOR):
         with open(ARQUIVO_ANTERIOR, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -62,13 +53,11 @@ def carregar_anterior():
 
 
 def salvar_json(dados, arquivo):
-    """Salva dados em JSON."""
     with open(arquivo, "w", encoding="utf-8") as f:
         json.dump(dados, f, ensure_ascii=False, indent=2)
 
 
 def enviar_telegram(mensagem):
-    """Envia notificação no Telegram."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         return
     try:
@@ -82,24 +71,18 @@ def enviar_telegram(mensagem):
 
 
 def formatar_eventos(eventos):
-    """Formata lista de eventos para o Telegram."""
+    """Formata TODOS os eventos detectados (sem filtro de scouts)."""
     if not eventos:
         return None
 
-    # Filtra apenas eventos relevantes
-    relevantes = []
-    for ev in eventos:
-        scouts = ev.get("scouts", {})
-        if any(k in scouts for k in SCOUTS_HOT) or ev["delta"] >= 2.0:
-            relevantes.append(ev)
-
-    if not relevantes:
-        return None
-
-    linhas = [f"⚽ <b>Parciais Cartola</b> — {len(relevantes)} eventos\n"]
-    for ev in relevantes[:20]:
+    linhas = [f"⚽ <b>Parciais Cartola</b> — {len(eventos)} mudanças\n"]
+    for ev in eventos[:50]:  # Limita a 50 pra não estourar
         scouts_txt = " ".join(f"[{k}+{v}]" for k, v in ev["scouts"].items()) if ev["scouts"] else ""
         linhas.append(f"• <b>{ev['apelido']}</b>: +{ev['delta']:.1f} pts {scouts_txt}")
+
+    if len(eventos) > 50:
+        linhas.append(f"\n<i>... e mais {len(eventos) - 50} mudanças</i>")
+
     return "\n".join(linhas)
 
 
@@ -141,10 +124,12 @@ def main():
     print(f"Parciais salvas: {len(dados['atletas'])} atletas")
 
     if eventos:
+        # Ordena por delta (maior primeiro)
+        eventos.sort(key=lambda e: e["delta"], reverse=True)
         msg = formatar_eventos(eventos)
         if msg:
             enviar_telegram(msg)
-            print(f"Telegram: {len(eventos)} eventos notificados")
+            print(f"Telegram: {len(eventos)} mudanças notificadas")
 
 
 if __name__ == "__main__":
