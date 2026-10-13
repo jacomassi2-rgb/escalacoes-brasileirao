@@ -2,6 +2,7 @@ name: Notícias dos Setoristas
 
 on:
   schedule:
+    # Roda 2x ao dia: 9h e 21h (horário de Brasília)
     - cron: '0 12,0 * * *'
   workflow_dispatch:
 
@@ -11,6 +12,8 @@ permissions:
 jobs:
   atualizar_setoristas:
     runs-on: ubuntu-latest
+    env:
+      X_COOKIES: ${{ secrets.X_COOKIES }}
     steps:
       - name: Baixar o código
         uses: actions/checkout@v4
@@ -21,7 +24,7 @@ jobs:
           python-version: '3.10'
 
       - name: Instalar dependências
-        run: pip install requests beautifulsoup4 lxml
+        run: pip install twikit
 
       - name: Rodar coletor de setoristas
         run: python setoristas.py
