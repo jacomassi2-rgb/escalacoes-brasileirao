@@ -1,38 +1,35 @@
 import requests
 import json
 import os
+import time
 from bs4 import BeautifulSoup
-from datetime import datetime
 
-# Espelhos do Nitter (tenta na ordem até um funcionar)
+# Só o mirror que funciona (descoberto via teste)
 NITTER_MIRRORS = [
-    "https://nitter.net",
-    "https://nitter.poast.org",
     "https://nitter.cz",
-    "https://xcancel.com",
 ]
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 }
 
-# Palavras-chave que indicam notícia relevante
 PALAVRAS_CHAVE = [
-    "escalação", "provavel", "provável", "dúvida", "titular",
-    "lesão", "suspenso", "poupado", "volta", "desfalque",
+    "escalação", "provavel", "provável", "dúvida", "duvida", "titular",
+    "lesão", "lesao", "suspenso", "poupado", "volta", "desfalque",
     "confirmado", "retorna", "fora"
 ]
 
 
 def fetch_rss(handle):
-    """Tenta buscar o RSS do perfil em vários espelhos do Nitter."""
+    """Busca o RSS do perfil no Nitter."""
     for base in NITTER_MIRRORS:
         try:
             url = f"{base}/{handle}/rss"
-            resp = requests.get(url, headers=HEADERS, timeout=8)
+            resp = requests.get(url, headers=HEADERS, timeout=5)
             if resp.status_code == 200 and "<rss" in resp.text:
                 return resp.text
-        except Exception:
+        except Exception as e:
+            print(f"     ERRO: {e}")
             continue
     return None
 
@@ -62,7 +59,6 @@ def processar_tweets(xml_content, clube, handle):
 
 
 def main():
-    # Carrega a lista de setoristas
     with open('setoristas.json', 'r', encoding='utf-8') as f:
         setoristas = json.load(f)
 
@@ -76,8 +72,8 @@ def main():
             tweets = processar_tweets(xml, clube, handle)
             todos_tweets.extend(tweets)
             print(f"     -> {len(tweets)} tweets relevantes")
+            time.sleep(0.5)  # Delay pra não bloquear
 
-    # Salva o resultado
     with open('noticias_setoristas.json', 'w', encoding='utf-8') as f:
         json.dump(todos_tweets, f, ensure_ascii=False, indent=2)
 
