@@ -25,7 +25,7 @@ jobs:
         run: pip install requests beautifulsoup4 lxml
 
       - name: Rodar coletor de setoristas
-        run: python setoristas.py
+        run: python teste_nitter.py
 
       - name: Salvar no repositório
         run: |
