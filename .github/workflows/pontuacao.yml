@@ -1,0 +1,43 @@
+name: Parciais em Tempo Real
+
+on:
+  schedule:
+    # Roda a cada 10 min das 14h às 01h BRT (17h-04h UTC)
+    - cron: '*/10 17-23,0-4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar_parciais:
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências
+        run: pip install requests
+
+      - name: Rodar coletor de parciais
+        run: python parciais.py
+
+      - name: Injetar parciais no HTML
+        run: python atualizar_site_parciais.py
+
+      - name: Salvar no repositório
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add parciais.json parciais_anterior.json index.html
+          git diff --quiet && git diff --staged --quiet || git commit -m "Parciais atualizadas"
+          git pull --rebase --autostash origin main || true
+          git push || (git pull --rebase --autostash origin main && git push)
