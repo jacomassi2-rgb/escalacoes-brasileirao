@@ -37,8 +37,6 @@ def gerar_bloco_parciais():
     if not atletas:
         return '<div class="vazio">Nenhum atleta pontuou ainda nesta rodada.</div>'
 
-    # Mapeia clube_id a partir das partidas
-    # (para sabermos de qual clube é cada jogador)
     # Agrupa atletas por clube
     atletas_por_clube = {}
     for atleta_id, info in atletas.items():
@@ -122,7 +120,7 @@ def injetar_no_html():
             flags=re.DOTALL,
         )
     else:
-        print("AVISO: placeholder <!-- PARCIAIS --> não encontrado, adicionando antes do footer")
+        print("AVISO: placeholder <!-- PARCIAIS --> não encontrado")
         html = html.replace('</footer>', f'{bloco}</footer>')
 
     with open(ARQUIVO_HTML, "w", encoding="utf-8") as f:
