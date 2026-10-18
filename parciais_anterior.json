@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-18T18:06:40.849707-03:00",
+  "ts": "2026-10-18T18:34:11.215241-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -1327,11 +1327,11 @@
     "143463": {
       "scout": {
         "FC": 2,
-        "FS": 2
+        "FS": 3
       },
       "apelido": "Wesley Natã",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLU/FORMATO.png",
-      "pontuacao": 0.4,
+      "pontuacao": 0.9,
       "posicao_id": 5,
       "clube_id": 266,
       "entrou_em_campo": true
@@ -1481,7 +1481,7 @@
       "scout": {},
       "apelido": "Renato Gaúcho",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/GRE/FORMATO.png",
-      "pontuacao": 4.19,
+      "pontuacao": 4.05,
       "posicao_id": 6,
       "clube_id": 284,
       "entrou_em_campo": true
@@ -1492,7 +1492,7 @@
       },
       "apelido": "Cuca",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAN/FORMATO.png",
-      "pontuacao": 7.68,
+      "pontuacao": 7.65,
       "posicao_id": 6,
       "clube_id": 277,
       "entrou_em_campo": true
@@ -1690,7 +1690,7 @@
       "scout": {},
       "apelido": "Marcão",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLU/FORMATO.png",
-      "pontuacao": 4.78,
+      "pontuacao": 4.83,
       "posicao_id": 6,
       "clube_id": 266,
       "entrou_em_campo": true
@@ -1698,12 +1698,12 @@
     "73992": {
       "scout": {
         "A": 1,
-        "FC": 5,
+        "FC": 6,
         "FS": 2
       },
       "apelido": "Rodinei",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAN/FORMATO.png",
-      "pontuacao": 4.5,
+      "pontuacao": 4.2,
       "posicao_id": 2,
       "clube_id": 277,
       "entrou_em_campo": true
@@ -2392,14 +2392,14 @@
     },
     "97145": {
       "scout": {
-        "DS": 5,
+        "DS": 4,
         "FC": 1,
         "FF": 1,
         "FS": 1
       },
       "apelido": "Villasanti",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/GRE/FORMATO.png",
-      "pontuacao": 8.5,
+      "pontuacao": 7,
       "posicao_id": 4,
       "clube_id": 284,
       "entrou_em_campo": true
@@ -2767,15 +2767,15 @@
         "e"
       ],
       "transmissao": {
-        "label": "ao vivo",
+        "label": "saiba como foi",
         "url": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/18-10-2026/fluminense-santos.ghtml?utm_source=cartolafc"
       },
       "local": "Maracanã",
-      "status_transmissao_tr": "EM_ANDAMENTO",
+      "status_transmissao_tr": "ENCERRADA",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "FIM_DE_JOGO",
+      "periodo_tr": "POS_JOGO",
       "partida_data": "2026-10-18 16:00:00",
-      "inicio_cronometro_tr": "2026-10-18T21:02:41.025Z",
+      "inicio_cronometro_tr": "2026-10-18T21:07:20.845Z",
       "placar_oficial_visitante": 2,
       "placar_oficial_mandante": 1,
       "partida_id": 346525,
@@ -2803,15 +2803,15 @@
         "e"
       ],
       "transmissao": {
-        "label": "ao vivo",
+        "label": "saiba como foi",
         "url": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/18-10-2026/gremio-cruzeiro.ghtml?utm_source=cartolafc"
       },
       "local": "Arena do Grêmio",
-      "status_transmissao_tr": "EM_ANDAMENTO",
+      "status_transmissao_tr": "ENCERRADA",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "FIM_DE_JOGO",
+      "periodo_tr": "POS_JOGO",
       "partida_data": "2026-10-18 16:00:00",
-      "inicio_cronometro_tr": "2026-10-18T21:02:25.357Z",
+      "inicio_cronometro_tr": "2026-10-18T21:07:12.030Z",
       "placar_oficial_visitante": 4,
       "placar_oficial_mandante": 2,
       "partida_id": 346531,
@@ -2844,12 +2844,12 @@
       },
       "local": "Arena Fonte Nova",
       "status_transmissao_tr": "EM_ANDAMENTO",
-      "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "PRE_JOGO",
+      "status_cronometro_tr": "INICIADO",
+      "periodo_tr": "PRIMEIRO_TEMPO",
       "partida_data": "2026-10-18 18:30:00",
-      "inicio_cronometro_tr": "2026-10-18T20:30:44.096Z",
-      "placar_oficial_visitante": null,
-      "placar_oficial_mandante": null,
+      "inicio_cronometro_tr": "2026-10-18T21:30:15.040Z",
+      "placar_oficial_visitante": 0,
+      "placar_oficial_mandante": 0,
       "partida_id": 346533,
       "clube_visitante_posicao": 2,
       "clube_visitante_id": 262,
