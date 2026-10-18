@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-18T01:27:25.705825-03:00",
+  "ts": "2026-10-18T01:58:05.775064-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -200,12 +200,12 @@
     },
     "105068": {
       "scout": {
-        "FD": 1,
-        "FF": 1
+        "FF": 1,
+        "FT": 1
       },
       "apelido": "Reinier",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAM/FORMATO.png",
-      "pontuacao": 2,
+      "pontuacao": 3.8,
       "posicao_id": 4,
       "clube_id": 282,
       "entrou_em_campo": true
@@ -1508,7 +1508,7 @@
       },
       "apelido": "Eduardo Domínguez",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAM/FORMATO.png",
-      "pontuacao": 8.85,
+      "pontuacao": 9.01,
       "posicao_id": 6,
       "clube_id": 282,
       "entrou_em_campo": true
