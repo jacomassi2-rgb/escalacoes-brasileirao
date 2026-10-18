@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-18T14:44:43.592036-03:00",
+  "ts": "2026-10-18T15:04:22.126551-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -2025,11 +2025,11 @@
         "url": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/18-10-2026/gremio-cruzeiro.ghtml?utm_source=cartolafc"
       },
       "local": "Arena do Grêmio",
-      "status_transmissao_tr": "CRIADA",
+      "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "",
+      "periodo_tr": "PRE_JOGO",
       "partida_data": "2026-10-18 16:00:00",
-      "inicio_cronometro_tr": "",
+      "inicio_cronometro_tr": "2026-10-18T17:59:58.594Z",
       "placar_oficial_visitante": null,
       "placar_oficial_mandante": null,
       "partida_id": 346531,
