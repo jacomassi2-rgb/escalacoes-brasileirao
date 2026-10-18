@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-17T22:56:57.284418-03:00",
+  "ts": "2026-10-17T23:23:52.952843-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -115,13 +115,13 @@
     },
     "104075": {
       "scout": {
-        "DS": 2,
+        "DS": 1,
         "FF": 1,
         "SG": 1
       },
       "apelido": "Sabino",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAO/FORMATO.png",
-      "pontuacao": 8.8,
+      "pontuacao": 7.3,
       "posicao_id": 3,
       "clube_id": 276,
       "entrou_em_campo": true
@@ -416,10 +416,12 @@
       "entrou_em_campo": true
     },
     "111682": {
-      "scout": {},
+      "scout": {
+        "FS": 1
+      },
       "apelido": "Adson",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/VAS/FORMATO.png",
-      "pontuacao": 0,
+      "pontuacao": 0.5,
       "posicao_id": 4,
       "clube_id": 267,
       "entrou_em_campo": true
@@ -552,14 +554,14 @@
     },
     "116065": {
       "scout": {
-        "DS": 5,
+        "DS": 6,
         "FC": 3,
         "FF": 1,
         "FS": 2
       },
       "apelido": "Cuiabano",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/VAS/FORMATO.png",
-      "pontuacao": 8.4,
+      "pontuacao": 9.9,
       "posicao_id": 2,
       "clube_id": 267,
       "entrou_em_campo": true
@@ -777,7 +779,7 @@
       "scout": {},
       "apelido": "Pedro Emanuel",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/VAS/FORMATO.png",
-      "pontuacao": 3.25,
+      "pontuacao": 3.51,
       "posicao_id": 6,
       "clube_id": 267,
       "entrou_em_campo": true
@@ -887,10 +889,12 @@
       "entrou_em_campo": true
     },
     "141382": {
-      "scout": {},
+      "scout": {
+        "DS": 1
+      },
       "apelido": "Gustavo Santana",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAO/FORMATO.png",
-      "pontuacao": 0,
+      "pontuacao": 1.5,
       "posicao_id": 5,
       "clube_id": 276,
       "entrou_em_campo": true
@@ -1002,11 +1006,12 @@
     },
     "150197": {
       "scout": {
+        "DS": 1,
         "SG": 1
       },
       "apelido": "Osorio",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAO/FORMATO.png",
-      "pontuacao": 5,
+      "pontuacao": 6.5,
       "posicao_id": 3,
       "clube_id": 276,
       "entrou_em_campo": true
@@ -1035,7 +1040,7 @@
       },
       "apelido": "Dorival Júnior",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAO/FORMATO.png",
-      "pontuacao": 10.83,
+      "pontuacao": 10.85,
       "posicao_id": 6,
       "clube_id": 276,
       "entrou_em_campo": true
@@ -1660,15 +1665,16 @@
     },
     "97868": {
       "scout": {
+        "CA": 1,
         "DS": 2,
-        "FC": 1,
+        "FC": 2,
         "FF": 1,
         "I": 1,
         "SG": 1
       },
       "apelido": "Iago",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAO/FORMATO.png",
-      "pontuacao": 8.4,
+      "pontuacao": 7.1,
       "posicao_id": 2,
       "clube_id": 276,
       "entrou_em_campo": true
@@ -1711,11 +1717,12 @@
     "99213": {
       "scout": {
         "DS": 1,
-        "FD": 1
+        "FD": 1,
+        "FF": 1
       },
       "apelido": "Puma Rodríguez",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/VAS/FORMATO.png",
-      "pontuacao": 2.7,
+      "pontuacao": 3.5,
       "posicao_id": 2,
       "clube_id": 267,
       "entrou_em_campo": true
@@ -1936,11 +1943,11 @@
         "url": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/17-10-2026/sao-paulo-vasco.ghtml?utm_source=cartolafc"
       },
       "local": "Morumbis",
-      "status_transmissao_tr": "EM_ANDAMENTO",
-      "status_cronometro_tr": "INICIADO",
-      "periodo_tr": "SEGUNDO_TEMPO",
+      "status_transmissao_tr": "ENCERRADA",
+      "status_cronometro_tr": "PAUSADO",
+      "periodo_tr": "POS_JOGO",
       "partida_data": "2026-10-17 21:00:00",
-      "inicio_cronometro_tr": "2026-10-18T01:08:04.306Z",
+      "inicio_cronometro_tr": "2026-10-18T02:10:04.515Z",
       "placar_oficial_visitante": 0,
       "placar_oficial_mandante": 1,
       "partida_id": 346527,
