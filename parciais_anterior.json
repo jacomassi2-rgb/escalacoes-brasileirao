@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-17T23:56:29.633911-03:00",
+  "ts": "2026-10-18T00:22:54.548102-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -1821,14 +1821,14 @@
         "e",
         "d",
         "d",
-        "e"
+        "d"
       ],
       "aproveitamento_mandante": [
         "v",
         "d",
         "d",
         "e",
-        "e"
+        "v"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -1857,14 +1857,14 @@
         "d",
         "d",
         "e",
-        "e"
+        "d"
       ],
       "aproveitamento_mandante": [
         "e",
         "v",
         "e",
         "v",
-        "e"
+        "v"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -1893,14 +1893,14 @@
         "e",
         "v",
         "v",
-        "e"
+        "v"
       ],
       "aproveitamento_mandante": [
         "e",
         "v",
         "e",
         "v",
-        "e"
+        "d"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -1929,14 +1929,14 @@
         "v",
         "v",
         "e",
-        "e"
+        "d"
       ],
       "aproveitamento_mandante": [
         "v",
         "d",
         "d",
         "v",
-        "e"
+        "v"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -1963,16 +1963,16 @@
       "aproveitamento_visitante": [
         "v",
         "v",
-        "v",
         "e",
-        "d"
+        "d",
+        "e"
       ],
       "aproveitamento_mandante": [
-        "v",
         "d",
         "v",
         "v",
-        "d"
+        "d",
+        "e"
       ],
       "transmissao": {
         "label": "fique por dentro",
@@ -1997,15 +1997,15 @@
     },
     {
       "aproveitamento_visitante": [
-        "v",
         "d",
         "v",
         "v",
-        "d"
+        "d",
+        "e"
       ],
       "aproveitamento_mandante": [
         "d",
-        "d",
+        "e",
         "e",
         "e",
         "e"
@@ -2035,16 +2035,16 @@
       "aproveitamento_visitante": [
         "v",
         "v",
-        "v",
         "e",
-        "v"
+        "v",
+        "e"
       ],
       "aproveitamento_mandante": [
         "v",
+        "d",
+        "d",
         "v",
-        "d",
-        "d",
-        "v"
+        "e"
       ],
       "transmissao": {
         "label": "fique por dentro",
@@ -2069,16 +2069,16 @@
     },
     {
       "aproveitamento_visitante": [
-        "e",
         "d",
         "d",
         "e",
-        "v"
+        "v",
+        "e"
       ],
       "aproveitamento_mandante": [
         "d",
         "d",
-        "d",
+        "e",
         "e",
         "e"
       ],
