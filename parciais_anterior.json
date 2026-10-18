@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-18T00:22:54.548102-03:00",
+  "ts": "2026-10-18T00:58:48.461737-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -710,6 +710,15 @@
       "clube_id": 282,
       "entrou_em_campo": true
     },
+    "125746": {
+      "scout": {},
+      "apelido": "Dudu",
+      "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
+      "pontuacao": 0,
+      "posicao_id": 4,
+      "clube_id": 293,
+      "entrou_em_campo": true
+    },
     "125803": {
       "scout": {
         "DE": 9,
@@ -1235,13 +1244,14 @@
     },
     "80313": {
       "scout": {
+        "CA": 1,
         "DS": 1,
         "FC": 2,
         "I": 1
       },
       "apelido": "Gilberto",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
-      "pontuacao": 0.8,
+      "pontuacao": -0.2,
       "posicao_id": 2,
       "clube_id": 293,
       "entrou_em_campo": true
@@ -1487,7 +1497,7 @@
       "scout": {},
       "apelido": "Odair Hellmann",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
-      "pontuacao": 2.93,
+      "pontuacao": 2.84,
       "posicao_id": 6,
       "clube_id": 293,
       "entrou_em_campo": true
