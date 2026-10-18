@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-18T16:52:56.936953-03:00",
+  "ts": "2026-10-18T17:14:27.272177-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -268,11 +268,12 @@
     },
     "105047": {
       "scout": {
-        "DS": 1
+        "DS": 1,
+        "FS": 1
       },
       "apelido": "João Marcelo",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CRU/FORMATO.png",
-      "pontuacao": 1.5,
+      "pontuacao": 2,
       "posicao_id": 3,
       "clube_id": 283,
       "entrou_em_campo": true
@@ -941,12 +942,12 @@
     "126471": {
       "scout": {
         "CA": 1,
-        "DS": 3,
+        "DS": 4,
         "FC": 1
       },
       "apelido": "Barreal",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAN/FORMATO.png",
-      "pontuacao": 3.2,
+      "pontuacao": 4.7,
       "posicao_id": 4,
       "clube_id": 277,
       "entrou_em_campo": true
@@ -964,7 +965,7 @@
       "scout": {},
       "apelido": "Artur Jorge",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CRU/FORMATO.png",
-      "pontuacao": 3.06,
+      "pontuacao": 3.11,
       "posicao_id": 6,
       "clube_id": 283,
       "entrou_em_campo": true
@@ -1348,7 +1349,7 @@
       "scout": {},
       "apelido": "Cuca",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAN/FORMATO.png",
-      "pontuacao": 1.58,
+      "pontuacao": 1.83,
       "posicao_id": 6,
       "clube_id": 277,
       "entrou_em_campo": true
@@ -1367,11 +1368,12 @@
     "63007": {
       "scout": {
         "FC": 2,
+        "FD": 1,
         "FS": 2
       },
       "apelido": "Neymar",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAN/FORMATO.png",
-      "pontuacao": 0.4,
+      "pontuacao": 1.6,
       "posicao_id": 4,
       "clube_id": 277,
       "entrou_em_campo": true
@@ -1537,12 +1539,12 @@
     },
     "73992": {
       "scout": {
-        "FC": 2,
+        "FC": 3,
         "FS": 1
       },
       "apelido": "Rodinei",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAN/FORMATO.png",
-      "pontuacao": -0.1,
+      "pontuacao": -0.4,
       "posicao_id": 2,
       "clube_id": 277,
       "entrou_em_campo": true
@@ -1668,10 +1670,12 @@
       "entrou_em_campo": true
     },
     "84558": {
-      "scout": {},
+      "scout": {
+        "FS": 1
+      },
       "apelido": "Lucas Romero",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CRU/FORMATO.png",
-      "pontuacao": 0,
+      "pontuacao": 0.5,
       "posicao_id": 4,
       "clube_id": 283,
       "entrou_em_campo": true
@@ -1741,12 +1745,12 @@
     "86757": {
       "scout": {
         "DS": 3,
-        "FC": 2,
+        "FC": 1,
         "FF": 2
       },
       "apelido": "Everton",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAN/FORMATO.png",
-      "pontuacao": 5.5,
+      "pontuacao": 5.8,
       "posicao_id": 5,
       "clube_id": 277,
       "entrou_em_campo": true
@@ -2141,11 +2145,11 @@
       "scout": {
         "A": 1,
         "DS": 1,
-        "FS": 3
+        "FS": 2
       },
       "apelido": "Matheus Pereira",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CRU/FORMATO.png",
-      "pontuacao": 8,
+      "pontuacao": 7.5,
       "posicao_id": 4,
       "clube_id": 283,
       "entrou_em_campo": true
@@ -2536,9 +2540,9 @@
       "local": "Maracanã",
       "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "INICIADO",
-      "periodo_tr": "PRIMEIRO_TEMPO",
+      "periodo_tr": "SEGUNDO_TEMPO",
       "partida_data": "2026-10-18 16:00:00",
-      "inicio_cronometro_tr": "2026-10-18T19:02:52.479Z",
+      "inicio_cronometro_tr": "2026-10-18T20:08:19.784Z",
       "placar_oficial_visitante": 0,
       "placar_oficial_mandante": 1,
       "partida_id": 346525,
@@ -2572,9 +2576,9 @@
       "local": "Arena do Grêmio",
       "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "INICIADO",
-      "periodo_tr": "PRIMEIRO_TEMPO",
+      "periodo_tr": "SEGUNDO_TEMPO",
       "partida_data": "2026-10-18 16:00:00",
-      "inicio_cronometro_tr": "2026-10-18T19:00:01.831Z",
+      "inicio_cronometro_tr": "2026-10-18T20:10:53.588Z",
       "placar_oficial_visitante": 1,
       "placar_oficial_mandante": 2,
       "partida_id": 346531,
