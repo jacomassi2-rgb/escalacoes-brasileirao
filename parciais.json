@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-18T18:59:05.362687-03:00",
+  "ts": "2026-10-18T19:23:44.500010-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -289,10 +289,12 @@
       "entrou_em_campo": true
     },
     "104783": {
-      "scout": {},
+      "scout": {
+        "DS": 1
+      },
       "apelido": "Acevedo",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BAH/FORMATO.png",
-      "pontuacao": 0,
+      "pontuacao": 1.5,
       "posicao_id": 4,
       "clube_id": 265,
       "entrou_em_campo": true
@@ -376,11 +378,12 @@
     "105436": {
       "scout": {
         "DS": 1,
-        "FD": 3
+        "FD": 4,
+        "FS": 2
       },
       "apelido": "Carrascal",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLA/FORMATO.png",
-      "pontuacao": 5.1,
+      "pontuacao": 7.3,
       "posicao_id": 4,
       "clube_id": 262,
       "entrou_em_campo": true
@@ -455,11 +458,11 @@
     },
     "106822": {
       "scout": {
-        "DS": 2
+        "DS": 3
       },
       "apelido": "Rodrigo Nestor",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BAH/FORMATO.png",
-      "pontuacao": 3,
+      "pontuacao": 4.5,
       "posicao_id": 4,
       "clube_id": 265,
       "entrou_em_campo": true
@@ -486,13 +489,14 @@
     },
     "107093": {
       "scout": {
-        "DS": 2,
+        "DS": 3,
         "FF": 2,
+        "FS": 1,
         "SG": 1
       },
       "apelido": "Luciano Juba",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BAH/FORMATO.png",
-      "pontuacao": 9.6,
+      "pontuacao": 11.6,
       "posicao_id": 2,
       "clube_id": 265,
       "entrou_em_campo": true
@@ -572,10 +576,13 @@
       "entrou_em_campo": true
     },
     "109096": {
-      "scout": {},
+      "scout": {
+        "DS": 2,
+        "FC": 1
+      },
       "apelido": "Plata",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLA/FORMATO.png",
-      "pontuacao": 0,
+      "pontuacao": 2.7,
       "posicao_id": 5,
       "clube_id": 262,
       "entrou_em_campo": true
@@ -595,11 +602,13 @@
     },
     "109401": {
       "scout": {
-        "DS": 1
+        "DS": 1,
+        "FC": 1,
+        "FD": 1
       },
       "apelido": "Erick Pulga",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BAH/FORMATO.png",
-      "pontuacao": 1.5,
+      "pontuacao": 2.4,
       "posicao_id": 5,
       "clube_id": 265,
       "entrou_em_campo": true
@@ -727,12 +736,15 @@
     },
     "113397": {
       "scout": {
+        "CA": 1,
         "DS": 1,
+        "FC": 1,
+        "FF": 1,
         "FS": 1
       },
       "apelido": "Cristian Olivera",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BAH/FORMATO.png",
-      "pontuacao": 2,
+      "pontuacao": 1.5,
       "posicao_id": 5,
       "clube_id": 265,
       "entrou_em_campo": true
@@ -765,12 +777,13 @@
     },
     "114208": {
       "scout": {
+        "FD": 1,
         "FS": 1,
         "I": 1
       },
       "apelido": "Alejo Véliz",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BAH/FORMATO.png",
-      "pontuacao": 0.4,
+      "pontuacao": 1.6,
       "posicao_id": 5,
       "clube_id": 265,
       "entrou_em_campo": true
@@ -803,12 +816,13 @@
     },
     "115537": {
       "scout": {
-        "DS": 1,
+        "DS": 2,
+        "FC": 1,
         "SG": 1
       },
       "apelido": "Marcos Victor",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BAH/FORMATO.png",
-      "pontuacao": 6.5,
+      "pontuacao": 7.7,
       "posicao_id": 3,
       "clube_id": 265,
       "entrou_em_campo": true
@@ -1603,7 +1617,7 @@
       },
       "apelido": "Cuca",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAN/FORMATO.png",
-      "pontuacao": 7.65,
+      "pontuacao": 7.79,
       "posicao_id": 6,
       "clube_id": 277,
       "entrou_em_campo": true
@@ -2017,11 +2031,12 @@
     },
     "84847": {
       "scout": {
+        "DS": 1,
         "FC": 1
       },
       "apelido": "Luan Peres",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/SAN/FORMATO.png",
-      "pontuacao": -0.3,
+      "pontuacao": 1.2,
       "posicao_id": 3,
       "clube_id": 277,
       "entrou_em_campo": true
@@ -2146,7 +2161,7 @@
       "scout": {},
       "apelido": "Leonardo Jardim",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLA/FORMATO.png",
-      "pontuacao": 3.08,
+      "pontuacao": 4.37,
       "posicao_id": 6,
       "clube_id": 262,
       "entrou_em_campo": true
@@ -2293,12 +2308,12 @@
     },
     "91101": {
       "scout": {
-        "DE": 5,
+        "DE": 8,
         "SG": 1
       },
       "apelido": "Ronaldo",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BAH/FORMATO.png",
-      "pontuacao": 11.5,
+      "pontuacao": 15.4,
       "posicao_id": 1,
       "clube_id": 265,
       "entrou_em_campo": true
@@ -2306,11 +2321,13 @@
     "91473": {
       "scout": {
         "CA": 1,
-        "FC": 1
+        "FC": 1,
+        "FD": 1,
+        "FF": 1
       },
       "apelido": "Erick Pulgar",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLA/FORMATO.png",
-      "pontuacao": -1.3,
+      "pontuacao": 0.7,
       "posicao_id": 4,
       "clube_id": 262,
       "entrou_em_campo": true
@@ -2506,11 +2523,11 @@
     },
     "94583": {
       "scout": {
-        "FD": 2
+        "FD": 3
       },
       "apelido": "Pedro",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLA/FORMATO.png",
-      "pontuacao": 2.4,
+      "pontuacao": 3.6,
       "posicao_id": 5,
       "clube_id": 262,
       "entrou_em_campo": true
@@ -2572,13 +2589,14 @@
     },
     "96870": {
       "scout": {
-        "DS": 2,
+        "DS": 3,
         "FC": 1,
+        "FS": 1,
         "SG": 1
       },
       "apelido": "Emerson Royal",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLA/FORMATO.png",
-      "pontuacao": 7.7,
+      "pontuacao": 9.7,
       "posicao_id": 2,
       "clube_id": 262,
       "entrou_em_campo": true
@@ -2610,7 +2628,7 @@
       "scout": {},
       "apelido": "Rogério Ceni",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BAH/FORMATO.png",
-      "pontuacao": 4.05,
+      "pontuacao": 5.11,
       "posicao_id": 6,
       "clube_id": 265,
       "entrou_em_campo": true
@@ -2645,11 +2663,12 @@
     },
     "97867": {
       "scout": {
+        "DS": 1,
         "SG": 1
       },
       "apelido": "Léo Ortiz",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLA/FORMATO.png",
-      "pontuacao": 5,
+      "pontuacao": 6.5,
       "posicao_id": 3,
       "clube_id": 262,
       "entrou_em_campo": true
@@ -2778,11 +2797,12 @@
     },
     "99552": {
       "scout": {
+        "DE": 2,
         "SG": 1
       },
       "apelido": "Rossi",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/FLA/FORMATO.png",
-      "pontuacao": 5,
+      "pontuacao": 7.6,
       "posicao_id": 1,
       "clube_id": 262,
       "entrou_em_campo": true
@@ -3009,7 +3029,7 @@
         "e"
       ],
       "transmissao": {
-        "label": "ao vivo",
+        "label": "saiba como foi",
         "url": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/18-10-2026/fluminense-santos.ghtml?utm_source=cartolafc"
       },
       "local": "Maracanã",
@@ -3045,7 +3065,7 @@
         "e"
       ],
       "transmissao": {
-        "label": "ao vivo",
+        "label": "saiba como foi",
         "url": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/18-10-2026/gremio-cruzeiro.ghtml?utm_source=cartolafc"
       },
       "local": "Arena do Grêmio",
@@ -3086,10 +3106,10 @@
       },
       "local": "Arena Fonte Nova",
       "status_transmissao_tr": "EM_ANDAMENTO",
-      "status_cronometro_tr": "INICIADO",
-      "periodo_tr": "PRIMEIRO_TEMPO",
+      "status_cronometro_tr": "PAUSADO",
+      "periodo_tr": "INTERVALO",
       "partida_data": "2026-10-18 18:30:00",
-      "inicio_cronometro_tr": "2026-10-18T21:30:15.040Z",
+      "inicio_cronometro_tr": "2026-10-18T22:19:04.976Z",
       "placar_oficial_visitante": 0,
       "placar_oficial_mandante": 0,
       "partida_id": 346533,
@@ -3121,11 +3141,11 @@
         "url": "https://ge.globo.com/pa/futebol/brasileirao-serie-a/jogo/18-10-2026/remo-bragantino.ghtml?utm_source=cartolafc"
       },
       "local": "Mangueirão",
-      "status_transmissao_tr": "CRIADA",
+      "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "",
+      "periodo_tr": "PRE_JOGO",
       "partida_data": "2026-10-18 19:30:00",
-      "inicio_cronometro_tr": "",
+      "inicio_cronometro_tr": "2026-10-18T21:53:53.579Z",
       "placar_oficial_visitante": null,
       "placar_oficial_mandante": null,
       "partida_id": 346534,
