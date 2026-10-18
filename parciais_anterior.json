@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-17T23:23:52.952843-03:00",
+  "ts": "2026-10-17T23:56:29.633911-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -277,7 +277,7 @@
       "scout": {},
       "apelido": "Rafael Lacerda",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CHA/FORMATO.png",
-      "pontuacao": 4.22,
+      "pontuacao": 4.35,
       "posicao_id": 6,
       "clube_id": 315,
       "entrou_em_campo": true
@@ -827,12 +827,12 @@
     "130806": {
       "scout": {
         "CA": 1,
-        "DS": 1,
+        "DS": 2,
         "FC": 1
       },
       "apelido": "Kauan",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CHA/FORMATO.png",
-      "pontuacao": 0.2,
+      "pontuacao": 1.7,
       "posicao_id": 3,
       "clube_id": 315,
       "entrou_em_campo": true
@@ -1069,7 +1069,7 @@
       },
       "apelido": "Tite",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BOT/FORMATO.png",
-      "pontuacao": 9,
+      "pontuacao": 9.14,
       "posicao_id": 6,
       "clube_id": 263,
       "entrou_em_campo": true
@@ -1637,14 +1637,14 @@
     },
     "97468": {
       "scout": {
-        "DS": 1,
+        "DS": 2,
         "FC": 1,
         "FT": 1,
         "SG": 1
       },
       "apelido": "Marçal",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/BOT/FORMATO.png",
-      "pontuacao": 9.2,
+      "pontuacao": 10.7,
       "posicao_id": 2,
       "clube_id": 263,
       "entrou_em_campo": true
@@ -1939,7 +1939,7 @@
         "e"
       ],
       "transmissao": {
-        "label": "ao vivo",
+        "label": "saiba como foi",
         "url": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/17-10-2026/sao-paulo-vasco.ghtml?utm_source=cartolafc"
       },
       "local": "Morumbis",
