@@ -8,11 +8,6 @@ on:
 permissions:
   contents: write
 
-# Isso impede que este workflow rode ao mesmo tempo que outro
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   atualizar_parciais:
     runs-on: ubuntu-latest
@@ -34,15 +29,5 @@ jobs:
       - name: Rodar coletor de parciais
         run: python parciais.py
 
-      - name: Injetar parciais no HTML
-        run: python atualizar_site_parciais.py
-
-      - name: Salvar no repositório
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add parciais.json parciais_anterior.json index.html
-          # Só faz commit se realmente houver mudança
-          git diff --quiet && git diff --staged --quiet || git commit -m "Parciais atualizadas"
-          git pull --rebase --autostash origin main || true
-          git push || (git pull --rebase --autostash origin main && git push)
+      # NÃO salva no repositório, apenas notifica
+      # O site é atualizado pelo outro workflow
