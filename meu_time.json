@@ -1,17 +1,18 @@
 {
-  "rodada": 29,
+  "rodada": 31,
   "jogadores": [
-    {"nome": "Rossi", "clube": "FLA", "posicao": "GOL", "pontos": 0, "capitao": false},
-    {"nome": "Juninho Capixaba", "clube": "RBB", "posicao": "LAT", "pontos": 0, "capitao": false},
-    {"nome": "Igor Formiga", "clube": "MIR", "posicao": "LAT", "pontos": 0, "capitao": false},
-    {"nome": "Gustavo Gómez", "clube": "PAL", "posicao": "ZAG", "pontos": 0, "capitao": false},
-    {"nome": "Jonathan Jesus", "clube": "CRU", "posicao": "ZAG", "pontos": 0, "capitao": false},
-    {"nome": "Lucas Paquetá", "clube": "FLA", "posicao": "MEI", "pontos": 0, "capitao": false},
+    {"nome": "Otávio", "clube": "CRU", "posicao": "GOL", "pontos": 0, "capitao": false},
+    {"nome": "Alex Telles", "clube": "BOT", "posicao": "LAT", "pontos": 0, "capitao": false},
+    {"nome": "Matheuzinho", "clube": "COR", "posicao": "LAT", "pontos": 0, "capitao": false},
+    {"nome": "Alexander Barboza", "clube": "PAL", "posicao": "ZAG", "pontos": 0, "capitao": false},
+    {"nome": "Ferraresi", "clube": "BOT", "posicao": "ZAG", "pontos": 0, "capitao": false},
+    {"nome": "Danilo", "clube": "BOT", "posicao": "MEI", "pontos": 0, "capitao": true},
     {"nome": "Matheus Pereira", "clube": "CRU", "posicao": "MEI", "pontos": 0, "capitao": false},
-    {"nome": "Andreas Pereira", "clube": "PAL", "posicao": "MEI", "pontos": 0, "capitao": false},
-    {"nome": "Vitor Roque", "clube": "PAL", "posicao": "ATA", "pontos": 0, "capitao": false},
-    {"nome": "Hulk", "clube": "FLU", "posicao": "ATA", "pontos": 0, "capitao": true},
-    {"nome": "Samuel Lino", "clube": "FLA", "posicao": "ATA", "pontos": 0, "capitao": false},
-    {"nome": "Marcão", "clube": "FLU", "posicao": "TEC", "pontos": 0, "capitao": false}
+    {"nome": "Neymar", "clube": "SAN", "posicao": "MEI", "pontos": 0, "capitao": false},
+    {"nome": "Ziyech", "clube": "BOT", "posicao": "MEI", "pontos": 0, "capitao": false},
+    {"nome": "Yuri Alberto", "clube": "COR", "posicao": "ATA", "pontos": 0, "capitao": false},
+    {"nome": "Pedro", "clube": "FLA", "posicao": "ATA", "pontos": 0, "capitao": false},
+    {"nome": "Tite", "clube": "BOT", "posicao": "TEC", "pontos": 0, "capitao": false},
+    {"nome": "Tiquinho Soares", "clube": "BOT", "posicao": "ATA", "pontos": 0, "capitao": false}
   ]
 }
