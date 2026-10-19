@@ -303,6 +303,10 @@ html = """<!DOCTYPE html>
 <footer>
   <p>Dados coletados automaticamente do Google News</p>
   <p>Atualização automática 3x ao dia: 8h, 13h, 18h</p>
+  <p style="margin-top:.75rem;font-size:.8rem;opacity:.7;">
+    Feito por <a href="https://github.com/jacomassi2-rgb" target="_blank" style="color:inherit;text-decoration:underline;">Fabio Jacomassi</a> 
+    · <a href="https://github.com/jacomassi2-rgb/escalacoes-brasileirao" target="_blank" style="color:inherit;text-decoration:underline;">Código aberto no GitHub</a>
+  </p>
 </footer>
 
 <button id="btn-topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
