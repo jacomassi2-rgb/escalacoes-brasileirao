@@ -33,6 +33,9 @@ jobs:
       - name: Rodar o gerador de site
         run: python gerar_site.py
 
+      - name: Injetar parciais no HTML
+        run: python atualizar_site_parciais.py
+
       - name: Enviar as atualizações para o GitHub
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -44,4 +47,30 @@ jobs:
 
       - name: Enviar notificação no Telegram
         if: success()
-        run: python notificador.py
+        run: |
+          python -c "
+          import os, requests
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          from config import obter_rodada_e_jogos
+          
+          rodada, data_rodada, jogos = obter_rodada_e_jogos()
+          hora = datetime.now(ZoneInfo('America/Sao_Paulo')).strftime('%d/%m/%Y %H:%M')
+          
+          mensagem = f'''🤖 Escalações atualizadas!
+          
+          🏆 Rodada {rodada}
+          📅 {data_rodada}
+          ⏰ {hora}
+          
+          🔗 https://jacomassi2-rgb.github.io/escalacoes-brasileirao'''
+          
+          token = os.environ['TELEGRAM_BOT_TOKEN']
+          chat_id = os.environ['TELEGRAM_CHAT_ID']
+          
+          r = requests.post(
+              f'https://api.telegram.org/bot{token}/sendMessage',
+              data={'chat_id': chat_id, 'text': mensagem}
+          )
+          print(r.status_code, r.text)
+          "
