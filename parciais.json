@@ -6,19 +6,22 @@
       "apelido": "Hulk",
       "pontuacao": 12.3,
       "scout": {"G": 1, "FT": 2},
-      "clube_id": 9
+      "clube_id": 9,
+      "posicao_id": 5
     },
     "94583": {
       "apelido": "Pedro",
       "pontuacao": 8.5,
       "scout": {"G": 1},
-      "clube_id": 262
+      "clube_id": 262,
+      "posicao_id": 5
     },
     "99552": {
       "apelido": "Rossi",
       "pontuacao": 6.7,
       "scout": {"DE": 3},
-      "clube_id": 262
+      "clube_id": 262,
+      "posicao_id": 1
     }
   },
   "partidas": [
