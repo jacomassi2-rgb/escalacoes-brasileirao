@@ -27,8 +27,6 @@ def buscar_dados():
             data = r.json()
             resultado["atletas"] = data.get("atletas", {})
             resultado["rodada"] = data.get("rodada")
-        else:
-            print(f"AVISO: /atletas/pontuados retornou {r.status_code}")
     except Exception as e:
         print(f"ERRO ao buscar pontuados: {e}")
 
@@ -37,8 +35,6 @@ def buscar_dados():
         if r2.status_code == 200:
             data2 = r2.json()
             resultado["partidas"] = data2.get("partidas", [])
-        else:
-            print(f"AVISO: /partidas retornou {r2.status_code}")
     except Exception as e:
         print(f"ERRO ao buscar partidas: {e}")
 
@@ -71,27 +67,30 @@ def enviar_telegram(mensagem):
 
 
 def formatar_eventos(eventos):
-    """Formata TODOS os eventos detectados (sem filtro de scouts)."""
     if not eventos:
         return None
-
     linhas = [f"⚽ <b>Parciais Cartola</b> — {len(eventos)} mudanças\n"]
-    for ev in eventos[:50]:  # Limita a 50 pra não estourar
+    for ev in eventos[:50]:
         scouts_txt = " ".join(f"[{k}+{v}]" for k, v in ev["scouts"].items()) if ev["scouts"] else ""
         linhas.append(f"• <b>{ev['apelido']}</b>: +{ev['delta']:.1f} pts {scouts_txt}")
-
     if len(eventos) > 50:
         linhas.append(f"\n<i>... e mais {len(eventos) - 50} mudanças</i>")
-
     return "\n".join(linhas)
 
 
 def main():
     dados = buscar_dados()
 
+    # Se não tem atleta pontuando, verifica se já existe um arquivo com dados
+    # Se existir, NÃO sobrescreve com vazio (evita apagar o site)
     if not dados["atletas"]:
-        print("Nenhum atleta pontuou ainda.")
-        return
+        if os.path.exists(ARQUIVO_ATUAL):
+            print("Nenhum atleta pontuou. Mantendo parciais antigas para não apagar o site.")
+            return
+        else:
+            print("Nenhum atleta pontuou e não há arquivo antigo. Criando vazio.")
+            salvar_json(dados, ARQUIVO_ATUAL)
+            return
 
     anterior = carregar_anterior()
     atletas_antigos = anterior.get("atletas", {})
@@ -124,7 +123,6 @@ def main():
     print(f"Parciais salvas: {len(dados['atletas'])} atletas")
 
     if eventos:
-        # Ordena por delta (maior primeiro)
         eventos.sort(key=lambda e: e["delta"], reverse=True)
         msg = formatar_eventos(eventos)
         if msg:
