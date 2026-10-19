@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-18T23:35:10.263441-03:00",
+  "ts": "2026-10-19T00:07:26.646620-03:00",
   "rodada": 31,
   "atletas": {
     "100084": {
@@ -3565,14 +3565,14 @@
         "v",
         "e",
         "d",
-        "e"
+        "v"
       ],
       "aproveitamento_mandante": [
         "d",
         "v",
         "v",
         "d",
-        "e"
+        "d"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -3601,14 +3601,14 @@
         "v",
         "v",
         "d",
-        "e"
+        "v"
       ],
       "aproveitamento_mandante": [
         "d",
         "e",
         "e",
         "e",
-        "e"
+        "d"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -3637,14 +3637,14 @@
         "v",
         "e",
         "v",
-        "e"
+        "v"
       ],
       "aproveitamento_mandante": [
         "v",
         "d",
         "d",
         "v",
-        "e"
+        "d"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -3705,18 +3705,18 @@
     },
     {
       "aproveitamento_visitante": [
-        "v",
         "e",
         "d",
         "v",
-        "d"
+        "d",
+        "e"
       ],
       "aproveitamento_mandante": [
         "d",
         "d",
         "d",
         "d",
-        "d"
+        "e"
       ],
       "transmissao": {
         "label": "fique por dentro",
