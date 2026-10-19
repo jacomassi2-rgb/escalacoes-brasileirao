@@ -43,24 +43,18 @@ def tempo_relativo(data_str):
         dt = parsedate_to_datetime(data_str)
         agora = datetime.now(dt.tzinfo)
         segundos = int((agora - dt).total_seconds())
-        if segundos < 60:
-            return "agora mesmo"
-        elif segundos < 3600:
-            return f"há {segundos // 60} min"
-        elif segundos < 86400:
-            return f"há {segundos // 3600} h"
-        else:
-            return f"há {segundos // 86400} dias"
-    except:
-        return ""
+        if segundos < 60: return "agora mesmo"
+        elif segundos < 3600: return f"há {segundos // 60} min"
+        elif segundos < 86400: return f"há {segundos // 3600} h"
+        else: return f"há {segundos // 86400} dias"
+    except: return ""
 
 def tempo_em_horas(data_str):
     try:
         dt = parsedate_to_datetime(data_str)
         agora = datetime.now(dt.tzinfo)
         return (agora - dt).total_seconds() / 3600
-    except:
-        return 9999
+    except: return 9999
 
 MEU_TIME = {}
 if os.path.exists('meu_time.json'):
@@ -71,6 +65,17 @@ SUGESTAO_FATHUR = {}
 if os.path.exists('sugestao_fathur.json'):
     with open('sugestao_fathur.json', 'r', encoding='utf-8') as f:
         SUGESTAO_FATHUR = json.load(f)
+
+# ============================================
+# CALCULA PONTOS REAIS DO MEU TIME
+# ============================================
+PONTOS_REAIS = {}
+if os.path.exists('parciais.json'):
+    with open('parciais.json', 'r', encoding='utf-8') as f:
+        parciais = json.load(f)
+    for atleta_id, info in parciais.get('atletas', {}).items():
+        apelido = info.get('apelido', '').lower().strip()
+        PONTOS_REAIS[apelido] = info.get('pontuacao', 0) or 0
 
 html = """<!DOCTYPE html>
 <html lang="pt-BR">
@@ -199,7 +204,6 @@ html = """<!DOCTYPE html>
   .acerto-legenda { display: flex; gap: 1rem; margin-top: .75rem; font-size: .8rem; }
   .acerto-legenda span { display: inline-flex; align-items: center; gap: .4rem; }
   .acerto-legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-  /* ===== PARCIAIS AO VIVO ===== */
   .parciais-container { max-width: 900px; margin: 1rem auto 3rem; padding: 0 1rem; }
   .parciais-header { display: flex; justify-content: space-between; align-items: center; background: linear-gradient(135deg, #dc2626, #ef4444); color: white; padding: .75rem 1rem; border-radius: 12px 12px 0 0; font-weight: 700; font-size: 1rem; }
   .parciais-ts { font-size: .75rem; opacity: .85; }
@@ -304,7 +308,7 @@ html = """<!DOCTYPE html>
   <p>Dados coletados automaticamente do Google News</p>
   <p>Atualização automática 3x ao dia: 8h, 13h, 18h</p>
   <p style="margin-top:.75rem;font-size:.8rem;opacity:.7;">
-    Feito por <a href="https://github.com/jacomassi2-rgb" target="_blank" style="color:inherit;text-decoration:underline;">Fabio Jacomassi</a> 
+    Feito por <a href="https://github.com/jacomassi2-rgb" target="_blank" style="color:inherit;text-decoration:underline;">Fabio Jacomassi</a>
     · <a href="https://github.com/jacomassi2-rgb/escalacoes-brasileirao" target="_blank" style="color:inherit;text-decoration:underline;">Código aberto no GitHub</a>
   </p>
 </footer>
@@ -313,12 +317,10 @@ html = """<!DOCTYPE html>
 
 <script>
 let filtro24h = false;
-
 function mudarAba(nome) {
   document.querySelectorAll('.aba-btn').forEach(b => b.classList.toggle('ativo', b.dataset.aba === nome));
   document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.toggle('ativo', c.id === 'aba-' + nome));
 }
-
 function filtrar() {
   const termo = document.getElementById('campo-busca').value.toLowerCase();
   document.querySelectorAll('#aba-noticias .time').forEach(function(el) {
@@ -326,7 +328,6 @@ function filtrar() {
     el.classList.toggle('oculto', !nome.includes(termo));
   });
 }
-
 function toggle24h() {
   filtro24h = !filtro24h;
   document.getElementById('btn-24h').classList.toggle('ativo', filtro24h);
@@ -343,11 +344,9 @@ function toggle24h() {
   });
   document.getElementById('info-filtro').textContent = filtro24h ? '🕐 Mostrando apenas notícias das últimas 24 horas' : '';
 }
-
 window.addEventListener('scroll', function() {
   document.getElementById('btn-topo').style.display = window.scrollY > 400 ? 'block' : 'none';
 });
-
 function alternarTema() {
   document.body.classList.toggle('escuro');
   localStorage.setItem('tema', document.body.classList.contains('escuro') ? 'escuro' : 'claro');
@@ -450,20 +449,28 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
     nomes_fathur = set()
     if SUGESTAO_FATHUR and SUGESTAO_FATHUR.get("jogadores"):
         nomes_fathur = {j["nome"].lower() for j in SUGESTAO_FATHUR["jogadores"]}
+    
     total = 0
     bonus_capitao = 0
     capitao_nome = ""
     capitao_pts_base = 0
     acertos = 0
+    
     for j in jogadores:
-        pts = j.get("pontos", 0) or 0
+        nome_original = j.get("nome", "")
+        nome_lower = nome_original.lower().strip()
+        
+        # Puxa os pontos reais do parciais.json, se existirem. Senão, usa o do JSON.
+        pts = PONTOS_REAIS.get(nome_lower, j.get("pontos", 0) or 0)
+        
         total += pts
         if j.get("capitao"):
-            capitao_nome = j.get("nome", "")
+            capitao_nome = nome_original
             capitao_pts_base = pts
             bonus_capitao = pts * 0.5
-        if j.get("nome", "").lower() in nomes_fathur:
+        if nome_lower in nomes_fathur:
             acertos += 1
+            
     total_com_capitao = total + bonus_capitao
     media = total_com_capitao / len(jogadores) if jogadores else 0
     total_meu = len(jogadores)
@@ -471,7 +478,7 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
     cards = ""
     for j in jogadores:
         nome = j.get("nome", "?")
-        pts = j.get("pontos", 0) or 0
+        pts = PONTOS_REAIS.get(nome.lower().strip(), j.get("pontos", 0) or 0)
         classe_neg = "negativo" if pts < 0 else ""
         badge_cap = '<span class="capitao-badge">👑 CAP</span>' if j.get("capitao") else ""
         exibir_pts = pts * 1.5 if j.get("capitao") else pts
