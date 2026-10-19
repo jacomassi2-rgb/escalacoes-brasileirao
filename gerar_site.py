@@ -199,24 +199,33 @@ html = """<!DOCTYPE html>
   .acerto-legenda { display: flex; gap: 1rem; margin-top: .75rem; font-size: .8rem; }
   .acerto-legenda span { display: inline-flex; align-items: center; gap: .4rem; }
   .acerto-legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  /* ===== PARCIAIS AO VIVO ===== */
   .parciais-container { max-width: 900px; margin: 1rem auto 3rem; padding: 0 1rem; }
   .parciais-header { display: flex; justify-content: space-between; align-items: center; background: linear-gradient(135deg, #dc2626, #ef4444); color: white; padding: .75rem 1rem; border-radius: 12px 12px 0 0; font-weight: 700; font-size: 1rem; }
   .parciais-ts { font-size: .75rem; opacity: .85; }
   .parcial-jogo { background: white; border-bottom: 1px solid #f0f0f0; }
   body.escuro .parcial-jogo { background: #1e1e1e; border-bottom-color: #2a2a2a; }
   .parcial-jogo:last-child { border-radius: 0 0 12px 12px; }
-  .parcial-jogo-header { display: flex; justify-content: space-between; padding: .6rem 1rem; background: #f8f9fa; font-size: .85rem; font-weight: 700; color: #0a5c2e; }
+  .parcial-jogo-header { display: flex; justify-content: space-between; align-items: center; padding: .75rem 1rem; background: #f8f9fa; font-size: .85rem; font-weight: 700; color: #0a5c2e; }
   body.escuro .parcial-jogo-header { background: #252525; color: #4ade80; }
+  .parcial-placar { display: flex; align-items: center; gap: .5rem; font-size: 1rem; }
+  .parcial-time-nome { font-weight: 800; color: #1a1a1a; }
+  body.escuro .parcial-time-nome { color: #e0e0e0; }
+  .parcial-total { font-weight: 900; color: #16a34a; min-width: 50px; text-align: center; }
+  .parcial-x { color: #888; font-weight: 400; }
   .parcial-jogo-status { font-size: .75rem; color: #888; font-weight: 500; }
-  .parcial-jogo-corpo { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; padding: .5rem; }
+  .parcial-jogo-corpo { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; padding: .75rem; }
   .parcial-jogo-lado { min-width: 0; }
+  .parcial-pos-titulo { font-size: .7rem; font-weight: 800; color: #666; text-transform: uppercase; letter-spacing: .5px; margin: .75rem 0 .35rem 0; padding-left: .3rem; }
+  body.escuro .parcial-pos-titulo { color: #aaa; }
   .parcial-jogador { display: flex; align-items: center; gap: .4rem; padding: .35rem .5rem; font-size: .8rem; border-radius: 6px; }
   .parcial-jogador:nth-child(odd) { background: #fafafa; }
   body.escuro .parcial-jogador:nth-child(odd) { background: #2a2a2a; }
   .parcial-nome { flex: 1; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .parcial-scouts { font-size: .7rem; color: #888; max-width: 80px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .parcial-pts { font-weight: 800; color: #16a34a; min-width: 40px; text-align: right; }
+  .parcial-scouts { font-size: .7rem; color: #888; max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .parcial-pts { font-weight: 800; color: #16a34a; min-width: 45px; text-align: right; }
   .parcial-vazio { padding: .5rem; font-size: .8rem; color: #999; font-style: italic; }
+
   @media (max-width: 600px) {
     header h1 { font-size: 1.3rem; }
     .time-header { flex-wrap: wrap; }
@@ -230,6 +239,7 @@ html = """<!DOCTYPE html>
     .meu-time-stats { grid-template-columns: 1fr; }
     .stats-grid { grid-template-columns: 1fr; }
     .parcial-jogo-corpo { grid-template-columns: 1fr; }
+    .parcial-placar { font-size: .85rem; }
   }
 </style>
 </head>
