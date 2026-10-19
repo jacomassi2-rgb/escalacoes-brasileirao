@@ -449,20 +449,58 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
     nomes_fathur = set()
     if SUGESTAO_FATHUR and SUGESTAO_FATHUR.get("jogadores"):
         nomes_fathur = {j["nome"].lower() for j in SUGESTAO_FATHUR["jogadores"]}
-    
+
     total = 0
     bonus_capitao = 0
     capitao_nome = ""
     capitao_pts_base = 0
     acertos = 0
-    
+
+    # 1. Separa o Reserva de Luxo dos titulares
+    reserva_luxo_nome = SUGESTAO_FATHUR.get("reserva_luxo", "").lower().strip()
+    jogadores_titulares = []
+    reserva_luxo_jogador = None
+
     for j in jogadores:
+        nome_lower = j.get("nome", "").lower().strip()
+        if nome_lower == reserva_luxo_nome:
+            reserva_luxo_jogador = j
+        else:
+            jogadores_titulares.append(j)
+
+    # 2. Calcula pontos dos titulares
+    pontos_titulares = {}
+    for j in jogadores_titulares:
+        nome_lower = j.get("nome", "").lower().strip()
+        pts = PONTOS_REAIS.get(nome_lower, j.get("pontos", 0) or 0)
+        pontos_titulares[nome_lower] = pts
+
+    # 3. Lógica do Reserva de Luxo (só substitui se for maior que o pior titular da mesma posição)
+    substituir_reserva = False
+    if reserva_luxo_jogador:
+        pos_reserva = reserva_luxo_jogador.get("posicao", "").upper()
+        pts_reserva = PONTOS_REAIS.get(reserva_luxo_nome, reserva_luxo_jogador.get("pontos", 0) or 0)
+
+        # Pega os titulares da mesma posição
+        titulares_mesma_pos = [j for j in jogadores_titulares if j.get("posicao", "").upper() == pos_reserva]
+
+        if titulares_mesma_pos:
+            # Encontra o pior titular da posição
+            pior_titular = min(titulares_mesma_pos, key=lambda x: PONTOS_REAIS.get(x.get("nome", "").lower().strip(), x.get("pontos", 0) or 0))
+            pts_pior_titular = PONTOS_REAIS.get(pior_titular.get("nome", "").lower().strip(), pior_titular.get("pontos", 0) or 0)
+
+            if pts_reserva > pts_pior_titular:
+                substituir_reserva = True
+                # Remove o pior titular da lista e adiciona o reserva no lugar
+                jogadores_titulares.remove(pior_titular)
+                jogadores_titulares.append(reserva_luxo_jogador)
+
+    # 4. Calcula o total final (com os titulares já ajustados)
+    for j in jogadores_titulares:
         nome_original = j.get("nome", "")
         nome_lower = nome_original.lower().strip()
-        
-        # Puxa os pontos reais do parciais.json, se existirem. Senão, usa o do JSON.
         pts = PONTOS_REAIS.get(nome_lower, j.get("pontos", 0) or 0)
-        
+
         total += pts
         if j.get("capitao"):
             capitao_nome = nome_original
@@ -470,13 +508,13 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
             bonus_capitao = pts * 0.5
         if nome_lower in nomes_fathur:
             acertos += 1
-            
+
     total_com_capitao = total + bonus_capitao
-    media = total_com_capitao / len(jogadores) if jogadores else 0
-    total_meu = len(jogadores)
+    media = total_com_capitao / len(jogadores_titulares) if jogadores_titulares else 0
+    total_meu = len(jogadores_titulares)
     taxa_acerto = (acertos / total_meu * 100) if total_meu > 0 else 0
     cards = ""
-    for j in jogadores:
+    for j in jogadores_titulares:
         nome = j.get("nome", "?")
         pts = PONTOS_REAIS.get(nome.lower().strip(), j.get("pontos", 0) or 0)
         classe_neg = "negativo" if pts < 0 else ""
@@ -523,7 +561,7 @@ if MEU_TIME and MEU_TIME.get("jogadores"):
     meu_time_html = f'''
     <div class="meu-time-header">
         <h2>👤 Meu Time</h2>
-        <p>Rodada {MEU_TIME.get("rodada", "?")} · {len(jogadores)} jogadores</p>
+        <p>Rodada {MEU_TIME.get("rodada", "?")} · {len(jogadores_titulares)} jogadores</p>
     </div>
     {stats_html}
     {barra_html}
