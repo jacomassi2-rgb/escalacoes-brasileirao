@@ -1,0 +1,21 @@
+{
+  "name": "Prováveis Escalações - Brasileirão",
+  "short_name": "Escalações",
+  "description": "Notícias e parciais em tempo real do Brasileirão Série A",
+  "start_url": "/escalacoes-brasileirao/",
+  "display": "standalone",
+  "background_color": "#0a5c2e",
+  "theme_color": "#0a5c2e",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
