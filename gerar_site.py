@@ -77,259 +77,227 @@ if os.path.exists('parciais.json'):
         apelido = info.get('apelido', '').lower().strip()
         PONTOS_REAIS[apelido] = info.get('pontuacao', 0) or 0
 
-html = """<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prováveis Escalações - Brasileirão</title>
-<style>
-  * { box-sizing: border-box; transition: background .3s, color .3s; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 0; background: #f0f2f5; color: #1a1a1a; }
-  body.escuro { background: #121212; color: #e0e0e0; }
-  header { background: linear-gradient(135deg, #0a5c2e 0%, #0d7a3f 100%); color: white; padding: 2rem 1rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.1); position: relative; }
-  header h1 { margin: 0; font-size: 1.8rem; }
-  .btn-tema { position: absolute; top: 1rem; right: 1rem; background: rgba(255,255,255,.2); border: none; color: white; padding: .5rem .9rem; border-radius: 20px; cursor: pointer; font-size: .9rem; }
-  .btn-tema:hover { background: rgba(255,255,255,.3); }
-  .rodada-badge { display: inline-block; background: rgba(255,255,255,.2); color: white; padding: .35rem 1rem; border-radius: 20px; font-size: .85rem; font-weight: 600; margin-top: .75rem; letter-spacing: .5px; }
-  header p { margin: .5rem 0 0; opacity: .85; font-size: .9rem; }
-  .jogos { max-width: 900px; margin: 1.5rem auto 0; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: .5rem; }
-  .jogo { background: rgba(255,255,255,.15); color: white; padding: .5rem .8rem; border-radius: 8px; font-size: .8rem; text-align: center; }
-  .jogo strong { display: block; font-size: .9rem; margin-bottom: .2rem; }
-  .abas { max-width: 900px; margin: 1rem auto 0; padding: 0 1rem; display: flex; gap: .5rem; flex-wrap: wrap; }
-  .aba-btn { flex: 1; min-width: 140px; padding: .8rem 1rem; background: white; border: 2px solid transparent; border-radius: 12px; font-size: .9rem; font-weight: 700; cursor: pointer; color: #0a5c2e; box-shadow: 0 2px 6px rgba(0,0,0,.05); transition: all .2s; }
-  body.escuro .aba-btn { background: #1e1e1e; color: #4ade80; }
-  .aba-btn.ativo { background: #0a5c2e; color: white; border-color: #0a5c2e; }
-  body.escuro .aba-btn.ativo { background: #0d7a3f; color: white; }
-  .aba-conteudo { display: none; }
-  .aba-conteudo.ativo { display: block; }
-  .controles { max-width: 900px; margin: 1rem auto 2rem; padding: 0 1rem; display: flex; gap: .5rem; flex-wrap: wrap; }
-  .controles input { flex: 1; min-width: 200px; padding: 1rem 1.2rem; font-size: 1rem; border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.1); outline: none; background: white; color: inherit; }
-  body.escuro .controles input { background: #1e1e1e; color: #e0e0e0; }
-  .btn-filtro { background: white; border: none; padding: .8rem 1.2rem; border-radius: 12px; font-size: .85rem; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.1); color: #0a5c2e; white-space: nowrap; }
-  body.escuro .btn-filtro { background: #1e1e1e; color: #4ade80; }
-  .btn-filtro.ativo { background: #0a5c2e; color: white; }
-  .container { max-width: 900px; margin: 0 auto; padding: 0 1rem 3rem; }
-  .time { background: white; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); border-left: 5px solid #0a5c2e; }
-  body.escuro .time { background: #1e1e1e; box-shadow: 0 1px 4px rgba(0,0,0,.3); }
-  .time-header { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.5rem; border-bottom: 1px solid #eee; }
-  body.escuro .time-header { border-bottom-color: #333; }
-  .time-header img { width: 44px; height: 44px; object-fit: contain; }
-  .time-header h2 { margin: 0; font-size: 1.15rem; color: #0a5c2e; flex: 1; }
-  body.escuro .time-header h2 { color: #4ade80; }
-  .contador { background: #f0f2f5; color: #666; padding: .2rem .6rem; border-radius: 20px; font-size: .75rem; font-weight: 600; }
-  body.escuro .contador { background: #2a2a2a; color: #aaa; }
-  .btn-escalacao { display: inline-block; background: #0a5c2e; color: white; text-decoration: none; padding: .5rem 1rem; border-radius: 8px; font-size: .85rem; font-weight: 600; white-space: nowrap; }
-  .btn-escalacao:hover { background: #0d7a3f; }
-  .noticia { padding: .75rem 1.5rem; border-top: 1px solid #f5f5f5; }
-  body.escuro .noticia { border-top-color: #2a2a2a; }
-  .noticia a { color: #1a4d8f; text-decoration: none; font-weight: 500; font-size: .95rem; }
-  body.escuro .noticia a { color: #60a5fa; }
-  .noticia a:hover { text-decoration: underline; }
-  .meta { font-size: .75rem; color: #888; margin-top: .25rem; display: flex; gap: 1rem; flex-wrap: wrap; }
-  .tempo { color: #0a5c2e; font-weight: 500; }
-  body.escuro .tempo { color: #4ade80; }
-  .vazio { padding: 1rem 1.5rem; color: #999; font-style: italic; font-size: .9rem; }
-  .oculto { display: none !important; }
-  footer { text-align: center; padding: 2rem 1rem; color: #888; font-size: .85rem; }
-  #btn-topo { position: fixed; bottom: 2rem; right: 2rem; background: #0a5c2e; color: white; border: none; width: 48px; height: 48px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.2); display: none; z-index: 100; }
-  #btn-topo:hover { background: #0d7a3f; }
-  .info-filtro { max-width: 900px; margin: -.5rem auto 1rem; padding: 0 1rem; font-size: .85rem; color: #666; }
-  body.escuro .info-filtro { color: #aaa; }
-  .tabela-wrap { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-  body.escuro .tabela-wrap { background: #1e1e1e; }
-  table.classificacao { width: 100%; border-collapse: collapse; font-size: .9rem; }
-  table.classificacao thead { background: #0a5c2e; color: white; }
-  table.classificacao th { padding: .75rem .5rem; text-align: left; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
-  table.classificacao th.num { text-align: center; }
-  table.classificacao td { padding: .65rem .5rem; border-bottom: 1px solid #f0f0f0; }
-  body.escuro table.classificacao td { border-bottom-color: #2a2a2a; }
-  table.classificacao tr:last-child td { border-bottom: none; }
-  table.classificacao td.num { text-align: center; font-variant-numeric: tabular-nums; }
-  table.classificacao .pos { font-weight: 700; width: 40px; text-align: center; border-radius: 6px; padding: .35rem 0; display: inline-block; min-width: 32px; }
-  table.classificacao .time-nome { font-weight: 600; }
-  table.classificacao tr.g4 .pos { background: #0a5c2e; color: white; }
-  table.classificacao tr.g5-g8 .pos { background: #3b82f6; color: white; }
-  table.classificacao tr.g9-g16 .pos { background: #e5e7eb; color: #333; }
-  table.classificacao tr.z4 .pos { background: #dc2626; color: white; }
-  table.classificacao tr.libertadores { background: rgba(10, 92, 46, .04); }
-  table.classificacao tr.pre-libertadores { background: rgba(59, 130, 246, .04); }
-  table.classificacao tr.rebaixamento { background: rgba(220, 38, 38, .04); }
-  .legenda { max-width: 900px; margin: 1rem auto; padding: 0 1rem; display: flex; gap: 1rem; flex-wrap: wrap; font-size: .8rem; color: #666; }
-  body.escuro .legenda { color: #aaa; }
-  .legenda span { display: inline-flex; align-items: center; gap: .4rem; }
-  .legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-  .meu-time-header { background: linear-gradient(135deg, #0a5c2e, #0d7a3f); color: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; }
-  .meu-time-header h2 { margin: 0 0 .5rem 0; font-size: 1.2rem; }
-  .meu-time-header p { margin: 0; opacity: .9; font-size: .9rem; }
-  .meu-time-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-top: 1rem; }
-  .meu-time-stat { text-align: center; }
-  .meu-time-stat-label { font-size: .75rem; opacity: .85; text-transform: uppercase; letter-spacing: .5px; }
-  .meu-time-stat-val { font-size: 1.6rem; font-weight: 800; margin-top: .25rem; }
-  .jogador-card { background: white; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: .75rem; display: flex; align-items: center; gap: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); border-left: 4px solid #0a5c2e; }
-  body.escuro .jogador-card { background: #1e1e1e; }
-  .jogador-pos { background: #f0f2f5; color: #666; padding: .3rem .6rem; border-radius: 6px; font-size: .7rem; font-weight: 800; text-transform: uppercase; }
-  body.escuro .jogador-pos { background: #2a2a2a; color: #aaa; }
-  .jogador-nome { flex: 1; font-weight: 700; font-size: 1rem; }
-  .jogador-nome small { display: block; font-weight: 400; color: #888; font-size: .75rem; margin-top: .15rem; }
-  .jogador-pts { font-size: 1.3rem; font-weight: 800; color: #0a5c2e; min-width: 60px; text-align: right; }
-  body.escuro .jogador-pts { color: #4ade80; }
-  .jogador-pts.negativo { color: #dc2626; }
-  .capitao-badge { background: #f59e0b; color: white; padding: .2rem .5rem; border-radius: 6px; font-size: .65rem; font-weight: 800; }
-  .meu-time-vazio { text-align: center; padding: 3rem 1rem; color: #888; }
-  .meu-time-vazio .icone { font-size: 3rem; margin-bottom: 1rem; }
-  .aviso-api { background: #fef3c7; border-left: 4px solid #f59e0b; padding: .75rem 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: .85rem; color: #78350f; }
-  body.escuro .aviso-api { background: #422006; color: #fbbf24; }
-  .comparador-badge { display: inline-flex; align-items: center; gap: .3rem; padding: .15rem .5rem; border-radius: 6px; font-size: .7rem; font-weight: 700; margin-left: .5rem; }
-  .comparador-badge.igual { background: #d1fae5; color: #065f46; }
-  .comparador-badge.diferente { background: #fef3c7; color: #92400e; }
-  body.escuro .comparador-badge.igual { background: #064e3b; color: #6ee7b7; }
-  body.escuro .comparador-badge.diferente { background: #451a03; color: #fcd34d; }
-  .stats-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
-  .stat-card { background: white; border-radius: 12px; padding: 1.25rem; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-  body.escuro .stat-card { background: #1e1e1e; }
-  .stat-card-label { font-size: .75rem; color: #666; text-transform: uppercase; letter-spacing: .5px; font-weight: 600; }
-  body.escuro .stat-card-label { color: #aaa; }
-  .stat-card-val { font-size: 1.8rem; font-weight: 800; color: #0a5c2e; margin-top: .35rem; }
-  body.escuro .stat-card-val { color: #4ade80; }
-  .stat-card-sub { font-size: .75rem; color: #888; margin-top: .25rem; }
-  .acerto-wrap { background: white; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-  body.escuro .acerto-wrap { background: #1e1e1e; }
-  .acerto-titulo { font-size: .8rem; font-weight: 700; color: #666; text-transform: uppercase; letter-spacing: .5px; margin-bottom: .75rem; }
-  body.escuro .acerto-titulo { color: #aaa; }
-  .acerto-barra { height: 24px; background: #f0f2f5; border-radius: 12px; overflow: hidden; display: flex; }
-  body.escuro .acerto-barra { background: #2a2a2a; }
-  .acerto-barra-igual { background: linear-gradient(90deg, #16a34a, #22c55e); display: flex; align-items: center; justify-content: center; color: white; font-size: .8rem; font-weight: 700; }
-  .acerto-barra-diferente { background: linear-gradient(90deg, #f59e0b, #fbbf24); display: flex; align-items: center; justify-content: center; color: white; font-size: .8rem; font-weight: 700; }
-  .acerto-legenda { display: flex; gap: 1rem; margin-top: .75rem; font-size: .8rem; }
-  .acerto-legenda span { display: inline-flex; align-items: center; gap: .4rem; }
-  .acerto-legenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-  .parciais-container { max-width: 900px; margin: 1rem auto 3rem; padding: 0 1rem; }
-  .parciais-header { display: flex; justify-content: space-between; align-items: center; background: linear-gradient(135deg, #dc2626, #ef4444); color: white; padding: .75rem 1rem; border-radius: 12px 12px 0 0; font-weight: 700; font-size: 1rem; }
-  .parciais-ts { font-size: .75rem; opacity: .85; }
-  .parcial-jogo { background: white; border-bottom: 1px solid #f0f0f0; }
-  body.escuro .parcial-jogo { background: #1e1e1e; border-bottom-color: #2a2a2a; }
-  .parcial-jogo:last-child { border-radius: 0 0 12px 12px; }
-  .parcial-jogo-header { display: flex; justify-content: space-between; align-items: center; padding: .75rem 1rem; background: #f8f9fa; font-size: .85rem; font-weight: 700; color: #0a5c2e; }
-  body.escuro .parcial-jogo-header { background: #252525; color: #4ade80; }
-  .parcial-placar { display: flex; align-items: center; gap: .5rem; font-size: 1rem; }
-  .parcial-time-nome { font-weight: 800; color: #1a1a1a; }
-  body.escuro .parcial-time-nome { color: #e0e0e0; }
-  .parcial-total { font-weight: 900; color: #16a34a; min-width: 50px; text-align: center; }
-  .parcial-x { color: #888; font-weight: 400; }
-  .parcial-jogo-status { font-size: .75rem; color: #888; font-weight: 500; }
-  .parcial-jogo-corpo { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; padding: .75rem; }
-  .parcial-jogo-lado { min-width: 0; }
-  .parcial-pos-titulo { font-size: .7rem; font-weight: 800; color: #666; text-transform: uppercase; letter-spacing: .5px; margin: .75rem 0 .35rem 0; padding-left: .3rem; }
-  body.escuro .parcial-pos-titulo { color: #aaa; }
-  .parcial-jogador { display: flex; align-items: center; gap: .4rem; padding: .35rem .5rem; font-size: .8rem; border-radius: 6px; }
-  .parcial-jogador:nth-child(odd) { background: #fafafa; }
-  body.escuro .parcial-jogador:nth-child(odd) { background: #2a2a2a; }
-  .parcial-nome { flex: 1; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .parcial-scouts { font-size: .7rem; color: #888; max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .parcial-pts { font-weight: 800; color: #16a34a; min-width: 45px; text-align: right; }
-  .parcial-vazio { padding: .5rem; font-size: .8rem; color: #999; font-style: italic; }
+# Lê o template HTML
+with open('template.html', 'r', encoding='utf-8') as f:
+    html = f.read()
 
-  @media (max-width: 600px) {
-    header h1 { font-size: 1.3rem; }
-    .time-header { flex-wrap: wrap; }
-    .time-header h2 { font-size: 1rem; }
-    .btn-escalacao { width: 100%; text-align: center; margin-top: .5rem; }
-    #btn-topo { bottom: 1rem; right: 1rem; }
-    .controles { flex-direction: column; }
-    table.classificacao { font-size: .8rem; }
-    table.classificacao th, table.classificacao td { padding: .5rem .3rem; }
-    table.classificacao .col-v-e-d, table.classificacao .col-gp-gc { display: none; }
-    .meu-time-stats { grid-template-columns: 1fr; }
-    .stats-grid { grid-template-columns: 1fr; }
-    .parcial-jogo-corpo { grid-template-columns: 1fr; }
-    .parcial-placar { font-size: .85rem; }
-  }
-</style>
-</head>
-<body>
-<header>
-  <button class="btn-tema" onclick="alternarTema()">🌙 Tema</button>
-  <h1>⚽ Prováveis Escalações</h1>
-  <div class="rodada-badge">RODADA_BADGE</div>
-  <p style="margin-top:.75rem;font-size:.8rem;">Atualizado em ATUALIZADO_AQUI</p>
-  <div class="jogos">JOGOS_AQUI</div>
-</header>
+if JOGOS_RODADA:
+    jogos_html = "".join(
+        f'<div class="jogo"><strong>{casa} x {vis}</strong>{dia}</div>'
+        for casa, vis, dia in JOGOS_RODADA
+    )
+else:
+    jogos_html = ""
 
-<div class="abas">
-  <button class="aba-btn ativo" data-aba="noticias" onclick="mudarAba('noticias')">📰 Notícias</button>
-  <button class="aba-btn" data-aba="classificacao" onclick="mudarAba('classificacao')">🏆 Classificação</button>
-  <button class="aba-btn" data-aba="meu-time" onclick="mudarAba('meu-time')">👤 Meu Time</button>
-  <button class="aba-btn" data-aba="parciais" onclick="mudarAba('parciais')">🔴 Parciais</button>
-</div>
+corpo = ""
+for nome, logo_url, cor in TIMES:
+    linhas = conn.execute(
+        "SELECT titulo, link, fonte, publicado_em FROM noticias WHERE time=? ORDER BY coletado_em DESC LIMIT 5",
+        (nome,)
+    ).fetchall()
+    corpo += f'<div class="time" data-time="{nome}" style="border-left-color:{cor}">'
+    if linhas:
+        primeiro_link = linhas[0][1]
+        qtd = len(linhas)
+        corpo += f'''<div class="time-header">
+            <img src="{logo_url}" alt="{nome}" onerror="this.style.display='none'">
+            <h2>{nome}</h2>
+            <span class="contador">{qtd} notícias</span>
+            <a href="{primeiro_link}" target="_blank" class="btn-escalacao">🟢 Ver escalação</a>
+        </div>'''
+    else:
+        corpo += f'''<div class="time-header">
+            <img src="{logo_url}" alt="{nome}" onerror="this.style.display='none'">
+            <h2>{nome}</h2>
+        </div>'''
+    if linhas:
+        for titulo, link, fonte, publicado_em in linhas:
+            tempo = tempo_relativo(publicado_em)
+            horas = tempo_em_horas(publicado_em)
+            meta = f'<span>{fonte}</span>'
+            if tempo:
+                meta += f'<span class="tempo">⏱ {tempo}</span>'
+            corpo += f'<div class="noticia" data-horas="{horas:.1f}"><a href="{link}" target="_blank">{titulo}</a><div class="meta">{meta}</div></div>'
+        corpo += '<div class="vazio vazio-24h oculto">Nenhuma notícia nas últimas 24 horas.</div>'
+    else:
+        corpo += '<div class="vazio">Nenhuma notícia encontrada.</div>'
+    corpo += '</div>'
 
-<div class="aba-conteudo ativo" id="aba-noticias">
-  <div class="controles">
-    <input type="text" id="campo-busca" placeholder="🔍 Buscar time..." oninput="filtrar()">
-    <button class="btn-filtro" id="btn-24h" onclick="toggle24h()">🕐 Últimas 24h</button>
-  </div>
-  <div class="info-filtro" id="info-filtro"></div>
-  <div class="container">
-    CONTEUDO_AQUI
-  </div>
-</div>
+if CLASSIFICACAO:
+    linhas_tabela = ""
+    for t in CLASSIFICACAO:
+        pos = t["posicao"]
+        if pos <= 4: classe = "g4 libertadores"
+        elif pos <= 8: classe = "g5-g8 pre-libertadores"
+        elif pos <= 16: classe = "g9-g16"
+        else: classe = "z4 rebaixamento"
+        linhas_tabela += f'''<tr class="{classe}">
+            <td><span class="pos">{pos}</span></td>
+            <td><span class="time-nome">{t["time"]}</span></td>
+            <td class="num"><b>{t["pontos"]}</b></td>
+            <td class="num">{t["jogos"]}</td>
+            <td class="num col-v-e-d">{t["vitorias"]}</td>
+            <td class="num col-v-e-d">{t["empates"]}</td>
+            <td class="num col-v-e-d">{t["derrotas"]}</td>
+            <td class="num col-gp-gc">{t["gols_pro"]}</td>
+            <td class="num col-gp-gc">{t["gols_contra"]}</td>
+            <td class="num">{t["saldo"]:+d}</td>
+        </tr>'''
+    tabela_html = f'''<table class="classificacao">
+        <thead>
+            <tr>
+                <th style="width:40px;">#</th>
+                <th>Time</th>
+                <th class="num">Pts</th>
+                <th class="num">J</th>
+                <th class="num col-v-e-d">V</th>
+                <th class="num col-v-e-d">E</th>
+                <th class="num col-v-e-d">D</th>
+                <th class="num col-gp-gc">GP</th>
+                <th class="num col-gp-gc">GC</th>
+                <th class="num">SG</th>
+            </tr>
+        </thead>
+        <tbody>
+            {linhas_tabela}
+        </tbody>
+    </table>'''
+else:
+    tabela_html = '<div style="padding:2rem; text-align:center; color:#888;">Classificação não disponível.</div>'
 
-<div class="aba-conteudo" id="aba-classificacao">
-  <div class="container">
-    <div class="tabela-wrap">TABELA_AQUI</div>
-    <div class="legenda">
-      <span><i style="background:#0a5c2e"></i> G4 (Libertadores)</span>
-      <span><i style="background:#3b82f6"></i> G5-G8 (Pré-Libertadores)</span>
-      <span><i style="background:#e5e7eb"></i> Meio da tabela</span>
-      <span><i style="background:#dc2626"></i> Z4 (Rebaixamento)</span>
+if MEU_TIME and MEU_TIME.get("jogadores"):
+    jogadores = MEU_TIME["jogadores"]
+    nomes_fathur = set()
+    if SUGESTAO_FATHUR and SUGESTAO_FATHUR.get("jogadores"):
+        nomes_fathur = {j["nome"].lower() for j in SUGESTAO_FATHUR["jogadores"]}
+
+    total = 0
+    bonus_capitao = 0
+    capitao_nome = ""
+    capitao_pts_base = 0
+    acertos = 0
+
+    reserva_luxo_nome = SUGESTAO_FATHUR.get("reserva_luxo", "").lower().strip()
+    jogadores_titulares = []
+    reserva_luxo_jogador = None
+
+    for j in jogadores:
+        nome_lower = j.get("nome", "").lower().strip()
+        if nome_lower == reserva_luxo_nome:
+            reserva_luxo_jogador = j
+        else:
+            jogadores_titulares.append(j)
+
+    if reserva_luxo_jogador:
+        pos_reserva = reserva_luxo_jogador.get("posicao", "").upper()
+        pts_reserva = PONTOS_REAIS.get(reserva_luxo_nome, reserva_luxo_jogador.get("pontos", 0) or 0)
+        titulares_mesma_pos = [j for j in jogadores_titulares if j.get("posicao", "").upper() == pos_reserva]
+
+        if titulares_mesma_pos:
+            pior_titular = min(titulares_mesma_pos, key=lambda x: PONTOS_REAIS.get(x.get("nome", "").lower().strip(), x.get("pontos", 0) or 0))
+            pts_pior_titular = PONTOS_REAIS.get(pior_titular.get("nome", "").lower().strip(), pior_titular.get("pontos", 0) or 0)
+
+            if pts_reserva > pts_pior_titular:
+                jogadores_titulares.remove(pior_titular)
+                jogadores_titulares.append(reserva_luxo_jogador)
+
+    for j in jogadores_titulares:
+        nome_original = j.get("nome", "")
+        nome_lower = nome_original.lower().strip()
+        pts = PONTOS_REAIS.get(nome_lower, j.get("pontos", 0) or 0)
+
+        total += pts
+        if j.get("capitao"):
+            capitao_nome = nome_original
+            capitao_pts_base = pts
+            bonus_capitao = pts * 0.5
+        if nome_lower in nomes_fathur:
+            acertos += 1
+
+    total_com_capitao = total + bonus_capitao
+    media = total_com_capitao / len(jogadores_titulares) if jogadores_titulares else 0
+    total_meu = len(jogadores_titulares)
+    taxa_acerto = (acertos / total_meu * 100) if total_meu > 0 else 0
+    
+    cards = ""
+    for j in jogadores_titulares:
+        nome = j.get("nome", "?")
+        pts = PONTOS_REAIS.get(nome.lower().strip(), j.get("pontos", 0) or 0)
+        classe_neg = "negativo" if pts < 0 else ""
+        badge_cap = '<span class="capitao-badge">👑 CAP</span>' if j.get("capitao") else ""
+        exibir_pts = pts * 1.5 if j.get("capitao") else pts
+        badge_comp = ""
+        if SUGESTAO_FATHUR and SUGESTAO_FATHUR.get("jogadores"):
+            if nome.lower() in nomes_fathur:
+                badge_comp = '<span class="comparador-badge igual">✓ Fathur</span>'
+            else:
+                badge_comp = '<span class="comparador-badge diferente">⚠ Fathur não</span>'
+        cards += f'''<div class="jogador-card">
+            <span class="jogador-pos">{j.get("posicao", "?")}</span>
+            <span class="jogador-nome">{nome} {badge_cap} {badge_comp}
+                <small>{j.get("clube", "")}</small>
+            </span>
+            <span class="jogador-pts {classe_neg}">{exibir_pts:+.1f}</span>
+        </div>'''
+        
+    stats_html = f'''
+    <div class="stats-grid">
+        <div class="stat-card"><div class="stat-card-label">Total</div><div class="stat-card-val">{total_com_capitao:.1f}</div><div class="stat-card-sub">com capitão ×1.5</div></div>
+        <div class="stat-card"><div class="stat-card-label">Média</div><div class="stat-card-val">{media:.1f}</div><div class="stat-card-sub">por jogador</div></div>
+        <div class="stat-card"><div class="stat-card-label">Capitão</div><div class="stat-card-val">{capitao_pts_base * 1.5:.1f}</div><div class="stat-card-sub">{capitao_nome}</div></div>
     </div>
-  </div>
-</div>
-
-<div class="aba-conteudo" id="aba-meu-time">
-  <div class="container">
-    <div class="aviso-api">
-      ⚠️ <b>Modo manual:</b> Edite o arquivo <code>meu_time.json</code> no GitHub.
-      👑 O capitão tem pontuação <b>×1.5</b>.
+    '''
+    if SUGESTAO_FATHUR and total_meu > 0:
+        pct_igual = taxa_acerto
+        pct_diferente = 100 - taxa_acerto
+        barra_html = f'''
+        <div class="acerto-wrap">
+            <div class="acerto-titulo">⚔️ Acordo com o Fathur FC — {acertos}/{total_meu} jogadores</div>
+            <div class="acerto-barra">
+                <div class="acerto-barra-igual" style="width:{pct_igual}%">{pct_igual:.0f}%</div>
+                <div class="acerto-barra-diferente" style="width:{pct_diferente}%">{pct_diferente:.0f}%</div>
+            </div>
+            <div class="acerto-legenda">
+                <span><i style="background:#16a34a"></i> Igual ao Fathur ({acertos})</span>
+                <span><i style="background:#f59e0b"></i> Diferente ({total_meu - acertos})</span>
+            </div>
+        </div>
+        '''
+    else:
+        barra_html = ""
+        
+    meu_time_html = f'''
+    <div class="meu-time-header">
+        <h2>👤 Meu Time</h2>
+        <p>Rodada {MEU_TIME.get("rodada", "?")} · {len(jogadores_titulares)} jogadores</p>
     </div>
-    <div id="meu-time-conteudo">
-      MEU_TIME_AQUI
+    {stats_html}
+    {barra_html}
+    {cards}
+    '''
+else:
+    meu_time_html = '''
+    <div class="meu-time-vazio">
+        <div class="icone">👤</div>
+        <h3>Nenhum time cadastrado</h3>
+        <p>Edite o arquivo <code>meu_time.json</code> no repositório.</p>
     </div>
-  </div>
-</div>
+    '''
 
-<div class="aba-conteudo" id="aba-parciais">
-  <!-- PARCIAIS -->
-  <div class="vazio">Aguardando primeira atualização das parciais...</div>
-  <!-- /PARCIAIS -->
-</div>
+badge = f"🏆 Rodada {RODADA_ATUAL}"
+if DATA_RODADA:
+    badge += f" • {DATA_RODADA}"
 
-<footer>
-  <p>Dados coletados automaticamente do Google News</p>
-  <p>Atualização automática 3x ao dia: 8h, 13h, 18h</p>
-  <p style="margin-top:.75rem;font-size:.8rem;opacity:.7;">
-    Feito por <a href="https://github.com/jacomassi2-rgb" target="_blank" style="color:inherit;text-decoration:underline;">Fabio Jacomassi</a>
-    · <a href="https://github.com/jacomassi2-rgb/escalacoes-brasileirao" target="_blank" style="color:inherit;text-decoration:underline;">Código aberto no GitHub</a>
-  </p>
-</footer>
+html = html.replace("RODADA_BADGE", badge)
+html = html.replace("JOGOS_AQUI", jogos_html)
+html = html.replace("ATUALIZADO_AQUI", datetime.now().strftime("%d/%m/%Y %H:%M"))
+html = html.replace("CONTEUDO_AQUI", corpo)
+html = html.replace("TABELA_AQUI", tabela_html)
+html = html.replace("MEU_TIME_AQUI", meu_time_html)
 
-<button id="btn-topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html)
 
-<script>
-let filtro24h = false;
-function mudarAba(nome) {
-  document.querySelectorAll('.aba-btn').forEach(b => b.classList.toggle('ativo', b.dataset.aba === nome));
-  document.querySelectorAll('.aba-conteudo').forEach(c => c.classList.toggle('ativo', c.id === 'aba-' + nome));
-}
-function filtrar() {
-  const termo = document.getElementById('campo-busca').value.toLowerCase();
-  document.querySelectorAll('#aba-noticias .time').forEach(function(el) {
-    const nome = el.getAttribute('data-time').toLowerCase();
-    el.classList.toggle('oculto', !nome.includes(termo));
-  });
-}
-function toggle24h() {
-  filtro24h = !filtro24h;
-  document.getElementById('btn-24h').classList.toggle('ativo', filtro24h);
-  document.querySelectorAll('#aba-noticias .time').forEach(function(el) {
-    el.querySelectorAll
+print(f"Site gerado - Rodada {RODADA_ATUAL}")
+print(f"Classificação: {len(CLASSIFICACAO)} times")
+print(f"Meu Time: {'OK' if MEU_TIME else 'vazio'}")
