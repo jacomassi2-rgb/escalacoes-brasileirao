@@ -284,6 +284,12 @@ else:
     </div>
     '''
 
+# Carrega o relatório de análise
+analise_html = ""
+if os.path.exists('analise_relatorio.html'):
+    with open('analise_relatorio.html', 'r', encoding='utf-8') as f:
+        analise_html = f.read()
+
 badge = f"🏆 Rodada {RODADA_ATUAL}"
 if DATA_RODADA:
     badge += f" • {DATA_RODADA}"
@@ -294,20 +300,7 @@ html = html.replace("ATUALIZADO_AQUI", datetime.now().strftime("%d/%m/%Y %H:%M")
 html = html.replace("CONTEUDO_AQUI", corpo)
 html = html.replace("TABELA_AQUI", tabela_html)
 html = html.replace("MEU_TIME_AQUI", meu_time_html)
-html = html.replace("MEU_TIME_AQUI", meu_time_html)
-
-# --- COLE A PARTIR DAQUI ---
-# Carrega o relatório de análise
-analise_html = ""
-if os.path.exists('analise_relatorio.html'):
-    with open('analise_relatorio.html', 'r', encoding='utf-8') as f:
-        analise_html = f.read()
-
 html = html.replace("ANALISE_AQUI", analise_html)
-# --- FIM DA COLAGEM ---
-
-with open('index.html', 'w', encoding='utf-8') as f:
-    f.write(html)
 
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
