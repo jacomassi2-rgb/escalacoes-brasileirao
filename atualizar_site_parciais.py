@@ -5,26 +5,47 @@ import re
 ARQUIVO_PARCIAIS = "parciais.json"
 ARQUIVO_HTML = "index.html"
 
+# Mapeamento de posições do Cartola
+POSICOES = {
+    1: "GOL",
+    2: "LAT",
+    3: "ZAG",
+    4: "MEI",
+    5: "ATA",
+    6: "TEC"
+}
 
-def _render_jogadores(lista):
-    """Renderiza lista de jogadores de um clube."""
-    if not lista:
+
+def _render_jogadores_por_posicao(jogadores):
+    """Renderiza jogadores agrupados por posição."""
+    if not jogadores:
         return '<div class="parcial-vazio">Sem pontuação</div>'
-    linhas = []
-    for a in lista:
-        scouts = a.get("scout", {}) or {}
-        scouts_txt = " ".join(f"{k}({v})" for k, v in scouts.items() if v > 0) if scouts else ""
-        linhas.append(f'''
-        <div class="parcial-jogador">
-            <span class="parcial-nome">{a.get("apelido", "?")}</span>
-            <span class="parcial-scouts">{scouts_txt}</span>
-            <span class="parcial-pts">{a.get("pontuacao", 0):.1f}</span>
-        </div>''')
-    return "".join(linhas)
+
+    # Agrupa por posição
+    por_posicao = {}
+    for j in jogadores:
+        pos_id = j.get("posicao_id", 0)
+        pos_nome = POSICOES.get(pos_id, "OUT")
+        por_posicao.setdefault(pos_nome, []).append(j)
+
+    html = ""
+    for pos in ["GOL", "LAT", "ZAG", "MEI", "ATA", "TEC"]:
+        if pos not in por_posicao:
+            continue
+        html += f'<div class="parcial-pos-titulo">{pos}</div>'
+        for j in por_posicao[pos]:
+            scouts = j.get("scout", {}) or {}
+            scouts_txt = " ".join(f"{k}({v})" for k, v in scouts.items() if v > 0) if scouts else ""
+            html += f'''
+            <div class="parcial-jogador">
+                <span class="parcial-nome">{j.get("apelido", "?")}</span>
+                <span class="parcial-scouts">{scouts_txt}</span>
+                <span class="parcial-pts">{j.get("pontuacao", 0):.1f}</span>
+            </div>'''
+    return html
 
 
 def gerar_bloco_parciais():
-    """Gera o HTML completo da seção de parciais."""
     if not os.path.exists(ARQUIVO_PARCIAIS):
         return '<div class="vazio">Nenhuma parcial disponível.</div>'
 
@@ -44,13 +65,6 @@ def gerar_bloco_parciais():
         if clube_id:
             atletas_por_clube.setdefault(clube_id, []).append(info)
 
-    # Ordena cada clube por pontos
-    for clube_id in atletas_por_clube:
-        atletas_por_clube[clube_id].sort(
-            key=lambda a: a.get("pontuacao", 0) or 0, reverse=True
-        )
-
-    # Gera HTML por jogo
     html_partes = []
     for partida in partidas:
         casa = partida.get("clube_casa", {})
@@ -59,7 +73,6 @@ def gerar_bloco_parciais():
         placar_visitante = partida.get("placar_oficial_visitante", "?")
         status = partida.get("partida_status", "")
 
-        # Só mostra jogos que já começaram
         if status == "Agendada":
             continue
 
@@ -71,18 +84,29 @@ def gerar_bloco_parciais():
         jogadores_casa = atletas_por_clube.get(casa_id, [])
         jogadores_visitante = atletas_por_clube.get(visitante_id, [])
 
-        if not jogadores_casa and not jogadores_visitante:
-            continue
+        # Calcula o total de cada time
+        total_casa = sum(j.get("pontuacao", 0) or 0 for j in jogadores_casa)
+        total_visitante = sum(j.get("pontuacao", 0) or 0 for j in jogadores_visitante)
 
         html_partes.append(f'''
         <div class="parcial-jogo">
             <div class="parcial-jogo-header">
-                <span class="parcial-jogo-time">{sigla_casa} {placar_casa} x {placar_visitante} {sigla_visitante}</span>
+                <div class="parcial-placar">
+                    <span class="parcial-time-nome">{sigla_casa}</span>
+                    <span class="parcial-total">{total_casa:.2f}</span>
+                    <span class="parcial-x">x</span>
+                    <span class="parcial-total">{total_visitante:.2f}</span>
+                    <span class="parcial-time-nome">{sigla_visitante}</span>
+                </div>
                 <span class="parcial-jogo-status">{status}</span>
             </div>
             <div class="parcial-jogo-corpo">
-                <div class="parcial-jogo-lado">{_render_jogadores(jogadores_casa)}</div>
-                <div class="parcial-jogo-lado">{_render_jogadores(jogadores_visitante)}</div>
+                <div class="parcial-jogo-lado">
+                    {_render_jogadores_por_posicao(jogadores_casa)}
+                </div>
+                <div class="parcial-jogo-lado">
+                    {_render_jogadores_por_posicao(jogadores_visitante)}
+                </div>
             </div>
         </div>
         ''')
@@ -102,7 +126,6 @@ def gerar_bloco_parciais():
 
 
 def injetar_no_html():
-    """Substitui o bloco <!-- PARCIAIS --> no index.html."""
     if not os.path.exists(ARQUIVO_HTML):
         print("AVISO: index.html não encontrado")
         return
