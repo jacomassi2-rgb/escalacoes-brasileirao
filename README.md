@@ -1,6 +1,6 @@
 # ⚽ Prováveis Escalações - Brasileirão Série A
 
-Agregador automático de notícias sobre prováveis escalações dos 20 times da Série A do Brasileirão.
+Plataforma completa de análise para o Cartola FC: notícias, classificação, parciais ao vivo e o seu time — tudo em um só lugar, atualizado automaticamente.
 
 **🌐 Site online:** [jacomassi2-rgb.github.io/escalacoes-brasileirao](https://jacomassi2-rgb.github.io/escalacoes-brasileirao)
 
@@ -8,137 +8,76 @@ Agregador automático de notícias sobre prováveis escalações dos 20 times da
 
 ## ✨ Funcionalidades
 
-- 📰 **Coleta automática** de notícias de 20 times via Google News
-- 🤖 **Atualização 3x ao dia** (8h, 13h, 18h - horário de Brasília)
-- 🔘 **Botão manual** pra forçar atualização a qualquer momento
-- 🔍 **Busca por time** em tempo real
-- 🕐 **Filtro "últimas 24h"**
-- 🏆 **Rodada atual + 10 jogos** da rodada
-- 🖼️ **Escudos dos times** (via Logo.dev)
-- 🟢 **Botão "Ver escalação"** que abre a notícia mais relevante
-- ⏱️ **Tempo relativo** em cada notícia ("há 2h", "há 1 dia")
-- 🌙 **Tema claro/escuro** (com preferência salva)
-- 📱 **Notificação no Telegram** a cada atualização
-- ⬆️ **Botão voltar ao topo**
+### 📰 Notícias
+- Coleta automática de notícias sobre prováveis escalações dos 20 times via Google News
+- Busca por time em tempo real
+- Filtro "últimas 24h"
+- Botão "Ver escalação" que abre a notícia mais relevante
+- Tempo relativo em cada notícia ("há 2h", "há 1 dia")
+
+### 🏆 Classificação
+- Tabela completa do Brasileirão via API football-data.org
+- Top 4 destacado (Libertadores), G5-G8 (Pré-Libertadores), Z4 (Rebaixamento)
+- Atualizada automaticamente
+
+### 👤 Meu Time
+- Cadastro manual do seu time no `meu_time.json`
+- Pontuação de cada jogador
+- Capitão com bônus ×1.5
+- Comparador automático com a sugestão do Fathur FC
+- Barra de "acordo" mostrando quantos jogadores você tem em comum
+
+### 🔴 Parciais ao Vivo
+- Pontuação em tempo real de **todos os jogadores** de **todos os jogos**
+- Agrupadas por partida (Time A x Time B)
+- Placar total de cada time
+- Jogadores separados por posição (GOL, LAT, ZAG, MEI, ATA, TEC)
+- Scouts individuais (gols, assistências, desarmes, etc.)
+- Atualização a cada 10 minutos durante os jogos
+
+### 📱 Notificações Telegram
+- Resumo diário 3x ao dia (8h, 13h, 18h)
+- Alertas em tempo real de mudanças de pontuação durante os jogos
 
 ---
 
-## 🛠️ Como funciona
-
-O sistema roda 100% no **GitHub Actions** (gratuito) e usa:
+## 🛠️ Arquitetura
 
 | Componente | Função |
 |---|---|
-| `coletor.py` | Busca notícias no Google News e salva no SQLite |
-| `gerar_site.py` | Monta o `index.html` com as notícias |
-| `config.py` | Configurações (rodada atual, jogos, dados manuais) |
-| `.github/workflows/atualizar.yml` | Agendador que roda o robô 3x/dia |
-| `index.html` | Site gerado (publicado automaticamente pelo GitHub Pages) |
+| `coletor.py` | Coleta notícias do Google News e salva no SQLite |
+| `gerar_site.py` | Monta o `index.html` com todas as abas |
+| `config.py` | Busca rodada, jogos e classificação via API |
+| `notificador.py` | Envia notificação no Telegram quando o site atualiza |
+| `parciais.py` | Busca parciais do Cartola e notifica mudanças |
+| `atualizar_site_parciais.py` | Injeta as parciais no `index.html` |
+
+### Workflows do GitHub Actions
+
+| Workflow | Frequência | Função |
+|---|---|---|
+| `atualizar.yml` | 3x ao dia | Coleta notícias, gera site, envia Telegram |
+| `pontuacao.yml` | A cada 10 min (durante jogos) | Busca parciais e notifica mudanças |
+
+### APIs usadas
+
+- **football-data.org** — rodada, jogos e classificação
+- **Cartola FC** — parciais dos jogadores
+- **Google News RSS** — notícias sobre escalações
+- **Logo.dev** — escudos dos times
+- **Telegram Bot API** — notificações
 
 ---
 
-## 🔄 Como atualizar a rodada (manual — 1x por semana)
+## 🔄 Manutenção
 
-Quando o Brasileirão avançar para a próxima rodada:
+### Atualizar o `meu_time.json` (antes de cada rodada)
 
-1. Acesse o arquivo **`config.py`** no GitHub
-2. Clique no ícone de **lápis ✏️** (editar)
-3. Altere as 3 variáveis:
-   - `RODADA_ATUAL` → número da nova rodada (ex: `30`)
-   - `DATA_RODADA` → datas dos jogos (ex: `"15 e 16 de outubro de 2026"`)
-   - `JOGOS_RODADA` → lista com os 10 jogos da rodada
-4. Clique em **"Commit changes"** → confirmar
-5. Vá em **Ações** → **Atualizar Escalações** → **Executar fluxo de trabalho**
-
-Pronto! O site vai atualizar em 1-2 minutos.
-
----
-
-## 🤖 Como forçar uma atualização manual
-
-1. Acesse a aba **Ações** do repositório
-2. Clique em **"Atualizar Escalações"** (lateral esquerda)
-3. Clique no botão **"Executar fluxo de trabalho"** (canto superior direito)
-4. Confirme no botão verde
-5. Aguarde ~40 segundos
-
----
-
-## 🔔 Notificações no Telegram
-
-Toda vez que o robô roda, você recebe uma mensagem no Telegram com a rodada atual, a hora da atualização e o link do site.
-
-**Como está configurado:**
-- Bot: `@meu_robo_escalacoes_bot`
-- Secrets no GitHub: `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CHAT_ID`
-
----
-
-## ⚙️ Configuração inicial (caso precise recriar)
-
-### 1. Secrets necessários no GitHub
-
-Vá em **Configurações** → **Segredos e variáveis** → **Ações** e crie:
-
-| Nome | Valor |
-|---|---|
-| `TELEGRAM_BOT_TOKEN` | Token do bot do Telegram (@BotFather) |
-| `TELEGRAM_CHAT_ID` | Seu chat ID do Telegram |
-| `FOOTBALL_DATA_TOKEN` | Token do football-data.org (opcional, atualmente não usado) |
-
-### 2. Ativar GitHub Pages
-
-Vá em **Configurações** → **Páginas**:
-- **Fonte:** Implantar a partir de uma ramificação
-- **Filial:** `main` / `(raiz)`
-- Salvar
-
----
-
-## 🐛 Problemas conhecidos
-
-| Problema | Solução |
-|---|---|
-| Site desatualizado | Apertar **Ctrl+F5** ou abrir em **janela anônima** |
-| Escudo não aparece | Aguardar 1-2 min (cache do GitHub Pages) |
-| Notificação não chega | Verificar se os secrets do Telegram estão certos |
-| Rodada errada | Editar `config.py` manualmente |
-
----
-
-## 📝 Como o site é gerado
-
-A cada execução (3x/dia), o fluxo é:
-
-1. O **coletor.py** roda e busca notícias no Google News, salvando no SQLite (dados/escalacoes.db)
-2. O **gerar_site.py** roda, lê o SQLite e o config.py, e gera o index.html
-3. O Git faz commit do index.html atualizado
-4. O GitHub Pages republica o site automaticamente
-5. O Telegram recebe a notificação
-
----
-
-## 🎯 Tecnologias usadas
-
-- **Python 3.10** (coleta e geração)
-- **SQLite** (banco de dados local, temporário a cada execução)
-- **feedparser** (leitura de RSS do Google News)
-- **GitHub Actions** (automação, gratuito)
-- **GitHub Pages** (hospedagem, gratuita)
-- **Logo.dev** (escudos dos times)
-- **Telegram Bot API** (notificações)
-
----
-
-## 👤 Autor
-
-Feito por **Fabio** ([@jacomassi2-rgb](https://github.com/jacomassi2-rgb))
-
-Projeto pessoal, código aberto pra quem quiser usar como base.
-
----
-
-## 📌 Última atualização
-
-- **Rodada atual:** 29
-- **Última modificação:** Outubro de 2026
+```json
+{
+  "rodada": 32,
+  "jogadores": [
+    {"nome": "Rossi", "clube": "FLA", "posicao": "GOL", "pontos": 0, "capitao": false},
+    {"nome": "Hulk", "clube": "FLU", "posicao": "ATA", "pontos": 0, "capitao": true}
+  ]
+}
