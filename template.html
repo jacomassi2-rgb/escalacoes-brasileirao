@@ -4,13 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Prováveis Escalações - Brasileirão</title>
- <!-- PWA -->
+
+<!-- PWA -->
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Escalações">
 <meta name="theme-color" content="#0a5c2e">
+
 <style>
   * { box-sizing: border-box; transition: background .3s, color .3s; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 0; background: #f0f2f5; color: #1a1a1a; }
@@ -25,7 +27,7 @@
   .jogo { background: rgba(255,255,255,.15); color: white; padding: .5rem .8rem; border-radius: 8px; font-size: .8rem; text-align: center; }
   .jogo strong { display: block; font-size: .9rem; margin-bottom: .2rem; }
   .abas { max-width: 900px; margin: 1rem auto 0; padding: 0 1rem; display: flex; gap: .5rem; flex-wrap: wrap; }
-  .aba-btn { flex: 1; min-width: 140px; padding: .8rem 1rem; background: white; border: 2px solid transparent; border-radius: 12px; font-size: .9rem; font-weight: 700; cursor: pointer; color: #0a5c2e; box-shadow: 0 2px 6px rgba(0,0,0,.05); transition: all .2s; }
+  .aba-btn { flex: 1; min-width: 100px; padding: .8rem .5rem; background: white; border: 2px solid transparent; border-radius: 12px; font-size: .85rem; font-weight: 700; cursor: pointer; color: #0a5c2e; box-shadow: 0 2px 6px rgba(0,0,0,.05); transition: all .2s; }
   body.escuro .aba-btn { background: #1e1e1e; color: #4ade80; }
   .aba-btn.ativo { background: #0a5c2e; color: white; border-color: #0a5c2e; }
   body.escuro .aba-btn.ativo { background: #0d7a3f; color: white; }
@@ -158,6 +160,21 @@
   .parcial-pts { font-weight: 800; color: #16a34a; min-width: 45px; text-align: right; }
   .parcial-vazio { padding: .5rem; font-size: .8rem; color: #999; font-style: italic; }
 
+  /* DATA EXPLORER */
+  .filtros-explorer { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .filtros-explorer input, .filtros-explorer select { padding: .6rem; border: 1px solid #ccc; border-radius: 8px; font-size: .9rem; background: white; color: #1a1a1a; }
+  body.escuro .filtros-explorer input, body.escuro .filtros-explorer select { background: #2a2a2a; border-color: #444; color: #e0e0e0; }
+  .tabela-explorer-wrap { overflow-x: auto; background: white; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  body.escuro .tabela-explorer-wrap { background: #1e1e1e; }
+  .tabela-explorer { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  .tabela-explorer th { background: #0a5c2e; color: white; padding: .75rem .5rem; cursor: pointer; text-align: left; font-size: .75rem; white-space: nowrap; }
+  .tabela-explorer th:hover { background: #0d7a3f; }
+  .tabela-explorer td { padding: .6rem .5rem; border-bottom: 1px solid #eee; white-space: nowrap; }
+  body.escuro .tabela-explorer td { border-bottom-color: #333; }
+  .text-green { color: #16a34a; }
+  .text-amber { color: #d97706; }
+  .text-red { color: #dc2626; }
+
   @media (max-width: 600px) {
     header h1 { font-size: 1.3rem; }
     .time-header { flex-wrap: wrap; }
@@ -185,11 +202,11 @@
 </header>
 
 <div class="abas">
-    <button class="aba-btn ativo" data-aba="noticias" onclick="mudarAba('noticias')">📰 Notícias</button>
+  <button class="aba-btn ativo" data-aba="noticias" onclick="mudarAba('noticias')">📰 Notícias</button>
   <button class="aba-btn" data-aba="classificacao" onclick="mudarAba('classificacao')">🏆 Classificação</button>
   <button class="aba-btn" data-aba="meu-time" onclick="mudarAba('meu-time')">👤 Meu Time</button>
   <button class="aba-btn" data-aba="parciais" onclick="mudarAba('parciais')">🔴 Parciais</button>
-    <button class="aba-btn" data-aba="analise" onclick="mudarAba('analise')">📊 Análise</button>
+  <button class="aba-btn" data-aba="analise" onclick="mudarAba('analise')">📊 Análise</button>
   <button class="aba-btn" data-aba="explorer" onclick="mudarAba('explorer')">🔍 Explorador</button>
 </div>
 
@@ -233,11 +250,16 @@
   <div class="vazio">Aguardando primeira atualização das parciais...</div>
   <!-- /PARCIAIS -->
 </div>
- <div class="aba-conteudo" id="aba-explorer">
+
+<div class="aba-conteudo" id="aba-analise">
+  <div class="container">
+    ANALISE_AQUI
+  </div>
+</div>
+
+<div class="aba-conteudo" id="aba-explorer">
   <div class="container">
     <h2>🔍 Data Explorer</h2>
-    
-    <!-- Filtros -->
     <div class="filtros-explorer">
       <input type="text" id="filtro-nome" placeholder="Buscar jogador..." oninput="filtrarDados()">
       <select id="filtro-posicao" onchange="filtrarDados()">
@@ -268,8 +290,6 @@
         <option value="Contundido">Contundido</option>
       </select>
     </div>
-
-    <!-- Tabela -->
     <div class="tabela-explorer-wrap">
       <table class="tabela-explorer">
         <thead>
@@ -290,10 +310,6 @@
         </tbody>
       </table>
     </div>
-  </div>
-</div>
-  <div class="container">
-    ANALISE_AQUI
   </div>
 </div>
 
@@ -345,11 +361,103 @@ function alternarTema() {
   localStorage.setItem('tema', document.body.classList.contains('escuro') ? 'escuro' : 'claro');
 }
 if (localStorage.getItem('tema') === 'escuro') document.body.classList.add('escuro');
-</script>
- <script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/escalacoes-brasileirao/sw.js');
+
+// DATA EXPLORER
+let dadosExplorer = [];
+let sortCol = 'score_contextualizado';
+let sortAsc = false;
+
+async function carregarExplorer() {
+  try {
+    const resp = await fetch('dados.json?v=' + new Date().getTime());
+    dadosExplorer = await resp.json();
+    
+    const clubes = [...new Set(dadosExplorer.map(d => d.clube_abrev))].sort();
+    const selectClube = document.getElementById('filtro-clube');
+    clubes.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c;
+      opt.textContent = c;
+      selectClube.appendChild(opt);
+    });
+    
+    ordenarPor(sortCol);
+  } catch (e) {
+    console.error('Erro ao carregar dados:', e);
+  }
 }
+
+function filtrarDados() {
+  const nome = document.getElementById('filtro-nome').value.toLowerCase();
+  const pos = document.getElementById('filtro-posicao').value;
+  const clube = document.getElementById('filtro-clube').value;
+  const perfil = document.getElementById('filtro-perfil').value;
+  const status = document.getElementById('filtro-status').value;
+
+  const filtrados = dadosExplorer.filter(j => {
+    if (nome && !j.apelido.toLowerCase().includes(nome)) return false;
+    if (pos && j.posicao_abrev !== pos) return false;
+    if (clube && j.clube_abrev !== clube) return false;
+    if (perfil && j.perfil !== perfil) return false;
+    if (status && j.status !== status) return false;
+    return true;
+  });
+
+  renderizarTabela(filtrados);
+}
+
+function ordenarPor(col) {
+  if (sortCol === col) {
+    sortAsc = !sortAsc;
+  } else {
+    sortCol = col;
+    sortAsc = false;
+  }
+  
+  dadosExplorer.sort((a, b) => {
+    let va = a[sortCol] || 0;
+    let vb = b[sortCol] || 0;
+    if (typeof va === 'string') va = va.toLowerCase();
+    if (typeof vb === 'string') vb = vb.toLowerCase();
+    if (va < vb) return sortAsc ? -1 : 1;
+    if (va > vb) return sortAsc ? 1 : -1;
+    return 0;
+  });
+  
+  filtrarDados();
+}
+
+function renderizarTabela(lista) {
+  const corpo = document.getElementById('corpo-tabela');
+  if (!corpo) return;
+  if (lista.length === 0) {
+    corpo.innerHTML = '<tr><td colspan="9" style="text-align:center; padding:2rem; color:#888;">Nenhum jogador encontrado.</td></tr>';
+    return;
+  }
+  
+  let html = '';
+  lista.forEach(j => {
+    const scoreClass = j.score_contextualizado >= 8 ? 'text-green' : j.score_contextualizado >= 4 ? 'text-amber' : 'text-red';
+    html += `
+      <tr>
+        <td><b>${j.apelido}</b></td>
+        <td>${j.clube_abrev}</td>
+        <td>${j.posicao_abrev}</td>
+        <td>R$ ${(j.preco_num || 0).toFixed(2)}</td>
+        <td class="${scoreClass}"><b>${(j.score_contextualizado || 0).toFixed(1)}</b></td>
+        <td>${(j.score_teto || 0).toFixed(1)}</td>
+        <td>${(j.score_piso || 0).toFixed(1)}</td>
+        <td>${j.perfil || '-'}</td>
+        <td>${j.status || '-'}</td>
+      </tr>
+    `;
+  });
+  corpo.innerHTML = html;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  carregarExplorer();
+});
 </script>
 </body>
 </html>
