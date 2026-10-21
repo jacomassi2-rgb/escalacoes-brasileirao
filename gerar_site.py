@@ -77,8 +77,8 @@ if os.path.exists('parciais.json'):
         apelido = info.get('apelido', '').lower().strip()
         PONTOS_REAIS[apelido] = info.get('pontuacao', 0) or 0
 
-# Lê o template HTML
-with open('template.html', 'r', encoding='utf-8') as f:
+# Lê o template HTML (modelo.html)
+with open('modelo.html', 'r', encoding='utf-8') as f:
     html = f.read()
 
 if JOGOS_RODADA:
