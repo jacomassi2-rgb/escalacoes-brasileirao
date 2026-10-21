@@ -27,7 +27,7 @@
   .jogo { background: rgba(255,255,255,.15); color: white; padding: .5rem .8rem; border-radius: 8px; font-size: .8rem; text-align: center; }
   .jogo strong { display: block; font-size: .9rem; margin-bottom: .2rem; }
   .abas { max-width: 900px; margin: 1rem auto 0; padding: 0 1rem; display: flex; gap: .5rem; flex-wrap: wrap; }
-  .aba-btn { flex: 1; min-width: 100px; padding: .8rem .5rem; background: white; border: 2px solid transparent; border-radius: 12px; font-size: .85rem; font-weight: 700; cursor: pointer; color: #0a5c2e; box-shadow: 0 2px 6px rgba(0,0,0,.05); transition: all .2s; }
+  .aba-btn { flex: 1; min-width: 90px; padding: .8rem .3rem; background: white; border: 2px solid transparent; border-radius: 12px; font-size: .85rem; font-weight: 700; cursor: pointer; color: #0a5c2e; box-shadow: 0 2px 6px rgba(0,0,0,.05); transition: all .2s; }
   body.escuro .aba-btn { background: #1e1e1e; color: #4ade80; }
   .aba-btn.ativo { background: #0a5c2e; color: white; border-color: #0a5c2e; }
   body.escuro .aba-btn.ativo { background: #0d7a3f; color: white; }
@@ -175,6 +175,13 @@
   .text-amber { color: #d97706; }
   .text-red { color: #dc2626; }
 
+  /* SCOUTS */
+  .scouts-selecao { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  #lista-jogadores-selecionados { display: flex; gap: .5rem; flex-wrap: wrap; }
+  .jogador-tag { background: #0a5c2e; color: white; padding: .5rem .8rem; border-radius: 8px; font-size: .85rem; display: inline-flex; align-items: center; gap: .5rem; }
+  .jogador-tag button { background: transparent; border: none; color: white; cursor: pointer; font-weight: bold; }
+  #select-adicionar-jogador { padding: .6rem; border-radius: 8px; border: 1px solid #ccc; }
+
   @media (max-width: 600px) {
     header h1 { font-size: 1.3rem; }
     .time-header { flex-wrap: wrap; }
@@ -208,6 +215,7 @@
   <button class="aba-btn" data-aba="parciais" onclick="mudarAba('parciais')">🔴 Parciais</button>
   <button class="aba-btn" data-aba="analise" onclick="mudarAba('analise')">📊 Análise</button>
   <button class="aba-btn" data-aba="explorer" onclick="mudarAba('explorer')">🔍 Explorador</button>
+  <button class="aba-btn" data-aba="scouts" onclick="mudarAba('scouts')">📈 Scouts</button>
 </div>
 
 <div class="aba-conteudo ativo" id="aba-noticias">
@@ -313,6 +321,26 @@
   </div>
 </div>
 
+<div class="aba-conteudo" id="aba-scouts">
+  <div class="container">
+    <h2>📈 Análise por Scout</h2>
+    <div class="scouts-selecao">
+      <div id="lista-jogadores-selecionados"></div>
+      <select id="select-adicionar-jogador" onchange="adicionarJogadorScout(this)">
+        <option value="">+ Adicionar jogador (até 5)</option>
+      </select>
+    </div>
+    <div class="tabela-explorer-wrap">
+      <table class="tabela-explorer">
+        <thead id="thead-scouts"></thead>
+        <tbody id="corpo-scouts">
+          <tr><td colspan="6" style="text-align:center;">Selecione jogadores para comparar.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 <footer>
   <p>Dados coletados automaticamente do Google News</p>
   <p>Atualização automática 3x ao dia: 8h, 13h, 18h</p>
@@ -396,7 +424,7 @@ function filtrarDados() {
 
   const filtrados = dadosExplorer.filter(j => {
     if (nome && !j.apelido.toLowerCase().includes(nome)) return false;
-   if (pos && (j.posicao_abrev || '').toUpperCase() !== pos) return false;
+    if (pos && (j.posicao_abrev || '').toUpperCase() !== pos) return false;
     if (clube && j.clube_abrev !== clube) return false;
     if (perfil && j.perfil !== perfil) return false;
     if (status && j.status !== status) return false;
@@ -457,7 +485,100 @@ function renderizarTabela(lista) {
 
 document.addEventListener('DOMContentLoaded', () => {
   carregarExplorer();
+  carregarScoutsHistorico();
 });
+
+// SCOUTS
+let scoutsHistorico = {};
+let jogadoresSelecionados = [];
+
+async function carregarScoutsHistorico() {
+  try {
+    const resp = await fetch('scouts_historico.json?v=' + new Date().getTime());
+    scoutsHistorico = await resp.json();
+    
+    const select = document.getElementById('select-adicionar-jogador');
+    const lista = Object.entries(scoutsHistorico)
+      .map(([id, info]) => ({ id, apelido: info.apelido }))
+      .sort((a, b) => a.apelido.localeCompare(b.apelido));
+    
+    lista.forEach(j => {
+      const opt = document.createElement('option');
+      opt.value = j.id;
+      opt.textContent = j.apelido;
+      select.appendChild(opt);
+    });
+  } catch (e) {
+    console.error('Erro ao carregar scouts:', e);
+  }
+}
+
+function adicionarJogadorScout(select) {
+  const id = select.value;
+  if (!id || jogadoresSelecionados.includes(id)) {
+    select.value = '';
+    return;
+  }
+  if (jogadoresSelecionados.length >= 5) {
+    alert('Máximo de 5 jogadores.');
+    return;
+  }
+  jogadoresSelecionados.push(id);
+  select.value = '';
+  renderizarComparativoScouts();
+}
+
+function removerJogadorScout(id) {
+  jogadoresSelecionados = jogadoresSelecionados.filter(j => j !== id);
+  renderizarComparativoScouts();
+}
+
+function renderizarComparativoScouts() {
+  const listaTags = document.getElementById('lista-jogadores-selecionados');
+  listaTags.innerHTML = jogadoresSelecionados.map(id => {
+    const nome = scoutsHistorico[id]?.apelido || id;
+    return `<div class="jogador-tag">${nome} <button onclick="removerJogadorScout('${id}')">×</button></div>`;
+  }).join('');
+  
+  const thead = document.getElementById('thead-scouts');
+  const corpo = document.getElementById('corpo-scouts');
+  
+  if (jogadoresSelecionados.length === 0) {
+    thead.innerHTML = '';
+    corpo.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:2rem; color:#888;">Selecione jogadores para comparar.</td></tr>';
+    return;
+  }
+  
+  thead.innerHTML = `<tr><th>Scout</th>${jogadoresSelecionados.map(id => `<th>${scoutsHistorico[id]?.apelido || id}</th>`).join('')}</tr>`;
+  
+  const linhas = [];
+  const scouts = [
+    { key: 'DE', label: 'Defesas (DE)' },
+    { key: 'SG', label: 'Saldo de Gols (SG)' },
+    { key: 'DS', label: 'Desarmes (DS)' },
+    { key: 'G', label: 'Gols (G)' },
+    { key: 'A', label: 'Assistências (A)' },
+    { key: 'FF', label: 'Finalizações (FF)' },
+  ];
+  
+  scouts.forEach(s => {
+    let linha = `<tr><td><b>${s.label}</b></td>`;
+    jogadoresSelecionados.forEach(id => {
+      const info = scoutsHistorico[id];
+      const mando = info?.por_mando || {};
+      const casa = mando['C'] || { ult3: {}, ult5: {} };
+      const fora = mando['F'] || { ult3: {}, ult5: {} };
+      
+      const media3 = ((casa.ult3[s.key] || 0) + (fora.ult3[s.key] || 0)) / 2;
+      
+      linha += `<td style="font-size:.8rem;">C: ${(casa.ult3[s.key]||0).toFixed(1)} | F: ${(fora.ult3[s.key]||0).toFixed(1)} <br> <small>Média (3j): ${media3.toFixed(1)}</small></td>`;
+    });
+    linha += '</tr>';
+    linhas.push(linha);
+  });
+  
+  corpo.innerHTML = linhas.join('');
+}
 </script>
 </body>
 </html>
