@@ -498,16 +498,34 @@ async function carregarScoutsHistorico() {
     scoutsHistorico = await resp.json();
     
     const select = document.getElementById('select-adicionar-jogador');
-    const lista = Object.entries(scoutsHistorico)
-      .map(([id, info]) => ({ id, apelido: info.apelido }))
-      .sort((a, b) => a.apelido.localeCompare(b.apelido));
+    select.innerHTML = '<option value="">+ Adicionar jogador (até 5)</option>'; // Limpa antes de popular
     
-    lista.forEach(j => {
-      const opt = document.createElement('option');
-      opt.value = j.id;
-      opt.textContent = j.apelido;
-      select.appendChild(opt);
+    // Agrupa por posição
+    const grupos = {};
+    Object.entries(scoutsHistorico).forEach(([id, info]) => {
+      const pos = info.posicao || 'N/A';
+      if (!grupos[pos]) grupos[pos] = [];
+      grupos[pos].push({ id, apelido: info.apelido });
     });
+    
+    // Ordem das posições
+    const ordem = ['GOL', 'LAT', 'ZAG', 'MEI', 'ATA', 'TEC', 'N/A'];
+    
+    ordem.forEach(pos => {
+      if (!grupos[pos]) return;
+      const optgroup = document.createElement('optgroup');
+      optgroup.label = pos;
+      
+      grupos[pos].sort((a, b) => a.apelido.localeCompare(b.apelido)).forEach(j => {
+        const opt = document.createElement('option');
+        opt.value = j.id;
+        opt.textContent = j.apelido;
+        optgroup.appendChild(opt);
+      });
+      
+      select.appendChild(optgroup);
+    });
+    
   } catch (e) {
     console.error('Erro ao carregar scouts:', e);
   }
