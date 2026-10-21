@@ -3,7 +3,7 @@
     "apelido": "Léo Condé",
     "posicao": "N/A",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -28,7 +28,7 @@
     "apelido": "Fábio",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 4.0,
           "SG": 0.2,
@@ -53,7 +53,7 @@
     "apelido": "Thiago Silva",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -78,7 +78,7 @@
     "apelido": "Hulk",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -103,7 +103,7 @@
     "apelido": "Alan Franco",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -128,7 +128,7 @@
     "apelido": "Vagner Mancini",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -153,7 +153,7 @@
     "apelido": "Dorival Júnior",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -178,7 +178,7 @@
     "apelido": "Renato Gaúcho",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -203,7 +203,7 @@
     "apelido": "Cuca",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -228,7 +228,7 @@
     "apelido": "Fagner",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -253,7 +253,7 @@
     "apelido": "Tite",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -278,7 +278,7 @@
     "apelido": "Walter",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 5.0,
           "SG": 0.33,
@@ -303,7 +303,7 @@
     "apelido": "Everton Ribeiro",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -328,7 +328,7 @@
     "apelido": "Alex Sandro",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -353,7 +353,7 @@
     "apelido": "Ganso",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -378,7 +378,7 @@
     "apelido": "Neymar",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -403,7 +403,7 @@
     "apelido": "Rafael Tolói",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.4,
@@ -428,7 +428,7 @@
     "apelido": "Marcos Rocha",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -453,7 +453,7 @@
     "apelido": "Edenílson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -478,7 +478,7 @@
     "apelido": "Rodrigo Moledo",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -503,7 +503,7 @@
     "apelido": "Alan Patrick",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -528,7 +528,7 @@
     "apelido": "Eduardo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -553,7 +553,7 @@
     "apelido": "Philippe Coutinho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -578,7 +578,7 @@
     "apelido": "Dudu",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -603,7 +603,7 @@
     "apelido": "Rafael",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 1.33,
           "SG": 0.67,
@@ -628,7 +628,7 @@
     "apelido": "Giovanni Augusto",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -653,7 +653,7 @@
     "apelido": "Marinho",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -678,7 +678,7 @@
     "apelido": "Willian José",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -703,7 +703,7 @@
     "apelido": "Allan",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -728,7 +728,7 @@
     "apelido": "Gabriel Paulista",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -753,7 +753,7 @@
     "apelido": "Danilo",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.33,
@@ -778,7 +778,7 @@
     "apelido": "Lucas Moura",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -803,7 +803,7 @@
     "apelido": "Eduardo Sasha",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -828,7 +828,7 @@
     "apelido": "Felipe Anderson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -853,7 +853,7 @@
     "apelido": "Marllon",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -878,7 +878,7 @@
     "apelido": "Bruno Henrique",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -903,7 +903,7 @@
     "apelido": "Thiago Mendes",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -928,7 +928,7 @@
     "apelido": "Luiz Gustavo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -953,7 +953,7 @@
     "apelido": "Weverton",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 5.8,
           "SG": 0.2,
@@ -978,7 +978,7 @@
     "apelido": "Gustavo Gómez",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.75,
@@ -1003,7 +1003,7 @@
     "apelido": "Tiago Volpi",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 5.6,
           "SG": 0.0,
@@ -1028,7 +1028,7 @@
     "apelido": "Fernando Diniz",
     "posicao": "N/A",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1053,7 +1053,7 @@
     "apelido": "Bernard",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1078,7 +1078,7 @@
     "apelido": "Alex Telles",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -1103,7 +1103,7 @@
     "apelido": "Vitor Hugo",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -1128,7 +1128,7 @@
     "apelido": "Mercado",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1153,7 +1153,7 @@
     "apelido": "Daniel Borges",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -1178,7 +1178,7 @@
     "apelido": "Samuel Xavier",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -1203,7 +1203,7 @@
     "apelido": "Marcão",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1228,7 +1228,7 @@
     "apelido": "Rodinei",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1253,7 +1253,7 @@
     "apelido": "Carrillo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1278,7 +1278,7 @@
     "apelido": "Fred",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1303,7 +1303,7 @@
     "apelido": "João Schmidt",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1328,7 +1328,7 @@
     "apelido": "Everaldo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1353,7 +1353,7 @@
     "apelido": "Gustavo Henrique",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1378,7 +1378,7 @@
     "apelido": "Vitinho",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1403,7 +1403,7 @@
     "apelido": "Renê",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1428,7 +1428,7 @@
     "apelido": "Willian Arão",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1453,7 +1453,7 @@
     "apelido": "Gabriel",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1478,7 +1478,7 @@
     "apelido": "Reinaldo",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -1503,7 +1503,7 @@
     "apelido": "Thiago Santos",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1528,7 +1528,7 @@
     "apelido": "Alex Muralha",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 4.0,
           "SG": 0.0,
@@ -1553,7 +1553,7 @@
     "apelido": "Lucas Silva",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1578,7 +1578,7 @@
     "apelido": "Saúl",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1603,7 +1603,7 @@
     "apelido": "Zé Roberto",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1628,7 +1628,7 @@
     "apelido": "Jadson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1653,7 +1653,7 @@
     "apelido": "Yago Pikachu",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1678,7 +1678,7 @@
     "apelido": "Luciano",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1703,7 +1703,7 @@
     "apelido": "Gilberto",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1728,7 +1728,7 @@
     "apelido": "Wendell",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1753,7 +1753,7 @@
     "apelido": "André Luis",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1778,7 +1778,7 @@
     "apelido": "Jair",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1803,7 +1803,7 @@
     "apelido": "Lingard",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1828,7 +1828,7 @@
     "apelido": "Chico Kim",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1853,7 +1853,7 @@
     "apelido": "Otávio",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1878,7 +1878,7 @@
     "apelido": "Luiz Araújo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1903,7 +1903,7 @@
     "apelido": "Tinga",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -1928,7 +1928,7 @@
     "apelido": "Marcelo Rangel",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 4.25,
           "SG": 0.25,
@@ -1953,7 +1953,7 @@
     "apelido": "Lucas Ramon",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -1978,7 +1978,7 @@
     "apelido": "Rafael Thyere",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2003,7 +2003,7 @@
     "apelido": "Gabriel",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2028,7 +2028,7 @@
     "apelido": "Patrick",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2053,7 +2053,7 @@
     "apelido": "Léo Pereira",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -2078,7 +2078,7 @@
     "apelido": "Tiquinho Soares",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2103,7 +2103,7 @@
     "apelido": "Bruno Melo",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2128,7 +2128,7 @@
     "apelido": "Lucas Romero",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2153,7 +2153,7 @@
     "apelido": "Josué",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2178,7 +2178,7 @@
     "apelido": "Lucas Evangelista",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2203,7 +2203,7 @@
     "apelido": "Jorginho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2228,7 +2228,7 @@
     "apelido": "Varela",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -2253,7 +2253,7 @@
     "apelido": "Luan Peres",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2278,7 +2278,7 @@
     "apelido": "Sanabria",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2303,7 +2303,7 @@
     "apelido": "Memphis Depay",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2328,7 +2328,7 @@
     "apelido": "Danielzinho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2353,7 +2353,7 @@
     "apelido": "Léo",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2378,7 +2378,7 @@
     "apelido": "Bolasie",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2403,7 +2403,7 @@
     "apelido": "Tchê Tchê",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2428,7 +2428,7 @@
     "apelido": "Everton",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2453,7 +2453,7 @@
     "apelido": "Danilo Barbosa",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2478,7 +2478,7 @@
     "apelido": "Clarence Seedorf",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2503,7 +2503,7 @@
     "apelido": "José Welison",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2528,7 +2528,7 @@
     "apelido": "Marlon",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -2553,7 +2553,7 @@
     "apelido": "Léo Jardim",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 2.2,
           "SG": 0.4,
@@ -2578,7 +2578,7 @@
     "apelido": "Eduardo Baptista",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2603,7 +2603,7 @@
     "apelido": "Guilherme Arana",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.33,
@@ -2628,7 +2628,7 @@
     "apelido": "Soteldo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2653,7 +2653,7 @@
     "apelido": "Kannemann",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2678,7 +2678,7 @@
     "apelido": "Thaciano",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2703,7 +2703,7 @@
     "apelido": "Vitor Bueno",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2728,7 +2728,7 @@
     "apelido": "Neto Moura",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2753,7 +2753,7 @@
     "apelido": "Yago Felipe",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2778,7 +2778,7 @@
     "apelido": "Arrascaeta",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2803,7 +2803,7 @@
     "apelido": "Balbuena",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -2828,7 +2828,7 @@
     "apelido": "Gustavo Scarpa",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2853,7 +2853,7 @@
     "apelido": "Luís Castro",
     "posicao": "N/A",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2878,7 +2878,7 @@
     "apelido": "Ivan",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 4.0,
           "SG": 0.0,
@@ -2903,7 +2903,7 @@
     "apelido": "Ayrton Lucas",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2928,7 +2928,7 @@
     "apelido": "Walace",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2953,7 +2953,7 @@
     "apelido": "Leonardo Jardim",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -2978,7 +2978,7 @@
     "apelido": "Gerson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3003,7 +3003,7 @@
     "apelido": "João Pedro",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -3028,7 +3028,7 @@
     "apelido": "Andreas Pereira",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3053,7 +3053,7 @@
     "apelido": "William",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -3078,7 +3078,7 @@
     "apelido": "Braithwaite",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3103,7 +3103,7 @@
     "apelido": "Igor Rabello",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3128,7 +3128,7 @@
     "apelido": "Thiago Maia",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3153,7 +3153,7 @@
     "apelido": "Lucho Acosta",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3178,7 +3178,7 @@
     "apelido": "Calleri",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3203,7 +3203,7 @@
     "apelido": "Dodi",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3228,7 +3228,7 @@
     "apelido": "Mendoza",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3253,7 +3253,7 @@
     "apelido": "Bruno Pacheco",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3278,7 +3278,7 @@
     "apelido": "Bruno Henrique",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3303,7 +3303,7 @@
     "apelido": "Pedro Rocha",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3328,7 +3328,7 @@
     "apelido": "David",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3353,7 +3353,7 @@
     "apelido": "Matheus Pereira",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3378,7 +3378,7 @@
     "apelido": "Arthur Melo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3403,7 +3403,7 @@
     "apelido": "Caíque",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3428,7 +3428,7 @@
     "apelido": "Matheuzinho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3453,7 +3453,7 @@
     "apelido": "Fabrício Bruno",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3478,7 +3478,7 @@
     "apelido": "Carlos Eduardo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3503,7 +3503,7 @@
     "apelido": "Ronaldo",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 6.4,
           "SG": 0.2,
@@ -3528,7 +3528,7 @@
     "apelido": "Fernandinho",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3553,7 +3553,7 @@
     "apelido": "Erick Pulgar",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3578,7 +3578,7 @@
     "apelido": "Arboleda",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.4,
@@ -3603,7 +3603,7 @@
     "apelido": "R. Rústico",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3628,7 +3628,7 @@
     "apelido": "Paulinho",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3653,7 +3653,7 @@
     "apelido": "Marlon",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3678,7 +3678,7 @@
     "apelido": "David Duarte",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -3703,7 +3703,7 @@
     "apelido": "Zé Ivaldo",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -3728,7 +3728,7 @@
     "apelido": "Pavón",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3753,7 +3753,7 @@
     "apelido": "Lyanco",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3778,7 +3778,7 @@
     "apelido": "Arthur Cabral",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3803,7 +3803,7 @@
     "apelido": "Jair Ventura",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3828,7 +3828,7 @@
     "apelido": "Juninho",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3853,7 +3853,7 @@
     "apelido": "Odair Hellmann",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3878,7 +3878,7 @@
     "apelido": "André Ramalho",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3903,7 +3903,7 @@
     "apelido": "Renato Kayzer",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3928,7 +3928,7 @@
     "apelido": "Eduardo Domínguez",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3953,7 +3953,7 @@
     "apelido": "Bruno Rodrigues",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -3978,7 +3978,7 @@
     "apelido": "Ronaldo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4003,7 +4003,7 @@
     "apelido": "Lucas Veríssimo",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4028,7 +4028,7 @@
     "apelido": "Rodrigo Rodrigues",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4053,7 +4053,7 @@
     "apelido": "Bruno Tubarão",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4078,7 +4078,7 @@
     "apelido": "Paulo Henrique",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -4103,7 +4103,7 @@
     "apelido": "Marlon Freitas",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4128,7 +4128,7 @@
     "apelido": "Cleiton",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4153,7 +4153,7 @@
     "apelido": "Breno Lopes",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4178,7 +4178,7 @@
     "apelido": "Matheus Fernandes",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4203,7 +4203,7 @@
     "apelido": "Maycon",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4228,7 +4228,7 @@
     "apelido": "Léo Duarte",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -4253,7 +4253,7 @@
     "apelido": "Lucas Oliveira",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4278,7 +4278,7 @@
     "apelido": "Pedro",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4303,7 +4303,7 @@
     "apelido": "Lucas Paquetá",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4328,7 +4328,7 @@
     "apelido": "Juninho Capixaba",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4353,7 +4353,7 @@
     "apelido": "Gabriel Taliari",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4378,7 +4378,7 @@
     "apelido": "Marcinho",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4403,7 +4403,7 @@
     "apelido": "Cassierra",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4428,7 +4428,7 @@
     "apelido": "Igor Vinícius",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4453,7 +4453,7 @@
     "apelido": "Raniele",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4478,7 +4478,7 @@
     "apelido": "Artur",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4503,7 +4503,7 @@
     "apelido": "Lima",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4528,7 +4528,7 @@
     "apelido": "Charles",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4553,7 +4553,7 @@
     "apelido": "Renan Lodi",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.33,
@@ -4578,7 +4578,7 @@
     "apelido": "Matheus Pereira",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4603,7 +4603,7 @@
     "apelido": "Allan",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4628,7 +4628,7 @@
     "apelido": "Bustos",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4653,7 +4653,7 @@
     "apelido": "Emerson Royal",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -4678,7 +4678,7 @@
     "apelido": "Carlos Cuesta",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4703,7 +4703,7 @@
     "apelido": "Gabriel Rojas",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -4728,7 +4728,7 @@
     "apelido": "Dudu",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4753,7 +4753,7 @@
     "apelido": "Villasanti",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4778,7 +4778,7 @@
     "apelido": "Alesson",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4803,7 +4803,7 @@
     "apelido": "Rogério Ceni",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4828,7 +4828,7 @@
     "apelido": "Gustavo Mosquito",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4853,7 +4853,7 @@
     "apelido": "João Victor",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -4878,7 +4878,7 @@
     "apelido": "Marçal",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -4903,7 +4903,7 @@
     "apelido": "Shaylon",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4928,7 +4928,7 @@
     "apelido": "Félix Torres",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -4953,7 +4953,7 @@
     "apelido": "Murilo",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.75,
@@ -4978,7 +4978,7 @@
     "apelido": "Marcelinho",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -5003,7 +5003,7 @@
     "apelido": "Erick",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5028,7 +5028,7 @@
     "apelido": "Léo Ortiz",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -5053,7 +5053,7 @@
     "apelido": "Iago",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -5078,7 +5078,7 @@
     "apelido": "Jacy",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5103,7 +5103,7 @@
     "apelido": "Matheus Bahia",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5128,7 +5128,7 @@
     "apelido": "Vitão",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -5153,7 +5153,7 @@
     "apelido": "Lucas Silva",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5178,7 +5178,7 @@
     "apelido": "Erick",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5203,7 +5203,7 @@
     "apelido": "Jáderson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5228,7 +5228,7 @@
     "apelido": "Pedro Raul",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5253,7 +5253,7 @@
     "apelido": "Gabriel Batista",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 4.0,
           "SG": 0.2,
@@ -5278,7 +5278,7 @@
     "apelido": "Kanu",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5303,7 +5303,7 @@
     "apelido": "Jean Lucas",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5328,7 +5328,7 @@
     "apelido": "Maripán",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5353,7 +5353,7 @@
     "apelido": "Savarino",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5378,7 +5378,7 @@
     "apelido": "Angileri",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5403,7 +5403,7 @@
     "apelido": "Samuel Lino",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5428,7 +5428,7 @@
     "apelido": "Cuello",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5453,7 +5453,7 @@
     "apelido": "Viña",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -5478,7 +5478,7 @@
     "apelido": "Puma Rodríguez",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -5503,7 +5503,7 @@
     "apelido": "De la Cruz",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5528,7 +5528,7 @@
     "apelido": "Pochettino",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5553,7 +5553,7 @@
     "apelido": "Alexander Barboza",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.75,
@@ -5578,7 +5578,7 @@
     "apelido": "Ziyech",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5603,7 +5603,7 @@
     "apelido": "Rossi",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 2.6,
           "SG": 0.4,
@@ -5628,7 +5628,7 @@
     "apelido": "Brenner",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5653,7 +5653,7 @@
     "apelido": "Arias",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5678,7 +5678,7 @@
     "apelido": "Paulinho",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5703,7 +5703,7 @@
     "apelido": "Igor Gomes",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5728,7 +5728,7 @@
     "apelido": "Krovinovic",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5753,7 +5753,7 @@
     "apelido": "Yuri Alberto",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5778,7 +5778,7 @@
     "apelido": "Fernando",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5803,7 +5803,7 @@
     "apelido": "Matheus Henrique",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5828,7 +5828,7 @@
     "apelido": "Tchamba",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5853,7 +5853,7 @@
     "apelido": "Luan Cândido",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -5878,7 +5878,7 @@
     "apelido": "Vitinho",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -5903,7 +5903,7 @@
     "apelido": "Nonato",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5928,7 +5928,7 @@
     "apelido": "Júnior Santos",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5953,7 +5953,7 @@
     "apelido": "Eliasson",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -5978,7 +5978,7 @@
     "apelido": "Alef Manga",
     "posicao": "N/A",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6003,7 +6003,7 @@
     "apelido": "Ferreira",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6028,7 +6028,7 @@
     "apelido": "Ademir",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6053,7 +6053,7 @@
     "apelido": "Guga",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -6078,7 +6078,7 @@
     "apelido": "Bruno Matias",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6103,7 +6103,7 @@
     "apelido": "Eduardo Doma",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6128,7 +6128,7 @@
     "apelido": "Wallisson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6153,7 +6153,7 @@
     "apelido": "Hugo Souza",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 4.8,
           "SG": 0.0,
@@ -6178,7 +6178,7 @@
     "apelido": "Felipe Jonatan",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6203,7 +6203,7 @@
     "apelido": "Alerrandro",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6228,7 +6228,7 @@
     "apelido": "Matheuzinho",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6253,7 +6253,7 @@
     "apelido": "Fabinho",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6278,7 +6278,7 @@
     "apelido": "Oliva",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6303,7 +6303,7 @@
     "apelido": "Mayk",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -6328,7 +6328,7 @@
     "apelido": "Willian Machado",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -6353,7 +6353,7 @@
     "apelido": "Vitinho",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6378,7 +6378,7 @@
     "apelido": "Brítez",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6403,7 +6403,7 @@
     "apelido": "Piquerez",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.75,
@@ -6428,7 +6428,7 @@
     "apelido": "Santiago Sosa",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6453,7 +6453,7 @@
     "apelido": "Rollheiser",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6478,7 +6478,7 @@
     "apelido": "Matheus Felipe",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6503,7 +6503,7 @@
     "apelido": "Caio Paulista",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6528,7 +6528,7 @@
     "apelido": "Cacá",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -6553,7 +6553,7 @@
     "apelido": "Gabriel Poveda",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6578,7 +6578,7 @@
     "apelido": "Anderson",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 6.0,
           "SG": 0.0,
@@ -6603,7 +6603,7 @@
     "apelido": "Zé Ricardo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6628,7 +6628,7 @@
     "apelido": "Canobbio",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6653,7 +6653,7 @@
     "apelido": "Escobar",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6678,7 +6678,7 @@
     "apelido": "Laquintana",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6703,7 +6703,7 @@
     "apelido": "Gabriel Brazão",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 2.0,
           "SG": 0.0,
@@ -6728,7 +6728,7 @@
     "apelido": "Eric Ramires",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6753,7 +6753,7 @@
     "apelido": "Matheus Alexandre",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -6778,7 +6778,7 @@
     "apelido": "Emmanuel Martínez",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6803,7 +6803,7 @@
     "apelido": "Kaio Jorge",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6828,7 +6828,7 @@
     "apelido": "Ignácio",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6853,7 +6853,7 @@
     "apelido": "Ocampo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6878,7 +6878,7 @@
     "apelido": "Gabriel Menino",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6903,7 +6903,7 @@
     "apelido": "Bruno Santos",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6928,7 +6928,7 @@
     "apelido": "Rafael Guanaes",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -6953,7 +6953,7 @@
     "apelido": "Sabino",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -6978,7 +6978,7 @@
     "apelido": "Carlos Miguel",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 3.2,
           "SG": 0.8,
@@ -7003,7 +7003,7 @@
     "apelido": "Bruno Fuchs",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.67,
@@ -7028,7 +7028,7 @@
     "apelido": "Lucas Arcanjo",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 3.8,
           "SG": 0.2,
@@ -7053,7 +7053,7 @@
     "apelido": "Fabri",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7078,7 +7078,7 @@
     "apelido": "Edson Carioca",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7103,7 +7103,7 @@
     "apelido": "Gabriel Pereira",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7128,7 +7128,7 @@
     "apelido": "Everton",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7153,7 +7153,7 @@
     "apelido": "Camilo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7178,7 +7178,7 @@
     "apelido": "Newton",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7203,7 +7203,7 @@
     "apelido": "Acevedo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7228,7 +7228,7 @@
     "apelido": "Sebastián Gómez",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7253,7 +7253,7 @@
     "apelido": "João Marcelo",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -7278,7 +7278,7 @@
     "apelido": "Jajá",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7303,7 +7303,7 @@
     "apelido": "Reinier",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7328,7 +7328,7 @@
     "apelido": "Tetê",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7353,7 +7353,7 @@
     "apelido": "Villagra",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7378,7 +7378,7 @@
     "apelido": "Khellven",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -7403,7 +7403,7 @@
     "apelido": "Sant'Anna",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7428,7 +7428,7 @@
     "apelido": "Ferraresi",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -7453,7 +7453,7 @@
     "apelido": "Carrascal",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7478,7 +7478,7 @@
     "apelido": "Matheus Bidu",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7503,7 +7503,7 @@
     "apelido": "Carlos Vinícius",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7528,7 +7528,7 @@
     "apelido": "Lucas Piton",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -7553,7 +7553,7 @@
     "apelido": "Maurício",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7578,7 +7578,7 @@
     "apelido": "Coronel",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 6.0,
           "SG": 0.0,
@@ -7603,7 +7603,7 @@
     "apelido": "Enamorado",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7628,7 +7628,7 @@
     "apelido": "Thiago Carpini",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7653,7 +7653,7 @@
     "apelido": "Bruno Gomes",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7678,7 +7678,7 @@
     "apelido": "Marcos Antônio",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7703,7 +7703,7 @@
     "apelido": "Preciado",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7728,7 +7728,7 @@
     "apelido": "Domingos Duarte",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -7753,7 +7753,7 @@
     "apelido": "Caio Alexandre",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7778,7 +7778,7 @@
     "apelido": "Eduardo Santos",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7803,7 +7803,7 @@
     "apelido": "Villalba",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7828,7 +7828,7 @@
     "apelido": "Igor Formiga",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -7853,7 +7853,7 @@
     "apelido": "Rodrigo Nestor",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7878,7 +7878,7 @@
     "apelido": "Borrero",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7903,7 +7903,7 @@
     "apelido": "Rafael Lacerda",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7928,7 +7928,7 @@
     "apelido": "Fernando",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -7953,7 +7953,7 @@
     "apelido": "Luciano Juba",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -7978,7 +7978,7 @@
     "apelido": "Max",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8003,7 +8003,7 @@
     "apelido": "Danilo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8028,7 +8028,7 @@
     "apelido": "Vanderlan",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8053,7 +8053,7 @@
     "apelido": "Zé Vitor",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8078,7 +8078,7 @@
     "apelido": "Alex Bruno",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8103,7 +8103,7 @@
     "apelido": "João Paulo",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8128,7 +8128,7 @@
     "apelido": "Natanael",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -8153,7 +8153,7 @@
     "apelido": "Eduardo Melo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8178,7 +8178,7 @@
     "apelido": "Bobadilla",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8203,7 +8203,7 @@
     "apelido": "Terán",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8228,7 +8228,7 @@
     "apelido": "Carbonero",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8253,7 +8253,7 @@
     "apelido": "Garcez",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8278,7 +8278,7 @@
     "apelido": "Isidro Pitta",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8303,7 +8303,7 @@
     "apelido": "Nardoni",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8328,7 +8328,7 @@
     "apelido": "Emiliano Martínez",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8353,7 +8353,7 @@
     "apelido": "Galeano",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8378,7 +8378,7 @@
     "apelido": "Victor Sá",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8403,7 +8403,7 @@
     "apelido": "Plata",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8428,7 +8428,7 @@
     "apelido": "Jovane Cabral",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8453,7 +8453,7 @@
     "apelido": "Matheus Nascimento",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8478,7 +8478,7 @@
     "apelido": "Tiago Cóser",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8503,7 +8503,7 @@
     "apelido": "Erick Pulga",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8528,7 +8528,7 @@
     "apelido": "Martinelli",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8553,7 +8553,7 @@
     "apelido": "Medina",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8578,7 +8578,7 @@
     "apelido": "Spinelli",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8603,7 +8603,7 @@
     "apelido": "Bernabei",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8628,7 +8628,7 @@
     "apelido": "Abel Ferreira",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8653,7 +8653,7 @@
     "apelido": "Aguirre",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8678,7 +8678,7 @@
     "apelido": "Marino Hinestroza",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8703,7 +8703,7 @@
     "apelido": "Esquivel",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8728,7 +8728,7 @@
     "apelido": "Mycael",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 3.75,
           "SG": 0.0,
@@ -8753,7 +8753,7 @@
     "apelido": "Pedro Rangel",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 5.0,
           "SG": 0.0,
@@ -8778,7 +8778,7 @@
     "apelido": "Andrés Hurtado",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8803,7 +8803,7 @@
     "apelido": "Gustavo Marques",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8828,7 +8828,7 @@
     "apelido": "Alix Vinicius",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8853,7 +8853,7 @@
     "apelido": "Gustavo Martins",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.33,
@@ -8878,7 +8878,7 @@
     "apelido": "Arthur Chaves",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8903,7 +8903,7 @@
     "apelido": "Adson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -8928,7 +8928,7 @@
     "apelido": "Anthoni",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 3.33,
           "SG": 0.0,
@@ -8953,7 +8953,7 @@
     "apelido": "Matheus Cunha",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 1.0,
           "SG": 0.0,
@@ -8978,7 +8978,7 @@
     "apelido": "Fabinho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9003,7 +9003,7 @@
     "apelido": "Matheus Martins",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9028,7 +9028,7 @@
     "apelido": "Mateus Silva",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -9053,7 +9053,7 @@
     "apelido": "Felipinho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9078,7 +9078,7 @@
     "apelido": "Vini Paulista",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9103,7 +9103,7 @@
     "apelido": "Ramón Sosa",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9128,7 +9128,7 @@
     "apelido": "Lucas Barbosa",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9153,7 +9153,7 @@
     "apelido": "Freytes",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9178,7 +9178,7 @@
     "apelido": "Flaco López",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9203,7 +9203,7 @@
     "apelido": "Picco",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9228,7 +9228,7 @@
     "apelido": "Pablo Maia",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9253,7 +9253,7 @@
     "apelido": "Cristian Olivera",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9278,7 +9278,7 @@
     "apelido": "Bruninho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9303,7 +9303,7 @@
     "apelido": "Diógenes",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 2.5,
           "SG": 0.0,
@@ -9328,7 +9328,7 @@
     "apelido": "Minda",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9353,7 +9353,7 @@
     "apelido": "Alejo Véliz",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9378,7 +9378,7 @@
     "apelido": "Colidio",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9403,7 +9403,7 @@
     "apelido": "Danilo Pereira",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9428,7 +9428,7 @@
     "apelido": "Vitor Roque",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9453,7 +9453,7 @@
     "apelido": "Miguelito",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9478,7 +9478,7 @@
     "apelido": "Paulo Pezzolano",
     "posicao": "N/A",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9503,7 +9503,7 @@
     "apelido": "Marcos Victor",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -9528,7 +9528,7 @@
     "apelido": "Gabriel Delfim",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 3.0,
           "SG": 0.2,
@@ -9553,7 +9553,7 @@
     "apelido": "Denilson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9578,7 +9578,7 @@
     "apelido": "Victor Hugo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9603,7 +9603,7 @@
     "apelido": "Cuiabano",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.4,
@@ -9628,7 +9628,7 @@
     "apelido": "Rubens",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9653,7 +9653,7 @@
     "apelido": "Hércules",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9678,7 +9678,7 @@
     "apelido": "Jamerson",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.2,
@@ -9703,7 +9703,7 @@
     "apelido": "Andrés Gómez",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9728,7 +9728,7 @@
     "apelido": "Gabriel Knesowitsch",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9753,7 +9753,7 @@
     "apelido": "Thiago Borbas",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9778,7 +9778,7 @@
     "apelido": "Robert Renan",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.4,
@@ -9803,7 +9803,7 @@
     "apelido": "Renato Marques",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9828,7 +9828,7 @@
     "apelido": "Otávio",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 5.6,
           "SG": 0.2,
@@ -9853,7 +9853,7 @@
     "apelido": "Garro",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9878,7 +9878,7 @@
     "apelido": "Wesley",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9903,7 +9903,7 @@
     "apelido": "Breno Bidon",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9928,7 +9928,7 @@
     "apelido": "Nicolás Fonseca",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9953,7 +9953,7 @@
     "apelido": "Lavega",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -9978,7 +9978,7 @@
     "apelido": "Rodriguinho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10003,7 +10003,7 @@
     "apelido": "Saldivia",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.67,
@@ -10028,7 +10028,7 @@
     "apelido": "Alexsander",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10053,7 +10053,7 @@
     "apelido": "Kaio César",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10078,7 +10078,7 @@
     "apelido": "Marco Moreno",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -10103,7 +10103,7 @@
     "apelido": "Túlio Eduardo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10128,7 +10128,7 @@
     "apelido": "Rodrigo Gelado",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10153,7 +10153,7 @@
     "apelido": "Wallace Yan",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10178,7 +10178,7 @@
     "apelido": "Diego Caito",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10203,7 +10203,7 @@
     "apelido": "Caballero",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10228,7 +10228,7 @@
     "apelido": "Guzmán Rodríguez",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10253,7 +10253,7 @@
     "apelido": "Patrick",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10278,7 +10278,7 @@
     "apelido": "David Braga",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10303,7 +10303,7 @@
     "apelido": "Leozinho",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10328,7 +10328,7 @@
     "apelido": "Cauly",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10353,7 +10353,7 @@
     "apelido": "Dantas",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10378,7 +10378,7 @@
     "apelido": "Milans",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10403,7 +10403,7 @@
     "apelido": "Herrera",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10428,7 +10428,7 @@
     "apelido": "Lucho Rodríguez",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10453,7 +10453,7 @@
     "apelido": "Aguirre",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10478,7 +10478,7 @@
     "apelido": "Millán",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.33,
@@ -10503,7 +10503,7 @@
     "apelido": "Henry Mosquera",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10528,7 +10528,7 @@
     "apelido": "Allex",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10553,7 +10553,7 @@
     "apelido": "Rodrigo Castillo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10578,7 +10578,7 @@
     "apelido": "Mateo Ponte",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10603,7 +10603,7 @@
     "apelido": "Lucas Monzón",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10628,7 +10628,7 @@
     "apelido": "Giay",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.67,
@@ -10653,7 +10653,7 @@
     "apelido": "Lescano",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10678,7 +10678,7 @@
     "apelido": "Jonathan Jesus",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -10703,7 +10703,7 @@
     "apelido": "Castaño",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10728,7 +10728,7 @@
     "apelido": "William Batista",
     "posicao": "N/A",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10753,7 +10753,7 @@
     "apelido": "João Pedro",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10778,7 +10778,7 @@
     "apelido": "Dudu",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10803,7 +10803,7 @@
     "apelido": "Pedro Morisco",
     "posicao": "gol",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 6.33,
           "SG": 0.0,
@@ -10828,7 +10828,7 @@
     "apelido": "Zapelli",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10853,7 +10853,7 @@
     "apelido": "Paulinho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10878,7 +10878,7 @@
     "apelido": "Tomás Pérez",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10903,7 +10903,7 @@
     "apelido": "Barreal",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10928,7 +10928,7 @@
     "apelido": "Fernando Seabra",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10953,7 +10953,7 @@
     "apelido": "Artur Jorge",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -10978,7 +10978,7 @@
     "apelido": "Vargas",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11003,7 +11003,7 @@
     "apelido": "Júlio Fidelis",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11028,7 +11028,7 @@
     "apelido": "Felipe Chiqueti",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11053,7 +11053,7 @@
     "apelido": "Pedro Emanuel",
     "posicao": "tec",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11078,7 +11078,7 @@
     "apelido": "João Cruz",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11103,7 +11103,7 @@
     "apelido": "Johan Rojas",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11128,7 +11128,7 @@
     "apelido": "Noriega",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.33,
@@ -11153,7 +11153,7 @@
     "apelido": "João Costa",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11178,7 +11178,7 @@
     "apelido": "Renê",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11203,7 +11203,7 @@
     "apelido": "Wallace",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -11228,7 +11228,7 @@
     "apelido": "Rodrigo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11253,7 +11253,7 @@
     "apelido": "Pedro Lima",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -11278,7 +11278,7 @@
     "apelido": "Edenílson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11303,7 +11303,7 @@
     "apelido": "Kauan",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11328,7 +11328,7 @@
     "apelido": "Arthur Dias",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11353,7 +11353,7 @@
     "apelido": "André Silva",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11378,7 +11378,7 @@
     "apelido": "Portilla",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11403,7 +11403,7 @@
     "apelido": "Serna",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11428,7 +11428,7 @@
     "apelido": "Arroyo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11453,7 +11453,7 @@
     "apelido": "Ignacio Sosa",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11478,7 +11478,7 @@
     "apelido": "Román Gómez",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -11503,7 +11503,7 @@
     "apelido": "Jemmes",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11528,7 +11528,7 @@
     "apelido": "Vinicinho",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11553,7 +11553,7 @@
     "apelido": "Gui Negão",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11578,7 +11578,7 @@
     "apelido": "Benedetti",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -11603,7 +11603,7 @@
     "apelido": "Larson",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11628,7 +11628,7 @@
     "apelido": "Sanabria",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11653,7 +11653,7 @@
     "apelido": "Bruno Duarte",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11678,7 +11678,7 @@
     "apelido": "David",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11703,7 +11703,7 @@
     "apelido": "Riquelme Felipe",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11728,7 +11728,7 @@
     "apelido": "Vitão",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11753,7 +11753,7 @@
     "apelido": "Zé Lucas",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11778,7 +11778,7 @@
     "apelido": "Paulo Roberto",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11803,7 +11803,7 @@
     "apelido": "Vitor Tissi",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11828,7 +11828,7 @@
     "apelido": "Gustavo Santana",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11853,7 +11853,7 @@
     "apelido": "Huguinho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11878,7 +11878,7 @@
     "apelido": "Pedro Gabriel",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -11903,7 +11903,7 @@
     "apelido": "Pedro Ferreira",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11928,7 +11928,7 @@
     "apelido": "Gabriel Bontempo",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11953,7 +11953,7 @@
     "apelido": "Gustavo Henrique",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -11978,7 +11978,7 @@
     "apelido": "Tico",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12003,7 +12003,7 @@
     "apelido": "Dieguinho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12028,7 +12028,7 @@
     "apelido": "Amuzu",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12053,7 +12053,7 @@
     "apelido": "Kauan Toledo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12078,7 +12078,7 @@
     "apelido": "Bernardo Zortea",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12103,7 +12103,7 @@
     "apelido": "Nuno Moreira",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12128,7 +12128,7 @@
     "apelido": "João Victor",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12153,7 +12153,7 @@
     "apelido": "Franco Rossi",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12178,7 +12178,7 @@
     "apelido": "Villalba",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12203,7 +12203,7 @@
     "apelido": "Montoro",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12228,7 +12228,7 @@
     "apelido": "Tarzia",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12253,7 +12253,7 @@
     "apelido": "Viveros",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12278,7 +12278,7 @@
     "apelido": "Wesley Natã",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12303,7 +12303,7 @@
     "apelido": "João Alencar",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12328,7 +12328,7 @@
     "apelido": "Domingos Andrade",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12353,7 +12353,7 @@
     "apelido": "Kauê Furquim",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12378,7 +12378,7 @@
     "apelido": "Arthur",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 1.0,
@@ -12403,7 +12403,7 @@
     "apelido": "André",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12428,7 +12428,7 @@
     "apelido": "Gilberto Junior",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12453,7 +12453,7 @@
     "apelido": "Kadir",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12478,7 +12478,7 @@
     "apelido": "Luis Pacheco",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12503,7 +12503,7 @@
     "apelido": "Cissé",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12528,7 +12528,7 @@
     "apelido": "Kauã Pascini",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.25,
@@ -12553,7 +12553,7 @@
     "apelido": "Claudinho",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12578,7 +12578,7 @@
     "apelido": "Anderson Pato",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12603,7 +12603,7 @@
     "apelido": "Rodrigo Bellão",
     "posicao": "N/A",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12628,7 +12628,7 @@
     "apelido": "Ryan Augusto",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12653,7 +12653,7 @@
     "apelido": "Djhordney",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12678,7 +12678,7 @@
     "apelido": "Tetê",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12703,7 +12703,7 @@
     "apelido": "Rafael Gonzaga",
     "posicao": "lat",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12728,7 +12728,7 @@
     "apelido": "Iago Machado",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12753,7 +12753,7 @@
     "apelido": "Ramon Rique",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12778,7 +12778,7 @@
     "apelido": "Osorio",
     "posicao": "zag",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.5,
@@ -12803,7 +12803,7 @@
     "apelido": "Joaquín Freitas",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12828,7 +12828,7 @@
     "apelido": "Jorge Rivaldo",
     "posicao": "ata",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12853,7 +12853,7 @@
     "apelido": "Felipe Morais",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
@@ -12878,7 +12878,7 @@
     "apelido": "Miguel Carvalho",
     "posicao": "mei",
     "por_mando": {
-      "N/A": {
+      "F": {
         "ult5": {
           "DE": 0.0,
           "SG": 0.0,
