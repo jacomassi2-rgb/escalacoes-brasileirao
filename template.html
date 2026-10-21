@@ -442,7 +442,7 @@ function renderizarTabela(lista) {
       <tr>
         <td><b>${j.apelido}</b></td>
         <td>${j.clube_abrev}</td>
-        <td>${j.posicao_abrev}</td>
+        <td style="text-transform: uppercase;">${j.posicao_abrev}</td>
         <td>R$ ${(j.preco_num || 0).toFixed(2)}</td>
         <td class="${scoreClass}"><b>${(j.score_contextualizado || 0).toFixed(1)}</b></td>
         <td>${(j.score_teto || 0).toFixed(1)}</td>
