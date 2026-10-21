@@ -396,7 +396,7 @@ function filtrarDados() {
 
   const filtrados = dadosExplorer.filter(j => {
     if (nome && !j.apelido.toLowerCase().includes(nome)) return false;
-    if (pos && j.posicao_abrev !== pos) return false;
+   if (pos && (j.posicao_abrev || '').toUpperCase() !== pos) return false;
     if (clube && j.clube_abrev !== clube) return false;
     if (perfil && j.perfil !== perfil) return false;
     if (status && j.status !== status) return false;
