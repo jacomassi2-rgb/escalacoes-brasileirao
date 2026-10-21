@@ -1,6 +1,9 @@
 name: Atualizar Escalações
 
 on:
+  push:
+    paths:
+      - 'fathur_dados.csv'
   schedule:
     - cron: '0 11,16,21 * * *'
   workflow_dispatch:
@@ -33,6 +36,9 @@ jobs:
       - name: Rodar o coletor de parciais (Cartola)
         run: python parciais.py
 
+      - name: Processar dados para o Data Explorer
+        run: python processar_dados.py
+
       - name: Rodar a análise (PPM e Armadilhas)
         run: python analise.py
 
@@ -46,7 +52,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add index.html parciais.json parciais_anterior.json analise_relatorio.html
+          git add index.html parciais.json parciais_anterior.json dados.json analise_relatorio.html
           git diff --quiet && git diff --staged --quiet || git commit -m "Atualização automática das escalações e análise"
           git pull --rebase --autostash origin main || true
           git push || (git pull --rebase --autostash origin main && git push)
