@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'fathur_dados.csv'
+      - 'scouts_historico.json'
   schedule:
     - cron: '0 11,16,21 * * *'
   workflow_dispatch:
