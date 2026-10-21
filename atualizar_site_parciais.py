@@ -3,7 +3,6 @@ import os
 import re
 
 ARQUIVO_PARCIAIS = "parciais.json"
-ARQUIVO_MEU_TIME = "meu_time.json"
 ARQUIVO_HTML = "index.html"
 
 
@@ -94,67 +93,20 @@ def gerar_bloco_parciais():
     '''
 
 
-def calcular_total_meu_time():
-    if not os.path.exists(ARQUIVO_PARCIAIS) or not os.path.exists(ARQUIVO_MEU_TIME):
-        print("ERRO: parciais.json ou meu_time.json não encontrados")
-        return None
-    with open(ARQUIVO_PARCIAIS, "r", encoding="utf-8") as f:
-        parciais = json.load(f)
-    with open(ARQUIVO_MEU_TIME, "r", encoding="utf-8") as f:
-        meu_time = json.load(f)
-    atletas_parciais = parciais.get("atletas", {})
-    jogadores_meu_time = meu_time.get("jogadores", [])
-    print(f"Jogadores no parciais.json: {len(atletas_parciais)}")
-    print(f"Jogadores no meu_time.json: {len(jogadores_meu_time)}")
-    # Mapeia todos os apelidos do parciais (lower) para pontuação
-    mapa_pontos = {}
-    for aid, info in atletas_parciais.items():
-        apelido = info.get("apelido", "").lower().strip()
-        pontos = info.get("pontuacao", 0) or 0
-        mapa_pontos[apelido] = pontos
-    total = 0
-    encontrados = 0
-    for j in jogadores_meu_time:
-        nome = j.get("nome", "").lower().strip()
-        pontos = mapa_pontos.get(nome, 0)
-        if nome in mapa_pontos:
-            encontrados += 1
-            print(f"  ✅ {j.get('nome')}: {pontos} pts")
-        else:
-            print(f"  ❌ {j.get('nome')}: NÃO encontrado no parciais")
-        if j.get("capitao"):
-            pontos = pontos * 1.5
-        total += pontos
-    print(f"Total encontrados: {encontrados}/{len(jogadores_meu_time)}")
-    print(f"Total calculado: {total:.1f}")
-    return total
-
-
 def injetar_no_html():
     if not os.path.exists(ARQUIVO_HTML):
         print("AVISO: index.html não encontrado")
         return
     with open(ARQUIVO_HTML, "r", encoding="utf-8") as f:
         html = f.read()
-    # 1. Injeta as parciais
     bloco = gerar_bloco_parciais()
     if '<!-- PARCIAIS -->' in html:
         html = re.sub(r'<!-- PARCIAIS -->.*?<!-- /PARCIAIS -->', f'<!-- PARCIAIS -->{bloco}<!-- /PARCIAIS -->', html, flags=re.DOTALL)
     else:
         html = html.replace('</footer>', f'{bloco}</footer>')
-    # 2. Atualiza o total do Meu Time
-    total_ao_vivo = calcular_total_meu_time()
-    if total_ao_vivo is not None:
-        # Substitui o valor dentro do card de "Total"
-        html = re.sub(
-            r'(<div class="stat-card-label">Total</div>\s*<div class="stat-card-val">)[^<]*(</div>)',
-            rf'\g<1>{total_ao_vivo:.1f}\g<2>',
-            html,
-            count=1
-        )
     with open(ARQUIVO_HTML, "w", encoding="utf-8") as f:
         f.write(html)
-    print("Parciais injetadas e total do Meu Time atualizado")
+    print("Parciais injetadas no HTML")
 
 
 if __name__ == "__main__":
