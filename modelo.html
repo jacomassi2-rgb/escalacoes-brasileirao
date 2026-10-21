@@ -580,16 +580,16 @@ function renderizarComparativoScouts() {
   ];
   
   scouts.forEach(s => {
+     scouts.forEach(s => {
     let linha = `<tr><td><b>${s.label}</b></td>`;
     jogadoresSelecionados.forEach(id => {
       const info = scoutsHistorico[id];
-      const mando = info?.por_mando || {};
-      const casa = mando['C'] || { ult3: {}, ult5: {} };
-      const fora = mando['F'] || { ult3: {}, ult5: {} };
+      const geral = info?.por_mando?.Geral || { ult3: {}, ult5: {} };
       
-      const media3 = ((casa.ult3[s.key] || 0) + (fora.ult3[s.key] || 0)) / 2;
+      const media3 = geral.ult3[s.key] || 0;
+      const media5 = geral.ult5[s.key] || 0;
       
-      linha += `<td style="font-size:.8rem;">C: ${(casa.ult3[s.key]||0).toFixed(1)} | F: ${(fora.ult3[s.key]||0).toFixed(1)} <br> <small>Média (3j): ${media3.toFixed(1)}</small></td>`;
+      linha += `<td style="font-size:.8rem;">Média (3j): ${media3.toFixed(1)} <br> <small>Média (5j): ${media5.toFixed(1)}</small></td>`;
     });
     linha += '</tr>';
     linhas.push(linha);
