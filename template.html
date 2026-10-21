@@ -233,7 +233,65 @@
   <div class="vazio">Aguardando primeira atualização das parciais...</div>
   <!-- /PARCIAIS -->
 </div>
- <div class="aba-conteudo" id="aba-analise">
+ <div class="aba-conteudo" id="aba-explorer">
+  <div class="container">
+    <h2>🔍 Data Explorer</h2>
+    
+    <!-- Filtros -->
+    <div class="filtros-explorer">
+      <input type="text" id="filtro-nome" placeholder="Buscar jogador..." oninput="filtrarDados()">
+      <select id="filtro-posicao" onchange="filtrarDados()">
+        <option value="">Todas as Posições</option>
+        <option value="GOL">GOL</option>
+        <option value="LAT">LAT</option>
+        <option value="ZAG">ZAG</option>
+        <option value="MEI">MEI</option>
+        <option value="ATA">ATA</option>
+        <option value="TEC">TEC</option>
+      </select>
+      <select id="filtro-clube" onchange="filtrarDados()">
+        <option value="">Todos os Clubes</option>
+      </select>
+      <select id="filtro-perfil" onchange="filtrarDados()">
+        <option value="">Todos os Perfis</option>
+        <option value="Consistente">Consistente</option>
+        <option value="Explosivo">Explosivo</option>
+        <option value="Volatil">Volátil</option>
+        <option value="Coringa">Coringa</option>
+      </select>
+      <select id="filtro-status" onchange="filtrarDados()">
+        <option value="">Todos os Status</option>
+        <option value="Provável">Provável</option>
+        <option value="Dúvida">Dúvida</option>
+        <option value="Nulo">Nulo</option>
+        <option value="Suspenso">Suspenso</option>
+        <option value="Contundido">Contundido</option>
+      </select>
+    </div>
+
+    <!-- Tabela -->
+    <div class="tabela-explorer-wrap">
+      <table class="tabela-explorer">
+        <thead>
+          <tr>
+            <th onclick="ordenarPor('apelido')">Jogador</th>
+            <th onclick="ordenarPor('clube_abrev')">Clube</th>
+            <th onclick="ordenarPor('posicao_abrev')">Pos</th>
+            <th onclick="ordenarPor('preco_num')">Preço</th>
+            <th onclick="ordenarPor('score_contextualizado')">Score</th>
+            <th onclick="ordenarPor('score_teto')">Teto</th>
+            <th onclick="ordenarPor('score_piso')">Piso</th>
+            <th onclick="ordenarPor('perfil')">Perfil</th>
+            <th onclick="ordenarPor('status')">Status</th>
+          </tr>
+        </thead>
+        <tbody id="corpo-tabela">
+          <tr><td colspan="9" style="text-align:center;">Carregando dados...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
   <div class="container">
     ANALISE_AQUI
   </div>
