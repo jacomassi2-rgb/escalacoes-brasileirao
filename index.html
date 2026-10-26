@@ -21,7 +21,6 @@
         .filter-group label { font-size: 0.8rem; color: #888; margin-bottom: 5px; }
         .filter-group select { background-color: #333; color: white; border: 1px solid #555; padding: 8px; border-radius: 4px; font-size: 1rem; }
 
-        /* Cruzamento Cartola Style */
         .confronto-row { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 15px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; border-bottom: 1px solid #333; }
         .time-info { display: flex; flex-direction: column; align-items: center; width: 100px; font-weight: bold; font-size: 1.1rem; text-align: center; }
         .time-info small { font-size: 0.75rem; color: #888; font-weight: normal; }
@@ -124,12 +123,11 @@
     async function carregarDados() {
         try {
             const resTop5 = await fetch(`top5_posicoes.json?t=${timestamp}`);
-            if (!resTop5.ok) throw new Error("Erro ao carregar Top 5");
-            const dataTop5 = await resTop5.json();
-            renderTop5(dataTop5);
+            if (!resTop5.ok) throw new Error("Erro Top 5");
+            renderTop5(await resTop5.json());
 
             const resCruz = await fetch(`cruzamento_completo.json?t=${timestamp}`);
-            if (!resCruz.ok) throw new Error("Erro ao carregar Cruzamento");
+            if (!resCruz.ok) throw new Error("Erro Cruzamento");
             dadosCruzamentoGlobal = await resCruz.json();
             renderScouts();
 
@@ -164,24 +162,26 @@
         
         if (!dadosCruzamentoGlobal) return;
         
+        // Pega os dados calculados pelo Python
         const confrontosOriginais = dadosCruzamentoGlobal[pos]?.[periodo]?.[mando] || [];
         
-        // A MÁGICA DO VICE-VERSA ACONTECE AQUI
+        // Cria as DUAS LINHAS (Ida e Volta)
         let listaConfrontos = [];
         confrontosOriginais.forEach(c => {
-            // Adiciona o confronto normal (Casa x Fora)
-            listaConfrontos.push(c);
-            // Adiciona o confronto invertido (Fora x Casa)
+            // Linha 1: Time Casa x Time Fora
             listaConfrontos.push({
-                casa: c.visitante,
-                visitante: c.casa,
-                feito: c.cedido,     // O que era cedido, agora é feito
-                cedido: c.feito      // O que era feito, agora é cedido
+                casa: c.casa, visitante: c.visitante,
+                feito: c.feito, cedido: c.cedido
+            });
+            // Linha 2: Time Fora x Time Casa (Inversão)
+            listaConfrontos.push({
+                casa: c.visitante, visitante: c.casa,
+                feito: c.cedido, cedido: c.feito
             });
         });
 
         if (listaConfrontos.length === 0) {
-            container.innerHTML = '<p style="text-align:center; color:#888;">Nenhum confronto encontrado.</p>';
+            container.innerHTML = '<p style="text-align:center; color:#ff6b6b;">Nenhum dado. Verifique se o Python rodou com sucesso.</p>';
             return;
         }
 
@@ -196,7 +196,7 @@
             const feito = c.feito[scout] || 0;
             const cedido = c.cedido[scout] || 0;
 
-            // Largura mínima de 10% para a barra não sumir quando o valor for 0
+            // Se ambos forem 0, a barra fica 10% de largura (mínimo visual)
             const wFeito = Math.max((feito / maxValor) * 100, 10);
             const wCedido = Math.max((cedido / maxValor) * 100, 10);
 
