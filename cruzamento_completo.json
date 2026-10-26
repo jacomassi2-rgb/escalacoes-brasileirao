@@ -1,14 +1,20 @@
 {
   "GOL": {
     "total_5": {
-      "BAH": {
-        "PTS": 38
+      "COR": {
+        "PTS": 19
       },
-      "BOT": {
-        "PTS": 17
+      "CHA": {
+        "PTS": 27
       },
-      "CAM": {
-        "PTS": 18
+      "PAL": {
+        "PTS": 32
+      },
+      "VIT": {
+        "PTS": 19
+      },
+      "SAO": {
+        "PTS": 22
       },
       "CAP": {
         "PTS": 22
@@ -16,32 +22,26 @@
       "CFC": {
         "PTS": 21
       },
-      "CHA": {
-        "PTS": 27
+      "INT": {
+        "PTS": 10
       },
-      "COR": {
-        "PTS": 19
+      "SAN": {
+        "PTS": 9
+      },
+      "CAM": {
+        "PTS": 18
       },
       "CRU": {
         "PTS": 26
       },
-      "FLA": {
-        "PTS": 24
-      },
       "FLU": {
         "PTS": 19
-      },
-      "GRE": {
-        "PTS": 36
-      },
-      "INT": {
-        "PTS": 10
       },
       "MIR": {
         "PTS": 22
       },
-      "PAL": {
-        "PTS": 32
+      "GRE": {
+        "PTS": 36
       },
       "RBB": {
         "PTS": 23
@@ -49,28 +49,34 @@
       "REM": {
         "PTS": 19
       },
-      "SAN": {
-        "PTS": 9
-      },
-      "SAO": {
-        "PTS": 22
-      },
       "VAS": {
         "PTS": 16
       },
-      "VIT": {
-        "PTS": 19
+      "BAH": {
+        "PTS": 38
+      },
+      "BOT": {
+        "PTS": 17
+      },
+      "FLA": {
+        "PTS": 24
       }
     },
     "total_3": {
-      "BAH": {
-        "PTS": 32
+      "COR": {
+        "PTS": 18
       },
-      "BOT": {
-        "PTS": 12
+      "CHA": {
+        "PTS": 17
       },
-      "CAM": {
+      "PAL": {
+        "PTS": 22
+      },
+      "VIT": {
         "PTS": 19
+      },
+      "SAO": {
+        "PTS": 22
       },
       "CAP": {
         "PTS": 14
@@ -78,259 +84,765 @@
       "CFC": {
         "PTS": 21
       },
-      "CHA": {
-        "PTS": 17
+      "INT": {
+        "PTS": 10
       },
-      "COR": {
-        "PTS": 18
+      "SAN": {
+        "PTS": 5
+      },
+      "CAM": {
+        "PTS": 19
       },
       "CRU": {
         "PTS": 17
+      },
+      "FLU": {
+        "PTS": 12
+      },
+      "MIR": {
+        "PTS": 22
+      },
+      "GRE": {
+        "PTS": 14
+      },
+      "RBB": {
+        "PTS": 19
+      },
+      "REM": {
+        "PTS": 19
+      },
+      "VAS": {
+        "PTS": 10
+      },
+      "BAH": {
+        "PTS": 32
+      },
+      "BOT": {
+        "PTS": 12
+      },
+      "FLA": {
+        "PTS": 20
+      }
+    },
+    "casa_5": {
+      "COR": {
+        "PTS": 4
+      },
+      "CHA": {
+        "PTS": 1
+      },
+      "PAL": {
+        "PTS": 18
+      },
+      "VIT": {
+        "PTS": 11
+      },
+      "CAP": {
+        "PTS": 6
+      },
+      "INT": {
+        "PTS": 8
+      },
+      "SAN": {
+        "PTS": 5
+      },
+      "CAM": {
+        "PTS": 10
+      },
+      "CRU": {
+        "PTS": 17
+      },
+      "CFC": {
+        "PTS": 5
+      },
+      "FLU": {
+        "PTS": 14
+      },
+      "MIR": {
+        "PTS": 10
+      },
+      "SAO": {
+        "PTS": 15
+      },
+      "GRE": {
+        "PTS": 2
+      },
+      "RBB": {
+        "PTS": 15
+      },
+      "REM": {
+        "PTS": 7
+      },
+      "VAS": {
+        "PTS": 15
+      },
+      "BAH": {
+        "PTS": 26
+      },
+      "BOT": {
+        "PTS": 10
+      },
+      "FLA": {
+        "PTS": 14
+      }
+    },
+    "casa_3": {
+      "COR": {
+        "PTS": 4
+      },
+      "CHA": {
+        "PTS": 1
+      },
+      "PAL": {
+        "PTS": 8
+      },
+      "VIT": {
+        "PTS": 11
+      },
+      "CAP": {
+        "PTS": 6
+      },
+      "INT": {
+        "PTS": 8
+      },
+      "SAN": {
+        "PTS": 1
+      },
+      "CAM": {
+        "PTS": 11
+      },
+      "CRU": {
+        "PTS": 9
+      },
+      "CFC": {
+        "PTS": 5
+      },
+      "FLU": {
+        "PTS": 7
+      },
+      "MIR": {
+        "PTS": 10
+      },
+      "SAO": {
+        "PTS": 15
+      },
+      "GRE": {
+        "PTS": 2
+      },
+      "RBB": {
+        "PTS": 15
+      },
+      "REM": {
+        "PTS": 7
+      },
+      "VAS": {
+        "PTS": 9
+      },
+      "BAH": {
+        "PTS": 20
+      },
+      "BOT": {
+        "PTS": 10
+      },
+      "FLA": {
+        "PTS": 10
+      }
+    },
+    "fora_5": {
+      "COR": {
+        "PTS": 15
+      },
+      "CHA": {
+        "PTS": 26
+      },
+      "PAL": {
+        "PTS": 14
+      },
+      "VIT": {
+        "PTS": 8
+      },
+      "SAO": {
+        "PTS": 7
+      },
+      "CAP": {
+        "PTS": 16
+      },
+      "CFC": {
+        "PTS": 16
+      },
+      "INT": {
+        "PTS": 2
+      },
+      "SAN": {
+        "PTS": 4
+      },
+      "CAM": {
+        "PTS": 8
+      },
+      "CRU": {
+        "PTS": 8
+      },
+      "FLU": {
+        "PTS": 6
+      },
+      "MIR": {
+        "PTS": 11
+      },
+      "GRE": {
+        "PTS": 33
+      },
+      "RBB": {
+        "PTS": 7
+      },
+      "REM": {
+        "PTS": 12
+      },
+      "VAS": {
+        "PTS": 1
+      },
+      "BAH": {
+        "PTS": 12
+      },
+      "BOT": {
+        "PTS": 7
+      },
+      "FLA": {
+        "PTS": 10
+      }
+    },
+    "fora_3": {
+      "COR": {
+        "PTS": 14
+      },
+      "CHA": {
+        "PTS": 16
+      },
+      "PAL": {
+        "PTS": 14
+      },
+      "VIT": {
+        "PTS": 9
+      },
+      "SAO": {
+        "PTS": 7
+      },
+      "CAP": {
+        "PTS": 8
+      },
+      "CFC": {
+        "PTS": 16
+      },
+      "INT": {
+        "PTS": 2
+      },
+      "SAN": {
+        "PTS": 4
+      },
+      "CAM": {
+        "PTS": 8
+      },
+      "CRU": {
+        "PTS": 8
+      },
+      "FLU": {
+        "PTS": 6
+      },
+      "MIR": {
+        "PTS": 11
+      },
+      "GRE": {
+        "PTS": 12
+      },
+      "RBB": {
+        "PTS": 4
+      },
+      "REM": {
+        "PTS": 12
+      },
+      "VAS": {
+        "PTS": 1
+      },
+      "BAH": {
+        "PTS": 12
+      },
+      "BOT": {
+        "PTS": 3
+      },
+      "FLA": {
+        "PTS": 10
+      }
+    }
+  },
+  "LAT": {
+    "total_5": {
+      "VIT": {
+        "PTS": 68
+      },
+      "BOT": {
+        "PTS": 54
+      },
+      "FLU": {
+        "PTS": 38
+      },
+      "CFC": {
+        "PTS": 5
+      },
+      "COR": {
+        "PTS": 40
+      },
+      "REM": {
+        "PTS": 51
+      },
+      "PAL": {
+        "PTS": 92
+      },
+      "GRE": {
+        "PTS": 36
+      },
+      "SAN": {
+        "PTS": 19
+      },
+      "RBB": {
+        "PTS": 24
+      },
+      "VAS": {
+        "PTS": 75
+      },
+      "CAM": {
+        "PTS": 59
+      },
+      "MIR": {
+        "PTS": 40
+      },
+      "CHA": {
+        "PTS": 25
+      },
+      "BAH": {
+        "PTS": 41
+      },
+      "INT": {
+        "PTS": 12
+      },
+      "CAP": {
+        "PTS": 34
+      },
+      "SAO": {
+        "PTS": 67
+      },
+      "CRU": {
+        "PTS": 42
+      },
+      "FLA": {
+        "PTS": 44
+      }
+    },
+    "total_3": {
+      "VIT": {
+        "PTS": 57
+      },
+      "BOT": {
+        "PTS": 49
+      },
+      "FLU": {
+        "PTS": 37
+      },
+      "CFC": {
+        "PTS": 5
+      },
+      "COR": {
+        "PTS": 28
+      },
+      "REM": {
+        "PTS": 41
+      },
+      "PAL": {
+        "PTS": 92
+      },
+      "GRE": {
+        "PTS": 36
+      },
+      "SAN": {
+        "PTS": 18
+      },
+      "RBB": {
+        "PTS": 24
+      },
+      "VAS": {
+        "PTS": 63
+      },
+      "CAM": {
+        "PTS": 47
+      },
+      "MIR": {
+        "PTS": 40
+      },
+      "CHA": {
+        "PTS": 18
+      },
+      "BAH": {
+        "PTS": 38
+      },
+      "INT": {
+        "PTS": 12
+      },
+      "CAP": {
+        "PTS": 34
+      },
+      "SAO": {
+        "PTS": 58
+      },
+      "CRU": {
+        "PTS": 40
+      },
+      "FLA": {
+        "PTS": 44
+      }
+    },
+    "casa_5": {
+      "VIT": {
+        "PTS": 36
+      },
+      "BOT": {
+        "PTS": 43
+      },
+      "FLU": {
+        "PTS": 35
+      },
+      "CFC": {
+        "PTS": -1
+      },
+      "COR": {
+        "PTS": 11
+      },
+      "PAL": {
+        "PTS": 60
+      },
+      "GRE": {
+        "PTS": 14
+      },
+      "SAN": {
+        "PTS": 10
+      },
+      "VAS": {
+        "PTS": 45
+      },
+      "CAM": {
+        "PTS": 50
+      },
+      "MIR": {
+        "PTS": 34
+      },
+      "BAH": {
+        "PTS": 38
+      },
+      "INT": {
+        "PTS": 6
+      },
+      "CAP": {
+        "PTS": 10
+      },
+      "SAO": {
+        "PTS": 60
+      },
+      "RBB": {
+        "PTS": 14
+      },
+      "CRU": {
+        "PTS": 33
+      },
+      "FLA": {
+        "PTS": 24
+      },
+      "REM": {
+        "PTS": 13
+      },
+      "CHA": {
+        "PTS": 4
+      }
+    },
+    "casa_3": {
+      "VIT": {
+        "PTS": 36
+      },
+      "BOT": {
+        "PTS": 43
+      },
+      "FLU": {
+        "PTS": 34
+      },
+      "CFC": {
+        "PTS": -1
+      },
+      "COR": {
+        "PTS": 11
+      },
+      "PAL": {
+        "PTS": 60
+      },
+      "GRE": {
+        "PTS": 14
+      },
+      "SAN": {
+        "PTS": 10
+      },
+      "VAS": {
+        "PTS": 32
+      },
+      "CAM": {
+        "PTS": 38
+      },
+      "MIR": {
+        "PTS": 34
+      },
+      "BAH": {
+        "PTS": 35
+      },
+      "INT": {
+        "PTS": 6
+      },
+      "CAP": {
+        "PTS": 10
+      },
+      "SAO": {
+        "PTS": 50
+      },
+      "RBB": {
+        "PTS": 14
+      },
+      "CRU": {
+        "PTS": 31
+      },
+      "FLA": {
+        "PTS": 24
+      },
+      "REM": {
+        "PTS": 13
+      },
+      "CHA": {
+        "PTS": 4
+      }
+    },
+    "fora_5": {
+      "VIT": {
+        "PTS": 32
+      },
+      "BOT": {
+        "PTS": 11
+      },
+      "CFC": {
+        "PTS": 6
+      },
+      "COR": {
+        "PTS": 28
+      },
+      "REM": {
+        "PTS": 38
+      },
+      "PAL": {
+        "PTS": 32
+      },
+      "GRE": {
+        "PTS": 22
+      },
+      "SAN": {
+        "PTS": 9
+      },
+      "RBB": {
+        "PTS": 10
+      },
+      "MIR": {
+        "PTS": 5
+      },
+      "CHA": {
+        "PTS": 22
+      },
+      "BAH": {
+        "PTS": 3
+      },
+      "CAM": {
+        "PTS": 9
+      },
+      "INT": {
+        "PTS": 7
+      },
+      "CAP": {
+        "PTS": 24
+      },
+      "VAS": {
+        "PTS": 30
+      },
+      "SAO": {
+        "PTS": 8
       },
       "FLA": {
         "PTS": 20
       },
       "FLU": {
-        "PTS": 12
-      },
-      "GRE": {
-        "PTS": 14
-      },
-      "INT": {
-        "PTS": 10
-      },
-      "MIR": {
-        "PTS": 22
-      },
-      "PAL": {
-        "PTS": 22
-      },
-      "RBB": {
-        "PTS": 19
-      },
-      "REM": {
-        "PTS": 19
-      },
-      "SAN": {
-        "PTS": 5
-      },
-      "SAO": {
-        "PTS": 22
-      },
-      "VAS": {
-        "PTS": 10
-      },
-      "VIT": {
-        "PTS": 19
-      }
-    },
-    "casa_5": {},
-    "casa_3": {},
-    "fora_5": {},
-    "fora_3": {}
-  },
-  "LAT": {
-    "total_5": {
-      "BAH": {
-        "PTS": 41
-      },
-      "BOT": {
-        "PTS": 54
-      },
-      "CAM": {
-        "PTS": 59
-      },
-      "CAP": {
-        "PTS": 34
-      },
-      "CFC": {
-        "PTS": 5
-      },
-      "CHA": {
-        "PTS": 25
-      },
-      "COR": {
-        "PTS": 40
+        "PTS": 3
       },
       "CRU": {
-        "PTS": 42
-      },
-      "FLA": {
-        "PTS": 44
-      },
-      "FLU": {
-        "PTS": 38
-      },
-      "GRE": {
-        "PTS": 36
-      },
-      "INT": {
-        "PTS": 12
-      },
-      "MIR": {
-        "PTS": 40
-      },
-      "PAL": {
-        "PTS": 92
-      },
-      "RBB": {
-        "PTS": 24
-      },
-      "REM": {
-        "PTS": 51
-      },
-      "SAN": {
-        "PTS": 19
-      },
-      "SAO": {
-        "PTS": 67
-      },
-      "VAS": {
-        "PTS": 75
-      },
-      "VIT": {
-        "PTS": 68
+        "PTS": 9
       }
     },
-    "total_3": {
-      "BAH": {
-        "PTS": 38
+    "fora_3": {
+      "VIT": {
+        "PTS": 22
       },
       "BOT": {
-        "PTS": 49
-      },
-      "CAM": {
-        "PTS": 47
-      },
-      "CAP": {
-        "PTS": 34
+        "PTS": 6
       },
       "CFC": {
-        "PTS": 5
-      },
-      "CHA": {
-        "PTS": 18
+        "PTS": 6
       },
       "COR": {
+        "PTS": 17
+      },
+      "REM": {
         "PTS": 28
       },
-      "CRU": {
-        "PTS": 40
-      },
-      "FLA": {
-        "PTS": 44
-      },
-      "FLU": {
-        "PTS": 37
+      "PAL": {
+        "PTS": 32
       },
       "GRE": {
-        "PTS": 36
-      },
-      "INT": {
-        "PTS": 12
-      },
-      "MIR": {
-        "PTS": 40
-      },
-      "PAL": {
-        "PTS": 92
-      },
-      "RBB": {
-        "PTS": 24
-      },
-      "REM": {
-        "PTS": 41
+        "PTS": 22
       },
       "SAN": {
-        "PTS": 18
+        "PTS": 9
       },
-      "SAO": {
-        "PTS": 58
+      "RBB": {
+        "PTS": 10
+      },
+      "MIR": {
+        "PTS": 5
+      },
+      "CHA": {
+        "PTS": 15
+      },
+      "BAH": {
+        "PTS": 3
+      },
+      "CAM": {
+        "PTS": 9
+      },
+      "INT": {
+        "PTS": 7
+      },
+      "CAP": {
+        "PTS": 24
       },
       "VAS": {
-        "PTS": 63
+        "PTS": 30
       },
-      "VIT": {
-        "PTS": 57
+      "SAO": {
+        "PTS": 8
+      },
+      "FLA": {
+        "PTS": 20
+      },
+      "FLU": {
+        "PTS": 3
+      },
+      "CRU": {
+        "PTS": 9
       }
-    },
-    "casa_5": {},
-    "casa_3": {},
-    "fora_5": {},
-    "fora_3": {}
+    }
   },
   "ZAG": {
     "total_5": {
-      "BAH": {
-        "PTS": 38
-      },
-      "BOT": {
-        "PTS": 29
-      },
-      "CAM": {
-        "PTS": 41
-      },
-      "CAP": {
-        "PTS": 23
-      },
-      "CFC": {
-        "PTS": 25
+      "REM": {
+        "PTS": 42
       },
       "CHA": {
         "PTS": 14
       },
-      "COR": {
-        "PTS": 26
+      "MIR": {
+        "PTS": 29
       },
-      "CRU": {
-        "PTS": 51
-      },
-      "FLA": {
-        "PTS": 54
+      "VIT": {
+        "PTS": 9
       },
       "FLU": {
         "PTS": 32
       },
-      "GRE": {
-        "PTS": 64
-      },
-      "INT": {
-        "PTS": 8
-      },
-      "MIR": {
-        "PTS": 29
+      "SAO": {
+        "PTS": 76
       },
       "PAL": {
         "PTS": 91
       },
+      "VAS": {
+        "PTS": 49
+      },
+      "CRU": {
+        "PTS": 51
+      },
+      "BOT": {
+        "PTS": 29
+      },
       "RBB": {
         "PTS": 13
       },
-      "REM": {
-        "PTS": 42
+      "CAP": {
+        "PTS": 23
+      },
+      "CFC": {
+        "PTS": 25
+      },
+      "GRE": {
+        "PTS": 64
+      },
+      "BAH": {
+        "PTS": 38
+      },
+      "CAM": {
+        "PTS": 41
       },
       "SAN": {
         "PTS": 24
       },
-      "SAO": {
-        "PTS": 76
+      "COR": {
+        "PTS": 26
       },
-      "VAS": {
-        "PTS": 49
+      "FLA": {
+        "PTS": 54
       },
-      "VIT": {
-        "PTS": 9
+      "INT": {
+        "PTS": 7
       }
     },
     "total_3": {
-      "BAH": {
-        "PTS": 33
+      "REM": {
+        "PTS": 34
+      },
+      "CHA": {
+        "PTS": 9
+      },
+      "MIR": {
+        "PTS": 29
+      },
+      "VIT": {
+        "PTS": 9
+      },
+      "FLU": {
+        "PTS": 32
+      },
+      "SAO": {
+        "PTS": 54
+      },
+      "PAL": {
+        "PTS": 84
+      },
+      "VAS": {
+        "PTS": 40
+      },
+      "CRU": {
+        "PTS": 41
       },
       "BOT": {
         "PTS": 23
       },
-      "CAM": {
-        "PTS": 41
+      "RBB": {
+        "PTS": 13
       },
       "CAP": {
         "PTS": 16
@@ -338,445 +850,1397 @@
       "CFC": {
         "PTS": 22
       },
-      "CHA": {
-        "PTS": 9
-      },
-      "COR": {
-        "PTS": 14
-      },
-      "CRU": {
-        "PTS": 41
-      },
-      "FLA": {
-        "PTS": 53
-      },
-      "FLU": {
-        "PTS": 32
-      },
       "GRE": {
         "PTS": 64
       },
-      "INT": {
-        "PTS": 7
+      "BAH": {
+        "PTS": 33
       },
-      "MIR": {
-        "PTS": 29
-      },
-      "PAL": {
-        "PTS": 84
-      },
-      "RBB": {
-        "PTS": 13
-      },
-      "REM": {
-        "PTS": 34
+      "CAM": {
+        "PTS": 41
       },
       "SAN": {
         "PTS": 15
       },
-      "SAO": {
-        "PTS": 54
+      "COR": {
+        "PTS": 14
       },
-      "VAS": {
-        "PTS": 40
+      "FLA": {
+        "PTS": 53
       },
-      "VIT": {
-        "PTS": 9
+      "INT": {
+        "PTS": 7
       }
     },
-    "casa_5": {},
-    "casa_3": {},
-    "fora_5": {},
-    "fora_3": {}
+    "casa_5": {
+      "CHA": {
+        "PTS": 5
+      },
+      "MIR": {
+        "PTS": 17
+      },
+      "VIT": {
+        "PTS": 4
+      },
+      "FLU": {
+        "PTS": 29
+      },
+      "SAO": {
+        "PTS": 67
+      },
+      "PAL": {
+        "PTS": 62
+      },
+      "CRU": {
+        "PTS": 32
+      },
+      "BOT": {
+        "PTS": 18
+      },
+      "RBB": {
+        "PTS": 4
+      },
+      "CAP": {
+        "PTS": 10
+      },
+      "CFC": {
+        "PTS": 8
+      },
+      "GRE": {
+        "PTS": 12
+      },
+      "BAH": {
+        "PTS": 38
+      },
+      "VAS": {
+        "PTS": 43
+      },
+      "CAM": {
+        "PTS": 31
+      },
+      "COR": {
+        "PTS": 2
+      },
+      "FLA": {
+        "PTS": 22
+      },
+      "REM": {
+        "PTS": 16
+      },
+      "INT": {
+        "PTS": 3
+      },
+      "SAN": {
+        "PTS": 15
+      }
+    },
+    "casa_3": {
+      "CHA": {
+        "PTS": 5
+      },
+      "MIR": {
+        "PTS": 17
+      },
+      "VIT": {
+        "PTS": 4
+      },
+      "FLU": {
+        "PTS": 29
+      },
+      "SAO": {
+        "PTS": 46
+      },
+      "PAL": {
+        "PTS": 55
+      },
+      "CRU": {
+        "PTS": 22
+      },
+      "BOT": {
+        "PTS": 18
+      },
+      "RBB": {
+        "PTS": 4
+      },
+      "CAP": {
+        "PTS": 10
+      },
+      "CFC": {
+        "PTS": 8
+      },
+      "GRE": {
+        "PTS": 12
+      },
+      "BAH": {
+        "PTS": 34
+      },
+      "VAS": {
+        "PTS": 34
+      },
+      "CAM": {
+        "PTS": 31
+      },
+      "COR": {
+        "PTS": 2
+      },
+      "FLA": {
+        "PTS": 21
+      },
+      "REM": {
+        "PTS": 16
+      },
+      "INT": {
+        "PTS": 3
+      },
+      "SAN": {
+        "PTS": 7
+      }
+    },
+    "fora_5": {
+      "REM": {
+        "PTS": 26
+      },
+      "CHA": {
+        "PTS": 9
+      },
+      "MIR": {
+        "PTS": 12
+      },
+      "VIT": {
+        "PTS": 5
+      },
+      "FLU": {
+        "PTS": 3
+      },
+      "SAO": {
+        "PTS": 9
+      },
+      "PAL": {
+        "PTS": 29
+      },
+      "VAS": {
+        "PTS": 6
+      },
+      "CRU": {
+        "PTS": 19
+      },
+      "BOT": {
+        "PTS": 11
+      },
+      "CFC": {
+        "PTS": 17
+      },
+      "RBB": {
+        "PTS": 9
+      },
+      "GRE": {
+        "PTS": 52
+      },
+      "CAP": {
+        "PTS": 13
+      },
+      "CAM": {
+        "PTS": 10
+      },
+      "SAN": {
+        "PTS": 8
+      },
+      "COR": {
+        "PTS": 24
+      },
+      "FLA": {
+        "PTS": 32
+      },
+      "INT": {
+        "PTS": 4
+      },
+      "BAH": {
+        "PTS": -1
+      }
+    },
+    "fora_3": {
+      "REM": {
+        "PTS": 18
+      },
+      "CHA": {
+        "PTS": 5
+      },
+      "MIR": {
+        "PTS": 12
+      },
+      "VIT": {
+        "PTS": 5
+      },
+      "FLU": {
+        "PTS": 3
+      },
+      "SAO": {
+        "PTS": 9
+      },
+      "PAL": {
+        "PTS": 29
+      },
+      "VAS": {
+        "PTS": 6
+      },
+      "CRU": {
+        "PTS": 19
+      },
+      "BOT": {
+        "PTS": 5
+      },
+      "CFC": {
+        "PTS": 14
+      },
+      "RBB": {
+        "PTS": 8
+      },
+      "GRE": {
+        "PTS": 52
+      },
+      "CAP": {
+        "PTS": 6
+      },
+      "CAM": {
+        "PTS": 10
+      },
+      "SAN": {
+        "PTS": 8
+      },
+      "COR": {
+        "PTS": 11
+      },
+      "FLA": {
+        "PTS": 32
+      },
+      "INT": {
+        "PTS": 4
+      },
+      "BAH": {
+        "PTS": -1
+      }
+    }
   },
   "MEI": {
     "total_5": {
-      "BAH": {
-        "PTS": 43
-      },
-      "BOT": {
-        "PTS": 75
-      },
       "CAM": {
         "PTS": 88
-      },
-      "CAP": {
-        "PTS": 58
-      },
-      "CFC": {
-        "PTS": 25
-      },
-      "CHA": {
-        "PTS": 48
-      },
-      "COR": {
-        "PTS": 63
-      },
-      "CRU": {
-        "PTS": 113
-      },
-      "FLA": {
-        "PTS": 118
-      },
-      "FLU": {
-        "PTS": 107
       },
       "GRE": {
         "PTS": 27
       },
-      "INT": {
-        "PTS": 57
+      "CRU": {
+        "PTS": 112
+      },
+      "FLU": {
+        "PTS": 107
+      },
+      "CHA": {
+        "PTS": 48
       },
       "MIR": {
         "PTS": 45
       },
-      "PAL": {
-        "PTS": 90
-      },
-      "RBB": {
-        "PTS": 34
-      },
-      "REM": {
-        "PTS": 78
-      },
       "SAN": {
-        "PTS": 111
-      },
-      "SAO": {
-        "PTS": 38
+        "PTS": 110
       },
       "VAS": {
         "PTS": 87
       },
-      "VIT": {
-        "PTS": 82
-      }
-    },
-    "total_3": {
-      "BAH": {
-        "PTS": 38
-      },
-      "BOT": {
-        "PTS": 65
-      },
-      "CAM": {
-        "PTS": 88
-      },
-      "CAP": {
-        "PTS": 56
-      },
-      "CFC": {
-        "PTS": 24
-      },
-      "CHA": {
-        "PTS": 37
-      },
-      "COR": {
-        "PTS": 58
-      },
-      "CRU": {
-        "PTS": 100
-      },
-      "FLA": {
-        "PTS": 107
-      },
-      "FLU": {
-        "PTS": 94
-      },
-      "GRE": {
-        "PTS": 21
-      },
-      "INT": {
-        "PTS": 56
-      },
-      "MIR": {
-        "PTS": 45
-      },
-      "PAL": {
+      "REM": {
         "PTS": 78
       },
       "RBB": {
         "PTS": 34
       },
-      "REM": {
-        "PTS": 67
-      },
-      "SAN": {
-        "PTS": 107
+      "VIT": {
+        "PTS": 82
       },
       "SAO": {
         "PTS": 38
       },
+      "BAH": {
+        "PTS": 43
+      },
+      "CFC": {
+        "PTS": 25
+      },
+      "INT": {
+        "PTS": 56
+      },
+      "FLA": {
+        "PTS": 118
+      },
+      "PAL": {
+        "PTS": 90
+      },
+      "BOT": {
+        "PTS": 75
+      },
+      "CAP": {
+        "PTS": 58
+      },
+      "COR": {
+        "PTS": 63
+      }
+    },
+    "total_3": {
+      "CAM": {
+        "PTS": 88
+      },
+      "GRE": {
+        "PTS": 21
+      },
+      "CRU": {
+        "PTS": 100
+      },
+      "FLU": {
+        "PTS": 94
+      },
+      "CHA": {
+        "PTS": 37
+      },
+      "MIR": {
+        "PTS": 45
+      },
+      "SAN": {
+        "PTS": 107
+      },
       "VAS": {
         "PTS": 64
       },
+      "REM": {
+        "PTS": 67
+      },
+      "RBB": {
+        "PTS": 34
+      },
       "VIT": {
         "PTS": 65
+      },
+      "SAO": {
+        "PTS": 38
+      },
+      "BAH": {
+        "PTS": 38
+      },
+      "CFC": {
+        "PTS": 24
+      },
+      "INT": {
+        "PTS": 56
+      },
+      "FLA": {
+        "PTS": 107
+      },
+      "PAL": {
+        "PTS": 78
+      },
+      "BOT": {
+        "PTS": 65
+      },
+      "CAP": {
+        "PTS": 56
+      },
+      "COR": {
+        "PTS": 58
       }
     },
-    "casa_5": {},
-    "casa_3": {},
-    "fora_5": {},
-    "fora_3": {}
+    "casa_5": {
+      "CAM": {
+        "PTS": 66
+      },
+      "GRE": {
+        "PTS": 18
+      },
+      "CRU": {
+        "PTS": 50
+      },
+      "FLU": {
+        "PTS": 92
+      },
+      "CHA": {
+        "PTS": 11
+      },
+      "MIR": {
+        "PTS": 36
+      },
+      "SAN": {
+        "PTS": 41
+      },
+      "VAS": {
+        "PTS": 54
+      },
+      "REM": {
+        "PTS": 43
+      },
+      "RBB": {
+        "PTS": 14
+      },
+      "VIT": {
+        "PTS": 34
+      },
+      "SAO": {
+        "PTS": 31
+      },
+      "BAH": {
+        "PTS": 38
+      },
+      "CFC": {
+        "PTS": 3
+      },
+      "INT": {
+        "PTS": 37
+      },
+      "FLA": {
+        "PTS": 59
+      },
+      "PAL": {
+        "PTS": 74
+      },
+      "BOT": {
+        "PTS": 36
+      },
+      "CAP": {
+        "PTS": 28
+      },
+      "COR": {
+        "PTS": 11
+      }
+    },
+    "casa_3": {
+      "CAM": {
+        "PTS": 66
+      },
+      "GRE": {
+        "PTS": 18
+      },
+      "CRU": {
+        "PTS": 38
+      },
+      "FLU": {
+        "PTS": 79
+      },
+      "CHA": {
+        "PTS": 11
+      },
+      "MIR": {
+        "PTS": 36
+      },
+      "SAN": {
+        "PTS": 37
+      },
+      "VAS": {
+        "PTS": 31
+      },
+      "REM": {
+        "PTS": 43
+      },
+      "RBB": {
+        "PTS": 14
+      },
+      "VIT": {
+        "PTS": 34
+      },
+      "SAO": {
+        "PTS": 31
+      },
+      "BAH": {
+        "PTS": 33
+      },
+      "CFC": {
+        "PTS": 3
+      },
+      "INT": {
+        "PTS": 37
+      },
+      "FLA": {
+        "PTS": 48
+      },
+      "PAL": {
+        "PTS": 62
+      },
+      "BOT": {
+        "PTS": 36
+      },
+      "CAP": {
+        "PTS": 28
+      },
+      "COR": {
+        "PTS": 11
+      }
+    },
+    "fora_5": {
+      "CAM": {
+        "PTS": 22
+      },
+      "CRU": {
+        "PTS": 63
+      },
+      "FLU": {
+        "PTS": 16
+      },
+      "CHA": {
+        "PTS": 37
+      },
+      "MIR": {
+        "PTS": 9
+      },
+      "SAN": {
+        "PTS": 70
+      },
+      "VAS": {
+        "PTS": 33
+      },
+      "REM": {
+        "PTS": 34
+      },
+      "RBB": {
+        "PTS": 20
+      },
+      "VIT": {
+        "PTS": 48
+      },
+      "SAO": {
+        "PTS": 8
+      },
+      "BAH": {
+        "PTS": 5
+      },
+      "CFC": {
+        "PTS": 22
+      },
+      "INT": {
+        "PTS": 19
+      },
+      "FLA": {
+        "PTS": 59
+      },
+      "PAL": {
+        "PTS": 16
+      },
+      "BOT": {
+        "PTS": 39
+      },
+      "GRE": {
+        "PTS": 9
+      },
+      "CAP": {
+        "PTS": 30
+      },
+      "COR": {
+        "PTS": 52
+      }
+    },
+    "fora_3": {
+      "CAM": {
+        "PTS": 22
+      },
+      "CRU": {
+        "PTS": 63
+      },
+      "FLU": {
+        "PTS": 16
+      },
+      "CHA": {
+        "PTS": 26
+      },
+      "MIR": {
+        "PTS": 9
+      },
+      "SAN": {
+        "PTS": 70
+      },
+      "VAS": {
+        "PTS": 33
+      },
+      "REM": {
+        "PTS": 23
+      },
+      "RBB": {
+        "PTS": 20
+      },
+      "VIT": {
+        "PTS": 31
+      },
+      "SAO": {
+        "PTS": 8
+      },
+      "BAH": {
+        "PTS": 5
+      },
+      "CFC": {
+        "PTS": 21
+      },
+      "INT": {
+        "PTS": 19
+      },
+      "FLA": {
+        "PTS": 59
+      },
+      "PAL": {
+        "PTS": 16
+      },
+      "BOT": {
+        "PTS": 29
+      },
+      "GRE": {
+        "PTS": 2
+      },
+      "CAP": {
+        "PTS": 27
+      },
+      "COR": {
+        "PTS": 47
+      }
+    }
   },
   "ATA": {
     "total_5": {
-      "BAH": {
-        "PTS": 36
-      },
-      "BOT": {
-        "PTS": 50
-      },
-      "CAM": {
-        "PTS": 52
-      },
-      "CAP": {
-        "PTS": 104
-      },
-      "CFC": {
-        "PTS": 36
-      },
-      "CHA": {
-        "PTS": 61
-      },
       "COR": {
-        "PTS": 62
-      },
-      "CRU": {
-        "PTS": 90
-      },
-      "FLA": {
-        "PTS": 86
-      },
-      "FLU": {
-        "PTS": 81
-      },
-      "GRE": {
-        "PTS": 59
-      },
-      "INT": {
-        "PTS": 43
-      },
-      "MIR": {
-        "PTS": 31
-      },
-      "PAL": {
         "PTS": 62
       },
       "RBB": {
         "PTS": 122
       },
-      "REM": {
-        "PTS": 51
-      },
-      "SAN": {
-        "PTS": 67
-      },
-      "SAO": {
-        "PTS": 77
-      },
-      "VAS": {
-        "PTS": 101
-      },
-      "VIT": {
-        "PTS": 74
-      }
-    },
-    "total_3": {
-      "BAH": {
-        "PTS": 27
-      },
       "BOT": {
-        "PTS": 51
-      },
-      "CAM": {
-        "PTS": 52
-      },
-      "CAP": {
-        "PTS": 96
-      },
-      "CFC": {
-        "PTS": 37
-      },
-      "CHA": {
-        "PTS": 48
-      },
-      "COR": {
-        "PTS": 62
-      },
-      "CRU": {
-        "PTS": 61
-      },
-      "FLA": {
-        "PTS": 70
-      },
-      "FLU": {
-        "PTS": 48
-      },
-      "GRE": {
-        "PTS": 52
+        "PTS": 50
       },
       "INT": {
         "PTS": 43
       },
+      "REM": {
+        "PTS": 51
+      },
+      "SAO": {
+        "PTS": 77
+      },
+      "BAH": {
+        "PTS": 36
+      },
+      "CFC": {
+        "PTS": 35
+      },
+      "FLU": {
+        "PTS": 81
+      },
+      "VIT": {
+        "PTS": 74
+      },
+      "CRU": {
+        "PTS": 90
+      },
       "MIR": {
         "PTS": 31
       },
+      "GRE": {
+        "PTS": 59
+      },
+      "CHA": {
+        "PTS": 61
+      },
+      "FLA": {
+        "PTS": 86
+      },
+      "VAS": {
+        "PTS": 101
+      },
       "PAL": {
-        "PTS": 56
+        "PTS": 62
+      },
+      "CAM": {
+        "PTS": 52
+      },
+      "SAN": {
+        "PTS": 67
+      },
+      "CAP": {
+        "PTS": 104
+      }
+    },
+    "total_3": {
+      "COR": {
+        "PTS": 62
       },
       "RBB": {
         "PTS": 109
       },
+      "BOT": {
+        "PTS": 51
+      },
+      "INT": {
+        "PTS": 43
+      },
       "REM": {
         "PTS": 44
-      },
-      "SAN": {
-        "PTS": 39
       },
       "SAO": {
         "PTS": 65
       },
-      "VAS": {
-        "PTS": 88
+      "BAH": {
+        "PTS": 27
+      },
+      "CFC": {
+        "PTS": 37
+      },
+      "FLU": {
+        "PTS": 48
       },
       "VIT": {
         "PTS": 58
-      }
-    },
-    "casa_5": {},
-    "casa_3": {},
-    "fora_5": {},
-    "fora_3": {}
-  },
-  "TEC": {
-    "total_5": {
-      "BAH": {
-        "PTS": 19
-      },
-      "BOT": {
-        "PTS": 21
-      },
-      "CAM": {
-        "PTS": 25
-      },
-      "CAP": {
-        "PTS": 24
-      },
-      "CFC": {
-        "PTS": 10
-      },
-      "CHA": {
-        "PTS": 16
-      },
-      "COR": {
-        "PTS": 16
       },
       "CRU": {
-        "PTS": 32
+        "PTS": 61
+      },
+      "MIR": {
+        "PTS": 31
+      },
+      "GRE": {
+        "PTS": 52
+      },
+      "CHA": {
+        "PTS": 48
       },
       "FLA": {
-        "PTS": 33
+        "PTS": 70
+      },
+      "VAS": {
+        "PTS": 88
+      },
+      "PAL": {
+        "PTS": 56
+      },
+      "CAM": {
+        "PTS": 52
+      },
+      "SAN": {
+        "PTS": 39
+      },
+      "CAP": {
+        "PTS": 96
+      }
+    },
+    "casa_5": {
+      "COR": {
+        "PTS": 26
+      },
+      "RBB": {
+        "PTS": 82
+      },
+      "BOT": {
+        "PTS": 37
+      },
+      "SAO": {
+        "PTS": 70
+      },
+      "BAH": {
+        "PTS": 31
+      },
+      "INT": {
+        "PTS": 14
       },
       "FLU": {
-        "PTS": 27
+        "PTS": 70
+      },
+      "VIT": {
+        "PTS": 31
+      },
+      "CRU": {
+        "PTS": 53
+      },
+      "MIR": {
+        "PTS": 8
+      },
+      "REM": {
+        "PTS": 34
+      },
+      "GRE": {
+        "PTS": 39
+      },
+      "CHA": {
+        "PTS": 34
+      },
+      "FLA": {
+        "PTS": 35
+      },
+      "VAS": {
+        "PTS": 62
+      },
+      "PAL": {
+        "PTS": 50
+      },
+      "CAM": {
+        "PTS": 42
+      },
+      "CFC": {
+        "PTS": 14
+      },
+      "SAN": {
+        "PTS": 38
+      },
+      "CAP": {
+        "PTS": 42
+      }
+    },
+    "casa_3": {
+      "COR": {
+        "PTS": 26
+      },
+      "RBB": {
+        "PTS": 82
+      },
+      "BOT": {
+        "PTS": 37
+      },
+      "SAO": {
+        "PTS": 58
+      },
+      "BAH": {
+        "PTS": 22
+      },
+      "INT": {
+        "PTS": 14
+      },
+      "FLU": {
+        "PTS": 36
+      },
+      "VIT": {
+        "PTS": 31
+      },
+      "CRU": {
+        "PTS": 24
+      },
+      "MIR": {
+        "PTS": 8
+      },
+      "REM": {
+        "PTS": 34
+      },
+      "GRE": {
+        "PTS": 39
+      },
+      "CHA": {
+        "PTS": 34
+      },
+      "FLA": {
+        "PTS": 18
+      },
+      "VAS": {
+        "PTS": 50
+      },
+      "PAL": {
+        "PTS": 44
+      },
+      "CAM": {
+        "PTS": 42
+      },
+      "CFC": {
+        "PTS": 14
+      },
+      "SAN": {
+        "PTS": 10
+      },
+      "CAP": {
+        "PTS": 42
+      }
+    },
+    "fora_5": {
+      "COR": {
+        "PTS": 36
+      },
+      "RBB": {
+        "PTS": 40
+      },
+      "BOT": {
+        "PTS": 13
+      },
+      "INT": {
+        "PTS": 29
+      },
+      "REM": {
+        "PTS": 16
+      },
+      "SAO": {
+        "PTS": 7
+      },
+      "BAH": {
+        "PTS": 5
+      },
+      "CFC": {
+        "PTS": 21
+      },
+      "FLU": {
+        "PTS": 11
+      },
+      "VIT": {
+        "PTS": 43
+      },
+      "CRU": {
+        "PTS": 37
+      },
+      "MIR": {
+        "PTS": 23
       },
       "GRE": {
         "PTS": 20
       },
+      "CHA": {
+        "PTS": 27
+      },
+      "FLA": {
+        "PTS": 52
+      },
+      "VAS": {
+        "PTS": 39
+      },
+      "PAL": {
+        "PTS": 12
+      },
+      "CAM": {
+        "PTS": 10
+      },
+      "CAP": {
+        "PTS": 62
+      },
+      "SAN": {
+        "PTS": 29
+      }
+    },
+    "fora_3": {
+      "COR": {
+        "PTS": 36
+      },
+      "RBB": {
+        "PTS": 26
+      },
+      "BOT": {
+        "PTS": 14
+      },
       "INT": {
-        "PTS": 13
+        "PTS": 29
+      },
+      "REM": {
+        "PTS": 9
+      },
+      "SAO": {
+        "PTS": 7
+      },
+      "BAH": {
+        "PTS": 5
+      },
+      "CFC": {
+        "PTS": 22
+      },
+      "FLU": {
+        "PTS": 11
+      },
+      "VIT": {
+        "PTS": 27
+      },
+      "CRU": {
+        "PTS": 37
       },
       "MIR": {
+        "PTS": 23
+      },
+      "GRE": {
+        "PTS": 12
+      },
+      "CHA": {
+        "PTS": 13
+      },
+      "FLA": {
+        "PTS": 52
+      },
+      "VAS": {
+        "PTS": 39
+      },
+      "PAL": {
+        "PTS": 12
+      },
+      "CAM": {
+        "PTS": 10
+      },
+      "CAP": {
+        "PTS": 54
+      },
+      "SAN": {
+        "PTS": 29
+      }
+    }
+  },
+  "TEC": {
+    "total_5": {
+      "MIR": {
+        "PTS": 16
+      },
+      "REM": {
+        "PTS": 22
+      },
+      "CHA": {
         "PTS": 16
       },
       "PAL": {
         "PTS": 36
       },
-      "RBB": {
-        "PTS": 21
+      "INT": {
+        "PTS": 13
       },
-      "REM": {
-        "PTS": 22
+      "CFC": {
+        "PTS": 10
       },
-      "SAN": {
-        "PTS": 23
-      },
-      "SAO": {
-        "PTS": 29
+      "CRU": {
+        "PTS": 32
       },
       "VAS": {
         "PTS": 32
       },
-      "VIT": {
-        "PTS": 24
-      }
-    },
-    "total_3": {
-      "BAH": {
-        "PTS": 15
+      "RBB": {
+        "PTS": 21
       },
-      "BOT": {
-        "PTS": 18
+      "SAO": {
+        "PTS": 29
       },
-      "CAM": {
+      "GRE": {
         "PTS": 20
       },
-      "CAP": {
-        "PTS": 17
+      "SAN": {
+        "PTS": 23
       },
-      "CFC": {
-        "PTS": 9
-      },
-      "CHA": {
-        "PTS": 11
+      "BOT": {
+        "PTS": 21
       },
       "COR": {
         "PTS": 16
       },
+      "FLU": {
+        "PTS": 27
+      },
+      "FLA": {
+        "PTS": 33
+      },
+      "VIT": {
+        "PTS": 24
+      },
+      "CAP": {
+        "PTS": 24
+      },
+      "CAM": {
+        "PTS": 25
+      },
+      "BAH": {
+        "PTS": 19
+      }
+    },
+    "total_3": {
+      "MIR": {
+        "PTS": 16
+      },
+      "REM": {
+        "PTS": 18
+      },
+      "CHA": {
+        "PTS": 11
+      },
+      "PAL": {
+        "PTS": 29
+      },
+      "INT": {
+        "PTS": 13
+      },
+      "CFC": {
+        "PTS": 9
+      },
       "CRU": {
         "PTS": 24
       },
-      "FLA": {
-        "PTS": 26
+      "VAS": {
+        "PTS": 18
       },
-      "FLU": {
+      "RBB": {
+        "PTS": 17
+      },
+      "SAO": {
         "PTS": 20
       },
       "GRE": {
         "PTS": 12
       },
-      "INT": {
-        "PTS": 13
-      },
-      "MIR": {
-        "PTS": 16
-      },
-      "PAL": {
-        "PTS": 29
-      },
-      "RBB": {
-        "PTS": 17
-      },
-      "REM": {
-        "PTS": 18
-      },
       "SAN": {
         "PTS": 17
       },
-      "SAO": {
+      "BOT": {
+        "PTS": 18
+      },
+      "COR": {
+        "PTS": 16
+      },
+      "FLU": {
         "PTS": 20
       },
-      "VAS": {
-        "PTS": 18
+      "FLA": {
+        "PTS": 26
       },
       "VIT": {
         "PTS": 18
+      },
+      "CAP": {
+        "PTS": 17
+      },
+      "CAM": {
+        "PTS": 20
+      },
+      "BAH": {
+        "PTS": 15
       }
     },
-    "casa_5": {},
-    "casa_3": {},
-    "fora_5": {},
-    "fora_3": {}
+    "casa_5": {
+      "MIR": {
+        "PTS": 11
+      },
+      "REM": {
+        "PTS": 10
+      },
+      "CHA": {
+        "PTS": 5
+      },
+      "PAL": {
+        "PTS": 26
+      },
+      "CFC": {
+        "PTS": 3
+      },
+      "CRU": {
+        "PTS": 19
+      },
+      "VAS": {
+        "PTS": 21
+      },
+      "RBB": {
+        "PTS": 13
+      },
+      "SAO": {
+        "PTS": 25
+      },
+      "GRE": {
+        "PTS": 8
+      },
+      "SAN": {
+        "PTS": 11
+      },
+      "BOT": {
+        "PTS": 14
+      },
+      "FLU": {
+        "PTS": 24
+      },
+      "COR": {
+        "PTS": 5
+      },
+      "INT": {
+        "PTS": 7
+      },
+      "FLA": {
+        "PTS": 16
+      },
+      "VIT": {
+        "PTS": 11
+      },
+      "CAP": {
+        "PTS": 9
+      },
+      "CAM": {
+        "PTS": 20
+      },
+      "BAH": {
+        "PTS": 17
+      }
+    },
+    "casa_3": {
+      "MIR": {
+        "PTS": 11
+      },
+      "REM": {
+        "PTS": 10
+      },
+      "CHA": {
+        "PTS": 5
+      },
+      "PAL": {
+        "PTS": 18
+      },
+      "CFC": {
+        "PTS": 3
+      },
+      "CRU": {
+        "PTS": 11
+      },
+      "VAS": {
+        "PTS": 7
+      },
+      "RBB": {
+        "PTS": 13
+      },
+      "SAO": {
+        "PTS": 17
+      },
+      "GRE": {
+        "PTS": 8
+      },
+      "SAN": {
+        "PTS": 5
+      },
+      "BOT": {
+        "PTS": 14
+      },
+      "FLU": {
+        "PTS": 16
+      },
+      "COR": {
+        "PTS": 5
+      },
+      "INT": {
+        "PTS": 7
+      },
+      "FLA": {
+        "PTS": 9
+      },
+      "VIT": {
+        "PTS": 11
+      },
+      "CAP": {
+        "PTS": 9
+      },
+      "CAM": {
+        "PTS": 15
+      },
+      "BAH": {
+        "PTS": 12
+      }
+    },
+    "fora_5": {
+      "MIR": {
+        "PTS": 6
+      },
+      "REM": {
+        "PTS": 11
+      },
+      "CHA": {
+        "PTS": 11
+      },
+      "PAL": {
+        "PTS": 10
+      },
+      "INT": {
+        "PTS": 6
+      },
+      "CFC": {
+        "PTS": 7
+      },
+      "CRU": {
+        "PTS": 13
+      },
+      "VAS": {
+        "PTS": 11
+      },
+      "RBB": {
+        "PTS": 8
+      },
+      "SAO": {
+        "PTS": 3
+      },
+      "GRE": {
+        "PTS": 12
+      },
+      "SAN": {
+        "PTS": 12
+      },
+      "BOT": {
+        "PTS": 7
+      },
+      "COR": {
+        "PTS": 11
+      },
+      "FLU": {
+        "PTS": 4
+      },
+      "FLA": {
+        "PTS": 17
+      },
+      "VIT": {
+        "PTS": 12
+      },
+      "CAP": {
+        "PTS": 15
+      },
+      "CAM": {
+        "PTS": 5
+      },
+      "BAH": {
+        "PTS": 2
+      }
+    },
+    "fora_3": {
+      "MIR": {
+        "PTS": 6
+      },
+      "REM": {
+        "PTS": 7
+      },
+      "CHA": {
+        "PTS": 6
+      },
+      "PAL": {
+        "PTS": 10
+      },
+      "INT": {
+        "PTS": 6
+      },
+      "CFC": {
+        "PTS": 6
+      },
+      "CRU": {
+        "PTS": 13
+      },
+      "VAS": {
+        "PTS": 11
+      },
+      "RBB": {
+        "PTS": 4
+      },
+      "SAO": {
+        "PTS": 3
+      },
+      "GRE": {
+        "PTS": 4
+      },
+      "SAN": {
+        "PTS": 12
+      },
+      "BOT": {
+        "PTS": 4
+      },
+      "COR": {
+        "PTS": 11
+      },
+      "FLU": {
+        "PTS": 4
+      },
+      "FLA": {
+        "PTS": 17
+      },
+      "VIT": {
+        "PTS": 7
+      },
+      "CAP": {
+        "PTS": 8
+      },
+      "CAM": {
+        "PTS": 5
+      },
+      "BAH": {
+        "PTS": 2
+      }
+    }
   }
 }
