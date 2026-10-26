@@ -83,30 +83,59 @@
         } catch(e) { console.log(e); }
     }
 
-    function renderCruzamento() {
-        const pos = document.getElementById('filtro-posicao').value; const scout = document.getElementById('filtro-scout').value;
+        function renderCruzamento() {
+        const pos = document.getElementById('filtro-posicao').value;
+        const scout = document.getElementById('filtro-scout').value;
         const container = document.getElementById('cruzamento-list');
+        
+        // Confrontos reais da rodada atual
+        const confrontos = [
+            { casa: "PAL", fora: "RBB" },
+            { casa: "FLU", fora: "CHA" },
+            { casa: "VAS", fora: "COR" },
+            { casa: "MIR", fora: "SAO" },
+            { casa: "FLA", fora: "CAM" },
+            { casa: "GRE", fora: "CFC" }
+        ];
+
         if (!window.dadosCruzamento || !window.dadosCruzamento.casa) return;
 
-        let timesCasa = Object.keys(window.dadosCruzamento.casa).filter(k => k.endsWith(`_${pos}`)); let html = '';
-        timesCasa.slice(0, 10).forEach(chave => {
-            const timeCasa = chave.split('_')[0]; const valorFeito = window.dadosCruzamento.casa[chave][scout] || 0;
-            let chaveFora = Object.keys(window.dadosCruzamento.fora).find(k => k.endsWith(`_${pos}`)); if(!chaveFora) return;
-            const timeFora = chaveFora.split('_')[0]; const valorCedido = window.dadosCruzamento.fora[chaveFora][scout] || 0;
+        let html = '';
+        confrontos.forEach(conf => {
+            const chaveCasa = `${conf.casa}_${pos}`;
+            const chaveFora = `${conf.fora}_${pos}`;
+            
+            const dadosCasa = window.dadosCruzamento.casa[chaveCasa] || {};
+            const dadosFora = window.dadosCruzamento.fora[chaveFora] || {};
+            
+            const valorFeito = dadosCasa[scout] || 0;
+            const valorCedido = dadosFora[scout] || 0;
+
             const max = Math.max(valorFeito, valorCedido, 1);
-            html += `<div class="match-container">
-                <div class="match-team">${timeCasa}</div>
+            const pctFeito = (valorFeito / max) * 100;
+            const pctCedido = (valorCedido / max) * 100;
+
+            html += `
+            <div class="match-container">
+                <div class="match-team">${conf.casa}</div>
                 <div class="match-stats">
                     <div class="stat-row">
-                        <div class="stat-bar-left" style="width:45%"><div class="bar bar-green" style="width:${(valorFeito/max)*100}%">${valorFeito}</div></div>
+                        <div class="stat-bar-left" style="width:45%">
+                            <div class="bar bar-green" style="width:${pctFeito}%">${valorFeito}</div>
+                        </div>
                         <div style="width:10%;text-align:center;color:#888;font-weight:bold;">X</div>
-                        <div class="stat-bar-right" style="width:45%"><div class="bar bar-red" style="width:${(valorCedido/max)*100}%">${valorCedido}</div></div>
+                        <div class="stat-bar-right" style="width:45%">
+                            <div class="bar bar-red" style="width:${pctCedido}%">${valorCedido}</div>
+                        </div>
                     </div>
                     <div class="stat-label">${scout} Feitos x Cedidos</div>
                 </div>
-                <div class="match-team">${timeFora}</div>
+                <div class="match-team">${conf.fora}</div>
             </div>`;
         });
+
+        container.innerHTML = html || '<p>Nenhum confronto gerado.</p>';
+    }
         container.innerHTML = html || '<p>Nenhum confronto.</p>';
     }
     window.onload = () => { carregarClassificacao(); carregarDados(); };
