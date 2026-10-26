@@ -9,11 +9,10 @@
         body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; }
         header { background-color: #000; padding: 15px; text-align: center; border-bottom: 2px solid var(--accent); }
         .tabs { display: flex; background-color: #000; justify-content: center; gap: 10px; padding: 10px; }
-        .tab-btn { background: none; border: none; color: #888; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .tab-btn { background: none; border: none; color: #888; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-bottom: 2px solid transparent; }
         .tab-btn.active { color: var(--accent); border-bottom: 2px solid var(--accent); font-weight: bold; }
         .container { padding: 20px; max-width: 1200px; margin: 0 auto; }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
+        .tab-content { display: none; } .tab-content.active { display: block; }
         
         .btn-ge { display: inline-block; background-color: var(--accent); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2rem; margin-top: 20px; }
         .top5-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
@@ -32,10 +31,10 @@
         .stat-row { display: flex; align-items: center; justify-content: center; gap: 10px; }
         .stat-bar-left { flex: 1; display: flex; justify-content: flex-end; }
         .stat-bar-right { flex: 1; display: flex; justify-content: flex-start; }
-        .bar { height: 30px; border-radius: 15px; display: flex; align-items: center; padding: 0 10px; color: #fff; font-weight: bold; min-width: 40px; transition: width 0.5s; }
+        .bar { height: 30px; border-radius: 15px; display: flex; align-items: center; padding: 0 10px; color: #fff; font-weight: bold; min-width: 40px; }
         .bar-green { background-color: #00b894; justify-content: flex-end; }
         .bar-red { background-color: #ff7675; justify-content: flex-start; }
-        .stat-label { text-align: center; font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .stat-label { text-align: center; font-size: 0.8rem; color: #888; text-transform: uppercase; }
     </style>
 </head>
 <body>
@@ -80,7 +79,7 @@
             <div class="filter-group">
                 <label>Período</label>
                 <select id="filtro-periodo" onchange="renderCruzamento()">
-                    <option value="total">Total</option>
+                    <option value="total">Total (Todas as Rodadas)</option>
                     <option value="ultimos_3">Últimos 3 Jogos</option>
                     <option value="ultimos_5">Últimos 5 Jogos</option>
                 </select>
@@ -117,15 +116,9 @@
     async function carregarDados() {
         try {
             const resTop5 = await fetch('top5_posicoes.json');
-            if (resTop5.ok) {
-                dadosTop5 = await resTop5.json();
-                renderTop5();
-            }
+            if (resTop5.ok) { dadosTop5 = await resTop5.json(); renderTop5(); }
             const resCruz = await fetch('cruzamento_completo.json');
-            if (resCruz.ok) {
-                dadosCruzamento = await resCruz.json();
-                renderCruzamento();
-            }
+            if (resCruz.ok) { dadosCruzamento = await resCruz.json(); renderCruzamento(); }
         } catch (e) { console.error(e); }
     }
 
@@ -134,8 +127,7 @@
         const posicoesNomes = { 'GOL': 'Goleiros', 'LAT': 'Laterais', 'ZAG': 'Zagueiros', 'MEI': 'Meias', 'ATA': 'Atacantes', 'TEC': 'Técnicos' };
         
         if (!dadosTop5 || Object.keys(dadosTop5).length === 0) {
-            container.innerHTML = '<p>Dados não encontrados.</p>';
-            return;
+            container.innerHTML = '<p>Dados não encontrados.</p>'; return;
         }
         
         let html = '';
@@ -158,32 +150,37 @@
         const container = document.getElementById('cruzamento-list');
 
         if (!dadosCruzamento || !dadosCruzamento[pos]) {
-            container.innerHTML = '<p>Dados não encontrados.</p>';
-            return;
+            container.innerHTML = '<p>Dados não encontrados.</p>'; return;
         }
 
-        // Define a base de dados com base no período
-        let base = dadosCruzamento[pos][periodo] || dadosCruzamento[pos]["total"];
-
-        // Se o mando for Casa, usamos a base de Casa para o time da casa e Fora para o visitante
-        // Nota: O JSON separa por "casa" e "fora", mas a soma de "casa" não tem o filtro de período.
-        // Para simplificar, se o usuário escolher "Casa", usamos a base de casa global.
-        // Se escolher "Total", usamos a base do período.
-        if (mando === 'casa') {
-            base = dadosCruzamento[pos]["casa"];
-        } else if (mando === 'fora') {
-            base = dadosCruzamento[pos]["fora"];
+        // Lógica Cartola:
+        // Se Mando = Total, usamos a base do período selecionado (total, ultimos_3, ultimos_5)
+        // Se Mando = Casa, usamos a base "casa" (que já é a soma de todas as rodadas em casa) 
+        // E para o visitante, usamos a base "fora" (soma de todas as rodadas fora)
+        
+        let baseCasa, baseFora;
+        
+        if (mando === 'total') {
+            // Total x Total pega os últimos 3 ou 5 jogos, independente do mando
+            baseCasa = dadosCruzamento[pos][periodo] || dadosCruzamento[pos]["total"];
+            baseFora = dadosCruzamento[pos][periodo] || dadosCruzamento[pos]["total"];
+        } else {
+            // Casa x Fora: Pega os dados de quem joga em casa (feito) e quem joga fora (cedido)
+            // O JSON já separa "casa" e "fora" somando tudo. 
+            baseCasa = dadosCruzamento[pos]["casa"];
+            baseFora = dadosCruzamento[pos]["fora"];
         }
 
         let html = '';
         confrontos.forEach(conf => {
-            const dadosCasa = base[conf.casa] || {};
+            const dadosCasa = baseCasa[conf.casa] || {};
             const valorFeito = dadosCasa[scout] || 0;
             
-            const dadosFora = base[conf.fora] || {};
+            const dadosFora = baseFora[conf.fora] || {};
             const valorCedido = dadosFora[scout] || 0;
 
-            // Para as barras, precisamos do maior valor para dar a proporção
+            // Se for Casa x Fora, o valor "Feito" é o que o time da casa fez jogando em casa, 
+            // e o "Cedido" é o que o time de fora cedeu jogando fora.
             const max = Math.max(valorFeito, valorCedido, 1);
             const pctFeito = (valorFeito / max) * 100;
             const pctCedido = (valorCedido / max) * 100;
