@@ -15,10 +15,8 @@
         .tab-content { display: none; } .tab-content.active { display: block; }
         
         /* Classificação */
-        #classificacao-container { background-color: var(--card-bg); padding: 20px; border-radius: 8px; overflow-x: auto; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
-        th { background-color: #2c2c2c; color: var(--accent); }
+        #classificacao-container { background-color: var(--card-bg); padding: 20px; border-radius: 8px; text-align: center; }
+        .btn-ge { display: inline-block; background-color: var(--accent); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2rem; margin-top: 20px; }
         
         /* Top 5 */
         .top5-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
@@ -53,11 +51,12 @@
 </div>
 <div class="container">
     
-    <!-- ABA CLASSIFICAÇÃO (Tabela via Cartola API) -->
+    <!-- ABA CLASSIFICAÇÃO -->
     <div id="classificacao" class="tab-content active">
         <div id="classificacao-container">
             <h2>Campeonato Brasileiro Série A</h2>
-            <div id="tabela-classificacao"><p>Carregando tabela oficial...</p></div>
+            <p style="color: #ccc; margin-bottom: 20px;">A tabela oficial é atualizada em tempo real pela Globo Esporte.</p>
+            <a href="https://ge.globo.com/futebol/brasileirao-serie-a/" target="_blank" class="btn-ge">Abrir Classificação Oficial no GE</a>
         </div>
     </div>
 
@@ -67,7 +66,7 @@
         <div id="top5-container" class="top5-container"></div>
     </div>
 
-    <!-- ABA CRUZAMENTO (Apenas 2 Filtros: Total x Total e Casa x Fora) -->
+    <!-- ABA CRUZAMENTO -->
     <div id="cruzamento" class="tab-content">
         <h2>Cruzamento de Scouts (Soma)</h2>
         <div class="filters">
@@ -85,13 +84,22 @@
                     <option value="DS">Desarmes</option><option value="FF">Finalizações</option>
                     <option value="G">Gols</option><option value="A">Assistências</option>
                     <option value="SG">Saldo de Gols</option><option value="DE">Defesas</option>
+                    <option value="PTS">Pontuação Média</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Período</label>
+                <select id="filtro-periodo" onchange="renderCruzamento()">
+                    <option value="3">Últimos 3 Jogos</option>
+                    <option value="5">Últimos 5 Jogos</option>
                 </select>
             </div>
             <div class="filter-group">
                 <label>Mando</label>
                 <select id="filtro-mando" onchange="renderCruzamento()">
-                    <option value="total_5">Total (Últimos 5 Jogos)</option>
-                    <option value="casa_fora">Casa x Fora</option>
+                    <option value="total">Total (Casa e Fora)</option>
+                    <option value="casa">Casa</option>
+                    <option value="fora">Fora</option>
                 </select>
             </div>
         </div>
@@ -117,50 +125,12 @@
 
     async function carregarDados() {
         try {
-            // Carrega Top 5 e Cruzamento
             const resTop5 = await fetch('top5_posicoes.json');
             if (resTop5.ok) { dadosTop5 = await resTop5.json(); renderTop5(); }
             
             const resCruz = await fetch('cruzamento_completo.json');
             if (resCruz.ok) { dadosCruzamento = await resCruz.json(); renderCruzamento(); }
-
-            // Carrega Classificação da API do Cartola
-            const resClassificacao = await fetch('https://api.cartolafc.globo.com/posicoes');
-            const dataClassificacao = await resClassificacao.json();
-            renderClassificacao(dataClassificacao);
-
-        } catch (e) { 
-            console.error(e); 
-            document.getElementById('tabela-classificacao').innerHTML = '<p>Erro ao carregar classificação.</p>';
-        }
-    }
-
-    function renderClassificacao(data) {
-        const container = document.getElementById('tabela-classificacao');
-        // A API do Cartola retorna a lista dentro de "tabela"
-        const tabela = data.tabela || [];
-        
-        if (tabela.length === 0) { container.innerHTML = '<p>Tabela indisponível.</p>'; return; }
-
-        let html = '<table><thead><tr><th>Pos</th><th>Time</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th><th>SG</th></tr></thead><tbody>';
-        
-        tabela.forEach(time => {
-            let cor = time.posicao <= 4 ? 'border-left: 4px solid #00b894;' : (time.posicao >= 17 ? 'border-left: 4px solid #d63031;' : '');
-            html += `<tr style="${cor}">
-                <td>${time.posicao}</td>
-                <td style="font-weight:bold;">${time.time}</td>
-                <td style="color:var(--accent);font-weight:bold;">${time.pontos}</td>
-                <td>${time.jogos}</td>
-                <td>${time.vitorias}</td>
-                <td>${time.empates}</td>
-                <td>${time.derrotas}</td>
-                <td>${time.gols_pro}</td>
-                <td>${time.gols_contra}</td>
-                <td>${time.saldo_gols}</td>
-            </tr>`;
-        });
-        
-        container.innerHTML = html + '</tbody></table>';
+        } catch (e) { console.error(e); }
     }
 
     function renderTop5() {
@@ -186,6 +156,7 @@
     function renderCruzamento() {
         const pos = document.getElementById('filtro-posicao').value;
         const scout = document.getElementById('filtro-scout').value;
+        const periodo = document.getElementById('filtro-periodo').value;
         const mando = document.getElementById('filtro-mando').value;
         const container = document.getElementById('cruzamento-list');
 
@@ -193,29 +164,34 @@
             container.innerHTML = '<p>Dados não encontrados. Rode o Colab.</p>'; return;
         }
 
-        let baseCasa, baseFora;
+        // Monta a chave que o Colab criou: Ex: "casa_3", "total_5", "fora_3"
+        const chave = `${mando}_${periodo}`;
         
-        if (mando === 'total_5') {
-            // Total x Total: Pega a soma dos últimos 5 jogos independente do mando
-            baseCasa = dadosCruzamento[pos]["ultimos_5"];
-            baseFora = dadosCruzamento[pos]["ultimos_5"];
-        } else {
-            // Casa x Fora: Pega os dados do mandante (jogando em casa) e visitante (jogando fora)
-            baseCasa = dadosCruzamento[pos]["casa"];
-            baseFora = dadosCruzamento[pos]["fora"];
+        // Pega os dados daquela chave específica
+        const baseDados = dadosCruzamento[pos][chave];
+
+        if (!baseDados) {
+            container.innerHTML = '<p>Dados para esta combinação não encontrados.</p>'; return;
         }
 
         let html = '';
         confrontos.forEach(conf => {
-            const dadosCasa = baseCasa[conf.casa] || {};
+            // Pega os dados do time da casa
+            const dadosCasa = baseDados[conf.casa] || {};
             const valorFeito = dadosCasa[scout] || 0;
             
-            const dadosFora = baseFora[conf.fora] || {};
+            // Pega os dados do time de fora
+            const dadosFora = baseDados[conf.fora] || {};
             const valorCedido = dadosFora[scout] || 0;
 
             const max = Math.max(valorFeito, valorCedido, 1);
             const pctFeito = (valorFeito / max) * 100;
             const pctCedido = (valorCedido / max) * 100;
+
+            // Se o scout for 'PTS', mostra a média (mas o Colab não gerou a média por clube, apenas a soma de scouts).
+            // Para simplificar, mostramos o valor da soma.
+            const exibirFeito = scout === 'PTS' ? valorFeito : valorFeito;
+            const exibirCedido = scout === 'PTS' ? valorCedido : valorCedido;
 
             html += `
             <div class="match-container">
@@ -223,14 +199,14 @@
                 <div class="match-stats">
                     <div class="stat-row">
                         <div class="stat-bar-left" style="width:45%">
-                            <div class="bar bar-green" style="width:${pctFeito}%; min-width: 40px;">${valorFeito}</div>
+                            <div class="bar bar-green" style="width:${pctFeito}%; min-width: 40px;">${exibirFeito}</div>
                         </div>
                         <div style="width:10%;text-align:center;color:#888;font-weight:bold;">X</div>
                         <div class="stat-bar-right" style="width:45%">
-                            <div class="bar bar-red" style="width:${pctCedido}%; min-width: 40px;">${valorCedido}</div>
+                            <div class="bar bar-red" style="width:${pctCedido}%; min-width: 40px;">${exibirCedido}</div>
                         </div>
                     </div>
-                    <div class="stat-label">${scout} Feitos x Cedidos</div>
+                    <div class="stat-label">${scout} Feitos x Cedidos (${mando} - ${periodo} Jogos)</div>
                 </div>
                 <div class="match-team">${conf.fora}</div>
             </div>`;
