@@ -1,36 +1,41 @@
 {
   "GOL": [
     {
-      "nome": "Ronaldo",
-      "clube": "BAH",
-      "media_ult5": 9.5
-    },
-    {
       "nome": "Weverton",
       "clube": "GRE",
-      "media_ult5": 8.9
+      "media_ult5": 11.44
+    },
+    {
+      "nome": "Ronaldo",
+      "clube": "BAH",
+      "media_ult5": 8.76
     },
     {
       "nome": "Carlos Miguel",
       "clube": "PAL",
-      "media_ult5": 8.05
+      "media_ult5": 8.48
     },
     {
       "nome": "Walter",
       "clube": "MIR",
-      "media_ult5": 7.17
+      "media_ult5": 7.92
     },
     {
-      "nome": "Coronel",
-      "clube": "SAO",
-      "media_ult5": 7.1
+      "nome": "Anderson",
+      "clube": "CHA",
+      "media_ult5": 7.36
     }
   ],
   "LAT": [
     {
       "nome": "Giay",
       "clube": "PAL",
-      "media_ult5": 13.3
+      "media_ult5": 10.83
+    },
+    {
+      "nome": "Cuiabano",
+      "clube": "VAS",
+      "media_ult5": 10.72
     },
     {
       "nome": "Pedro Gabriel",
@@ -38,36 +43,31 @@
       "media_ult5": 10.4
     },
     {
-      "nome": "Cuiabano",
-      "clube": "VAS",
-      "media_ult5": 10.2
+      "nome": "Igor Formiga",
+      "clube": "MIR",
+      "media_ult5": 9.72
     },
     {
-      "nome": "Pedro Lima",
-      "clube": "SAO",
-      "media_ult5": 9.18
-    },
-    {
-      "nome": "Khellven",
-      "clube": "PAL",
-      "media_ult5": 8.8
+      "nome": "Natanael",
+      "clube": "CAM",
+      "media_ult5": 9.4
     }
   ],
   "ZAG": [
     {
-      "nome": "Alexander Barboza",
-      "clube": "PAL",
-      "media_ult5": 10.5
-    },
-    {
       "nome": "Saldivia",
       "clube": "VAS",
-      "media_ult5": 10.37
+      "media_ult5": 11.9
     },
     {
       "nome": "Wallace",
       "clube": "GRE",
-      "media_ult5": 9.53
+      "media_ult5": 9.8
+    },
+    {
+      "nome": "Alexander Barboza",
+      "clube": "PAL",
+      "media_ult5": 9.74
     },
     {
       "nome": "Danilo",
@@ -84,7 +84,7 @@
     {
       "nome": "Carrascal",
       "clube": "FLA",
-      "media_ult5": 11.32
+      "media_ult5": 11.24
     },
     {
       "nome": "Neymar",
@@ -92,26 +92,26 @@
       "media_ult5": 11.15
     },
     {
-      "nome": "Bernard",
-      "clube": "CAM",
-      "media_ult5": 10.5
+      "nome": "Lescano",
+      "clube": "VAS",
+      "media_ult5": 10.4
+    },
+    {
+      "nome": "Eduardo",
+      "clube": "MIR",
+      "media_ult5": 9.75
     },
     {
       "nome": "Matheuzinho",
       "clube": "VIT",
-      "media_ult5": 9.72
-    },
-    {
-      "nome": "Savarino",
-      "clube": "FLU",
-      "media_ult5": 9.6
+      "media_ult5": 9.74
     }
   ],
   "ATA": [
     {
       "nome": "Kaio Jorge",
       "clube": "CRU",
-      "media_ult5": 13.42
+      "media_ult5": 11.98
     },
     {
       "nome": "Cassierra",
@@ -119,14 +119,14 @@
       "media_ult5": 11.2
     },
     {
+      "nome": "Vargas",
+      "clube": "CAP",
+      "media_ult5": 11.07
+    },
+    {
       "nome": "Wallace Yan",
       "clube": "RBB",
       "media_ult5": 10.87
-    },
-    {
-      "nome": "Vargas",
-      "clube": "CAP",
-      "media_ult5": 10.6
     },
     {
       "nome": "Viveros",
@@ -136,29 +136,29 @@
   ],
   "TEC": [
     {
-      "nome": "Abel Ferreira",
-      "clube": "PAL",
-      "media_ult5": 9.1
+      "nome": "Pedro Emanuel",
+      "clube": "VAS",
+      "media_ult5": 9.08
     },
     {
-      "nome": "Leonardo Jardim",
-      "clube": "FLA",
-      "media_ult5": 8.16
+      "nome": "Abel Ferreira",
+      "clube": "PAL",
+      "media_ult5": 8.86
     },
     {
       "nome": "Artur Jorge",
       "clube": "CRU",
-      "media_ult5": 8.05
+      "media_ult5": 8.07
     },
     {
-      "nome": "Pedro Emanuel",
-      "clube": "VAS",
-      "media_ult5": 7.96
+      "nome": "Leonardo Jardim",
+      "clube": "FLA",
+      "media_ult5": 7.94
     },
     {
       "nome": "Dorival Júnior",
       "clube": "SAO",
-      "media_ult5": 7.13
+      "media_ult5": 7.34
     }
   ]
 }
