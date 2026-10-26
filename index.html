@@ -6,7 +6,7 @@
     <title>Fathur FC — Análise</title>
     <style>
         :root { --bg-color: #121212; --card-bg: #1e1e1e; --text-color: #e0e0e0; --accent: #00b894; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; }
         header { background-color: #000; padding: 15px; text-align: center; border-bottom: 2px solid var(--accent); }
         .tabs { display: flex; background-color: #000; justify-content: center; gap: 10px; padding: 10px; }
         .tab-btn { background: none; border: none; color: #888; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-bottom: 2px solid transparent; transition: 0.3s; }
@@ -15,17 +15,12 @@
         .tab-content { display: none; }
         .tab-content.active { display: block; }
         
-        /* Classificação */
-        .btn-ge { display: inline-block; background-color: var(--accent); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2rem; margin-top: 20px; transition: 0.3s; }
-        .btn-ge:hover { background-color: #00a884; }
-        
-        /* Top 5 */
+        .btn-ge { display: inline-block; background-color: var(--accent); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2rem; margin-top: 20px; }
         .top5-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
         .top5-card { background-color: var(--card-bg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--accent); }
         .top5-card h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 5px; }
         .top5-card p { margin: 5px 0; font-size: 0.9rem; display: flex; justify-content: space-between; }
         
-        /* Cruzamento */
         .filters { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; }
         .filter-group { display: flex; flex-direction: column; }
         .filter-group label { font-size: 0.8rem; color: #888; margin-bottom: 5px; }
@@ -37,66 +32,65 @@
         .stat-row { display: flex; align-items: center; justify-content: center; gap: 10px; }
         .stat-bar-left { flex: 1; display: flex; justify-content: flex-end; }
         .stat-bar-right { flex: 1; display: flex; justify-content: flex-start; }
-        .bar { height: 30px; border-radius: 15px; display: flex; align-items: center; padding: 0 10px; color: #fff; font-weight: bold; font-size: 0.9rem; min-width: 40px; transition: width 0.5s; }
+        .bar { height: 30px; border-radius: 15px; display: flex; align-items: center; padding: 0 10px; color: #fff; font-weight: bold; min-width: 40px; transition: width 0.5s; }
         .bar-green { background-color: #00b894; justify-content: flex-end; }
         .bar-red { background-color: #ff7675; justify-content: flex-start; }
         .stat-label { text-align: center; font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>⚽ Fathur FC — Análise</h1>
-</header>
-
+<header><h1>⚽ Fathur FC — Análise</h1></header>
 <div class="tabs">
     <button class="tab-btn active" onclick="openTab('classificacao', event)">🏆 Classificação</button>
     <button class="tab-btn" onclick="openTab('top5', event)">⭐ Top 5 Posições</button>
     <button class="tab-btn" onclick="openTab('cruzamento', event)">📊 Cruzamento</button>
 </div>
-
 <div class="container">
-    <!-- ABA CLASSIFICAÇÃO -->
     <div id="classificacao" class="tab-content active">
         <div style="background-color: var(--card-bg); padding: 40px; border-radius: 8px; text-align: center;">
             <h2>Campeonato Brasileiro Série A</h2>
-            <p style="color: #ccc; margin-bottom: 20px;">A tabela oficial é atualizada em tempo real pela Globo Esporte.</p>
             <a href="https://ge.globo.com/futebol/brasileirao-serie-a/" target="_blank" class="btn-ge">Abrir Classificação Oficial no GE</a>
         </div>
     </div>
 
-    <!-- ABA TOP 5 -->
     <div id="top5" class="tab-content">
         <h2>Top 5 Posições</h2>
-        <div id="top5-container" class="top5-container">
-            <p>Carregando...</p>
-        </div>
+        <div id="top5-container" class="top5-container"></div>
     </div>
 
-    <!-- ABA CRUZAMENTO -->
     <div id="cruzamento" class="tab-content">
         <h2>Cruzamento de Scouts</h2>
         <div class="filters">
             <div class="filter-group">
                 <label>Posição</label>
                 <select id="filtro-posicao" onchange="renderCruzamento()">
-                    <option value="ZAG">Zagueiros</option>
-                    <option value="LAT">Laterais</option>
-                    <option value="MEI">Meias</option>
-                    <option value="ATA">Atacantes</option>
-                    <option value="GOL">Goleiros</option>
-                    <option value="TEC">Técnicos</option>
+                    <option value="ZAG">Zagueiros</option><option value="LAT">Laterais</option>
+                    <option value="MEI">Meias</option><option value="ATA">Atacantes</option>
+                    <option value="GOL">Goleiros</option><option value="TEC">Técnicos</option>
                 </select>
             </div>
             <div class="filter-group">
                 <label>Scout</label>
                 <select id="filtro-scout" onchange="renderCruzamento()">
-                    <option value="DS">Desarmes</option>
-                    <option value="FF">Finalizações</option>
-                    <option value="G">Gols</option>
-                    <option value="A">Assistências</option>
-                    <option value="SG">Saldo de Gols</option>
-                    <option value="DE">Defesas</option>
+                    <option value="DS">Desarmes</option><option value="FF">Finalizações</option>
+                    <option value="G">Gols</option><option value="A">Assistências</option>
+                    <option value="SG">Saldo de Gols</option><option value="DE">Defesas</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Período</label>
+                <select id="filtro-periodo" onchange="renderCruzamento()">
+                    <option value="total">Total</option>
+                    <option value="ultimos_3">Últimos 3 Jogos</option>
+                    <option value="ultimos_5">Últimos 5 Jogos</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Mando</label>
+                <select id="filtro-mando" onchange="renderCruzamento()">
+                    <option value="total">Total (Casa e Fora)</option>
+                    <option value="casa">Casa</option>
+                    <option value="fora">Fora</option>
                 </select>
             </div>
         </div>
@@ -105,7 +99,6 @@
 </div>
 
 <script>
-    // Função para alternar entre as abas (Essencial para funcionar)
     function openTab(tabId, event) {
         document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
         document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
@@ -115,27 +108,30 @@
 
     let dadosTop5 = {};
     let dadosCruzamento = {};
+    const confrontos = [
+        { casa: "PAL", fora: "RBB" }, { casa: "FLU", fora: "CHA" },
+        { casa: "VAS", fora: "COR" }, { casa: "MIR", fora: "SAO" },
+        { casa: "FLA", fora: "CAM" }, { casa: "GRE", fora: "CFC" }
+    ];
 
-    // Carrega os dados dos JSONs
     async function carregarDados() {
         try {
+            // Carrega Top 5
             const resTop5 = await fetch('top5_posicoes.json');
             if (resTop5.ok) {
                 dadosTop5 = await resTop5.json();
                 renderTop5();
             }
 
-            const resCruz = await fetch('cruzamento_clubes.json');
+            // Carrega Cruzamento Completo
+            const resCruz = await fetch('cruzamento_completo.json');
             if (resCruz.ok) {
                 dadosCruzamento = await resCruz.json();
                 renderCruzamento();
             }
-        } catch (e) {
-            console.log("Erro ao carregar JSONs:", e);
-        }
+        } catch (e) { console.error(e); }
     }
 
-    // Renderiza os cards do Top 5
     function renderTop5() {
         const container = document.getElementById('top5-container');
         const posicoesNomes = { 'GOL': 'Goleiros', 'LAT': 'Laterais', 'ZAG': 'Zagueiros', 'MEI': 'Meias', 'ATA': 'Atacantes', 'TEC': 'Técnicos' };
@@ -150,41 +146,44 @@
             if (jogadores.length === 0) continue;
             html += `<div class="top5-card"><h3>${posicoesNomes[pos] || pos}</h3>`;
             jogadores.forEach((j, index) => {
-                html += `<p><span><strong>${index + 1}º</strong> ${j.nome} <small>(${j.clube})</small></span> <span style="color: var(--accent)">${j.media_ult5 ? j.media_ult5.toFixed(2) : '0.00'}</span></p>`;
+                html += `<p><span><strong>${index + 1}º</strong> ${j.nome} <small>(${j.clube})</small></span> <span style="color: var(--accent)">${j.media_ult5.toFixed(2)}</span></p>`;
             });
             html += `</div>`;
         }
         container.innerHTML = html;
     }
 
-    // Renderiza as barras do Cruzamento
     function renderCruzamento() {
         const pos = document.getElementById('filtro-posicao').value;
         const scout = document.getElementById('filtro-scout').value;
+        const periodo = document.getElementById('filtro-periodo').value;
+        const mando = document.getElementById('filtro-mando').value;
         const container = document.getElementById('cruzamento-list');
-        
-        // Confrontos da rodada (pode ser ajustado)
-        const confrontos = [
-            { casa: "PAL", fora: "RBB" },
-            { casa: "FLU", fora: "CHA" },
-            { casa: "VAS", fora: "COR" },
-            { casa: "MIR", fora: "SAO" },
-            { casa: "FLA", fora: "CAM" },
-            { casa: "GRE", fora: "CFC" }
-        ];
 
-        if (!dadosCruzamento || !dadosCruzamento.casa) {
-            container.innerHTML = '<p>Dados não encontrados.</p>';
+        if (!dadosCruzamento || !dadosCruzamento[pos]) {
+            container.innerHTML = '<p>Dados não encontrados. Rode o script no Colab.</p>';
             return;
+        }
+
+        // Lógica para escolher qual dado usar baseado nos filtros
+        // Se o mando for "casa", ele usa os dados de "casa" e cruza com o "fora" do adversário.
+        // Mas como simplificamos o JSON, usaremos o filtro de período primeiro, depois mando.
+        
+        let baseCasa = dadosCruzamento[pos][mando] || dadosCruzamento[pos]["total"]; 
+        let baseFora = dadosCruzamento[pos][mando === 'casa' ? 'fora' : (mando === 'fora' ? 'casa' : 'total')] || dadosCruzamento[pos]["total"];
+
+        // Ajuste para pegar o período correto
+        if (periodo !== 'total') {
+            baseCasa = dadosCruzamento[pos][periodo] || dadosCruzamento[pos]["total"];
+            baseFora = dadosCruzamento[pos][periodo] || dadosCruzamento[pos]["total"];
         }
 
         let html = '';
         confrontos.forEach(conf => {
-            const chaveCasa = `${conf.casa}_${pos}`;
-            const chaveFora = `${conf.fora}_${pos}`;
-            
-            const dadosCasa = dadosCruzamento.casa[chaveCasa] || {};
-            const dadosFora = dadosCruzamento.fora[chaveFora] || {};
+            // Dados de quem joga em casa
+            const dadosCasa = baseCasa[conf.casa] || {};
+            // Dados de quem joga fora
+            const dadosFora = baseFora[conf.fora] || {};
             
             const valorFeito = dadosCasa[scout] || 0;
             const valorCedido = dadosFora[scout] || 0;
@@ -212,7 +211,7 @@
             </div>`;
         });
 
-        container.innerHTML = html;
+        container.innerHTML = html || '<p>Nenhum dado para esta combinação de filtros.</p>';
     }
 
     window.onload = carregarDados;
