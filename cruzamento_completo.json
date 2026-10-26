@@ -3,62 +3,6 @@
     "ultimos_5": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 1,
-            "SG": 8,
-            "DE": 124,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 38
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 1,
-            "DS": 0,
-            "SG": 5,
-            "DE": 75,
-            "FF": 0,
-            "FC": 1,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 36
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -171,34 +115,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 5,
-            "DE": 97,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 19
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -284,62 +200,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 1,
-            "SG": 8,
-            "DE": 124,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 38
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -438,34 +298,6 @@
             "FD": 0,
             "FT": 0,
             "PTS": 10
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -567,62 +399,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 1,
-            "DS": 0,
-            "SG": 5,
-            "DE": 75,
-            "FF": 0,
-            "FC": 1,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 36
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -735,34 +511,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 5,
-            "DE": 97,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 19
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -850,62 +598,6 @@
     },
     "ultimos_3": {
       "total": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 2,
-            "DE": 71,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 32
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 6,
-            "FF": 0,
-            "FC": 1,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 14
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -1011,34 +703,6 @@
             "DS": 0,
             "SG": 1,
             "DE": 10,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 12
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
             "FF": 0,
             "FC": 0,
             "FD": 0,
@@ -1133,62 +797,6 @@
       ],
       "casa": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 2,
-            "DE": 71,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 32
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -1301,34 +909,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -1414,62 +994,6 @@
         }
       ],
       "fora": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 6,
-            "FF": 0,
-            "FC": 1,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 14
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -1575,34 +1099,6 @@
             "DS": 0,
             "SG": 1,
             "DE": 10,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 12
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
             "FF": 0,
             "FC": 0,
             "FD": 0,
@@ -1701,62 +1197,6 @@
     "ultimos_5": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 9,
-            "A": 1,
-            "DS": 57,
-            "SG": 12,
-            "DE": 0,
-            "FF": 16,
-            "FC": 35,
-            "FD": 7,
-            "FT": 1,
-            "PTS": 41
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 2,
-            "DS": 54,
-            "SG": 7,
-            "DE": 0,
-            "FF": 10,
-            "FC": 51,
-            "FD": 9,
-            "FT": 0,
-            "PTS": 36
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -1869,34 +1309,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 1,
-            "A": 4,
-            "DS": 111,
-            "SG": 14,
-            "DE": 0,
-            "FF": 17,
-            "FC": 58,
-            "FD": 11,
-            "FT": 0,
-            "PTS": 38
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -1982,62 +1394,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 9,
-            "A": 1,
-            "DS": 57,
-            "SG": 12,
-            "DE": 0,
-            "FF": 16,
-            "FC": 35,
-            "FD": 7,
-            "FT": 1,
-            "PTS": 41
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -2136,34 +1492,6 @@
             "FD": 16,
             "FT": 1,
             "PTS": 12
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -2265,62 +1593,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 2,
-            "DS": 54,
-            "SG": 7,
-            "DE": 0,
-            "FF": 10,
-            "FC": 51,
-            "FD": 9,
-            "FT": 0,
-            "PTS": 36
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -2430,34 +1702,6 @@
             "FD": 3,
             "FT": 2,
             "PTS": 54
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 1,
-            "A": 4,
-            "DS": 111,
-            "SG": 14,
-            "DE": 0,
-            "FF": 17,
-            "FC": 58,
-            "FD": 11,
-            "FT": 0,
-            "PTS": 38
           }
         },
         {
@@ -2549,62 +1793,6 @@
     "ultimos_3": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 6,
-            "SG": 1,
-            "DE": 0,
-            "FF": 2,
-            "FC": 4,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 38
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 2,
-            "DS": 54,
-            "SG": 7,
-            "DE": 0,
-            "FF": 10,
-            "FC": 51,
-            "FD": 9,
-            "FT": 0,
-            "PTS": 36
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -2717,34 +1905,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 1,
-            "A": 4,
-            "DS": 90,
-            "SG": 11,
-            "DE": 0,
-            "FF": 15,
-            "FC": 40,
-            "FD": 9,
-            "FT": 0,
-            "PTS": 37
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -2830,62 +1990,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 6,
-            "SG": 1,
-            "DE": 0,
-            "FF": 2,
-            "FC": 4,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 38
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -2984,34 +2088,6 @@
             "FD": 0,
             "FT": 0,
             "PTS": 12
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -3113,62 +2189,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 2,
-            "DS": 54,
-            "SG": 7,
-            "DE": 0,
-            "FF": 10,
-            "FC": 51,
-            "FD": 9,
-            "FT": 0,
-            "PTS": 36
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -3278,34 +2298,6 @@
             "FD": 3,
             "FT": 1,
             "PTS": 49
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 1,
-            "A": 4,
-            "DS": 90,
-            "SG": 11,
-            "DE": 0,
-            "FF": 15,
-            "FC": 40,
-            "FD": 9,
-            "FT": 0,
-            "PTS": 37
           }
         },
         {
@@ -3399,62 +2391,6 @@
     "ultimos_5": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 3,
-            "A": 0,
-            "DS": 27,
-            "SG": 5,
-            "DE": 0,
-            "FF": 4,
-            "FC": 20,
-            "FD": 5,
-            "FT": 1,
-            "PTS": 38
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 4,
-            "A": 3,
-            "DS": 75,
-            "SG": 10,
-            "DE": 0,
-            "FF": 15,
-            "FC": 70,
-            "FD": 5,
-            "FT": 0,
-            "PTS": 64
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -3567,34 +2503,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 1,
-            "DS": 71,
-            "SG": 12,
-            "DE": 0,
-            "FF": 22,
-            "FC": 46,
-            "FD": 2,
-            "FT": 1,
-            "PTS": 32
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -3680,62 +2588,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 3,
-            "A": 0,
-            "DS": 27,
-            "SG": 5,
-            "DE": 0,
-            "FF": 4,
-            "FC": 20,
-            "FD": 5,
-            "FT": 1,
-            "PTS": 38
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -3834,34 +2686,6 @@
             "FD": 5,
             "FT": 0,
             "PTS": 8
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -3963,62 +2787,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 4,
-            "A": 3,
-            "DS": 75,
-            "SG": 10,
-            "DE": 0,
-            "FF": 15,
-            "FC": 70,
-            "FD": 5,
-            "FT": 0,
-            "PTS": 64
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -4128,34 +2896,6 @@
             "FD": 3,
             "FT": 1,
             "PTS": 29
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 1,
-            "DS": 71,
-            "SG": 12,
-            "DE": 0,
-            "FF": 22,
-            "FC": 46,
-            "FD": 2,
-            "FT": 1,
-            "PTS": 32
           }
         },
         {
@@ -4247,62 +2987,6 @@
     "ultimos_3": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 1,
-            "DE": 0,
-            "FF": 0,
-            "FC": 5,
-            "FD": 1,
-            "FT": 0,
-            "PTS": 33
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 1,
-            "A": 1,
-            "DS": 49,
-            "SG": 7,
-            "DE": 0,
-            "FF": 7,
-            "FC": 44,
-            "FD": 3,
-            "FT": 0,
-            "PTS": 64
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -4415,34 +3099,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 1,
-            "DS": 69,
-            "SG": 11,
-            "DE": 0,
-            "FF": 19,
-            "FC": 40,
-            "FD": 1,
-            "FT": 1,
-            "PTS": 32
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -4528,62 +3184,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 1,
-            "DE": 0,
-            "FF": 0,
-            "FC": 5,
-            "FD": 1,
-            "FT": 0,
-            "PTS": 33
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -4682,34 +3282,6 @@
             "FD": 3,
             "FT": 0,
             "PTS": 8
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -4811,62 +3383,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 1,
-            "A": 1,
-            "DS": 49,
-            "SG": 7,
-            "DE": 0,
-            "FF": 7,
-            "FC": 44,
-            "FD": 3,
-            "FT": 0,
-            "PTS": 64
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -4976,34 +3492,6 @@
             "FD": 1,
             "FT": 1,
             "PTS": 23
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 1,
-            "DS": 69,
-            "SG": 11,
-            "DE": 0,
-            "FF": 19,
-            "FC": 40,
-            "FD": 1,
-            "FT": 1,
-            "PTS": 32
           }
         },
         {
@@ -5097,62 +3585,6 @@
     "ultimos_5": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 9,
-            "A": 13,
-            "DS": 198,
-            "SG": 0,
-            "DE": 0,
-            "FF": 58,
-            "FC": 173,
-            "FD": 25,
-            "FT": 6,
-            "PTS": 43
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 0,
-            "DS": 33,
-            "SG": 0,
-            "DE": 0,
-            "FF": 14,
-            "FC": 48,
-            "FD": 5,
-            "FT": 0,
-            "PTS": 27
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -5265,34 +3697,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 11,
-            "A": 10,
-            "DS": 114,
-            "SG": 0,
-            "DE": 0,
-            "FF": 51,
-            "FC": 119,
-            "FD": 34,
-            "FT": 5,
-            "PTS": 107
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -5378,62 +3782,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 9,
-            "A": 13,
-            "DS": 198,
-            "SG": 0,
-            "DE": 0,
-            "FF": 58,
-            "FC": 173,
-            "FD": 25,
-            "FT": 6,
-            "PTS": 43
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -5532,34 +3880,6 @@
             "FD": 19,
             "FT": 1,
             "PTS": 56
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -5661,62 +3981,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 2,
-            "A": 0,
-            "DS": 33,
-            "SG": 0,
-            "DE": 0,
-            "FF": 14,
-            "FC": 48,
-            "FD": 5,
-            "FT": 0,
-            "PTS": 27
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -5826,34 +4090,6 @@
             "FD": 25,
             "FT": 5,
             "PTS": 75
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 11,
-            "A": 10,
-            "DS": 114,
-            "SG": 0,
-            "DE": 0,
-            "FF": 51,
-            "FC": 119,
-            "FD": 34,
-            "FT": 5,
-            "PTS": 107
           }
         },
         {
@@ -5945,62 +4181,6 @@
     "ultimos_3": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 1,
-            "DS": 8,
-            "SG": 0,
-            "DE": 0,
-            "FF": 5,
-            "FC": 16,
-            "FD": 2,
-            "FT": 0,
-            "PTS": 38
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 1,
-            "A": 0,
-            "DS": 22,
-            "SG": 0,
-            "DE": 0,
-            "FF": 13,
-            "FC": 40,
-            "FD": 3,
-            "FT": 0,
-            "PTS": 21
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -6113,34 +4293,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 1,
-            "DS": 10,
-            "SG": 0,
-            "DE": 0,
-            "FF": 1,
-            "FC": 12,
-            "FD": 2,
-            "FT": 0,
-            "PTS": 94
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -6226,62 +4378,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 1,
-            "DS": 8,
-            "SG": 0,
-            "DE": 0,
-            "FF": 5,
-            "FC": 16,
-            "FD": 2,
-            "FT": 0,
-            "PTS": 38
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -6380,34 +4476,6 @@
             "FD": 4,
             "FT": 0,
             "PTS": 56
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -6509,62 +4577,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 1,
-            "A": 0,
-            "DS": 22,
-            "SG": 0,
-            "DE": 0,
-            "FF": 13,
-            "FC": 40,
-            "FD": 3,
-            "FT": 0,
-            "PTS": 21
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -6674,34 +4686,6 @@
             "FD": 8,
             "FT": 2,
             "PTS": 65
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 1,
-            "DS": 10,
-            "SG": 0,
-            "DE": 0,
-            "FF": 1,
-            "FC": 12,
-            "FD": 2,
-            "FT": 0,
-            "PTS": 94
           }
         },
         {
@@ -6795,62 +4779,6 @@
     "ultimos_5": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 17,
-            "A": 9,
-            "DS": 81,
-            "SG": 0,
-            "DE": 0,
-            "FF": 61,
-            "FC": 109,
-            "FD": 49,
-            "FT": 5,
-            "PTS": 36
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 14,
-            "A": 11,
-            "DS": 105,
-            "SG": 0,
-            "DE": 0,
-            "FF": 55,
-            "FC": 91,
-            "FD": 40,
-            "FT": 5,
-            "PTS": 59
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -6963,34 +4891,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 27,
-            "A": 15,
-            "DS": 97,
-            "SG": 0,
-            "DE": 0,
-            "FF": 61,
-            "FC": 113,
-            "FD": 60,
-            "FT": 5,
-            "PTS": 81
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -7076,62 +4976,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 17,
-            "A": 9,
-            "DS": 81,
-            "SG": 0,
-            "DE": 0,
-            "FF": 61,
-            "FC": 109,
-            "FD": 49,
-            "FT": 5,
-            "PTS": 36
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -7230,34 +5074,6 @@
             "FD": 37,
             "FT": 1,
             "PTS": 43
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -7359,62 +5175,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 14,
-            "A": 11,
-            "DS": 105,
-            "SG": 0,
-            "DE": 0,
-            "FF": 55,
-            "FC": 91,
-            "FD": 40,
-            "FT": 5,
-            "PTS": 59
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -7524,34 +5284,6 @@
             "FD": 45,
             "FT": 2,
             "PTS": 50
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 27,
-            "A": 15,
-            "DS": 97,
-            "SG": 0,
-            "DE": 0,
-            "FF": 61,
-            "FC": 113,
-            "FD": 60,
-            "FT": 5,
-            "PTS": 81
           }
         },
         {
@@ -7643,62 +5375,6 @@
     "ultimos_3": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 9,
-            "A": 3,
-            "DS": 22,
-            "SG": 0,
-            "DE": 0,
-            "FF": 23,
-            "FC": 41,
-            "FD": 11,
-            "FT": 2,
-            "PTS": 27
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 1,
-            "DS": 4,
-            "SG": 0,
-            "DE": 0,
-            "FF": 1,
-            "FC": 2,
-            "FD": 2,
-            "FT": 0,
-            "PTS": 52
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -7811,34 +5487,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 10,
-            "A": 4,
-            "DS": 23,
-            "SG": 0,
-            "DE": 0,
-            "FF": 23,
-            "FC": 26,
-            "FD": 24,
-            "FT": 2,
-            "PTS": 48
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -7924,62 +5572,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 9,
-            "A": 3,
-            "DS": 22,
-            "SG": 0,
-            "DE": 0,
-            "FF": 23,
-            "FC": 41,
-            "FD": 11,
-            "FT": 2,
-            "PTS": 27
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -8078,34 +5670,6 @@
             "FD": 11,
             "FT": 0,
             "PTS": 43
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -8207,62 +5771,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 1,
-            "DS": 4,
-            "SG": 0,
-            "DE": 0,
-            "FF": 1,
-            "FC": 2,
-            "FD": 2,
-            "FT": 0,
-            "PTS": 52
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -8372,34 +5880,6 @@
             "FD": 13,
             "FT": 0,
             "PTS": 51
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 10,
-            "A": 4,
-            "DS": 23,
-            "SG": 0,
-            "DE": 0,
-            "FF": 23,
-            "FC": 26,
-            "FD": 24,
-            "FT": 2,
-            "PTS": 48
           }
         },
         {
@@ -8493,62 +5973,6 @@
     "ultimos_5": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 19
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 20
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -8661,34 +6085,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 27
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -8774,62 +6170,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 19
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -8928,34 +6268,6 @@
             "FD": 0,
             "FT": 0,
             "PTS": 13
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -9057,62 +6369,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 20
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -9222,34 +6478,6 @@
             "FD": 0,
             "FT": 0,
             "PTS": 21
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 27
           }
         },
         {
@@ -9341,62 +6569,6 @@
     "ultimos_3": {
       "total": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 15
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 12
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -9509,34 +6681,6 @@
           }
         },
         {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 20
-          }
-        },
-        {
           "casa": "CRU",
           "visitante": "SAO",
           "feito": {
@@ -9622,62 +6766,6 @@
         }
       ],
       "casa": [
-        {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 15
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
         {
           "casa": "COR",
           "visitante": "PAL",
@@ -9776,34 +6864,6 @@
             "FD": 0,
             "FT": 0,
             "PTS": 13
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
           },
           "cedido": {
             "G": 0,
@@ -9905,62 +6965,6 @@
       ],
       "fora": [
         {
-          "casa": "BAH",
-          "visitante": "N/A",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "GRE",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 12
-          }
-        },
-        {
           "casa": "COR",
           "visitante": "PAL",
           "feito": {
@@ -10070,34 +7074,6 @@
             "FD": 0,
             "FT": 0,
             "PTS": 18
-          }
-        },
-        {
-          "casa": "N/A",
-          "visitante": "FLU",
-          "feito": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 0
-          },
-          "cedido": {
-            "G": 0,
-            "A": 0,
-            "DS": 0,
-            "SG": 0,
-            "DE": 0,
-            "FF": 0,
-            "FC": 0,
-            "FD": 0,
-            "FT": 0,
-            "PTS": 20
           }
         },
         {
