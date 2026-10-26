@@ -1,1 +1,112 @@
-<html><body><h1>Site Fathur FC</h1></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Fathur FC</title>
+    <style>
+        :root { --bg-color: #121212; --card-bg: #1e1e1e; --text-color: #e0e0e0; --accent: #00b894; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; }
+        header { background-color: #000; padding: 15px; text-align: center; border-bottom: 2px solid var(--accent); }
+        .tabs { display: flex; background-color: #000; justify-content: center; gap: 10px; padding: 10px; }
+        .tab-btn { background: none; border: none; color: #888; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-bottom: 2px solid transparent; }
+        .tab-btn.active { color: var(--accent); border-bottom: 2px solid var(--accent); font-weight: bold; }
+        .container { padding: 20px; max-width: 1200px; margin: 0 auto; }
+        .tab-content { display: none; } .tab-content.active { display: block; }
+        table { width: 100%; border-collapse: collapse; background-color: var(--card-bg); border-radius: 8px; overflow: hidden; margin-top: 15px;}
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
+        th { background-color: #2c2c2c; color: var(--accent); }
+        .top5-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+        .top5-card { background-color: var(--card-bg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--accent); }
+        .top5-card h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 5px; }
+        .top5-card p { margin: 5px 0; font-size: 0.9rem; display: flex; justify-content: space-between; }
+        .filters { display: flex; gap: 15px; margin-bottom: 20px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; }
+        .filter-group select { background-color: #333; color: white; padding: 8px; border-radius: 4px; }
+        .match-container { background-color: #000; border-radius: 8px; margin-bottom: 15px; display: flex; align-items: center; padding: 15px; gap: 20px; }
+        .match-team { flex: 1; text-align: center; font-weight: bold; }
+        .match-stats { flex: 2; display: flex; flex-direction: column; gap: 10px; }
+        .stat-row { display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .stat-bar-left { flex: 1; display: flex; justify-content: flex-end; }
+        .stat-bar-right { flex: 1; display: flex; justify-content: flex-start; }
+        .bar { height: 30px; border-radius: 15px; display: flex; align-items: center; padding: 0 10px; color: #fff; font-weight: bold; min-width: 40px; }
+        .bar-green { background-color: #00b894; justify-content: flex-end; }
+        .bar-red { background-color: #ff7675; justify-content: flex-start; }
+        .stat-label { text-align: center; font-size: 0.8rem; color: #888; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+<header><h1>⚽ Fathur FC — Análise</h1></header>
+<div class="tabs">
+    <button class="tab-btn active" onclick="openTab('classificacao', event)">🏆 Classificação</button>
+    <button class="tab-btn" onclick="openTab('top5', event)">⭐ Top 5 Posições</button>
+    <button class="tab-btn" onclick="openTab('cruzamento', event)">📊 Cruzamento</button>
+</div>
+<div class="container">
+    <div id="classificacao" class="tab-content active">
+        <h2>Campeonato Brasileiro Série A</h2>
+        <div id="tabela-classificacao"><p>Carregando...</p></div>
+    </div>
+    <div id="top5" class="tab-content">
+        <h2>Top 5 Posições</h2>
+        <div id="top5-container" class="top5-container"><p>Carregando...</p></div>
+    </div>
+    <div id="cruzamento" class="tab-content">
+        <h2>Cruzamento de Scouts</h2>
+        <div class="filters">
+            <div class="filter-group"><select id="filtro-posicao" onchange="renderCruzamento()"><option value="ZAG">Zagueiros</option><option value="LAT">Laterais</option><option value="MEI">Meias</option><option value="ATA">Atacantes</option><option value="GOL">Goleiros</option><option value="TEC">Técnicos</option></select></div>
+            <div class="filter-group"><select id="filtro-scout" onchange="renderCruzamento()"><option value="DS">Desarmes</option><option value="FF">Finalizações</option><option value="G">Gols</option><option value="A">Assistências</option><option value="SG">Saldo Gols</option><option value="DE">Defesas</option></select></div>
+        </div>
+        <div id="cruzamento-list"></div>
+    </div>
+</div>
+<script>
+    function openTab(id, e) { document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active')); document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active')); document.getElementById(id).classList.add('active'); if(e) e.target.classList.add('active'); }
+    
+    async function carregarClassificacao() {
+        try {
+            const res = await fetch('https://api-futebol-brasileirao.vercel.app/api/tabela'); const data = await res.json();
+            let html = '<table><thead><tr><th>Pos</th><th>Time</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th><th>SG</th></tr></thead><tbody>';
+            data.forEach(t => { let cor = t.posicao <= 4 ? 'border-left: 4px solid #00b894;' : (t.posicao >= 17 ? 'border-left: 4px solid #d63031;' : ''); html += `<tr style="${cor}"><td>${t.posicao}</td><td style="font-weight:bold;">${t.time}</td><td style="color:var(--accent);font-weight:bold;">${t.pontos}</td><td>${t.jogos}</td><td>${t.vitorias}</td><td>${t.empates}</td><td>${t.derrotas}</td><td>${t.gols_pro}</td><td>${t.gols_contra}</td><td>${t.saldo_gols}</td></tr>`; });
+            document.getElementById('tabela-classificacao').innerHTML = html + '</tbody></table>';
+        } catch(e) { document.getElementById('tabela-classificacao').innerHTML = '<p>API indisponível.</p>'; }
+    }
+
+    async function carregarDados() {
+        try {
+            const resTop5 = await fetch('top5_posicoes.json'); const top5 = await resTop5.json();
+            const posicoesNomes = { 'GOL': 'Goleiros', 'LAT': 'Laterais', 'ZAG': 'Zagueiros', 'MEI': 'Meias', 'ATA': 'Atacantes', 'TEC': 'Técnicos' };
+            let html = ''; for (const [pos, jogadores] of Object.entries(top5)) { if (jogadores.length === 0) continue; html += `<div class="top5-card"><h3>${posicoesNomes[pos] || pos}</h3>`; jogadores.forEach((j, i) => { html += `<p><span><strong>${i+1}º</strong> ${j.nome} <small>(${j.clube})</small></span> <span style="color:var(--accent)">${j.media_ult5.toFixed(2)}</span></p>`; }); html += `</div>`; }
+            document.getElementById('top5-container').innerHTML = html;
+
+            const resCruz = await fetch('cruzamento_clubes.json'); window.dadosCruzamento = await resCruz.json();
+            renderCruzamento();
+        } catch(e) { console.log(e); }
+    }
+
+    function renderCruzamento() {
+        const pos = document.getElementById('filtro-posicao').value; const scout = document.getElementById('filtro-scout').value;
+        const container = document.getElementById('cruzamento-list');
+        if (!window.dadosCruzamento || !window.dadosCruzamento.casa) return;
+
+        let timesCasa = Object.keys(window.dadosCruzamento.casa).filter(k => k.endsWith(`_${pos}`)); let html = '';
+        timesCasa.slice(0, 10).forEach(chave => {
+            const timeCasa = chave.split('_')[0]; const valorFeito = window.dadosCruzamento.casa[chave][scout] || 0;
+            let chaveFora = Object.keys(window.dadosCruzamento.fora).find(k => k.endsWith(`_${pos}`)); if(!chaveFora) return;
+            const timeFora = chaveFora.split('_')[0]; const valorCedido = window.dadosCruzamento.fora[chaveFora][scout] || 0;
+            const max = Math.max(valorFeito, valorCedido, 1);
+            html += `<div class="match-container">
+                <div class="match-team">${timeCasa}</div>
+                <div class="match-stats">
+                    <div class="stat-row">
+                        <div class="stat-bar-left" style="width:45%"><div class="bar bar-green" style="width:${(valorFeito/max)*100}%">${valorFeito}</div></div>
+                        <div style="width:10%;text-align:center;color:#888;font-weight:bold;">X</div>
+                        <div class="stat-bar-right" style="width:45%"><div class="bar bar-red" style="width:${(valorCedido/max)*100}%">${valorCedido}</div></div>
+                    </div>
+                    <div class="stat-label">${scout} Feitos x Cedidos</div>
+                </div>
+                <div class="match-team">${timeFora}</div>
+            </div>`;
+        });
+        container.innerHTML = html || '<p>Nenhum confronto.</p>';
+    }
+    window.onload = () => { carregarClassificacao(); carregarDados(); };
+</script>
+</body></html>
