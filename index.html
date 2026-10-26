@@ -14,17 +14,14 @@
         .container { padding: 20px; max-width: 1200px; margin: 0 auto; }
         .tab-content { display: none; } .tab-content.active { display: block; }
         
-        /* Classificação */
         #classificacao-container { background-color: var(--card-bg); padding: 20px; border-radius: 8px; text-align: center; }
         .btn-ge { display: inline-block; background-color: var(--accent); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2rem; margin-top: 20px; }
         
-        /* Top 5 */
         .top5-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
         .top5-card { background-color: var(--card-bg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--accent); }
         .top5-card h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 5px; }
         .top5-card p { margin: 5px 0; font-size: 0.9rem; display: flex; justify-content: space-between; }
         
-        /* Cruzamento */
         .filters { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; }
         .filter-group { display: flex; flex-direction: column; }
         .filter-group label { font-size: 0.8rem; color: #888; margin-bottom: 5px; }
@@ -51,7 +48,6 @@
 </div>
 <div class="container">
     
-    <!-- ABA CLASSIFICAÇÃO -->
     <div id="classificacao" class="tab-content active">
         <div id="classificacao-container">
             <h2>Campeonato Brasileiro Série A</h2>
@@ -60,13 +56,11 @@
         </div>
     </div>
 
-    <!-- ABA TOP 5 -->
     <div id="top5" class="tab-content">
         <h2>Top 5 Posições (Média Últimos 5 Jogos)</h2>
         <div id="top5-container" class="top5-container"></div>
     </div>
 
-    <!-- ABA CRUZAMENTO -->
     <div id="cruzamento" class="tab-content">
         <h2>Cruzamento de Scouts (Soma)</h2>
         <div class="filters">
@@ -84,7 +78,6 @@
                     <option value="DS">Desarmes</option><option value="FF">Finalizações</option>
                     <option value="G">Gols</option><option value="A">Assistências</option>
                     <option value="SG">Saldo de Gols</option><option value="DE">Defesas</option>
-                    <option value="PTS">Pontuação Média</option>
                 </select>
             </div>
             <div class="filter-group">
@@ -97,9 +90,8 @@
             <div class="filter-group">
                 <label>Mando</label>
                 <select id="filtro-mando" onchange="renderCruzamento()">
-                    <option value="total">Total (Casa e Fora)</option>
-                    <option value="casa">Casa</option>
-                    <option value="fora">Fora</option>
+                    <option value="total">Total x Total</option>
+                    <option value="casa_fora">Casa x Fora</option>
                 </select>
             </div>
         </div>
@@ -164,34 +156,25 @@
             container.innerHTML = '<p>Dados não encontrados. Rode o Colab.</p>'; return;
         }
 
-        // Monta a chave que o Colab criou: Ex: "casa_3", "total_5", "fora_3"
-        const chave = `${mando}_${periodo}`;
-        
-        // Pega os dados daquela chave específica
-        const baseDados = dadosCruzamento[pos][chave];
-
-        if (!baseDados) {
-            container.innerHTML = '<p>Dados para esta combinação não encontrados.</p>'; return;
-        }
-
         let html = '';
         confrontos.forEach(conf => {
-            // Pega os dados do time da casa
-            const dadosCasa = baseDados[conf.casa] || {};
-            const valorFeito = dadosCasa[scout] || 0;
-            
-            // Pega os dados do time de fora
-            const dadosFora = baseDados[conf.fora] || {};
-            const valorCedido = dadosFora[scout] || 0;
+            let valorFeito = 0;
+            let valorCedido = 0;
+
+            if (mando === 'total') {
+                // Total x Total: Usa a chave total_3 ou total_5
+                const base = dadosCruzamento[pos][`total_${periodo}`];
+                valorFeito = base[conf.casa]?.[scout] || 0;
+                valorCedido = base[conf.fora]?.[scout] || 0;
+            } else {
+                // Casa x Fora: Usa a chave casa_3 (ou 5) para o mandante e fora_3 (ou 5) para o visitante
+                valorFeito = dadosCruzamento[pos][`casa_${periodo}`]?.[conf.casa]?.[scout] || 0;
+                valorCedido = dadosCruzamento[pos][`fora_${periodo}`]?.[conf.fora]?.[scout] || 0;
+            }
 
             const max = Math.max(valorFeito, valorCedido, 1);
             const pctFeito = (valorFeito / max) * 100;
             const pctCedido = (valorCedido / max) * 100;
-
-            // Se o scout for 'PTS', mostra a média (mas o Colab não gerou a média por clube, apenas a soma de scouts).
-            // Para simplificar, mostramos o valor da soma.
-            const exibirFeito = scout === 'PTS' ? valorFeito : valorFeito;
-            const exibirCedido = scout === 'PTS' ? valorCedido : valorCedido;
 
             html += `
             <div class="match-container">
@@ -199,14 +182,14 @@
                 <div class="match-stats">
                     <div class="stat-row">
                         <div class="stat-bar-left" style="width:45%">
-                            <div class="bar bar-green" style="width:${pctFeito}%; min-width: 40px;">${exibirFeito}</div>
+                            <div class="bar bar-green" style="width:${pctFeito}%; min-width: 40px;">${valorFeito}</div>
                         </div>
                         <div style="width:10%;text-align:center;color:#888;font-weight:bold;">X</div>
                         <div class="stat-bar-right" style="width:45%">
-                            <div class="bar bar-red" style="width:${pctCedido}%; min-width: 40px;">${exibirCedido}</div>
+                            <div class="bar bar-red" style="width:${pctCedido}%; min-width: 40px;">${valorCedido}</div>
                         </div>
                     </div>
-                    <div class="stat-label">${scout} Feitos x Cedidos (${mando} - ${periodo} Jogos)</div>
+                    <div class="stat-label">${scout} (${mando === 'total' ? 'Total' : 'Casa x Fora'}) - Últimos ${periodo}</div>
                 </div>
                 <div class="match-team">${conf.fora}</div>
             </div>`;
