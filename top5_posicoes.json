@@ -1,44 +1,164 @@
 {
   "GOL": [
-    {"nome": "Rossi", "clube": "FLA", "media_ult5": 9.50},
-    {"nome": "Weverton", "clube": "GRE", "media_ult5": 8.90},
-    {"nome": "Hugo Souza", "clube": "COR", "media_ult5": 8.05},
-    {"nome": "Walter", "clube": "MIR", "media_ult5": 7.17},
-    {"nome": "Rafael", "clube": "SAO", "media_ult5": 7.10}
+    {
+      "nome": "Desconhecido",
+      "clube": "BAH",
+      "media_ult5": 9.5
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "GRE",
+      "media_ult5": 8.9
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 8.05
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "MIR",
+      "media_ult5": 7.17
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "SAO",
+      "media_ult5": 7.1
+    }
   ],
   "LAT": [
-    {"nome": "Juninho Capixaba", "clube": "RBB", "media_ult5": 13.30},
-    {"nome": "Marlon", "clube": "GRE", "media_ult5": 10.40},
-    {"nome": "Cuiabano", "clube": "VAS", "media_ult5": 10.20},
-    {"nome": "Iago", "clube": "SAO", "media_ult5": 9.18},
-    {"nome": "Khellven", "clube": "PAL", "media_ult5": 8.80}
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 13.3
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "GRE",
+      "media_ult5": 10.4
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "VAS",
+      "media_ult5": 10.2
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "SAO",
+      "media_ult5": 9.18
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 8.8
+    }
   ],
   "ZAG": [
-    {"nome": "Gustavo Gómez", "clube": "PAL", "media_ult5": 10.50},
-    {"nome": "Saldivia", "clube": "VAS", "media_ult5": 10.37},
-    {"nome": "Wallace", "clube": "GRE", "media_ult5": 9.53},
-    {"nome": "Léo Pereira", "clube": "FLA", "media_ult5": 9.00},
-    {"nome": "Ruan", "clube": "CAM", "media_ult5": 8.40}
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 10.5
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "VAS",
+      "media_ult5": 10.37
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "GRE",
+      "media_ult5": 9.53
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "FLA",
+      "media_ult5": 9.0
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAM",
+      "media_ult5": 8.4
+    }
   ],
   "MEI": [
-    {"nome": "Carrascal", "clube": "FLA", "media_ult5": 11.32},
-    {"nome": "Neymar", "clube": "SAN", "media_ult5": 11.15},
-    {"nome": "Matheus Pereira", "clube": "CRU", "media_ult5": 10.50},
-    {"nome": "Matheuzinho", "clube": "VIT", "media_ult5": 9.72},
-    {"nome": "Lucas Paquetá", "clube": "FLA", "media_ult5": 9.60}
+    {
+      "nome": "Desconhecido",
+      "clube": "FLA",
+      "media_ult5": 11.32
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "SAN",
+      "media_ult5": 11.15
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAM",
+      "media_ult5": 10.5
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "VIT",
+      "media_ult5": 9.72
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "FLU",
+      "media_ult5": 9.6
+    }
   ],
   "ATA": [
-    {"nome": "Arroyo", "clube": "CRU", "media_ult5": 13.42},
-    {"nome": "Hulk", "clube": "FLU", "media_ult5": 11.20},
-    {"nome": "Wallace Yan", "clube": "RBB", "media_ult5": 10.87},
-    {"nome": "Viveros", "clube": "CAP", "media_ult5": 10.60},
-    {"nome": "Pulgar", "clube": "CAP", "media_ult5": 10.50}
+    {
+      "nome": "Desconhecido",
+      "clube": "CRU",
+      "media_ult5": 13.42
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAM",
+      "media_ult5": 11.2
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "RBB",
+      "media_ult5": 10.87
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAP",
+      "media_ult5": 10.6
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAP",
+      "media_ult5": 10.5
+    }
   ],
   "TEC": [
-    {"nome": "Abel Ferreira", "clube": "PAL", "media_ult5": 9.10},
-    {"nome": "Filipe Luís", "clube": "FLA", "media_ult5": 8.16},
-    {"nome": "Artur Jorge", "clube": "CRU", "media_ult5": 8.05},
-    {"nome": "Pedro Emanuel", "clube": "VAS", "media_ult5": 7.96},
-    {"nome": "Dorival Júnior", "clube": "SAO", "media_ult5": 7.13}
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 9.1
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "FLA",
+      "media_ult5": 8.16
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CRU",
+      "media_ult5": 8.05
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "VAS",
+      "media_ult5": 7.96
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "SAO",
+      "media_ult5": 7.13
+    }
   ]
 }
