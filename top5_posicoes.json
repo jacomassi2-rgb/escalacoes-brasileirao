@@ -1,162 +1,162 @@
 {
   "GOL": [
     {
-      "nome": "Ronaldo",
+      "nome": "Ronaldo de Oliveira Strada",
       "clube": "SAO",
       "media_ult5": 9.5
     },
     {
-      "nome": "Weverton",
+      "nome": "Weverton Pereira da Silva",
       "clube": "SPT",
       "media_ult5": 8.9
     },
     {
-      "nome": "Carlos Miguel",
+      "nome": "Carlos Miguel dos Santos Pereira",
       "clube": "INT",
       "media_ult5": 8.05
     },
     {
-      "nome": "Walter",
+      "nome": "Walter Leandro Capeloza Artune",
       "clube": "MIR",
       "media_ult5": 7.17
     },
     {
-      "nome": "Coronel",
+      "nome": "Carlos Miguel Coronel",
       "clube": "GRE",
       "media_ult5": 7.1
     }
   ],
   "LAT": [
     {
-      "nome": "Giay",
+      "nome": "Agustín Giay",
       "clube": "INT",
       "media_ult5": 13.3
     },
     {
-      "nome": "Pedro Gabriel",
+      "nome": "Pedro Gabriel Crisostomo Pinheiro",
       "clube": "SPT",
       "media_ult5": 10.4
     },
     {
-      "nome": "Cuiabano",
+      "nome": "Luís Eduardo Soares da Silva",
       "clube": "VAS",
       "media_ult5": 10.2
     },
     {
-      "nome": "Pedro Lima",
+      "nome": "Pedro Henrique Cardoso de Lima",
       "clube": "GRE",
       "media_ult5": 9.18
     },
     {
-      "nome": "Khellven",
+      "nome": "Khellven Douglas Silva Oliveira",
       "clube": "INT",
       "media_ult5": 8.8
     }
   ],
   "ZAG": [
     {
-      "nome": "Alexander Barboza",
+      "nome": "Alexander Nahuel Barboza Ullúa",
       "clube": "INT",
       "media_ult5": 10.5
     },
     {
-      "nome": "Saldivia",
+      "nome": "Alan Gabriel Saldivia Vázquez",
       "clube": "VAS",
       "media_ult5": 10.37
     },
     {
-      "nome": "Wallace",
+      "nome": "Wallace Gomes da Silva Santos",
       "clube": "SPT",
       "media_ult5": 9.53
     },
     {
-      "nome": "Danilo",
+      "nome": "Danilo Luiz da Silva",
       "clube": "FLA",
       "media_ult5": 9.0
     },
     {
-      "nome": "Lyanco",
+      "nome": "Lyanco Evangelista Silveira Neves Vojnovic",
       "clube": "CHA",
       "media_ult5": 8.4
     }
   ],
   "MEI": [
     {
-      "nome": "Carrascal",
+      "nome": "Jorge Andrés Carrascal Guardo",
       "clube": "FLA",
       "media_ult5": 11.32
     },
     {
-      "nome": "Neymar",
+      "nome": "Neymar da Silva Santos Júnior",
       "clube": "CRU",
       "media_ult5": 11.15
     },
     {
-      "nome": "Bernard",
+      "nome": "Bernard Anício Caldeira Duarte",
       "clube": "CHA",
       "media_ult5": 10.5
     },
     {
-      "nome": "Matheuzinho",
+      "nome": "Matheus Martins Fogaça de Paulo",
       "clube": "JUV",
       "media_ult5": 9.72
     },
     {
-      "nome": "Savarino",
+      "nome": "Jefferson David Savarino Quintero",
       "clube": "FLU",
       "media_ult5": 9.6
     }
   ],
   "ATA": [
     {
-      "nome": "Kaio Jorge",
+      "nome": "Kaio Jorge Pinto Ramos",
       "clube": "BAH",
       "media_ult5": 13.43
     },
     {
-      "nome": "Cassierra",
+      "nome": "Zander Mateo Casierra Cabezas",
       "clube": "CHA",
       "media_ult5": 11.2
     },
     {
-      "nome": "Wallace Yan",
+      "nome": "Wallace Yan de Souza Barreto",
       "clube": "BOT",
       "media_ult5": 10.87
     },
     {
-      "nome": "Vargas",
+      "nome": "Kerwin Andrés Calderón Vargas",
       "clube": "PON",
       "media_ult5": 10.6
     },
     {
-      "nome": "Viveros",
+      "nome": "Kevin Stiven Viveros Rodallega",
       "clube": "PON",
       "media_ult5": 10.5
     }
   ],
   "TEC": [
     {
-      "nome": "Abel Ferreira",
+      "nome": "Abel Fernando Moreira Ferreira",
       "clube": "INT",
       "media_ult5": 9.11
     },
     {
-      "nome": "Leonardo Jardim",
+      "nome": "José Leonardo Nunes Alves Sousa Jardim",
       "clube": "FLA",
       "media_ult5": 8.16
     },
     {
-      "nome": "Artur Jorge",
+      "nome": "Artur Jorge Torres Gomes Araújo Amorim",
       "clube": "BAH",
       "media_ult5": 8.05
     },
     {
-      "nome": "Pedro Emanuel",
+      "nome": "Pedro Emanuel dos Santos Martins Silva",
       "clube": "VAS",
       "media_ult5": 7.96
     },
     {
-      "nome": "Dorival Júnior",
+      "nome": "Dorival Silvestre Júnior",
       "clube": "GRE",
       "media_ult5": 7.13
     }
