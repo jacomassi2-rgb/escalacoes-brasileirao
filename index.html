@@ -21,7 +21,10 @@
         .filter-group label { font-size: 0.8rem; color: #888; margin-bottom: 5px; }
         .filter-group select { background-color: #333; color: white; border: 1px solid #555; padding: 8px; border-radius: 4px; font-size: 1rem; }
 
-        .confronto-row { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 15px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; border-bottom: 1px solid #333; }
+        /* Título dinâmico do Cartola */
+        .header-confronto { text-align: center; color: #e0e0e0; font-size: 1.1rem; margin-bottom: 20px; font-weight: normal; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        
+        .confronto-row { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 15px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; }
         .time-info { display: flex; flex-direction: column; align-items: center; width: 100px; font-weight: bold; font-size: 1.1rem; text-align: center; }
         .time-info small { font-size: 0.75rem; color: #888; font-weight: normal; }
         
@@ -69,7 +72,7 @@
     </div>
     
     <div id="scouts" class="tab-content">
-        <h2>Cruzamento de Scouts (Feitos x Cedidos)</h2>
+        <h2>Cruzamento de Scouts</h2>
         <div class="filters">
             <div class="filter-group">
                 <label>Posição</label>
@@ -89,7 +92,7 @@
                 </select>
             </div>
             <div class="filter-group">
-                <label>Período</label>
+                <label>Rodadas</label>
                 <select id="filtro-periodo" onchange="renderScouts()">
                     <option value="ultimos_5">Últimas 5</option>
                     <option value="ultimos_3">Últimas 3</option>
@@ -103,9 +106,9 @@
                 </select>
             </div>
         </div>
-        <div id="scouts-list">
-            <p style="color:#888; text-align:center;">Carregando dados...</p>
-        </div>
+        
+        <div id="scouts-header-titulo" class="header-confronto"></div>
+        <div id="scouts-list"></div>
     </div>
 </div>
 
@@ -123,17 +126,16 @@
     async function carregarDados() {
         try {
             const resTop5 = await fetch(`top5_posicoes.json?t=${timestamp}`);
-            if (!resTop5.ok) throw new Error("Erro Top 5");
-            renderTop5(await resTop5.json());
+            if (resTop5.ok) renderTop5(await resTop5.json());
 
             const resCruz = await fetch(`cruzamento_completo.json?t=${timestamp}`);
-            if (!resCruz.ok) throw new Error("Erro Cruzamento");
-            dadosCruzamentoGlobal = await resCruz.json();
-            renderScouts();
-
+            if (resCruz.ok) {
+                dadosCruzamentoGlobal = await resCruz.json();
+                renderScouts();
+            }
         } catch (error) {
-            document.getElementById('top5-container').innerHTML = `<p class="erro">${error.message}</p>`;
-            document.getElementById('scouts-list').innerHTML = `<p class="erro">${error.message}</p>`;
+            document.getElementById('top5-container').innerHTML = `<p class="erro">Erro ao carregar dados: ${error.message}</p>`;
+            document.getElementById('scouts-list').innerHTML = `<p class="erro">Erro ao carregar dados: ${error.message}</p>`;
         }
     }
 
@@ -158,45 +160,37 @@
         const scout = document.getElementById('filtro-scout').value;
         const periodo = document.getElementById('filtro-periodo').value;
         const mando = document.getElementById('filtro-mando').value;
+        
         const container = document.getElementById('scouts-list');
+        const headerTitulo = document.getElementById('scouts-header-titulo');
         
         if (!dadosCruzamentoGlobal) return;
         
-        // Pega os dados calculados pelo Python
         const confrontosOriginais = dadosCruzamentoGlobal[pos]?.[periodo]?.[mando] || [];
         
-        // Cria as DUAS LINHAS (Ida e Volta)
-        let listaConfrontos = [];
-        confrontosOriginais.forEach(c => {
-            // Linha 1: Time Casa x Time Fora
-            listaConfrontos.push({
-                casa: c.casa, visitante: c.visitante,
-                feito: c.feito, cedido: c.cedido
-            });
-            // Linha 2: Time Fora x Time Casa (Inversão)
-            listaConfrontos.push({
-                casa: c.visitante, visitante: c.casa,
-                feito: c.cedido, cedido: c.feito
-            });
-        });
+        // Dicionário para montar o título igual ao Cartola
+        const nomesScouts = { 'G': 'Gols', 'A': 'Assistências', 'DS': 'Desarmes', 'SG': 'Saldo de Gols', 'DE': 'Defesas', 'FF': 'Finalizações', 'PTS': 'Pontuações' };
+        const nomeScout = nomesScouts[scout] || 'Scouts';
 
-        if (listaConfrontos.length === 0) {
-            container.innerHTML = '<p style="text-align:center; color:#ff6b6b;">Nenhum dado. Verifique se o Python rodou com sucesso.</p>';
+        if (confrontosOriginais.length === 0) {
+            container.innerHTML = '<p class="erro">Nenhum dado encontrado.</p>';
+            headerTitulo.innerHTML = '';
             return;
         }
 
         let maxValor = 1;
-        listaConfrontos.forEach(c => {
+        confrontosOriginais.forEach(c => {
             if ((c.feito[scout] || 0) > maxValor) maxValor = c.feito[scout];
             if ((c.cedido[scout] || 0) > maxValor) maxValor = c.cedido[scout];
         });
 
         let html = '';
-        listaConfrontos.forEach(c => {
+        
+        // PRIMEIRA PARTE: MANTÉM A ORDEM NORMAL (Feitos x Cedidos)
+        headerTitulo.innerHTML = `${nomeScout} feitos x ${nomeScout} cedidos`;
+        confrontosOriginais.forEach(c => {
             const feito = c.feito[scout] || 0;
             const cedido = c.cedido[scout] || 0;
-
-            // Se ambos forem 0, a barra fica 10% de largura (mínimo visual)
             const wFeito = Math.max((feito / maxValor) * 100, 10);
             const wCedido = Math.max((cedido / maxValor) * 100, 10);
 
@@ -209,6 +203,30 @@
                     <div class="bar bar-cedido" style="width: ${wCedido}%;">${cedido}</div>
                 </div>
                 <div class="time-info">${c.visitante}</div>
+            </div>
+            `;
+        });
+
+        // SEGUNDA PARTE: A INVERSÃO (Cedidos x Feitos)
+        // Aqui o time da direita (visitante) vai para a esquerda, e medimos o que ele CEDEU
+        html += `<div class="header-confronto" style="margin-top: 40px;">${nomeScout} cedidos x ${nomeScout} feitos</div>`;
+        confrontosOriginais.forEach(c => {
+            const feitoOriginal = c.feito[scout] || 0; // Do time da casa
+            const cedidoOriginal = c.cedido[scout] || 0; // Do time visitante
+
+            const wFeito = Math.max((feitoOriginal / maxValor) * 100, 10);
+            const wCedido = Math.max((cedidoOriginal / maxValor) * 100, 10);
+
+            // Inverte as posições: Visitante na esquerda (vermelho), Casa na direita (verde)
+            html += `
+            <div class="confronto-row">
+                <div class="time-info">${c.visitante}</div>
+                <div class="bar-container">
+                    <div class="bar bar-cedido" style="width: ${wCedido}%;">${cedidoOriginal}</div>
+                    <div class="bar-x">X</div>
+                    <div class="bar bar-feito" style="width: ${wFeito}%;">${feitoOriginal}</div>
+                </div>
+                <div class="time-info">${c.casa}</div>
             </div>
             `;
         });
