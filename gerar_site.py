@@ -1,17 +1,16 @@
 # ============================================================
 # SCRIPT COMPLETO DEFINITIVO: gerar_site.py
-# Gera o index.html com Classificação ao Vivo e Scouts Filtrados
+# Gera o index.html lendo os JSONs e usa um template seguro
 # ============================================================
 import os
 import json
 import subprocess
 
-# --- LÓGICA PARA DETECTAR O AMBIENTE ---
+# Detecta o ambiente (Colab ou GitHub Actions)
 if os.path.exists("/content/drive/MyDrive/fathur_fc"):
     BASE_DIR = "/content/drive/MyDrive/fathur_fc"
 else:
     BASE_DIR = os.getcwd()
-# ---------------------------------------
 
 def carregar_json(nome_arquivo):
     caminho = os.path.join(BASE_DIR, nome_arquivo)
@@ -27,42 +26,45 @@ def gerar_html():
     js_analise = json.dumps(analise_scouts, ensure_ascii=False)
     js_top5 = json.dumps(top5_posicoes, ensure_ascii=False)
 
-    html_content = f"""<!DOCTYPE html>
+    # Como o Python f-string conflita com o JavaScript (chaves { }), 
+    # criamos o template HTML como uma string normal e usamos .replace()
+    
+    html_template = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fathur FC — Análise Cartola</title>
     <style>
-        :root {{
+        :root {
             --bg-color: #121212;
             --card-bg: #1e1e1e;
             --text-color: #e0e0e0;
             --accent: #00b894;
             --accent-hover: #00a884;
-        }}
-        body {{
+        }
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
             padding: 0;
-        }}
-        header {{
+        }
+        header {
             background-color: #000;
             padding: 15px 20px;
             text-align: center;
             border-bottom: 2px solid var(--accent);
-        }}
-        header h1 {{ margin: 0; font-size: 1.5rem; }}
-        .tabs {{
+        }
+        header h1 { margin: 0; font-size: 1.5rem; }
+        .tabs {
             display: flex;
             background-color: #000;
             justify-content: center;
             gap: 10px;
             padding: 10px;
-        }}
-        .tab-btn {{
+        }
+        .tab-btn {
             background: none;
             border: none;
             color: #888;
@@ -71,22 +73,22 @@ def gerar_html():
             cursor: pointer;
             border-bottom: 2px solid transparent;
             transition: 0.3s;
-        }}
-        .tab-btn.active {{
+        }
+        .tab-btn.active {
             color: var(--accent);
             border-bottom: 2px solid var(--accent);
             font-weight: bold;
-        }}
-        .container {{
+        }
+        .container {
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
-        }}
-        .tab-content {{ display: none; }}
-        .tab-content.active {{ display: block; }}
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
         
         /* Estilos Tabela de Scouts */
-        .filters {{
+        .filters {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
@@ -94,43 +96,43 @@ def gerar_html():
             background-color: var(--card-bg);
             padding: 15px;
             border-radius: 8px;
-        }}
-        .filter-group {{ display: flex; flex-direction: column; }}
-        .filter-group label {{ font-size: 0.8rem; color: #888; margin-bottom: 5px; }}
-        .filter-group select {{
+        }
+        .filter-group { display: flex; flex-direction: column; }
+        .filter-group label { font-size: 0.8rem; color: #888; margin-bottom: 5px; }
+        .filter-group select {
             background-color: #333; color: white; border: 1px solid #555;
             padding: 8px; border-radius: 4px;
-        }}
+        }
         
-        table {{
+        table {
             width: 100%; border-collapse: collapse; background-color: var(--card-bg);
             border-radius: 8px; overflow: hidden;
-        }}
-        th, td {{ padding: 12px; text-align: left; border-bottom: 1px solid #333; }}
-        th {{ background-color: #2c2c2c; color: var(--accent); font-weight: 600; }}
-        tr:hover {{ background-color: #2a2a2a; }}
+        }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
+        th { background-color: #2c2c2c; color: var(--accent); font-weight: 600; }
+        tr:hover { background-color: #2a2a2a; }
         
         /* Estilos Top 5 */
-        .top5-container {{
+        .top5-container {
             display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px;
-        }}
-        .top5-card {{
+        }
+        .top5-card {
             background-color: var(--card-bg); padding: 15px; border-radius: 8px;
             border-left: 4px solid var(--accent);
-        }}
-        .top5-card h3 {{ margin: 0 0 10px 0; font-size: 1.1rem; color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 5px; }}
-        .top5-card p {{ margin: 5px 0; font-size: 0.9rem; display: flex; justify-content: space-between; }}
+        }
+        .top5-card h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 5px; }
+        .top5-card p { margin: 5px 0; font-size: 0.9rem; display: flex; justify-content: space-between; }
         
         /* Estilos Classificação */
-        #classificacao-container {{
+        #classificacao-container {
             background-color: var(--card-bg); padding: 20px; border-radius: 8px; text-align: center;
-        }}
-        .live-badge {{
+        }
+        .live-badge {
             background-color: red; color: white; padding: 3px 8px; border-radius: 4px;
             font-size: 0.8rem; animation: blink 1s infinite; margin-left: 10px; vertical-align: middle;
-        }}
-        @keyframes blink {{ 50% {{ opacity: 0; }} }}
-        .loading {{ color: var(--accent); font-style: italic; }}
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+        .loading { color: var(--accent); font-style: italic; }
     </style>
 </head>
 <body>
@@ -159,15 +161,12 @@ def gerar_html():
     <!-- ABA TOP 5 -->
     <div id="top5" class="tab-content">
         <h2>Top 5 Melhores Opções (Média Últimos 5 jogos)</h2>
-        <div id="top5-container" class="top5-container">
-            <!-- Preenchido via JS -->
-        </div>
+        <div id="top5-container" class="top5-container"></div>
     </div>
 
     <!-- ABA SCOUTS -->
     <div id="scouts" class="tab-content">
         <h2>Cruzamento de Scouts por Posição</h2>
-        
         <div class="filters">
             <div class="filter-group">
                 <label>Posição</label>
@@ -197,7 +196,6 @@ def gerar_html():
                 </select>
             </div>
         </div>
-
         <table>
             <thead id="scouts-thead"></thead>
             <tbody id="scouts-tbody"></tbody>
@@ -206,163 +204,134 @@ def gerar_html():
 </div>
 
 <script>
-    // Dados injetados pelo Python
-    const dadosScouts = {js_analise};
-    const dadosTop5 = {js_top5};
+    const dadosScouts = __DADOS_SCOUTS__;
+    const dadosTop5 = __DADOS_TOP5__;
 
-    function openTab(tabId, event) {{
+    function openTab(tabId, event) {
         document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
         document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
         document.getElementById(tabId).classList.add('active');
         if (event) event.target.classList.add('active');
-    }}
+    }
 
-    // ================= ABA CLASSIFICAÇÃO AO VIVO =================
-    async function carregarClassificacao() {{
+    async function carregarClassificacao() {
         const container = document.getElementById('tabela-classificacao');
         try {
-            // API pública do campeonato brasileiro
             const response = await fetch('https://campeonato-brasileiro-api.vercel.app/api/tabela');
             const data = await response.json();
             
             let html = '<table><thead><tr><th>Pos</th><th>Time</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th><th>SG</th></tr></thead><tbody>';
             
-            // A API retorna um array de objetos com a classificação
-            data.forEach(time => {{
+            data.forEach(time => {
                 let corPos = '';
-                if (time.posicao <= 4) corPos = 'border-left: 4px solid #00b894;'; // Libertadores
-                else if (time.posicao >= 17) corPos = 'border-left: 4px solid #d63031;'; // Rebaixamento
+                if (time.posicao <= 4) corPos = 'border-left: 4px solid #00b894;';
+                else if (time.posicao >= 17) corPos = 'border-left: 4px solid #d63031;';
                 
-                html += `<tr style="${{corPos}}">
-                    <td>${{time.posicao}}</td>
-                    <td style="font-weight: bold;">${{time.time}}</td>
-                    <td style="color: var(--accent); font-weight: bold;">${{time.pontos}}</td>
-                    <td>${{time.jogos}}</td>
-                    <td>${{time.vitorias}}</td>
-                    <td>${{time.empates}}</td>
-                    <td>${{time.derrotas}}</td>
-                    <td>${{time.gols_pro}}</td>
-                    <td>${{time.gols_contra}}</td>
-                    <td>${{time.saldo_gols}}</td>
+                html += `<tr style="${corPos}">
+                    <td>${time.posicao}</td>
+                    <td style="font-weight: bold;">${time.time}</td>
+                    <td style="color: var(--accent); font-weight: bold;">${time.pontos}</td>
+                    <td>${time.jogos}</td>
+                    <td>${time.vitorias}</td>
+                    <td>${time.empates}</td>
+                    <td>${time.derrotas}</td>
+                    <td>${time.gols_pro}</td>
+                    <td>${time.gols_contra}</td>
+                    <td>${time.saldo_gols}</td>
                 </tr>`;
-            }});
+            });
             html += '</tbody></table>';
             container.innerHTML = html;
-        }} catch (error) {{
+        } catch (error) {
             container.innerHTML = '<p style="color: #d63031;">Não foi possível carregar a classificação ao vivo. Tente novamente mais tarde.</p>';
             console.error(error);
-        }}
-    }}
+        }
+    }
 
-    // ================= ABA TOP 5 =================
-    function renderTop5() {{
+    function renderTop5() {
         const container = document.getElementById('top5-container');
         container.innerHTML = '';
-        
-        const posicoesNomes = {{
-            'GOL': 'Goleiros', 'LAT': 'Laterais', 'ZAG': 'Zagueiros',
-            'MEI': 'Meias', 'ATA': 'Atacantes', 'TEC': 'Técnicos'
-        }};
+        const posicoesNomes = { 'GOL': 'Goleiros', 'LAT': 'Laterais', 'ZAG': 'Zagueiros', 'MEI': 'Meias', 'ATA': 'Atacantes', 'TEC': 'Técnicos' };
 
-        for (const [pos, jogadores] of Object.entries(dadosTop5)) {{
+        for (const [pos, jogadores] of Object.entries(dadosTop5)) {
             if (jogadores.length === 0) continue;
-            
-            let html = `<div class="top5-card"><h3>${{posicoesNomes[pos] || pos}}</h3>`;
-            jogadores.forEach((j, index) => {{
-                html += `<p><span><strong>${{index + 1}}º</strong> ${{j.nome}} <small>(${{j.clube}})</small></span> <span style="color: var(--accent)">${{j.media_ult5.toFixed(2)}}</span></p>`;
-            }});
+            let html = `<div class="top5-card"><h3>${posicoesNomes[pos] || pos}</h3>`;
+            jogadores.forEach((j, index) => {
+                html += `<p><span><strong>${index + 1}º</strong> ${j.nome} <small>(${j.clube})</small></span> <span style="color: var(--accent)">${j.media_ult5.toFixed(2)}</span></p>`;
+            });
             html += `</div>`;
             container.innerHTML += html;
-        }}
-    }}
+        }
+    }
 
-    // ================= ABA SCOUTS =================
-    function renderScouts() {{
+    function renderScouts() {
         const posicao = document.getElementById('filtro-posicao').value;
         const periodo = document.getElementById('filtro-periodo').value;
         const mando = document.getElementById('filtro-mando').value;
-        
         const thead = document.getElementById('scouts-thead');
         const tbody = document.getElementById('scouts-tbody');
         
-        const scoutsPorPosicao = {{
+        const scoutsPorPosicao = {
             'GOL': ['DE', 'SG', 'pontuacao'],
             'LAT': ['DS', 'FF', 'FD', 'FT', 'G', 'A', 'SG', 'pontuacao'],
             'ZAG': ['DS', 'FF', 'FD', 'FT', 'G', 'A', 'SG', 'pontuacao'],
             'MEI': ['DS', 'FF', 'FD', 'FT', 'G', 'A', 'pontuacao'],
             'ATA': ['DS', 'FF', 'FD', 'FT', 'G', 'A', 'pontuacao'],
             'TEC': ['pontuacao']
-        }};
+        };
         
         const colunas = scoutsPorPosicao[posicao] || [];
-        const nomesColunas = {{
-            'DE': 'Defesas', 'SG': 'SG', 'DS': 'Desarmes', 
-            'FF': 'Fin. Fora', 'FD': 'Fin. Def', 
-            'FT': 'Fin. Trave', 'G': 'Gols', 'A': 'Assist', 
-            'pontuacao': 'Pts Média'
-        }};
+        const nomesColunas = { 'DE': 'Defesas', 'SG': 'SG', 'DS': 'Desarmes', 'FF': 'Fin. Fora', 'FD': 'Fin. Def', 'FT': 'Fin. Trave', 'G': 'Gols', 'A': 'Assist', 'pontuacao': 'Pts Média' };
 
         let headerHtml = '<tr><th>Jogador</th><th>Clube</th>';
-        colunas.forEach(c => {{
-            headerHtml += `<th>${{nomesColunas[c] || c}}</th>`;
-        }});
+        colunas.forEach(c => { headerHtml += `<th>${nomesColunas[c] || c}</th>`; });
         headerHtml += '</tr>';
         thead.innerHTML = headerHtml;
 
         let jogadoresFiltrados = [];
-        for (const [id, data] of Object.entries(dadosScouts)) {{
+        for (const [id, data] of Object.entries(dadosScouts)) {
             if (data.posicao !== posicao) continue;
             
-            // Lógica para cruzar Mando (Casa/Fora) com Período (Últimos 3/5)
-            // Como o JSON original não tem o cruzamento "últimos 5 em casa", 
-            // usamos a média do período ou a média do mando como fallback.
             let dadosFinais = data[periodo];
+            if (mando !== 'total' && data[mando]) { dadosFinais = data[mando]; }
             
-            if (mando !== 'total' && data[mando]) {{
-                // Se o mando for específico, priorizamos os dados do mando
-                // (O ideal seria o Python ter gerado "casa_ult5", mas usamos o que temos)
-                dadosFinais = data[mando]; 
-            }}
-            
-            if (dadosFinais && dadosFinais.pontuacao !== undefined) {{
-                jogadoresFiltrados.push({{
-                    nome: data.nome,
-                    clube: data.clube,
-                    dados: dadosFinais
-                }});
-            }}
-        }}
+            if (dadosFinais && dadosFinais.pontuacao !== undefined) {
+                jogadoresFiltrados.push({ nome: data.nome, clube: data.clube, dados: dadosFinais });
+            }
+        }
 
         jogadoresFiltrados.sort((a, b) => (b.dados.pontuacao || 0) - (a.dados.pontuacao || 0));
 
         let bodyHtml = '';
-        jogadoresFiltrados.forEach(j => {{
-            bodyHtml += `<tr><td style="font-weight:bold;">${{j.nome}}</td><td>${{j.clube}}</td>`;
-            colunas.forEach(c => {{
+        jogadoresFiltrados.forEach(j => {
+            bodyHtml += `<tr><td style="font-weight:bold;">${j.nome}</td><td>${j.clube}</td>`;
+            colunas.forEach(c => {
                 const valor = j.dados[c] !== undefined ? j.dados[c] : '-';
-                // Destaca a pontuação
                 const isPts = c === 'pontuacao' ? 'style="color: var(--accent); font-weight:bold;"' : '';
-                bodyHtml += `<td ${{isPts}}>${{valor}}</td>`;
-            }});
+                bodyHtml += `<td ${isPts}>${valor}</td>`;
+            });
             bodyHtml += '</tr>';
-        }});
+        });
         tbody.innerHTML = bodyHtml;
-    }}
+    }
 
-    window.onload = function() {{
+    window.onload = function() {
         carregarClassificacao();
         renderTop5();
         renderScouts();
-    }};
+    };
 </script>
 
 </body>
 </html>
 """
-    
+
+    # Substitui os marcadores pelos dados JSON reais (sem quebrar o Python)
+    html_final = html_template.replace("__DADOS_SCOUTS__", js_analise).replace("__DADOS_TOP5__", js_top5)
+
     caminho_html = os.path.join(BASE_DIR, "index.html")
     with open(caminho_html, "w", encoding="utf-8") as f:
-        f.write(html_content)
+        f.write(html_final)
     
     print(f"✅ Site gerado com sucesso em: {caminho_html}")
     
