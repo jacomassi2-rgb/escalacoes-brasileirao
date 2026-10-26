@@ -61,13 +61,36 @@
     function openTab(id, e) { document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active')); document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active')); document.getElementById(id).classList.add('active'); if(e) e.target.classList.add('active'); }
     
     async function carregarClassificacao() {
-        try {
-            const res = await fetch('https://api-futebol-brasileirao.vercel.app/api/tabela'); const data = await res.json();
-            let html = '<table><thead><tr><th>Pos</th><th>Time</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th><th>SG</th></tr></thead><tbody>';
-            data.forEach(t => { let cor = t.posicao <= 4 ? 'border-left: 4px solid #00b894;' : (t.posicao >= 17 ? 'border-left: 4px solid #d63031;' : ''); html += `<tr style="${cor}"><td>${t.posicao}</td><td style="font-weight:bold;">${t.time}</td><td style="color:var(--accent);font-weight:bold;">${t.pontos}</td><td>${t.jogos}</td><td>${t.vitorias}</td><td>${t.empates}</td><td>${t.derrotas}</td><td>${t.gols_pro}</td><td>${t.gols_contra}</td><td>${t.saldo_gols}</td></tr>`; });
-            document.getElementById('tabela-classificacao').innerHTML = html + '</tbody></table>';
-        } catch(e) { document.getElementById('tabela-classificacao').innerHTML = '<p>API indisponível.</p>'; }
+    try {
+        const res = await fetch('classificacao.json');
+        if (!res.ok) throw new Error("Arquivo não encontrado");
+        const data = await res.json();
+        
+        let html = '<table><thead><tr><th>Pos</th><th>Time</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th><th>SG</th></tr></thead><tbody>';
+        
+        // A API do Cartola retorna a lista de classificação dentro da chave "tabela"
+        const tabela = data.tabela || data; 
+        
+        tabela.forEach(time => {
+            let cor = time.posicao <= 4 ? 'border-left: 4px solid #00b894;' : (time.posicao >= 17 ? 'border-left: 4px solid #d63031;' : '');
+            html += `<tr style="${cor}">
+                <td>${time.posicao}</td>
+                <td style="font-weight:bold;">${time.time || time.nome}</td>
+                <td style="color:var(--accent);font-weight:bold;">${time.pontos}</td>
+                <td>${time.jogos}</td>
+                <td>${time.vitorias}</td>
+                <td>${time.empates}</td>
+                <td>${time.derrotas}</td>
+                <td>${time.gols_pro}</td>
+                <td>${time.gols_contra}</td>
+                <td>${time.saldo_gols || (time.gols_pro - time.gols_contra)}</td>
+            </tr>`;
+        });
+        document.getElementById('tabela-classificacao').innerHTML = html + '</tbody></table>';
+    } catch(e) { 
+        document.getElementById('tabela-classificacao').innerHTML = '<p style="color:red; text-align:center;">Erro ao carregar a classificação oficial do Cartola.</p>'; 
     }
+}
 
     async function carregarDados() {
         try {
