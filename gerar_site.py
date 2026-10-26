@@ -1,11 +1,19 @@
 # ============================================================
 # SCRIPT COMPLETO: gerar_site.py
 # Lê os JSONs gerados e monta o index.html completo
+# Funciona no Colab e no GitHub Actions
 # ============================================================
 import os
 import json
+import subprocess
 
-BASE_DIR = "/content/drive/MyDrive/fathur_fc"
+# --- LÓGICA PARA DETECTAR O AMBIENTE ---
+# Se a pasta do Colab existir, usa ela. Se não, usa a pasta atual (GitHub Actions)
+if os.path.exists("/content/drive/MyDrive/fathur_fc"):
+    BASE_DIR = "/content/drive/MyDrive/fathur_fc"
+else:
+    BASE_DIR = os.getcwd() # Pega a pasta atual onde o script está rodando no GitHub
+# ---------------------------------------
 
 def carregar_json(nome_arquivo):
     caminho = os.path.join(BASE_DIR, nome_arquivo)
@@ -166,9 +174,9 @@ def gerar_html():
 </header>
 
 <div class="tabs">
-    <button class="tab-btn active" onclick="openTab('classificacao')">🏆 Classificação</button>
-    <button class="tab-btn" onclick="openTab('top5')">⭐ Top 5 Posições</button>
-    <button class="tab-btn" onclick="openTab('scouts')">📊 Cruzamento de Scouts</button>
+    <button class="tab-btn active" onclick="openTab('classificacao', event)">🏆 Classificação</button>
+    <button class="tab-btn" onclick="openTab('top5', event)">⭐ Top 5 Posições</button>
+    <button class="tab-btn" onclick="openTab('scouts', event)">📊 Cruzamento de Scouts</button>
 </div>
 
 <div class="container">
@@ -177,8 +185,6 @@ def gerar_html():
         <div id="classificacao-container">
             <h2>Campeonato Brasileiro 2026 <span class="live-badge">AO VIVO</span></h2>
             <p style="color: #888;">A classificação está sendo carregada em tempo real...</p>
-            <!-- Aqui entraria a API de classificação. Como não podemos garantir a API pública, 
-                 deixamos a estrutura pronta para você plugar o iframe ou JS da API do Cartola -->
             <div id="tabela-classificacao">
                 <p><em>[Aqui será carregado o iframe/API de classificação]</em></p>
             </div>
@@ -243,11 +249,11 @@ def gerar_html():
     const dadosScouts = {js_analise};
     const dadosTop5 = {js_top5};
 
-    function openTab(tabId) {{
+    function openTab(tabId, event) {{
         document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
         document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
         document.getElementById(tabId).classList.add('active');
-        event.target.classList.add('active');
+        if (event) event.target.classList.add('active');
     }}
 
     // ================= ABA TOP 5 =================
@@ -294,8 +300,8 @@ def gerar_html():
         const colunas = scoutsPorPosicao[posicao] || [];
         const nomesColunas = {{
             'DE': 'Defesas', 'SG': 'Saldo Gols', 'DS': 'Desarmes', 
-            'FF': 'Finalizações Fora', 'FD': 'Finalizações Defendidas', 
-            'FT': 'Finalizações Trave', 'G': 'Gols', 'A': 'Assistências', 
+            'FF': 'Fin. Fora', 'FD': 'Fin. Defendidas', 
+            'FT': 'Fin. Trave', 'G': 'Gols', 'A': 'Assistências', 
             'pontuacao': 'Pontuação'
         }};
 
@@ -315,11 +321,9 @@ def gerar_html():
             // Pega os dados do período e mando selecionados
             let dadosPeriodo = data[periodo];
             if (mando !== 'total' && dadosPeriodo) {{
-                // Se o mando for diferente de total, cruza os dados do período com o mando
-                // (Ex: ultimos_5 e casa -> aqui teríamos que ter os dados cruzados, mas 
-                // para simplificar, usaremos a média do mando se existir)
+                // Fallback: se tiver dados de mando específicos, usa eles
                 if (data[mando]) {{
-                    dadosPeriodo = data[mando]; // fallback para a média geral de casa/fora
+                    dadosPeriodo = data[mando]; 
                 }}
             }}
             
@@ -366,15 +370,15 @@ def gerar_html():
     
     print(f"✅ Site gerado com sucesso em: {caminho_html}")
     
-    # Tenta fazer o push para o GitHub
+    # Tenta fazer o push para o GitHub (só funciona se estiver rodando no Colab com token, 
+    # ou se o GitHub Actions já tiver permissão de push)
     try:
-        import subprocess
         subprocess.run(["git", "add", "index.html"], cwd=BASE_DIR, check=True)
-        subprocess.run(["git", "commit", "-m", "Atualização do site: Scouts e Top 5"], cwd=BASE_DIR, check=True)
+        subprocess.run(["git", "commit", "-m", "Atualização automática: Site Fathur FC"], cwd=BASE_DIR, check=True)
         subprocess.run(["git", "push"], cwd=BASE_DIR, check=True)
         print("✅ Site enviado para o GitHub com sucesso!")
     except Exception as e:
-        print(f"⚠️ Aviso: Push automático falhou. Envie o index.html manualmente. Erro: {e}")
+        print(f"⚠️ Aviso: Push automático falhou (normal se estiver rodando no GitHub Actions). Erro: {e}")
 
 if __name__ == "__main__":
     gerar_html()
