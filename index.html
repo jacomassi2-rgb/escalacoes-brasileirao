@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fathur FC — Análise Cartola</title>
     <style>
-        :root { --bg-color: #121212; --card-bg: #1e1e1e; --text-color: #e0e0e0; --accent: #00b894; }
+        :root { --bg-color: #121212; --card-bg: #1e1e1e; --text-color: #e0e0e0; --accent: #00b894; --red: #d63031; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; }
         header { background-color: #000; padding: 15px 20px; text-align: center; border-bottom: 2px solid var(--accent); }
         header h1 { margin: 0; font-size: 1.5rem; }
@@ -16,27 +16,22 @@
         .tab-content { display: none; }
         .tab-content.active { display: block; }
         
-        /* Estilos Filtros */
+        /* Filtros */
         .filters { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; }
         .filter-group { display: flex; flex-direction: column; }
         .filter-group label { font-size: 0.8rem; color: #888; margin-bottom: 5px; }
-        .filter-group select { background-color: #333; color: white; border: 1px solid #555; padding: 8px; border-radius: 4px; }
+        .filter-group select { background-color: #333; color: white; border: 1px solid #555; padding: 8px; border-radius: 4px; font-size: 1rem; }
+
+        /* Cruzamento Cartola Style */
+        .confronto-row { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 25px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; border-bottom: 1px solid #333; }
+        .time-info { display: flex; flex-direction: column; align-items: center; width: 80px; font-weight: bold; font-size: 1.1rem; }
         
-        /* Estilos para os Cards de Scouts (Barras) */
-        .scout-card { background-color: var(--card-bg); margin-bottom: 15px; padding: 15px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; }
-        .scout-info { flex: 1; }
-        .scout-name { font-weight: bold; font-size: 1.1rem; margin-bottom: 5px; }
-        .scout-club { font-size: 0.9rem; color: #888; }
+        .bar-container { display: flex; flex: 1; gap: 10px; align-items: center; justify-content: center; max-width: 600px; }
+        .bar { height: 30px; border-radius: 15px; display: flex; align-items: center; color: #fff; font-weight: bold; font-size: 1.1rem; position: relative; }
+        .bar-feito { background-color: #00d26a; justify-content: flex-end; padding-right: 15px; }
+        .bar-cedido { background-color: #ff6b6b; justify-content: flex-start; padding-left: 15px; }
+        .bar-x { font-size: 1.2rem; color: #888; font-weight: bold; margin: 0 5px; }
         
-        .scout-bars { flex: 2; display: flex; flex-direction: column; gap: 5px; padding: 0 20px; }
-        .bar-row { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; }
-        .bar-label { width: 100px; text-align: right; color: #ccc; }
-        .bar-container { flex: 1; background-color: #333; height: 20px; border-radius: 10px; overflow: hidden; display: flex; }
-        .bar-fill { height: 100%; display: flex; align-items: center; justify-content: flex-end; padding-right: 5px; font-size: 0.75rem; font-weight: bold; color: #fff; }
-        .bar-green { background-color: #00b894; } /* Representa o "Feito" */
-        .bar-red { background-color: #d63031; } /* Representa o "Cedido" ou outro scout */
-        
-        /* Estilos Top 5 */
         .top5-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
         .top5-card { background-color: var(--card-bg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--accent); }
         .top5-card h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 5px; }
@@ -44,11 +39,7 @@
         
         /* Classificação */
         #classificacao-container { background-color: var(--card-bg); padding: 20px; border-radius: 8px; text-align: center; }
-        .live-badge { background-color: red; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; animation: blink 1s infinite; margin-left: 10px; vertical-align: middle; }
-        @keyframes blink { 50% { opacity: 0; } }
-        .erro-msg { color: #d63031; text-align: center; padding: 20px; }
-        .btn-classificacao { background: #00b894; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin-top: 20px; transition: 0.2s; }
-        .btn-classificacao:hover { background: #009e7f; }
+        .btn-classificacao { background: var(--accent); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin-top: 20px; transition: 0.2s; }
     </style>
 </head>
 <body>
@@ -64,8 +55,8 @@
     <!-- ABA CLASSIFICAÇÃO -->
     <div id="classificacao" class="tab-content active">
         <div id="classificacao-container">
-            <h2>Campeonato Brasileiro Série A <span class="live-badge">AO VIVO</span></h2>
-            <p style="margin-top: 20px; color: #888;">Por motivos de segurança, o site da Globo não permite ser exibido aqui dentro. Clique no botão abaixo para ver a tabela oficial atualizada.</p>
+            <h2>Campeonato Brasileiro Série A</h2>
+            <p style="margin-top: 20px; color: #888;">Clique no botão abaixo para ver a tabela oficial atualizada em tempo real.</p>
             <a href="https://ge.globo.com/futebol/brasileirao-serie-a/" target="_blank" class="btn-classificacao">
                 Abrir Classificação no Globo Esporte
             </a>
@@ -80,7 +71,7 @@
     
     <!-- ABA CRUZAMENTO -->
     <div id="scouts" class="tab-content">
-        <h2>Cruzamento de Scouts por Posição</h2>
+        <h2>Cruzamento de Scouts</h2>
         <div class="filters">
             <div class="filter-group">
                 <label>Posição</label>
@@ -91,63 +82,39 @@
                 </select>
             </div>
             <div class="filter-group">
+                <label>Scout</label>
+                <select id="filtro-scout" onchange="renderScouts()">
+                    <option value="G">Gols</option>
+                    <option value="A">Assistências</option>
+                    <option value="DS">Desarmes</option>
+                    <option value="SG">Saldo de Gols</option>
+                    <option value="DE">Defesas</option>
+                    <option value="FF">Finalizações</option>
+                    <option value="PTS">Pontuações</option>
+                </select>
+            </div>
+            <div class="filter-group">
                 <label>Período</label>
                 <select id="filtro-periodo" onchange="renderScouts()">
-                    <option value="ultimos_5">Últimos 5 jogos</option>
-                    <option value="ultimos_3">Últimos 3 jogos</option>
+                    <option value="ultimos_5">Últimas 5</option>
+                    <option value="ultimos_3">Últimas 3</option>
                 </select>
             </div>
             <div class="filter-group">
                 <label>Mando de Campo</label>
                 <select id="filtro-mando" onchange="renderScouts()">
-                    <option value="total">Total</option><option value="casa">Casa</option><option value="fora">Fora</option>
+                    <option value="total">Total x Total</option>
+                    <option value="casa">Casa x Fora</option>
                 </select>
             </div>
         </div>
         <div id="scouts-list"></div>
     </div>
 </div>
+
 <script>
-    // Limpador de cache
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(regs => { for(let r of regs) r.unregister(); });
-    }
-
-    // ---------------------------------------------------------
-    // DADOS INJETADOS PELO COLAB
-    // (Estes dados refletem a rodada 31 processada)
-    // ---------------------------------------------------------
-    
-    // Se o seu Colab estiver gerando um arquivo js separado, ele substituirá isso.
-    // Caso contrário, os dados fixos abaixo estão com os nomes corretos.
-    
-    const dadosTop5 = {
-        "GOL": [{"nome": "Ronaldo", "clube": "BAH", "media_ult5": 9.50}, {"nome": "Weverton", "clube": "GRE", "media_ult5": 8.90}, {"nome": "Carlos Miguel", "clube": "PAL", "media_ult5": 8.05}, {"nome": "Walter", "clube": "MIR", "media_ult5": 7.17}, {"nome": "Gabriel Batista", "clube": "BOT", "media_ult5": 7.10}],
-        "LAT": [{"nome": "Giay", "clube": "PAL", "media_ult5": 13.30}, {"nome": "Pedro Gabriel", "clube": "GRE", "media_ult5": 10.40}, {"nome": "Cuiabano", "clube": "VAS", "media_ult5": 10.20}, {"nome": "Pedro Lima", "clube": "SAO", "media_ult5": 9.18}, {"nome": "Khellven", "clube": "PAL", "media_ult5": 8.80}],
-        "ZAG": [{"nome": "Alexander Barboza", "clube": "PAL", "media_ult5": 10.50}, {"nome": "Saldivia", "clube": "VAS", "media_ult5": 10.37}, {"nome": "Wallace", "clube": "GRE", "media_ult5": 9.53}, {"nome": "Danilo", "clube": "FLA", "media_ult5": 9.00}, {"nome": "Lyanco", "clube": "CAM", "media_ult5": 8.40}],
-        "MEI": [{"nome": "Carrascal", "clube": "FLA", "media_ult5": 11.32}, {"nome": "Neymar", "clube": "SAN", "media_ult5": 11.15}, {"nome": "Bernard", "clube": "CAM", "media_ult5": 10.50}, {"nome": "Matheuzinho", "clube": "VIT", "media_ult5": 9.72}, {"nome": "Savarino", "clube": "FLU", "media_ult5": 9.60}],
-        "ATA": [{"nome": "Kaio Jorge", "clube": "CRU", "media_ult5": 13.42}, {"nome": "Cassierra", "clube": "CAM", "media_ult5": 11.20}, {"nome": "Wallace Yan", "clube": "RBB", "media_ult5": 10.87}, {"nome": "Vargas", "clube": "CAP", "media_ult5": 10.60}, {"nome": "Viveros", "clube": "CAP", "media_ult5": 10.50}],
-        "TEC": [{"nome": "Abel Ferreira", "clube": "PAL", "media_ult5": 9.10}, {"nome": "Leonardo Jardim", "clube": "FLA", "media_ult5": 8.16}, {"nome": "Artur Jorge", "clube": "CRU", "media_ult5": 8.05}, {"nome": "Pedro Emanuel", "clube": "VAS", "media_ult5": 7.96}, {"nome": "Dorival Júnior", "clube": "SAO", "media_ult5": 7.13}]
-    };
-
-    const dadosScouts = {
-        "71631": {"nome": "Weverton", "clube": "GRE", "posicao": "GOL", "ultimos_3": {"pontuacao": 4.67, "DE": 15, "SG": 1}, "ultimos_5": {"pontuacao": 8.90, "DE": 23, "SG": 2}, "casa": {"pontuacao": 9.5, "DE": 12, "SG": 1}, "fora": {"pontuacao": 8.3, "DE": 11, "SG": 1}, "total": {"pontuacao": 8.9, "DE": 23, "SG": 2}},
-        "91101": {"nome": "Ronaldo", "clube": "BAH", "posicao": "GOL", "ultimos_3": {"pontuacao": 10.73, "DE": 15, "SG": 1}, "ultimos_5": {"pontuacao": 9.50, "DE": 29, "SG": 3}, "casa": {"pontuacao": 9.5, "DE": 15, "SG": 2}, "fora": {"pontuacao": 9.5, "DE": 14, "SG": 1}, "total": {"pontuacao": 9.5, "DE": 29, "SG": 3}},
-        "104084": {"nome": "Carlos Miguel", "clube": "PAL", "posicao": "GOL", "ultimos_3": {"pontuacao": 7.33, "DE": 10, "SG": 1}, "ultimos_5": {"pontuacao": 8.05, "DE": 18, "SG": 2}, "casa": {"pontuacao": 8.0, "DE": 10, "SG": 1}, "fora": {"pontuacao": 8.1, "DE": 8, "SG": 1}, "total": {"pontuacao": 8.05, "DE": 18, "SG": 2}},
-        
-        "102130": {"nome": "Piquerez", "clube": "PAL", "posicao": "LAT", "ultimos_3": {"pontuacao": 7.47, "DS": 12, "FF": 3, "A": 2}, "ultimos_5": {"pontuacao": 10.83, "DS": 22, "FF": 6, "A": 3}, "casa": {"pontuacao": 11.0, "DS": 12, "FF": 3, "A": 2}, "fora": {"pontuacao": 10.6, "DS": 10, "FF": 3, "A": 1}, "total": {"pontuacao": 10.83, "DS": 22, "FF": 6, "A": 3}},
-        "124526": {"nome": "Giay", "clube": "PAL", "posicao": "LAT", "ultimos_3": {"pontuacao": 13.30, "DS": 16, "FF": 4, "A": 1}, "ultimos_5": {"pontuacao": 13.30, "DS": 16, "FF": 4, "A": 1}, "casa": {"pontuacao": 13.3, "DS": 10, "FF": 2, "A": 1}, "fora": {"pontuacao": 13.3, "DS": 6, "FF": 2, "A": 0}, "total": {"pontuacao": 13.3, "DS": 16, "FF": 4, "A": 1}},
-
-        "105436": {"nome": "Carrascal", "clube": "FLA", "posicao": "MEI", "ultimos_3": {"pontuacao": 11.47, "DS": 14, "FF": 8, "A": 4}, "ultimos_5": {"pontuacao": 11.32, "DS": 20, "FF": 11, "A": 6}, "casa": {"pontuacao": 12.0, "DS": 10, "FF": 5, "A": 3}, "fora": {"pontuacao": 10.6, "DS": 10, "FF": 6, "A": 3}, "total": {"pontuacao": 11.32, "DS": 20, "FF": 11, "A": 6}},
-        "63007": {"nome": "Neymar", "clube": "SAN", "posicao": "MEI", "ultimos_3": {"pontuacao": 11.15, "DS": 5, "FF": 9, "A": 3}, "ultimos_5": {"pontuacao": 11.15, "DS": 5, "FF": 9, "A": 3}, "casa": {"pontuacao": 11.15, "DS": 5, "FF": 9, "A": 3}, "fora": {"pontuacao": 0, "DS": 0, "FF": 0, "A": 0}, "total": {"pontuacao": 11.15, "DS": 5, "FF": 9, "A": 3}},
-
-        "103445": {"nome": "Kaio Jorge", "clube": "CRU", "posicao": "ATA", "ultimos_3": {"pontuacao": 15.83, "DS": 2, "FF": 7, "G": 4}, "ultimos_5": {"pontuacao": 13.42, "DS": 3, "FF": 11, "G": 5}, "casa": {"pontuacao": 14.0, "DS": 2, "FF": 6, "G": 3}, "fora": {"pontuacao": 12.8, "DS": 1, "FF": 5, "G": 2}, "total": {"pontuacao": 13.42, "DS": 3, "FF": 11, "G": 5}},
-        "101960": {"nome": "Vitinho", "clube": "INT", "posicao": "ATA", "ultimos_3": {"pontuacao": 9.80, "DS": 5, "FF": 8, "G": 2}, "ultimos_5": {"pontuacao": 9.80, "DS": 5, "FF": 8, "G": 2}, "casa": {"pontuacao": 9.8, "DS": 3, "FF": 4, "G": 1}, "fora": {"pontuacao": 9.8, "DS": 2, "FF": 4, "G": 1}, "total": {"pontuacao": 9.8, "DS": 5, "FF": 8, "G": 2}}
-    };
-
-    // ---------------------------------------------------------
-    // FUNÇÕES DE RENDERIZAÇÃO
-    // ---------------------------------------------------------
+    // Dados Mockados para o Top 5 e Cruzamento (que serão substituídos pelos JSONs reais se usando fetch)
+    // Para manter este arquivo independente e funcionando, usamos o fetch para puxar do GitHub.
 
     function openTab(tabId, event) {
         document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
@@ -156,21 +123,33 @@
         if (event) event.target.classList.add('active');
     }
 
-    function renderTop5() {
-        const container = document.getElementById('top5-container');
-        const posicoesNomes = { 'GOL': 'Goleiros', 'LAT': 'Laterais', 'ZAG': 'Zagueiros', 'MEI': 'Meias', 'ATA': 'Atacantes', 'TEC': 'Técnicos' };
-        
-        if (!dadosTop5 || Object.keys(dadosTop5).length === 0) {
-            container.innerHTML = '<p class="erro-msg">Nenhum dado encontrado.</p>';
-            return;
+    // FUNÇÃO PARA BUSCAR DADOS DO GITHUB (FETCH)
+    async function fetchData() {
+        try {
+            const resTop5 = await fetch('top5_posicoes.json');
+            const dataTop5 = await resTop5.json();
+            renderTop5(dataTop5);
+
+            const resCruz = await fetch('cruzamento_completo.json');
+            const dataCruz = await resCruz.json();
+            window.dadosCruzamento = dataCruz; // Salva globalmente
+            renderScouts();
+        } catch (error) {
+            console.error("Erro ao carregar JSONs:", error);
         }
+    }
+
+    function renderTop5(dados) {
+        const container = document.getElementById('top5-container');
+        const nomesPos = { 'GOL': 'Goleiros', 'LAT': 'Laterais', 'ZAG': 'Zagueiros', 'MEI': 'Meias', 'ATA': 'Atacantes', 'TEC': 'Técnicos' };
         
+        if (!dados) return;
         container.innerHTML = '';
-        for (const [pos, jogadores] of Object.entries(dadosTop5)) {
+        for (const [pos, jogadores] of Object.entries(dados)) {
             if (jogadores.length === 0) continue;
-            let html = `<div class="top5-card"><h3>${posicoesNomes[pos] || pos}</h3>`;
+            let html = `<div class="top5-card"><h3>${nomesPos[pos] || pos}</h3>`;
             jogadores.forEach((j, index) => {
-                html += `<p><span><strong>${index + 1}º</strong> ${j.nome} <small>(${j.clube})</small></span> <span style="color: var(--accent)">${j.media_ult5 ? j.media_ult5.toFixed(2) : '0.00'}</span></p>`;
+                html += `<p><span><strong>${index + 1}º</strong> ${j.nome} <small>(${j.clube})</small></span> <span style="color: var(--accent)">${j.media_ult5.toFixed(2)}</span></p>`;
             });
             html += `</div>`;
             container.innerHTML += html;
@@ -178,91 +157,58 @@
     }
 
     function renderScouts() {
-        try {
-            const posicao = document.getElementById('filtro-posicao').value;
-            const periodo = document.getElementById('filtro-periodo').value;
-            const mando = document.getElementById('filtro-mando').value;
-            const container = document.getElementById('scouts-list');
-            
-            const scoutsPorPosicao = {
-                'GOL': ['DE', 'SG', 'pontuacao'],
-                'LAT': ['DS', 'FF', 'FD', 'FT', 'G', 'A', 'SG', 'pontuacao'],
-                'ZAG': ['DS', 'FF', 'FD', 'FT', 'G', 'A', 'SG', 'pontuacao'],
-                'MEI': ['DS', 'FF', 'FD', 'FT', 'G', 'A', 'pontuacao'],
-                'ATA': ['DS', 'FF', 'FD', 'FT', 'G', 'A', 'pontuacao'],
-                'TEC': ['pontuacao']
-            };
-            
-            const nomesColunas = { 'DE': 'Defesas', 'SG': 'Saldo Gols', 'DS': 'Desarmes', 'FF': 'Fin. Fora', 'FD': 'Fin. Def', 'FT': 'Fin. Trave', 'G': 'Gols', 'A': 'Assistências', 'pontuacao': 'Média Pts' };
-            const colunas = scoutsPorPosicao[posicao] || [];
+        const pos = document.getElementById('filtro-posicao').value;
+        const scout = document.getElementById('filtro-scout').value;
+        const periodo = document.getElementById('filtro-periodo').value;
+        const mando = document.getElementById('filtro-mando').value;
+        
+        const container = document.getElementById('scouts-list');
+        
+        if (!window.dadosCruzamento) return;
+        
+        // Pega a lista de confrontos baseado nos filtros
+        const confrontos = window.dadosCruzamento[pos]?.[periodo]?.[mando] || [];
+        
+        if (confrontos.length === 0) {
+            container.innerHTML = '<p style="text-align:center; color:#888;">Nenhum dado encontrado para estes filtros.</p>';
+            return;
+        }
 
-            if (!dadosScouts || Object.keys(dadosScouts).length === 0) {
-                container.innerHTML = '<p class="erro-msg">Nenhum dado encontrado. Rode a análise primeiro.</p>';
-                return;
-            }
+        // Encontra o maior valor para calcular o tamanho das barras proporcionalmente
+        let maxValor = 1;
+        confrontos.forEach(c => {
+            const vFeito = c.feito[scout] || 0;
+            const vCedido = c.cedido[scout] || 0;
+            if (vFeito > maxValor) maxValor = vFeito;
+            if (vCedido > maxValor) maxValor = vCedido;
+        });
 
-            let jogadoresFiltrados = [];
-            for (const [id, data] of Object.entries(dadosScouts)) {
-                if (data.posicao !== posicao) continue;
-                
-                let dadosFinais = data[periodo] || {};
-                if (mando !== 'total' && data[mando]) {
-                    dadosFinais = data[mando];
-                }
-                
-                // Se os dados do mando específico estiverem vazios, pula ou usa total
-                if (!dadosFinais || Object.keys(dadosFinais).length === 0) continue;
+        let html = '';
+        confrontos.forEach(c => {
+            const feito = c.feito[scout] || 0;
+            const cedido = c.cedido[scout] || 0;
 
-                jogadoresFiltrados.push({ nome: data.nome, clube: data.clube, dados: dadosFinais });
-            }
+            // Larguras baseadas no maior valor (para ficar tipo o Cartola)
+            const wFeito = Math.max((feito / maxValor) * 100, 5);
+            const wCedido = Math.max((cedido / maxValor) * 100, 5);
 
-            // Ordena pelos que têm mais pontos
-            jogadoresFiltrados.sort((a, b) => (b.dados.pontuacao || 0) - (a.dados.pontuacao || 0));
+            html += `
+            <div class="confronto-row">
+                <div class="time-info"><span>${c.casa}</span></div>
+                <div class="bar-container">
+                    <div class="bar bar-feito" style="width: ${wFeito}%;">${feito}</div>
+                    <div class="bar-x">X</div>
+                    <div class="bar bar-cedido" style="width: ${wCedido}%;">${cedido}</div>
+                </div>
+                <div class="time-info"><span>${c.visitante}</span></div>
+            </div>
+            `;
+        });
 
-            // Pega o maior valor de scout para usar como base nas barras
-            let maxValores = {};
-            colunas.forEach(c => {
-                if (c === 'pontuacao') return;
-                maxValores[c] = Math.max(...jogadoresFiltrados.map(j => j.dados[c] || 0), 1);
-            });
-
-            let html = '';
-            jogadoresFiltrados.slice(0, 20).forEach(j => {
-                html += `<div class="scout-card">
-                    <div class="scout-info">
-                        <div class="scout-name">${j.nome}</div>
-                        <div class="scout-club">${j.clube}</div>
-                    </div>
-                    <div class="scout-bars">`;
-                
-                colunas.forEach(c => {
-                    if (c === 'pontuacao') return;
-                    
-                    const valor = j.dados[c] || 0;
-                    const porcentagem = (valor / maxValores[c]) * 100;
-                    
-                    html += `<div class="bar-row">
-                        <div class="bar-label">${nomesColunas[c]}</div>
-                        <div class="bar-container">
-                            <div class="bar-fill bar-green" style="width: ${porcentagem}%;">${valor > 0 ? valor : ''}</div>
-                        </div>
-                    </div>`;
-                });
-                
-                html += `</div>
-                    <div style="text-align: right; min-width: 80px;">
-                        <div style="font-size: 0.8rem; color: #888;">Média Pts</div>
-                        <div style="font-size: 1.2rem; font-weight: bold; color: var(--accent);">${j.dados.pontuacao || 0}</div>
-                    </div>
-                </div>`;
-            });
-            
-            container.innerHTML = html || '<p class="erro-msg">Nenhum jogador encontrado com esses filtros.</p>';
-            
-        } catch (e) { console.error(e); }
+        container.innerHTML = html;
     }
 
-    window.onload = function() { renderTop5(); renderScouts(); };
+    window.onload = fetchData;
 </script>
 </body>
 </html>
