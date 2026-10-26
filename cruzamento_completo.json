@@ -1,44 +1,8 @@
 {
-  "GOL": {
-    "casa": {},
-    "fora": {},
-    "ultimos_3": {},
-    "ultimos_5": {},
-    "total": {}
-  },
-  "LAT": {
-    "casa": {},
-    "fora": {},
-    "ultimos_3": {},
-    "ultimos_5": {},
-    "total": {}
-  },
-  "ZAG": {
-    "casa": {},
-    "fora": {},
-    "ultimos_3": {},
-    "ultimos_5": {},
-    "total": {}
-  },
-  "MEI": {
-    "casa": {},
-    "fora": {},
-    "ultimos_3": {},
-    "ultimos_5": {},
-    "total": {}
-  },
-  "ATA": {
-    "casa": {},
-    "fora": {},
-    "ultimos_3": {},
-    "ultimos_5": {},
-    "total": {}
-  },
-  "TEC": {
-    "casa": {},
-    "fora": {},
-    "ultimos_3": {},
-    "ultimos_5": {},
-    "total": {}
-  }
+  "GOL": {},
+  "LAT": {},
+  "ZAG": {},
+  "MEI": {},
+  "ATA": {},
+  "TEC": {}
 }
