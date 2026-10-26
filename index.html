@@ -54,12 +54,12 @@
     </div>
 
     <div id="top5" class="tab-content">
-        <h2>Top 5 Posições</h2>
+        <h2>Top 5 Posições (Média Últimos 5 Jogos)</h2>
         <div id="top5-container" class="top5-container"></div>
     </div>
 
     <div id="cruzamento" class="tab-content">
-        <h2>Cruzamento de Scouts</h2>
+        <h2>Cruzamento de Scouts (Soma)</h2>
         <div class="filters">
             <div class="filter-group">
                 <label>Posição</label>
@@ -116,14 +116,11 @@
 
     async function carregarDados() {
         try {
-            // Carrega Top 5
             const resTop5 = await fetch('top5_posicoes.json');
             if (resTop5.ok) {
                 dadosTop5 = await resTop5.json();
                 renderTop5();
             }
-
-            // Carrega Cruzamento Completo
             const resCruz = await fetch('cruzamento_completo.json');
             if (resCruz.ok) {
                 dadosCruzamento = await resCruz.json();
@@ -161,33 +158,32 @@
         const container = document.getElementById('cruzamento-list');
 
         if (!dadosCruzamento || !dadosCruzamento[pos]) {
-            container.innerHTML = '<p>Dados não encontrados. Rode o script no Colab.</p>';
+            container.innerHTML = '<p>Dados não encontrados.</p>';
             return;
         }
 
-        // Lógica para escolher qual dado usar baseado nos filtros
-        // Se o mando for "casa", ele usa os dados de "casa" e cruza com o "fora" do adversário.
-        // Mas como simplificamos o JSON, usaremos o filtro de período primeiro, depois mando.
-        
-        let baseCasa = dadosCruzamento[pos][mando] || dadosCruzamento[pos]["total"]; 
-        let baseFora = dadosCruzamento[pos][mando === 'casa' ? 'fora' : (mando === 'fora' ? 'casa' : 'total')] || dadosCruzamento[pos]["total"];
+        // Define a base de dados com base no período
+        let base = dadosCruzamento[pos][periodo] || dadosCruzamento[pos]["total"];
 
-        // Ajuste para pegar o período correto
-        if (periodo !== 'total') {
-            baseCasa = dadosCruzamento[pos][periodo] || dadosCruzamento[pos]["total"];
-            baseFora = dadosCruzamento[pos][periodo] || dadosCruzamento[pos]["total"];
+        // Se o mando for Casa, usamos a base de Casa para o time da casa e Fora para o visitante
+        // Nota: O JSON separa por "casa" e "fora", mas a soma de "casa" não tem o filtro de período.
+        // Para simplificar, se o usuário escolher "Casa", usamos a base de casa global.
+        // Se escolher "Total", usamos a base do período.
+        if (mando === 'casa') {
+            base = dadosCruzamento[pos]["casa"];
+        } else if (mando === 'fora') {
+            base = dadosCruzamento[pos]["fora"];
         }
 
         let html = '';
         confrontos.forEach(conf => {
-            // Dados de quem joga em casa
-            const dadosCasa = baseCasa[conf.casa] || {};
-            // Dados de quem joga fora
-            const dadosFora = baseFora[conf.fora] || {};
-            
+            const dadosCasa = base[conf.casa] || {};
             const valorFeito = dadosCasa[scout] || 0;
+            
+            const dadosFora = base[conf.fora] || {};
             const valorCedido = dadosFora[scout] || 0;
 
+            // Para as barras, precisamos do maior valor para dar a proporção
             const max = Math.max(valorFeito, valorCedido, 1);
             const pctFeito = (valorFeito / max) * 100;
             const pctCedido = (valorCedido / max) * 100;
@@ -211,7 +207,7 @@
             </div>`;
         });
 
-        container.innerHTML = html || '<p>Nenhum dado para esta combinação de filtros.</p>';
+        container.innerHTML = html;
     }
 
     window.onload = carregarDados;
