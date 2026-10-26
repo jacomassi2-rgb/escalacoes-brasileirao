@@ -1,36 +1,41 @@
 {
   "GOL": [
     {
-      "nome": "Ronaldo de Oliveira Strada",
-      "clube": "BAH",
-      "media_ult5": 9.5
-    },
-    {
       "nome": "Weverton Pereira da Silva",
       "clube": "GRE",
-      "media_ult5": 8.9
+      "media_ult5": 11.44
+    },
+    {
+      "nome": "Ronaldo de Oliveira Strada",
+      "clube": "BAH",
+      "media_ult5": 8.76
     },
     {
       "nome": "Carlos Miguel dos Santos Pereira",
       "clube": "PAL",
-      "media_ult5": 8.05
+      "media_ult5": 8.48
     },
     {
       "nome": "Walter Leandro Capeloza Artune",
       "clube": "MIR",
-      "media_ult5": 7.17
+      "media_ult5": 7.92
     },
     {
-      "nome": "Carlos Miguel Coronel",
-      "clube": "SAO",
-      "media_ult5": 7.1
+      "nome": "Anderson Silva da Paixão",
+      "clube": "CHA",
+      "media_ult5": 7.36
     }
   ],
   "LAT": [
     {
       "nome": "Agustín Giay",
       "clube": "PAL",
-      "media_ult5": 13.3
+      "media_ult5": 10.83
+    },
+    {
+      "nome": "Luís Eduardo Soares da Silva",
+      "clube": "VAS",
+      "media_ult5": 10.72
     },
     {
       "nome": "Pedro Gabriel Crisostomo Pinheiro",
@@ -38,36 +43,31 @@
       "media_ult5": 10.4
     },
     {
-      "nome": "Luís Eduardo Soares da Silva",
-      "clube": "VAS",
-      "media_ult5": 10.2
+      "nome": "Igor Marques Paciência Cardoso",
+      "clube": "MIR",
+      "media_ult5": 9.72
     },
     {
-      "nome": "Pedro Henrique Cardoso de Lima",
-      "clube": "SAO",
-      "media_ult5": 9.18
-    },
-    {
-      "nome": "Khellven Douglas Silva Oliveira",
-      "clube": "PAL",
-      "media_ult5": 8.8
+      "nome": "Natanael Moreira Milouski",
+      "clube": "CAM",
+      "media_ult5": 9.4
     }
   ],
   "ZAG": [
     {
-      "nome": "Alexander Nahuel Barboza Ullúa",
-      "clube": "PAL",
-      "media_ult5": 10.5
-    },
-    {
       "nome": "Alan Gabriel Saldivia Vázquez",
       "clube": "VAS",
-      "media_ult5": 10.37
+      "media_ult5": 11.9
     },
     {
       "nome": "Wallace Gomes da Silva Santos",
       "clube": "GRE",
-      "media_ult5": 9.53
+      "media_ult5": 9.8
+    },
+    {
+      "nome": "Alexander Nahuel Barboza Ullúa",
+      "clube": "PAL",
+      "media_ult5": 9.74
     },
     {
       "nome": "Danilo Luiz da Silva",
@@ -84,7 +84,7 @@
     {
       "nome": "Jorge Andrés Carrascal Guardo",
       "clube": "FLA",
-      "media_ult5": 11.32
+      "media_ult5": 11.24
     },
     {
       "nome": "Neymar da Silva Santos Júnior",
@@ -92,26 +92,26 @@
       "media_ult5": 11.15
     },
     {
-      "nome": "Bernard Anício Caldeira Duarte",
-      "clube": "CAM",
-      "media_ult5": 10.5
+      "nome": "Alan Hernán Lescano",
+      "clube": "VAS",
+      "media_ult5": 10.4
+    },
+    {
+      "nome": "Carlos Eduardo de Oliveira Alves",
+      "clube": "MIR",
+      "media_ult5": 9.75
     },
     {
       "nome": "Matheus Martins Fogaça de Paulo",
       "clube": "VIT",
-      "media_ult5": 9.72
-    },
-    {
-      "nome": "Jefferson David Savarino Quintero",
-      "clube": "FLU",
-      "media_ult5": 9.6
+      "media_ult5": 9.74
     }
   ],
   "ATA": [
     {
       "nome": "Kaio Jorge Pinto Ramos",
       "clube": "CRU",
-      "media_ult5": 13.43
+      "media_ult5": 11.98
     },
     {
       "nome": "Zander Mateo Casierra Cabezas",
@@ -119,14 +119,14 @@
       "media_ult5": 11.2
     },
     {
+      "nome": "Kerwin Andrés Calderón Vargas",
+      "clube": "CAP",
+      "media_ult5": 11.07
+    },
+    {
       "nome": "Wallace Yan de Souza Barreto",
       "clube": "RBB",
       "media_ult5": 10.87
-    },
-    {
-      "nome": "Kerwin Andrés Calderón Vargas",
-      "clube": "CAP",
-      "media_ult5": 10.6
     },
     {
       "nome": "Kevin Stiven Viveros Rodallega",
@@ -136,29 +136,29 @@
   ],
   "TEC": [
     {
-      "nome": "Abel Fernando Moreira Ferreira",
-      "clube": "PAL",
-      "media_ult5": 9.11
+      "nome": "Pedro Emanuel dos Santos Martins Silva",
+      "clube": "VAS",
+      "media_ult5": 9.08
     },
     {
-      "nome": "José Leonardo Nunes Alves Sousa Jardim",
-      "clube": "FLA",
-      "media_ult5": 8.16
+      "nome": "Abel Fernando Moreira Ferreira",
+      "clube": "PAL",
+      "media_ult5": 8.86
     },
     {
       "nome": "Artur Jorge Torres Gomes Araújo Amorim",
       "clube": "CRU",
-      "media_ult5": 8.05
+      "media_ult5": 8.07
     },
     {
-      "nome": "Pedro Emanuel dos Santos Martins Silva",
-      "clube": "VAS",
-      "media_ult5": 7.96
+      "nome": "José Leonardo Nunes Alves Sousa Jardim",
+      "clube": "FLA",
+      "media_ult5": 7.94
     },
     {
       "nome": "Dorival Silvestre Júnior",
       "clube": "SAO",
-      "media_ult5": 7.13
+      "media_ult5": 7.34
     }
   ]
 }
