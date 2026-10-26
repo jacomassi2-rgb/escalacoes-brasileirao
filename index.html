@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fathur FC — Análise Cartola</title>
     <style>
-        :root { --bg-color: #121212; --card-bg: #1e1e1e; --text-color: #e0e0e0; --accent: #00b894; --red: #d63031; }
+        :root { --bg-color: #121212; --card-bg: #1e1e1e; --text-color: #e0e0e0; --accent: #00b894; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; }
         header { background-color: #000; padding: 15px 20px; text-align: center; border-bottom: 2px solid var(--accent); }
         header h1 { margin: 0; font-size: 1.5rem; }
         .tabs { display: flex; background-color: #000; justify-content: center; gap: 10px; padding: 10px; }
-        .tab-btn { background: none; border: none; color: #888; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-bottom: 2px solid transparent; transition: 0.3s; }
+        .tab-btn { background: none; border: none; color: #888; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-bottom: 2px solid transparent; }
         .tab-btn.active { color: var(--accent); border-bottom: 2px solid var(--accent); font-weight: bold; }
         .container { padding: 20px; max-width: 1200px; margin: 0 auto; }
         .tab-content { display: none; }
         .tab-content.active { display: block; }
         
-        /* Filtros */
         .filters { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; }
         .filter-group { display: flex; flex-direction: column; }
         .filter-group label { font-size: 0.8rem; color: #888; margin-bottom: 5px; }
         .filter-group select { background-color: #333; color: white; border: 1px solid #555; padding: 8px; border-radius: 4px; font-size: 1rem; }
 
-        /* Cruzamento Cartola Style */
-        .confronto-row { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 25px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; border-bottom: 1px solid #333; }
+        .confronto-row { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 15px; background-color: var(--card-bg); padding: 15px; border-radius: 8px; }
         .time-info { display: flex; flex-direction: column; align-items: center; width: 80px; font-weight: bold; font-size: 1.1rem; }
         
-        .bar-container { display: flex; flex: 1; gap: 10px; align-items: center; justify-content: center; max-width: 600px; }
-        .bar { height: 30px; border-radius: 15px; display: flex; align-items: center; color: #fff; font-weight: bold; font-size: 1.1rem; position: relative; }
+        .bar-container { display: flex; flex: 1; gap: 10px; align-items: center; justify-content: center; max-width: 500px; }
+        .bar { height: 30px; border-radius: 15px; display: flex; align-items: center; color: #fff; font-weight: bold; font-size: 1.1rem; }
         .bar-feito { background-color: #00d26a; justify-content: flex-end; padding-right: 15px; }
         .bar-cedido { background-color: #ff6b6b; justify-content: flex-start; padding-left: 15px; }
         .bar-x { font-size: 1.2rem; color: #888; font-weight: bold; margin: 0 5px; }
@@ -37,9 +35,10 @@
         .top5-card h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 5px; }
         .top5-card p { margin: 5px 0; font-size: 0.9rem; display: flex; justify-content: space-between; }
         
-        /* Classificação */
         #classificacao-container { background-color: var(--card-bg); padding: 20px; border-radius: 8px; text-align: center; }
-        .btn-classificacao { background: var(--accent); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin-top: 20px; transition: 0.2s; }
+        .btn-classificacao { background: var(--accent); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin-top: 20px; }
+        
+        .erro { color: #ff6b6b; text-align: center; padding: 20px; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -52,7 +51,6 @@
     <button class="tab-btn" onclick="openTab('scouts', event)">📊 Cruzamento de Scouts</button>
 </div>
 <div class="container">
-    <!-- ABA CLASSIFICAÇÃO -->
     <div id="classificacao" class="tab-content active">
         <div id="classificacao-container">
             <h2>Campeonato Brasileiro Série A</h2>
@@ -63,15 +61,15 @@
         </div>
     </div>
     
-    <!-- ABA TOP 5 -->
     <div id="top5" class="tab-content">
         <h2>Top 5 Melhores Opções (Média Últimos 5 jogos)</h2>
-        <div id="top5-container" class="top5-container"></div>
+        <div id="top5-container" class="top5-container">
+            <p style="color:#888;">Carregando dados do GitHub...</p>
+        </div>
     </div>
     
-    <!-- ABA CRUZAMENTO -->
     <div id="scouts" class="tab-content">
-        <h2>Cruzamento de Scouts</h2>
+        <h2>Cruzamento de Scouts (Feitos x Cedidos)</h2>
         <div class="filters">
             <div class="filter-group">
                 <label>Posição</label>
@@ -108,13 +106,15 @@
                 </select>
             </div>
         </div>
-        <div id="scouts-list"></div>
+        <div id="scouts-list">
+            <p style="color:#888; text-align:center;">Carregando dados do GitHub...</p>
+        </div>
     </div>
 </div>
 
 <script>
-    // Dados Mockados para o Top 5 e Cruzamento (que serão substituídos pelos JSONs reais se usando fetch)
-    // Para manter este arquivo independente e funcionando, usamos o fetch para puxar do GitHub.
+    // Variável global para guardar os dados
+    let dadosCruzamentoGlobal = null;
 
     function openTab(tabId, event) {
         document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
@@ -123,19 +123,27 @@
         if (event) event.target.classList.add('active');
     }
 
-    // FUNÇÃO PARA BUSCAR DADOS DO GITHUB (FETCH)
-    async function fetchData() {
+    // Força o navegador a não usar cache antigo adicionando um timestamp
+    const getUrl = (file) => `${file}?t=${new Date().getTime()}`;
+
+    async function carregarDados() {
         try {
-            const resTop5 = await fetch('top5_posicoes.json');
+            // 1. Carrega Top 5
+            const resTop5 = await fetch(getUrl('top5_posicoes.json'));
+            if (!resTop5.ok) throw new Error("Falha ao carregar top5_posicoes.json");
             const dataTop5 = await resTop5.json();
             renderTop5(dataTop5);
 
-            const resCruz = await fetch('cruzamento_completo.json');
-            const dataCruz = await resCruz.json();
-            window.dadosCruzamento = dataCruz; // Salva globalmente
+            // 2. Carrega Cruzamento
+            const resCruz = await fetch(getUrl('cruzamento_completo.json'));
+            if (!resCruz.ok) throw new Error("Falha ao carregar cruzamento_completo.json");
+            dadosCruzamentoGlobal = await resCruz.json();
             renderScouts();
+
         } catch (error) {
-            console.error("Erro ao carregar JSONs:", error);
+            console.error(error);
+            document.getElementById('top5-container').innerHTML = `<p class="erro">Erro ao carregar dados: ${error.message}</p>`;
+            document.getElementById('scouts-list').innerHTML = `<p class="erro">Erro ao carregar dados: ${error.message}</p>`;
         }
     }
 
@@ -143,7 +151,11 @@
         const container = document.getElementById('top5-container');
         const nomesPos = { 'GOL': 'Goleiros', 'LAT': 'Laterais', 'ZAG': 'Zagueiros', 'MEI': 'Meias', 'ATA': 'Atacantes', 'TEC': 'Técnicos' };
         
-        if (!dados) return;
+        if (!dados || Object.keys(dados).length === 0) {
+            container.innerHTML = '<p class="erro">Nenhum dado encontrado.</p>';
+            return;
+        }
+        
         container.innerHTML = '';
         for (const [pos, jogadores] of Object.entries(dados)) {
             if (jogadores.length === 0) continue;
@@ -164,17 +176,15 @@
         
         const container = document.getElementById('scouts-list');
         
-        if (!window.dadosCruzamento) return;
+        if (!dadosCruzamentoGlobal) return;
         
-        // Pega a lista de confrontos baseado nos filtros
-        const confrontos = window.dadosCruzamento[pos]?.[periodo]?.[mando] || [];
+        const confrontos = dadosCruzamentoGlobal[pos]?.[periodo]?.[mando] || [];
         
         if (confrontos.length === 0) {
-            container.innerHTML = '<p style="text-align:center; color:#888;">Nenhum dado encontrado para estes filtros.</p>';
+            container.innerHTML = '<p style="text-align:center; color:#888;">Nenhum confronto encontrado.</p>';
             return;
         }
 
-        // Encontra o maior valor para calcular o tamanho das barras proporcionalmente
         let maxValor = 1;
         confrontos.forEach(c => {
             const vFeito = c.feito[scout] || 0;
@@ -188,9 +198,9 @@
             const feito = c.feito[scout] || 0;
             const cedido = c.cedido[scout] || 0;
 
-            // Larguras baseadas no maior valor (para ficar tipo o Cartola)
-            const wFeito = Math.max((feito / maxValor) * 100, 5);
-            const wCedido = Math.max((cedido / maxValor) * 100, 5);
+            // Largura mínima de 10% para a barra não sumir quando o valor for 0
+            const wFeito = Math.max((feito / maxValor) * 100, 10);
+            const wCedido = Math.max((cedido / maxValor) * 100, 10);
 
             html += `
             <div class="confronto-row">
@@ -208,7 +218,8 @@
         container.innerHTML = html;
     }
 
-    window.onload = fetchData;
+    // Inicia a carga
+    window.onload = carregarDados;
 </script>
 </body>
 </html>
