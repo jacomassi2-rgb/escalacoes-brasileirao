@@ -1,0 +1,164 @@
+{
+  "GOL": [
+    {
+      "nome": "Desconhecido",
+      "clube": "BAH",
+      "media_ult5": 9.5
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "GRE",
+      "media_ult5": 8.9
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 8.05
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "MIR",
+      "media_ult5": 7.17
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "SAO",
+      "media_ult5": 7.1
+    }
+  ],
+  "LAT": [
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 13.3
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "GRE",
+      "media_ult5": 10.4
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "VAS",
+      "media_ult5": 10.2
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "SAO",
+      "media_ult5": 9.18
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 8.8
+    }
+  ],
+  "ZAG": [
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 10.5
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "VAS",
+      "media_ult5": 10.37
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "GRE",
+      "media_ult5": 9.53
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "FLA",
+      "media_ult5": 9.0
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAM",
+      "media_ult5": 8.4
+    }
+  ],
+  "MEI": [
+    {
+      "nome": "Desconhecido",
+      "clube": "FLA",
+      "media_ult5": 11.32
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "SAN",
+      "media_ult5": 11.15
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAM",
+      "media_ult5": 10.5
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "VIT",
+      "media_ult5": 9.72
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "FLU",
+      "media_ult5": 9.6
+    }
+  ],
+  "ATA": [
+    {
+      "nome": "Desconhecido",
+      "clube": "CRU",
+      "media_ult5": 13.42
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAM",
+      "media_ult5": 11.2
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "RBB",
+      "media_ult5": 10.87
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAP",
+      "media_ult5": 10.6
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CAP",
+      "media_ult5": 10.5
+    }
+  ],
+  "TEC": [
+    {
+      "nome": "Desconhecido",
+      "clube": "PAL",
+      "media_ult5": 9.1
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "FLA",
+      "media_ult5": 8.16
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "CRU",
+      "media_ult5": 8.05
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "VAS",
+      "media_ult5": 7.96
+    },
+    {
+      "nome": "Desconhecido",
+      "clube": "SAO",
+      "media_ult5": 7.13
+    }
+  ]
+}

@@ -1,0 +1,7762 @@
+{
+  "37656": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 4.13
+    },
+    "ultimos_5": {
+      "pontuacao": 4.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.8
+    }
+  },
+  "37715": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 6.0
+    },
+    "ultimos_5": {
+      "pontuacao": 6.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.0
+    }
+  },
+  "39148": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.8
+    },
+    "ultimos_5": {
+      "pontuacao": 7.43
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.43
+    }
+  },
+  "39656": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": -0.4
+    },
+    "ultimos_5": {
+      "pontuacao": -0.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.4
+    }
+  },
+  "39850": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 5.64
+    },
+    "ultimos_5": {
+      "pontuacao": 5.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.17
+    }
+  },
+  "40990": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 6.79
+    },
+    "ultimos_5": {
+      "pontuacao": 7.13
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.13
+    }
+  },
+  "41929": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 4.09
+    },
+    "ultimos_5": {
+      "pontuacao": 5.06
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.06
+    }
+  },
+  "42411": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 5.75
+    },
+    "ultimos_5": {
+      "pontuacao": 5.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.7
+    }
+  },
+  "42500": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "45125": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 6.09
+    },
+    "ultimos_5": {
+      "pontuacao": 5.36
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.36
+    }
+  },
+  "51413": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 7.17
+    },
+    "ultimos_5": {
+      "pontuacao": 7.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.17
+    }
+  },
+  "51772": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.17
+    },
+    "ultimos_5": {
+      "pontuacao": 0.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.17
+    }
+  },
+  "61987": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 2.8
+    },
+    "ultimos_5": {
+      "pontuacao": 2.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.8
+    }
+  },
+  "62977": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.53
+    },
+    "ultimos_5": {
+      "pontuacao": 2.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.7
+    }
+  },
+  "63007": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 11.15
+    },
+    "ultimos_5": {
+      "pontuacao": 11.15
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 11.15
+    }
+  },
+  "63008": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.2
+    },
+    "ultimos_5": {
+      "pontuacao": 6.43
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.43
+    }
+  },
+  "63013": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 6.5
+    },
+    "ultimos_5": {
+      "pontuacao": 6.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.5
+    }
+  },
+  "63289": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "63354": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.5
+    },
+    "ultimos_5": {
+      "pontuacao": 1.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.5
+    }
+  },
+  "68685": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 7.4
+    },
+    "ultimos_5": {
+      "pontuacao": 7.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.4
+    }
+  },
+  "68708": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 6.9
+    },
+    "ultimos_5": {
+      "pontuacao": 6.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.9
+    }
+  },
+  "68899": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 6.17
+    },
+    "ultimos_5": {
+      "pontuacao": 6.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.17
+    }
+  },
+  "68920": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.6
+    },
+    "ultimos_5": {
+      "pontuacao": 0.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.6
+    }
+  },
+  "68928": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 4.9
+    },
+    "ultimos_5": {
+      "pontuacao": 4.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.9
+    }
+  },
+  "68938": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.27
+    },
+    "ultimos_5": {
+      "pontuacao": 3.82
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.82
+    }
+  },
+  "68996": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.65
+    },
+    "ultimos_5": {
+      "pontuacao": 0.65
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.65
+    }
+  },
+  "69140": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.9
+    },
+    "ultimos_5": {
+      "pontuacao": 3.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.9
+    }
+  },
+  "69208": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.77
+    },
+    "ultimos_5": {
+      "pontuacao": 0.77
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.77
+    }
+  },
+  "69783": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 9.0
+    },
+    "ultimos_5": {
+      "pontuacao": 9.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.0
+    }
+  },
+  "70164": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.85
+    },
+    "ultimos_5": {
+      "pontuacao": 1.85
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.85
+    }
+  },
+  "70360": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 5.07
+    },
+    "ultimos_5": {
+      "pontuacao": 5.07
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.07
+    }
+  },
+  "70592": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.3
+    },
+    "ultimos_5": {
+      "pontuacao": 1.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.3
+    }
+  },
+  "70666": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 7.47
+    },
+    "ultimos_5": {
+      "pontuacao": 7.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.6
+    }
+  },
+  "70944": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.83
+    },
+    "ultimos_5": {
+      "pontuacao": 0.83
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.83
+    }
+  },
+  "71123": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.3
+    },
+    "ultimos_5": {
+      "pontuacao": 2.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.3
+    }
+  },
+  "71536": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 6.3
+    },
+    "ultimos_5": {
+      "pontuacao": 5.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.1
+    }
+  },
+  "71631": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 4.67
+    },
+    "ultimos_5": {
+      "pontuacao": 8.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.9
+    }
+  },
+  "71684": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 7.27
+    },
+    "ultimos_5": {
+      "pontuacao": 7.27
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.27
+    }
+  },
+  "72018": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 6.47
+    },
+    "ultimos_5": {
+      "pontuacao": 5.65
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.65
+    }
+  },
+  "72391": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 5.4
+    },
+    "ultimos_5": {
+      "pontuacao": 5.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.4
+    }
+  },
+  "72460": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 10.5
+    },
+    "ultimos_5": {
+      "pontuacao": 10.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 10.5
+    }
+  },
+  "72493": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 8.93
+    },
+    "ultimos_5": {
+      "pontuacao": 7.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.2
+    }
+  },
+  "72605": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.37
+    },
+    "ultimos_5": {
+      "pontuacao": 5.37
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.37
+    }
+  },
+  "72951": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.1
+    },
+    "ultimos_5": {
+      "pontuacao": 1.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.1
+    }
+  },
+  "73318": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 8.5
+    },
+    "ultimos_5": {
+      "pontuacao": 8.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.5
+    }
+  },
+  "73384": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.8
+    },
+    "ultimos_5": {
+      "pontuacao": 3.02
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.02
+    }
+  },
+  "73476": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 6.56
+    },
+    "ultimos_5": {
+      "pontuacao": 6.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.8
+    }
+  },
+  "73992": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.47
+    },
+    "ultimos_5": {
+      "pontuacao": 2.78
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.78
+    }
+  },
+  "77485": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.0
+    },
+    "ultimos_5": {
+      "pontuacao": 1.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.0
+    }
+  },
+  "77510": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.9
+    },
+    "ultimos_5": {
+      "pontuacao": 2.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.9
+    }
+  },
+  "77777": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.7
+    },
+    "ultimos_5": {
+      "pontuacao": 1.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.7
+    }
+  },
+  "78117": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": -2.8
+    },
+    "ultimos_5": {
+      "pontuacao": -2.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -2.8
+    }
+  },
+  "78248": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.33
+    },
+    "ultimos_5": {
+      "pontuacao": 5.55
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.55
+    }
+  },
+  "78435": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 5.2
+    },
+    "ultimos_5": {
+      "pontuacao": 5.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.2
+    }
+  },
+  "78445": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.55
+    },
+    "ultimos_5": {
+      "pontuacao": 3.55
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.55
+    }
+  },
+  "78478": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.25
+    },
+    "ultimos_5": {
+      "pontuacao": 0.25
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.25
+    }
+  },
+  "78605": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.25
+    },
+    "ultimos_5": {
+      "pontuacao": 0.25
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.25
+    }
+  },
+  "78850": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 2.8
+    },
+    "ultimos_5": {
+      "pontuacao": 2.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.8
+    }
+  },
+  "78855": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.03
+    },
+    "ultimos_5": {
+      "pontuacao": 2.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.4
+    }
+  },
+  "80061": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.7
+    },
+    "ultimos_5": {
+      "pontuacao": 1.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.7
+    }
+  },
+  "80076": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.4
+    },
+    "ultimos_5": {
+      "pontuacao": 1.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.4
+    }
+  },
+  "80129": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.33
+    },
+    "ultimos_5": {
+      "pontuacao": 2.75
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.75
+    }
+  },
+  "80196": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.33
+    },
+    "ultimos_5": {
+      "pontuacao": 3.12
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.12
+    }
+  },
+  "80287": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 5.2
+    },
+    "ultimos_5": {
+      "pontuacao": 5.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.2
+    }
+  },
+  "80313": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 4.8
+    },
+    "ultimos_5": {
+      "pontuacao": 3.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.6
+    }
+  },
+  "80570": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 2.3
+    },
+    "ultimos_5": {
+      "pontuacao": 2.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.3
+    }
+  },
+  "81005": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.6
+    },
+    "ultimos_5": {
+      "pontuacao": 4.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.6
+    }
+  },
+  "81091": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.57
+    },
+    "ultimos_5": {
+      "pontuacao": 1.57
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.57
+    }
+  },
+  "81720": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 5.1
+    },
+    "ultimos_5": {
+      "pontuacao": 5.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.1
+    }
+  },
+  "82407": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.63
+    },
+    "ultimos_5": {
+      "pontuacao": 1.63
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.63
+    }
+  },
+  "82463": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "82627": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.85
+    },
+    "ultimos_5": {
+      "pontuacao": 1.85
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.85
+    }
+  },
+  "82628": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.37
+    },
+    "ultimos_5": {
+      "pontuacao": 0.37
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.37
+    }
+  },
+  "82730": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 4.83
+    },
+    "ultimos_5": {
+      "pontuacao": 4.83
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.83
+    }
+  },
+  "82775": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.35
+    },
+    "ultimos_5": {
+      "pontuacao": 5.35
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.35
+    }
+  },
+  "83048": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "83257": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 7.83
+    },
+    "ultimos_5": {
+      "pontuacao": 9.02
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.02
+    }
+  },
+  "83433": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.4
+    },
+    "ultimos_5": {
+      "pontuacao": 3.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.4
+    }
+  },
+  "83528": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 4.63
+    },
+    "ultimos_5": {
+      "pontuacao": 3.85
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.85
+    }
+  },
+  "84042": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 5.13
+    },
+    "ultimos_5": {
+      "pontuacao": 5.13
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.13
+    }
+  },
+  "84339": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.47
+    },
+    "ultimos_5": {
+      "pontuacao": 0.47
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.47
+    }
+  },
+  "84558": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.65
+    },
+    "ultimos_5": {
+      "pontuacao": 1.65
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.65
+    }
+  },
+  "84626": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 5.1
+    },
+    "ultimos_5": {
+      "pontuacao": 4.45
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.45
+    }
+  },
+  "84674": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 5.23
+    },
+    "ultimos_5": {
+      "pontuacao": 4.85
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.85
+    }
+  },
+  "84735": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 5.73
+    },
+    "ultimos_5": {
+      "pontuacao": 5.73
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.73
+    }
+  },
+  "84816": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 7.97
+    },
+    "ultimos_5": {
+      "pontuacao": 7.97
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.97
+    }
+  },
+  "84847": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.13
+    },
+    "ultimos_5": {
+      "pontuacao": 1.65
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.65
+    }
+  },
+  "85035": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "85048": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.87
+    },
+    "ultimos_5": {
+      "pontuacao": 2.87
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.87
+    }
+  },
+  "85403": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": -0.6
+    },
+    "ultimos_5": {
+      "pontuacao": -0.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.6
+    }
+  },
+  "85626": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.5
+    },
+    "ultimos_5": {
+      "pontuacao": 1.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.5
+    }
+  },
+  "86292": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.7
+    },
+    "ultimos_5": {
+      "pontuacao": 3.45
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.45
+    }
+  },
+  "86686": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.75
+    },
+    "ultimos_5": {
+      "pontuacao": 1.75
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.75
+    }
+  },
+  "86757": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.7
+    },
+    "ultimos_5": {
+      "pontuacao": 2.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.7
+    }
+  },
+  "86777": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.13
+    },
+    "ultimos_5": {
+      "pontuacao": 1.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.1
+    }
+  },
+  "86787": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 4.89
+    },
+    "ultimos_5": {
+      "pontuacao": 4.89
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.89
+    }
+  },
+  "86859": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.43
+    },
+    "ultimos_5": {
+      "pontuacao": 3.43
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.43
+    }
+  },
+  "86864": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.57
+    },
+    "ultimos_5": {
+      "pontuacao": 5.55
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.55
+    }
+  },
+  "87008": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 3.17
+    },
+    "ultimos_5": {
+      "pontuacao": 3.95
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.95
+    }
+  },
+  "87211": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 5.5
+    },
+    "ultimos_5": {
+      "pontuacao": 5.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.5
+    }
+  },
+  "87228": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.5
+    },
+    "ultimos_5": {
+      "pontuacao": 5.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.5
+    }
+  },
+  "87258": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.35
+    },
+    "ultimos_5": {
+      "pontuacao": 0.35
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.35
+    }
+  },
+  "87342": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 4.0
+    },
+    "ultimos_5": {
+      "pontuacao": 4.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.0
+    }
+  },
+  "87470": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "87552": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.33
+    },
+    "ultimos_5": {
+      "pontuacao": 2.33
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.33
+    }
+  },
+  "87742": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.8
+    },
+    "ultimos_5": {
+      "pontuacao": 1.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.8
+    }
+  },
+  "87747": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.87
+    },
+    "ultimos_5": {
+      "pontuacao": 4.25
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.25
+    }
+  },
+  "87863": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 6.7
+    },
+    "ultimos_5": {
+      "pontuacao": 6.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.7
+    }
+  },
+  "87887": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 8.0
+    },
+    "ultimos_5": {
+      "pontuacao": 8.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.0
+    }
+  },
+  "88136": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 4.2
+    },
+    "ultimos_5": {
+      "pontuacao": 4.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.2
+    }
+  },
+  "88393": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.5
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "88479": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.1
+    },
+    "ultimos_5": {
+      "pontuacao": 0.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.1
+    }
+  },
+  "88963": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 8.55
+    },
+    "ultimos_5": {
+      "pontuacao": 8.16
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.16
+    }
+  },
+  "89256": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 6.3
+    },
+    "ultimos_5": {
+      "pontuacao": 5.32
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.32
+    }
+  },
+  "89273": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 1.3
+    },
+    "ultimos_5": {
+      "pontuacao": 1.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.3
+    }
+  },
+  "89274": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.27
+    },
+    "ultimos_5": {
+      "pontuacao": 3.78
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.78
+    }
+  },
+  "89275": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.73
+    },
+    "ultimos_5": {
+      "pontuacao": 4.82
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.82
+    }
+  },
+  "89368": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.8
+    }
+  },
+  "89493": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 6.7
+    },
+    "ultimos_5": {
+      "pontuacao": 6.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.7
+    }
+  },
+  "89637": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.73
+    },
+    "ultimos_5": {
+      "pontuacao": 2.73
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.73
+    }
+  },
+  "89837": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.97
+    },
+    "ultimos_5": {
+      "pontuacao": 4.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.6
+    }
+  },
+  "89840": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 8.4
+    },
+    "ultimos_5": {
+      "pontuacao": 8.58
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.58
+    }
+  },
+  "89883": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": -0.3
+    },
+    "ultimos_5": {
+      "pontuacao": -0.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.3
+    }
+  },
+  "90031": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.5
+    },
+    "ultimos_5": {
+      "pontuacao": 4.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.2
+    }
+  },
+  "90061": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.8
+    },
+    "ultimos_5": {
+      "pontuacao": 4.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.6
+    }
+  },
+  "90285": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.2
+    },
+    "ultimos_5": {
+      "pontuacao": 0.07
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.07
+    }
+  },
+  "90302": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.23
+    },
+    "ultimos_5": {
+      "pontuacao": 2.52
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.52
+    }
+  },
+  "90309": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.83
+    },
+    "ultimos_5": {
+      "pontuacao": 4.83
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.83
+    }
+  },
+  "90370": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "90532": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.2
+    },
+    "ultimos_5": {
+      "pontuacao": 0.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.2
+    }
+  },
+  "90588": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.93
+    },
+    "ultimos_5": {
+      "pontuacao": 2.95
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.95
+    }
+  },
+  "90703": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 9.7
+    },
+    "ultimos_5": {
+      "pontuacao": 9.72
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.72
+    }
+  },
+  "90768": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.3
+    },
+    "ultimos_5": {
+      "pontuacao": 0.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.3
+    }
+  },
+  "90917": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": -0.4
+    },
+    "ultimos_5": {
+      "pontuacao": -0.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.4
+    }
+  },
+  "91101": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 10.73
+    },
+    "ultimos_5": {
+      "pontuacao": 9.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.5
+    }
+  },
+  "91473": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.7
+    },
+    "ultimos_5": {
+      "pontuacao": 3.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.7
+    }
+  },
+  "91573": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.63
+    },
+    "ultimos_5": {
+      "pontuacao": 4.47
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.47
+    }
+  },
+  "91607": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.23
+    },
+    "ultimos_5": {
+      "pontuacao": 6.32
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.32
+    }
+  },
+  "91626": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 1.0
+    },
+    "ultimos_5": {
+      "pontuacao": 1.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.0
+    }
+  },
+  "91706": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 4.75
+    },
+    "ultimos_5": {
+      "pontuacao": 4.75
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.75
+    }
+  },
+  "91772": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.17
+    },
+    "ultimos_5": {
+      "pontuacao": 2.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.8
+    }
+  },
+  "91866": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.5
+    },
+    "ultimos_5": {
+      "pontuacao": 3.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.5
+    }
+  },
+  "91908": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 6.5
+    },
+    "ultimos_5": {
+      "pontuacao": 5.48
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.48
+    }
+  },
+  "92087": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 8.4
+    },
+    "ultimos_5": {
+      "pontuacao": 8.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.4
+    }
+  },
+  "92171": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.97
+    },
+    "ultimos_5": {
+      "pontuacao": 1.97
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.97
+    }
+  },
+  "92180": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 6.16
+    },
+    "ultimos_5": {
+      "pontuacao": 5.98
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.98
+    }
+  },
+  "92182": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.95
+    },
+    "ultimos_5": {
+      "pontuacao": 2.95
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.95
+    }
+  },
+  "92273": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 5.63
+    },
+    "ultimos_5": {
+      "pontuacao": 5.96
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.96
+    }
+  },
+  "92440": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "92696": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": -0.33
+    },
+    "ultimos_5": {
+      "pontuacao": -0.33
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.33
+    }
+  },
+  "92747": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 6.78
+    },
+    "ultimos_5": {
+      "pontuacao": 6.37
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.37
+    }
+  },
+  "92811": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.97
+    },
+    "ultimos_5": {
+      "pontuacao": 0.97
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.97
+    }
+  },
+  "92981": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.5
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "93368": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.93
+    },
+    "ultimos_5": {
+      "pontuacao": 3.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.5
+    }
+  },
+  "93371": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.0
+    },
+    "ultimos_5": {
+      "pontuacao": 2.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.0
+    }
+  },
+  "93637": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.7
+    },
+    "ultimos_5": {
+      "pontuacao": 0.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.7
+    }
+  },
+  "93716": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 4.43
+    },
+    "ultimos_5": {
+      "pontuacao": 4.43
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.43
+    }
+  },
+  "93790": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 5.9
+    },
+    "ultimos_5": {
+      "pontuacao": 5.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.9
+    }
+  },
+  "93882": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "93988": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.57
+    },
+    "ultimos_5": {
+      "pontuacao": 0.57
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.57
+    }
+  },
+  "94067": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.5
+    },
+    "ultimos_5": {
+      "pontuacao": 1.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.5
+    }
+  },
+  "94154": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.93
+    },
+    "ultimos_5": {
+      "pontuacao": 1.93
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.93
+    }
+  },
+  "94214": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.1
+    },
+    "ultimos_5": {
+      "pontuacao": 5.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.1
+    }
+  },
+  "94514": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.0
+    },
+    "ultimos_5": {
+      "pontuacao": 3.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.0
+    }
+  },
+  "94583": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.5
+    },
+    "ultimos_5": {
+      "pontuacao": 5.85
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.85
+    }
+  },
+  "94930": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 9.5
+    },
+    "ultimos_5": {
+      "pontuacao": 9.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.5
+    }
+  },
+  "94968": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 2.93
+    },
+    "ultimos_5": {
+      "pontuacao": 2.93
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.93
+    }
+  },
+  "95131": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 6.33
+    },
+    "ultimos_5": {
+      "pontuacao": 6.45
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.45
+    }
+  },
+  "95332": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.03
+    },
+    "ultimos_5": {
+      "pontuacao": 1.03
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.03
+    }
+  },
+  "95362": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 11.2
+    },
+    "ultimos_5": {
+      "pontuacao": 11.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 11.2
+    }
+  },
+  "95556": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 4.23
+    },
+    "ultimos_5": {
+      "pontuacao": 4.23
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.23
+    }
+  },
+  "95799": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 6.4
+    },
+    "ultimos_5": {
+      "pontuacao": 5.62
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.62
+    }
+  },
+  "96340": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": -0.6
+    },
+    "ultimos_5": {
+      "pontuacao": -0.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.6
+    }
+  },
+  "96342": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "96591": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.57
+    },
+    "ultimos_5": {
+      "pontuacao": 3.57
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.57
+    }
+  },
+  "96610": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 8.9
+    },
+    "ultimos_5": {
+      "pontuacao": 8.92
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.92
+    }
+  },
+  "96652": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "96678": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.43
+    },
+    "ultimos_5": {
+      "pontuacao": 0.25
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.25
+    }
+  },
+  "96870": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.5
+    },
+    "ultimos_5": {
+      "pontuacao": 5.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.5
+    }
+  },
+  "97101": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.33
+    },
+    "ultimos_5": {
+      "pontuacao": 3.33
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.33
+    }
+  },
+  "97133": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 2.17
+    },
+    "ultimos_5": {
+      "pontuacao": 2.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.17
+    }
+  },
+  "97145": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.3
+    },
+    "ultimos_5": {
+      "pontuacao": 3.88
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.88
+    }
+  },
+  "97321": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.45
+    },
+    "ultimos_5": {
+      "pontuacao": 4.45
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.45
+    }
+  },
+  "97341": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 4.89
+    },
+    "ultimos_5": {
+      "pontuacao": 4.71
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.71
+    }
+  },
+  "97450": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.4
+    },
+    "ultimos_5": {
+      "pontuacao": 1.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.4
+    }
+  },
+  "97460": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.2
+    },
+    "ultimos_5": {
+      "pontuacao": 2.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.2
+    }
+  },
+  "97468": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 4.2
+    },
+    "ultimos_5": {
+      "pontuacao": 4.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.2
+    }
+  },
+  "97520": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.5
+    },
+    "ultimos_5": {
+      "pontuacao": 1.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.5
+    }
+  },
+  "97642": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "97653": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.5
+    },
+    "ultimos_5": {
+      "pontuacao": 5.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.5
+    }
+  },
+  "97795": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 4.73
+    },
+    "ultimos_5": {
+      "pontuacao": 4.62
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.62
+    }
+  },
+  "97810": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 7.9
+    },
+    "ultimos_5": {
+      "pontuacao": 7.28
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.28
+    }
+  },
+  "97867": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.27
+    },
+    "ultimos_5": {
+      "pontuacao": 5.27
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.27
+    }
+  },
+  "97868": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.9
+    },
+    "ultimos_5": {
+      "pontuacao": 5.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.9
+    }
+  },
+  "97878": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.13
+    },
+    "ultimos_5": {
+      "pontuacao": 3.13
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.13
+    }
+  },
+  "97899": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.6
+    },
+    "ultimos_5": {
+      "pontuacao": 0.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.6
+    }
+  },
+  "97900": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.0
+    },
+    "ultimos_5": {
+      "pontuacao": 5.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.0
+    }
+  },
+  "97911": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.33
+    },
+    "ultimos_5": {
+      "pontuacao": 2.38
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.38
+    }
+  },
+  "98022": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.83
+    },
+    "ultimos_5": {
+      "pontuacao": 1.83
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.83
+    }
+  },
+  "98224": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "98225": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": -0.0
+    },
+    "ultimos_5": {
+      "pontuacao": -0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.0
+    }
+  },
+  "98333": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 4.13
+    },
+    "ultimos_5": {
+      "pontuacao": 4.22
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.22
+    }
+  },
+  "98484": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.55
+    },
+    "ultimos_5": {
+      "pontuacao": 0.55
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.55
+    }
+  },
+  "98517": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.47
+    },
+    "ultimos_5": {
+      "pontuacao": 2.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.6
+    }
+  },
+  "98617": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": -1.7
+    },
+    "ultimos_5": {
+      "pontuacao": -1.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -1.7
+    }
+  },
+  "98672": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 9.6
+    },
+    "ultimos_5": {
+      "pontuacao": 9.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.6
+    }
+  },
+  "98720": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 6.5
+    },
+    "ultimos_5": {
+      "pontuacao": 6.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.5
+    }
+  },
+  "98873": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 8.07
+    },
+    "ultimos_5": {
+      "pontuacao": 8.07
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.07
+    }
+  },
+  "98909": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.67
+    },
+    "ultimos_5": {
+      "pontuacao": 3.67
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.67
+    }
+  },
+  "98974": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 6.5
+    },
+    "ultimos_5": {
+      "pontuacao": 6.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.5
+    }
+  },
+  "99213": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 4.57
+    },
+    "ultimos_5": {
+      "pontuacao": 4.57
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.57
+    }
+  },
+  "99228": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.33
+    },
+    "ultimos_5": {
+      "pontuacao": 1.33
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.33
+    }
+  },
+  "99267": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.0
+    },
+    "ultimos_5": {
+      "pontuacao": 1.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.0
+    }
+  },
+  "99274": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 11.77
+    },
+    "ultimos_5": {
+      "pontuacao": 10.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 10.5
+    }
+  },
+  "99520": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.5
+    },
+    "ultimos_5": {
+      "pontuacao": 2.92
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.92
+    }
+  },
+  "99552": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 6.57
+    },
+    "ultimos_5": {
+      "pontuacao": 5.98
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.98
+    }
+  },
+  "99789": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.0
+    },
+    "ultimos_5": {
+      "pontuacao": 2.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.0
+    }
+  },
+  "99815": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 6.5
+    },
+    "ultimos_5": {
+      "pontuacao": 5.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.7
+    }
+  },
+  "99818": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": -1.8
+    },
+    "ultimos_5": {
+      "pontuacao": -1.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -1.8
+    }
+  },
+  "100084": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 4.2
+    },
+    "ultimos_5": {
+      "pontuacao": 4.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.2
+    }
+  },
+  "100596": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.7
+    },
+    "ultimos_5": {
+      "pontuacao": 3.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.7
+    }
+  },
+  "100652": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 5.4
+    },
+    "ultimos_5": {
+      "pontuacao": 5.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.4
+    }
+  },
+  "100695": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 6.87
+    },
+    "ultimos_5": {
+      "pontuacao": 6.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.1
+    }
+  },
+  "100742": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.57
+    },
+    "ultimos_5": {
+      "pontuacao": 1.92
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.92
+    }
+  },
+  "100804": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.2
+    },
+    "ultimos_5": {
+      "pontuacao": 1.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.2
+    }
+  },
+  "100848": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 4.7
+    },
+    "ultimos_5": {
+      "pontuacao": 4.68
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.68
+    }
+  },
+  "100898": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.77
+    },
+    "ultimos_5": {
+      "pontuacao": 3.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.6
+    }
+  },
+  "100987": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 7.5
+    },
+    "ultimos_5": {
+      "pontuacao": 7.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.5
+    }
+  },
+  "101002": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.6
+    }
+  },
+  "101237": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "101254": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.0
+    },
+    "ultimos_5": {
+      "pontuacao": 2.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.0
+    }
+  },
+  "101290": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.25
+    },
+    "ultimos_5": {
+      "pontuacao": 0.25
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.25
+    }
+  },
+  "101314": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.8
+    },
+    "ultimos_5": {
+      "pontuacao": 1.38
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.38
+    }
+  },
+  "101319": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 6.7
+    },
+    "ultimos_5": {
+      "pontuacao": 6.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.7
+    }
+  },
+  "101352": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.7
+    },
+    "ultimos_5": {
+      "pontuacao": 1.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.7
+    }
+  },
+  "101393": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.2
+    },
+    "ultimos_5": {
+      "pontuacao": 0.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.9
+    }
+  },
+  "101405": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.5
+    },
+    "ultimos_5": {
+      "pontuacao": 2.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.5
+    }
+  },
+  "101574": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 6.07
+    },
+    "ultimos_5": {
+      "pontuacao": 4.78
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.78
+    }
+  },
+  "101708": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 1.0
+    },
+    "ultimos_5": {
+      "pontuacao": 1.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.0
+    }
+  },
+  "101715": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.2
+    },
+    "ultimos_5": {
+      "pontuacao": 4.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.2
+    }
+  },
+  "101727": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.07
+    },
+    "ultimos_5": {
+      "pontuacao": 5.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.3
+    }
+  },
+  "101729": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.4
+    },
+    "ultimos_5": {
+      "pontuacao": 0.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.4
+    }
+  },
+  "101807": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.17
+    },
+    "ultimos_5": {
+      "pontuacao": 2.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.1
+    }
+  },
+  "101820": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.2
+    },
+    "ultimos_5": {
+      "pontuacao": 5.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.2
+    }
+  },
+  "101908": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 4.8
+    },
+    "ultimos_5": {
+      "pontuacao": 4.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.8
+    }
+  },
+  "101960": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 9.8
+    },
+    "ultimos_5": {
+      "pontuacao": 9.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.8
+    }
+  },
+  "101995": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.2
+    },
+    "ultimos_5": {
+      "pontuacao": 1.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.2
+    }
+  },
+  "102130": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 7.47
+    },
+    "ultimos_5": {
+      "pontuacao": 7.47
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.47
+    }
+  },
+  "102255": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.67
+    },
+    "ultimos_5": {
+      "pontuacao": 3.25
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.25
+    }
+  },
+  "102256": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.3
+    },
+    "ultimos_5": {
+      "pontuacao": 1.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.3
+    }
+  },
+  "102318": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 1.35
+    },
+    "ultimos_5": {
+      "pontuacao": 1.35
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.35
+    }
+  },
+  "102340": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.33
+    },
+    "ultimos_5": {
+      "pontuacao": 2.33
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.33
+    }
+  },
+  "102877": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": -2.8
+    },
+    "ultimos_5": {
+      "pontuacao": -2.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -2.8
+    }
+  },
+  "102906": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 5.67
+    },
+    "ultimos_5": {
+      "pontuacao": 6.72
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.72
+    }
+  },
+  "102911": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.07
+    },
+    "ultimos_5": {
+      "pontuacao": 3.18
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.18
+    }
+  },
+  "102928": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.9
+    },
+    "ultimos_5": {
+      "pontuacao": 1.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.9
+    }
+  },
+  "102975": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 2.67
+    },
+    "ultimos_5": {
+      "pontuacao": 2.67
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.67
+    }
+  },
+  "103014": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.5
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "103295": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.3
+    },
+    "ultimos_5": {
+      "pontuacao": 2.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.6
+    }
+  },
+  "103347": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.0
+    },
+    "ultimos_5": {
+      "pontuacao": 5.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.0
+    }
+  },
+  "103388": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 5.13
+    },
+    "ultimos_5": {
+      "pontuacao": 4.92
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.92
+    }
+  },
+  "103445": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 15.83
+    },
+    "ultimos_5": {
+      "pontuacao": 13.42
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 13.42
+    }
+  },
+  "103523": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.9
+    },
+    "ultimos_5": {
+      "pontuacao": 0.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.9
+    }
+  },
+  "103626": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.3
+    },
+    "ultimos_5": {
+      "pontuacao": 1.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.3
+    }
+  },
+  "103767": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.9
+    },
+    "ultimos_5": {
+      "pontuacao": 0.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.9
+    }
+  },
+  "103967": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.1
+    },
+    "ultimos_5": {
+      "pontuacao": 1.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.1
+    }
+  },
+  "104027": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 5.4
+    },
+    "ultimos_5": {
+      "pontuacao": 5.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.4
+    }
+  },
+  "104075": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.17
+    },
+    "ultimos_5": {
+      "pontuacao": 5.05
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.05
+    }
+  },
+  "104084": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 7.33
+    },
+    "ultimos_5": {
+      "pontuacao": 8.05
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.05
+    }
+  },
+  "104085": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.75
+    },
+    "ultimos_5": {
+      "pontuacao": 2.75
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.75
+    }
+  },
+  "104118": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 6.47
+    },
+    "ultimos_5": {
+      "pontuacao": 4.75
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.75
+    }
+  },
+  "104134": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": -0.4
+    },
+    "ultimos_5": {
+      "pontuacao": -0.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.4
+    }
+  },
+  "104204": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.67
+    },
+    "ultimos_5": {
+      "pontuacao": 2.67
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.67
+    }
+  },
+  "104387": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": -1.4
+    },
+    "ultimos_5": {
+      "pontuacao": -1.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -1.4
+    }
+  },
+  "104519": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.8
+    },
+    "ultimos_5": {
+      "pontuacao": 0.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.8
+    }
+  },
+  "104693": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.4
+    },
+    "ultimos_5": {
+      "pontuacao": 3.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.4
+    }
+  },
+  "104783": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.47
+    },
+    "ultimos_5": {
+      "pontuacao": 2.47
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.47
+    }
+  },
+  "104811": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.6
+    },
+    "ultimos_5": {
+      "pontuacao": 0.75
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.75
+    }
+  },
+  "105047": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 6.2
+    },
+    "ultimos_5": {
+      "pontuacao": 4.77
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.77
+    }
+  },
+  "105048": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.73
+    },
+    "ultimos_5": {
+      "pontuacao": 4.73
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.73
+    }
+  },
+  "105068": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 4.15
+    },
+    "ultimos_5": {
+      "pontuacao": 4.15
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.15
+    }
+  },
+  "105089": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.4
+    },
+    "ultimos_5": {
+      "pontuacao": 0.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.4
+    }
+  },
+  "105157": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 4.0
+    },
+    "ultimos_5": {
+      "pontuacao": 4.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.0
+    }
+  },
+  "105175": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 8.8
+    },
+    "ultimos_5": {
+      "pontuacao": 8.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.8
+    }
+  },
+  "105213": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.9
+    },
+    "ultimos_5": {
+      "pontuacao": 3.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.9
+    }
+  },
+  "105300": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 6.9
+    },
+    "ultimos_5": {
+      "pontuacao": 6.72
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.72
+    }
+  },
+  "105436": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 11.47
+    },
+    "ultimos_5": {
+      "pontuacao": 11.32
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 11.32
+    }
+  },
+  "105531": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 2.17
+    },
+    "ultimos_5": {
+      "pontuacao": 2.98
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.98
+    }
+  },
+  "105563": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.8
+    },
+    "ultimos_5": {
+      "pontuacao": 2.07
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.07
+    }
+  },
+  "105584": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 7.6
+    },
+    "ultimos_5": {
+      "pontuacao": 7.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.6
+    }
+  },
+  "105647": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 4.17
+    },
+    "ultimos_5": {
+      "pontuacao": 4.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.17
+    }
+  },
+  "106028": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 7.1
+    },
+    "ultimos_5": {
+      "pontuacao": 7.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.1
+    }
+  },
+  "106104": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.23
+    },
+    "ultimos_5": {
+      "pontuacao": 4.05
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.05
+    }
+  },
+  "106147": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 5.89
+    },
+    "ultimos_5": {
+      "pontuacao": 5.45
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.45
+    }
+  },
+  "106202": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.43
+    },
+    "ultimos_5": {
+      "pontuacao": 3.43
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.43
+    }
+  },
+  "106294": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.7
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "106302": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.5
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "106313": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.8
+    },
+    "ultimos_5": {
+      "pontuacao": 5.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.8
+    }
+  },
+  "106323": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.97
+    },
+    "ultimos_5": {
+      "pontuacao": 0.85
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.85
+    }
+  },
+  "106434": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.7
+    },
+    "ultimos_5": {
+      "pontuacao": 2.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.7
+    }
+  },
+  "106593": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 4.1
+    },
+    "ultimos_5": {
+      "pontuacao": 4.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.1
+    }
+  },
+  "106708": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 7.57
+    },
+    "ultimos_5": {
+      "pontuacao": 7.57
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.57
+    }
+  },
+  "106822": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.77
+    },
+    "ultimos_5": {
+      "pontuacao": 3.97
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.97
+    }
+  },
+  "106907": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 3.61
+    },
+    "ultimos_5": {
+      "pontuacao": 3.99
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.99
+    }
+  },
+  "106950": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": -0.27
+    },
+    "ultimos_5": {
+      "pontuacao": -0.27
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.27
+    }
+  },
+  "107093": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 8.8
+    },
+    "ultimos_5": {
+      "pontuacao": 7.48
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.48
+    }
+  },
+  "107203": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 5.3
+    },
+    "ultimos_5": {
+      "pontuacao": 5.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.3
+    }
+  },
+  "107231": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 5.47
+    },
+    "ultimos_5": {
+      "pontuacao": 4.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.3
+    }
+  },
+  "107236": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 1.5
+    },
+    "ultimos_5": {
+      "pontuacao": 1.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.5
+    }
+  },
+  "107256": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.13
+    },
+    "ultimos_5": {
+      "pontuacao": 3.13
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.13
+    }
+  },
+  "107300": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "107453": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.3
+    },
+    "ultimos_5": {
+      "pontuacao": 0.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.3
+    }
+  },
+  "107554": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 7.73
+    },
+    "ultimos_5": {
+      "pontuacao": 8.78
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.78
+    }
+  },
+  "107700": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.77
+    },
+    "ultimos_5": {
+      "pontuacao": 1.77
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.77
+    }
+  },
+  "107873": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.63
+    },
+    "ultimos_5": {
+      "pontuacao": 2.63
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.63
+    }
+  },
+  "107985": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.6
+    },
+    "ultimos_5": {
+      "pontuacao": 1.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.6
+    }
+  },
+  "107989": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.8
+    },
+    "ultimos_5": {
+      "pontuacao": 1.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.8
+    }
+  },
+  "108131": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 6.23
+    },
+    "ultimos_5": {
+      "pontuacao": 6.08
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.08
+    }
+  },
+  "108133": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.73
+    },
+    "ultimos_5": {
+      "pontuacao": 1.73
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.73
+    }
+  },
+  "108162": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.5
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "108683": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "108713": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.03
+    },
+    "ultimos_5": {
+      "pontuacao": 2.03
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.03
+    }
+  },
+  "108946": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.2
+    },
+    "ultimos_5": {
+      "pontuacao": 1.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.2
+    }
+  },
+  "109096": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 7.1
+    },
+    "ultimos_5": {
+      "pontuacao": 7.12
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.12
+    }
+  },
+  "109097": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.2
+    },
+    "ultimos_5": {
+      "pontuacao": 0.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.2
+    }
+  },
+  "109127": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.07
+    },
+    "ultimos_5": {
+      "pontuacao": 1.07
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.07
+    }
+  },
+  "109401": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.7
+    },
+    "ultimos_5": {
+      "pontuacao": 3.92
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.92
+    }
+  },
+  "109573": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.93
+    },
+    "ultimos_5": {
+      "pontuacao": 3.93
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.93
+    }
+  },
+  "109987": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 5.43
+    },
+    "ultimos_5": {
+      "pontuacao": 6.08
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.08
+    }
+  },
+  "110144": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.0
+    },
+    "ultimos_5": {
+      "pontuacao": 1.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.0
+    }
+  },
+  "110426": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 1.4
+    },
+    "ultimos_5": {
+      "pontuacao": 1.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.4
+    }
+  },
+  "110506": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 9.51
+    },
+    "ultimos_5": {
+      "pontuacao": 9.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.1
+    }
+  },
+  "110510": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 2.1
+    },
+    "ultimos_5": {
+      "pontuacao": 2.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.1
+    }
+  },
+  "110598": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.95
+    },
+    "ultimos_5": {
+      "pontuacao": 2.95
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.95
+    }
+  },
+  "110668": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.73
+    },
+    "ultimos_5": {
+      "pontuacao": 5.73
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.73
+    }
+  },
+  "110698": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 4.57
+    },
+    "ultimos_5": {
+      "pontuacao": 5.38
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.38
+    }
+  },
+  "110708": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 2.5
+    },
+    "ultimos_5": {
+      "pontuacao": 2.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.5
+    }
+  },
+  "110750": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.97
+    },
+    "ultimos_5": {
+      "pontuacao": 0.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.8
+    }
+  },
+  "111246": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.1
+    },
+    "ultimos_5": {
+      "pontuacao": 2.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.1
+    }
+  },
+  "111309": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.4
+    },
+    "ultimos_5": {
+      "pontuacao": 3.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.4
+    }
+  },
+  "111412": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.5
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "111682": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.5
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "111683": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 3.33
+    },
+    "ultimos_5": {
+      "pontuacao": 3.33
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.33
+    }
+  },
+  "111760": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.67
+    },
+    "ultimos_5": {
+      "pontuacao": 2.67
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.67
+    }
+  },
+  "111831": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 6.2
+    },
+    "ultimos_5": {
+      "pontuacao": 6.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.2
+    }
+  },
+  "111879": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 7.9
+    },
+    "ultimos_5": {
+      "pontuacao": 6.12
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.12
+    }
+  },
+  "112017": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.35
+    },
+    "ultimos_5": {
+      "pontuacao": 2.35
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.35
+    }
+  },
+  "112576": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.4
+    },
+    "ultimos_5": {
+      "pontuacao": 0.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.4
+    }
+  },
+  "112863": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.6
+    },
+    "ultimos_5": {
+      "pontuacao": 2.05
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.05
+    }
+  },
+  "112886": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 7.77
+    },
+    "ultimos_5": {
+      "pontuacao": 7.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.5
+    }
+  },
+  "113103": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 8.97
+    },
+    "ultimos_5": {
+      "pontuacao": 8.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.1
+    }
+  },
+  "113125": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.87
+    },
+    "ultimos_5": {
+      "pontuacao": 2.68
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.68
+    }
+  },
+  "113359": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.9
+    },
+    "ultimos_5": {
+      "pontuacao": 1.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.9
+    }
+  },
+  "113397": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.6
+    },
+    "ultimos_5": {
+      "pontuacao": 2.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.6
+    }
+  },
+  "113558": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "113690": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 1.6
+    },
+    "ultimos_5": {
+      "pontuacao": 2.25
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.25
+    }
+  },
+  "114040": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.7
+    },
+    "ultimos_5": {
+      "pontuacao": 3.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.7
+    }
+  },
+  "114208": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.9
+    },
+    "ultimos_5": {
+      "pontuacao": 1.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.8
+    }
+  },
+  "114323": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 5.43
+    },
+    "ultimos_5": {
+      "pontuacao": 7.22
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.22
+    }
+  },
+  "114801": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.65
+    },
+    "ultimos_5": {
+      "pontuacao": 0.65
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.65
+    }
+  },
+  "114802": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 7.73
+    },
+    "ultimos_5": {
+      "pontuacao": 7.73
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.73
+    }
+  },
+  "115479": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 1.76
+    },
+    "ultimos_5": {
+      "pontuacao": 1.76
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.76
+    }
+  },
+  "115537": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.9
+    },
+    "ultimos_5": {
+      "pontuacao": 5.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.9
+    }
+  },
+  "115674": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 6.47
+    },
+    "ultimos_5": {
+      "pontuacao": 4.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.6
+    }
+  },
+  "115986": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.13
+    },
+    "ultimos_5": {
+      "pontuacao": 2.13
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.13
+    }
+  },
+  "116034": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.0
+    },
+    "ultimos_5": {
+      "pontuacao": 3.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.0
+    }
+  },
+  "116065": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 9.33
+    },
+    "ultimos_5": {
+      "pontuacao": 10.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 10.2
+    }
+  },
+  "116447": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 4.93
+    },
+    "ultimos_5": {
+      "pontuacao": 4.93
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.93
+    }
+  },
+  "116461": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 6.47
+    },
+    "ultimos_5": {
+      "pontuacao": 6.12
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.12
+    }
+  },
+  "116706": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 8.37
+    },
+    "ultimos_5": {
+      "pontuacao": 8.37
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.37
+    }
+  },
+  "117061": {
+    "nome": "Desconhecido",
+    "clube": "MIR",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 4.5
+    },
+    "ultimos_5": {
+      "pontuacao": 4.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.5
+    }
+  },
+  "117314": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 5.87
+    },
+    "ultimos_5": {
+      "pontuacao": 5.87
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.87
+    }
+  },
+  "117330": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.37
+    },
+    "ultimos_5": {
+      "pontuacao": 4.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.9
+    }
+  },
+  "117403": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.0
+    },
+    "ultimos_5": {
+      "pontuacao": 1.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.0
+    }
+  },
+  "117404": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 5.73
+    },
+    "ultimos_5": {
+      "pontuacao": 6.38
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.38
+    }
+  },
+  "117632": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 6.03
+    },
+    "ultimos_5": {
+      "pontuacao": 6.03
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.03
+    }
+  },
+  "117909": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.67
+    },
+    "ultimos_5": {
+      "pontuacao": 1.67
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.67
+    }
+  },
+  "117910": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.93
+    },
+    "ultimos_5": {
+      "pontuacao": 3.88
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.88
+    }
+  },
+  "117926": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.87
+    },
+    "ultimos_5": {
+      "pontuacao": -0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.0
+    }
+  },
+  "117930": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.73
+    },
+    "ultimos_5": {
+      "pontuacao": 2.73
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.73
+    }
+  },
+  "118563": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.5
+    },
+    "ultimos_5": {
+      "pontuacao": 3.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.5
+    }
+  },
+  "118655": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 10.37
+    },
+    "ultimos_5": {
+      "pontuacao": 10.37
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 10.37
+    }
+  },
+  "118774": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 7.5
+    },
+    "ultimos_5": {
+      "pontuacao": 7.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.5
+    }
+  },
+  "118844": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.3
+    },
+    "ultimos_5": {
+      "pontuacao": 3.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.3
+    }
+  },
+  "120681": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.8
+    },
+    "ultimos_5": {
+      "pontuacao": 3.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.8
+    }
+  },
+  "122121": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.83
+    },
+    "ultimos_5": {
+      "pontuacao": 4.92
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.92
+    }
+  },
+  "122390": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": -0.4
+    },
+    "ultimos_5": {
+      "pontuacao": -0.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.4
+    }
+  },
+  "122573": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 10.87
+    },
+    "ultimos_5": {
+      "pontuacao": 10.87
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 10.87
+    }
+  },
+  "122670": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 2.4
+    },
+    "ultimos_5": {
+      "pontuacao": 2.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.4
+    }
+  },
+  "122781": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "122897": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.75
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.75
+    }
+  },
+  "122990": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.4
+    },
+    "ultimos_5": {
+      "pontuacao": 0.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.4
+    }
+  },
+  "123016": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 4.77
+    },
+    "ultimos_5": {
+      "pontuacao": 4.77
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.77
+    }
+  },
+  "123101": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 7.1
+    },
+    "ultimos_5": {
+      "pontuacao": 5.93
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.93
+    }
+  },
+  "123445": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 0.9
+    },
+    "ultimos_5": {
+      "pontuacao": 0.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.9
+    }
+  },
+  "123738": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.43
+    },
+    "ultimos_5": {
+      "pontuacao": 3.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.3
+    }
+  },
+  "123795": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "123869": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.57
+    },
+    "ultimos_5": {
+      "pontuacao": 1.57
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.57
+    }
+  },
+  "124219": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.8
+    },
+    "ultimos_5": {
+      "pontuacao": 3.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.8
+    }
+  },
+  "124239": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.9
+    },
+    "ultimos_5": {
+      "pontuacao": 0.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.9
+    }
+  },
+  "124270": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.3
+    },
+    "ultimos_5": {
+      "pontuacao": 1.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.3
+    }
+  },
+  "124424": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.07
+    },
+    "ultimos_5": {
+      "pontuacao": 3.42
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.42
+    }
+  },
+  "124481": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 1.5
+    },
+    "ultimos_5": {
+      "pontuacao": 1.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.5
+    }
+  },
+  "124483": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.7
+    },
+    "ultimos_5": {
+      "pontuacao": 1.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.7
+    }
+  },
+  "124526": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 13.3
+    },
+    "ultimos_5": {
+      "pontuacao": 13.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 13.3
+    }
+  },
+  "124552": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 7.0
+    },
+    "ultimos_5": {
+      "pontuacao": 9.12
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.12
+    }
+  },
+  "124912": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 4.57
+    },
+    "ultimos_5": {
+      "pontuacao": 5.65
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.65
+    }
+  },
+  "124961": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.63
+    },
+    "ultimos_5": {
+      "pontuacao": 0.48
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.48
+    }
+  },
+  "125746": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.63
+    },
+    "ultimos_5": {
+      "pontuacao": 2.63
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.63
+    }
+  },
+  "125803": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "GOL",
+    "ultimos_3": {
+      "pontuacao": 6.07
+    },
+    "ultimos_5": {
+      "pontuacao": 6.07
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.07
+    }
+  },
+  "125926": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.17
+    },
+    "ultimos_5": {
+      "pontuacao": 2.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.17
+    }
+  },
+  "126182": {
+    "nome": "Desconhecido",
+    "clube": "INT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.17
+    },
+    "ultimos_5": {
+      "pontuacao": 1.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.17
+    }
+  },
+  "126189": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": -0.95
+    },
+    "ultimos_5": {
+      "pontuacao": -0.95
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.95
+    }
+  },
+  "126471": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.03
+    },
+    "ultimos_5": {
+      "pontuacao": 2.03
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.03
+    }
+  },
+  "126977": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 2.84
+    },
+    "ultimos_5": {
+      "pontuacao": 2.53
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.53
+    }
+  },
+  "127273": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 8.03
+    },
+    "ultimos_5": {
+      "pontuacao": 8.05
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.05
+    }
+  },
+  "127871": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 10.6
+    },
+    "ultimos_5": {
+      "pontuacao": 10.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 10.6
+    }
+  },
+  "127932": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 1.1
+    },
+    "ultimos_5": {
+      "pontuacao": 1.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.1
+    }
+  },
+  "127970": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "128177": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "TEC",
+    "ultimos_3": {
+      "pontuacao": 6.1
+    },
+    "ultimos_5": {
+      "pontuacao": 7.96
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.96
+    }
+  },
+  "128431": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.5
+    },
+    "ultimos_5": {
+      "pontuacao": 2.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.5
+    }
+  },
+  "128433": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.8
+    },
+    "ultimos_5": {
+      "pontuacao": 3.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.8
+    }
+  },
+  "130048": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.65
+    },
+    "ultimos_5": {
+      "pontuacao": 2.65
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.65
+    }
+  },
+  "130209": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.63
+    },
+    "ultimos_5": {
+      "pontuacao": 5.43
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.43
+    }
+  },
+  "130307": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 9.53
+    },
+    "ultimos_5": {
+      "pontuacao": 9.53
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.53
+    }
+  },
+  "130444": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.2
+    },
+    "ultimos_5": {
+      "pontuacao": 0.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.2
+    }
+  },
+  "130525": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 8.93
+    },
+    "ultimos_5": {
+      "pontuacao": 9.18
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 9.18
+    }
+  },
+  "130806": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.8
+    },
+    "ultimos_5": {
+      "pontuacao": 2.45
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.45
+    }
+  },
+  "130843": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.6
+    },
+    "ultimos_5": {
+      "pontuacao": 3.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.5
+    }
+  },
+  "131617": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": -0.3
+    },
+    "ultimos_5": {
+      "pontuacao": -0.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.3
+    }
+  },
+  "131832": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "132071": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.13
+    },
+    "ultimos_5": {
+      "pontuacao": 5.82
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.82
+    }
+  },
+  "132264": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.03
+    },
+    "ultimos_5": {
+      "pontuacao": 7.15
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.15
+    }
+  },
+  "132274": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 8.0
+    },
+    "ultimos_5": {
+      "pontuacao": 8.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 8.0
+    }
+  },
+  "132412": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.77
+    },
+    "ultimos_5": {
+      "pontuacao": 3.77
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.77
+    }
+  },
+  "132580": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.8
+    },
+    "ultimos_5": {
+      "pontuacao": 0.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.8
+    }
+  },
+  "133543": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.47
+    },
+    "ultimos_5": {
+      "pontuacao": 0.47
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.47
+    }
+  },
+  "133679": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 5.0
+    },
+    "ultimos_5": {
+      "pontuacao": 5.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.0
+    }
+  },
+  "136955": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "138941": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 7.9
+    },
+    "ultimos_5": {
+      "pontuacao": 7.9
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.9
+    }
+  },
+  "140438": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "140484": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.2
+    },
+    "ultimos_5": {
+      "pontuacao": 0.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.2
+    }
+  },
+  "141131": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 2.95
+    },
+    "ultimos_5": {
+      "pontuacao": 2.95
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.95
+    }
+  },
+  "141160": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 7.77
+    },
+    "ultimos_5": {
+      "pontuacao": 6.02
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.02
+    }
+  },
+  "141339": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.0
+    },
+    "ultimos_5": {
+      "pontuacao": 2.6
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.6
+    }
+  },
+  "141344": {
+    "nome": "Desconhecido",
+    "clube": "CFC",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.5
+    },
+    "ultimos_5": {
+      "pontuacao": 3.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.5
+    }
+  },
+  "141382": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.25
+    },
+    "ultimos_5": {
+      "pontuacao": 4.25
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.25
+    }
+  },
+  "141400": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 3.4
+    },
+    "ultimos_5": {
+      "pontuacao": 3.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.4
+    }
+  },
+  "141594": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 10.4
+    },
+    "ultimos_5": {
+      "pontuacao": 10.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 10.4
+    }
+  },
+  "141615": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.5
+    },
+    "ultimos_5": {
+      "pontuacao": 1.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.5
+    }
+  },
+  "141754": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 6.5
+    },
+    "ultimos_5": {
+      "pontuacao": 4.97
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.97
+    }
+  },
+  "141776": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 9.1
+    },
+    "ultimos_5": {
+      "pontuacao": 7.18
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.18
+    }
+  },
+  "141991": {
+    "nome": "Desconhecido",
+    "clube": "REM",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "141995": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.5
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "142004": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.2
+    },
+    "ultimos_5": {
+      "pontuacao": 2.05
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.05
+    }
+  },
+  "142086": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.17
+    },
+    "ultimos_5": {
+      "pontuacao": 2.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.17
+    }
+  },
+  "142260": {
+    "nome": "Desconhecido",
+    "clube": "GRE",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": -0.3
+    },
+    "ultimos_5": {
+      "pontuacao": -0.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": -0.3
+    }
+  },
+  "142279": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 0.5
+    },
+    "ultimos_5": {
+      "pontuacao": 0.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.5
+    }
+  },
+  "142764": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "142877": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "142890": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.5
+    },
+    "ultimos_5": {
+      "pontuacao": 1.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.5
+    }
+  },
+  "143153": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 4.4
+    },
+    "ultimos_5": {
+      "pontuacao": 4.4
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.4
+    }
+  },
+  "143193": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 10.5
+    },
+    "ultimos_5": {
+      "pontuacao": 10.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 10.5
+    }
+  },
+  "143463": {
+    "nome": "Desconhecido",
+    "clube": "FLU",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.63
+    },
+    "ultimos_5": {
+      "pontuacao": 2.63
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.63
+    }
+  },
+  "144255": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 3.0
+    },
+    "ultimos_5": {
+      "pontuacao": 3.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.0
+    }
+  },
+  "144976": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.3
+    },
+    "ultimos_5": {
+      "pontuacao": 1.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.3
+    }
+  },
+  "145379": {
+    "nome": "Desconhecido",
+    "clube": "BAH",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 1.7
+    },
+    "ultimos_5": {
+      "pontuacao": 1.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.7
+    }
+  },
+  "145404": {
+    "nome": "Desconhecido",
+    "clube": "PAL",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 5.7
+    },
+    "ultimos_5": {
+      "pontuacao": 5.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 5.7
+    }
+  },
+  "145744": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 4.63
+    },
+    "ultimos_5": {
+      "pontuacao": 3.72
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.72
+    }
+  },
+  "146374": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.85
+    },
+    "ultimos_5": {
+      "pontuacao": 0.85
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.85
+    }
+  },
+  "146375": {
+    "nome": "Desconhecido",
+    "clube": "BOT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "147088": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.17
+    },
+    "ultimos_5": {
+      "pontuacao": 1.17
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.17
+    }
+  },
+  "147090": {
+    "nome": "Desconhecido",
+    "clube": "CAM",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 4.23
+    },
+    "ultimos_5": {
+      "pontuacao": 4.23
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 4.23
+    }
+  },
+  "147192": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.23
+    },
+    "ultimos_5": {
+      "pontuacao": 0.23
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.23
+    }
+  },
+  "147268": {
+    "nome": "Desconhecido",
+    "clube": "VIT",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 0.8
+    },
+    "ultimos_5": {
+      "pontuacao": 0.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.8
+    }
+  },
+  "148125": {
+    "nome": "Desconhecido",
+    "clube": "RBB",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 3.3
+    },
+    "ultimos_5": {
+      "pontuacao": 3.3
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.3
+    }
+  },
+  "148215": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 2.77
+    },
+    "ultimos_5": {
+      "pontuacao": 2.77
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.77
+    }
+  },
+  "149715": {
+    "nome": "Desconhecido",
+    "clube": "SAN",
+    "posicao": "LAT",
+    "ultimos_3": {
+      "pontuacao": 0.0
+    },
+    "ultimos_5": {
+      "pontuacao": 0.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 0.0
+    }
+  },
+  "149993": {
+    "nome": "Desconhecido",
+    "clube": "COR",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 1.2
+    },
+    "ultimos_5": {
+      "pontuacao": 1.2
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.2
+    }
+  },
+  "150180": {
+    "nome": "Desconhecido",
+    "clube": "VAS",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 7.0
+    },
+    "ultimos_5": {
+      "pontuacao": 7.0
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 7.0
+    }
+  },
+  "150197": {
+    "nome": "Desconhecido",
+    "clube": "SAO",
+    "posicao": "ZAG",
+    "ultimos_3": {
+      "pontuacao": 6.5
+    },
+    "ultimos_5": {
+      "pontuacao": 6.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.5
+    }
+  },
+  "150251": {
+    "nome": "Desconhecido",
+    "clube": "FLA",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 2.1
+    },
+    "ultimos_5": {
+      "pontuacao": 2.1
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 2.1
+    }
+  },
+  "151120": {
+    "nome": "Desconhecido",
+    "clube": "CAP",
+    "posicao": "ATA",
+    "ultimos_3": {
+      "pontuacao": 3.7
+    },
+    "ultimos_5": {
+      "pontuacao": 3.7
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 3.7
+    }
+  },
+  "151292": {
+    "nome": "Desconhecido",
+    "clube": "CRU",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 6.8
+    },
+    "ultimos_5": {
+      "pontuacao": 6.8
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 6.8
+    }
+  },
+  "151600": {
+    "nome": "Desconhecido",
+    "clube": "CHA",
+    "posicao": "MEI",
+    "ultimos_3": {
+      "pontuacao": 1.5
+    },
+    "ultimos_5": {
+      "pontuacao": 1.5
+    },
+    "casa": null,
+    "fora": null,
+    "total": {
+      "pontuacao": 1.5
+    }
+  }
+}
