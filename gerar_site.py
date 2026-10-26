@@ -1,18 +1,16 @@
 # ============================================================
-# SCRIPT COMPLETO: gerar_site.py
-# Lê os JSONs gerados e monta o index.html completo
-# Funciona no Colab e no GitHub Actions
+# SCRIPT COMPLETO DEFINITIVO: gerar_site.py
+# Gera o index.html com Classificação ao Vivo e Scouts Filtrados
 # ============================================================
 import os
 import json
 import subprocess
 
 # --- LÓGICA PARA DETECTAR O AMBIENTE ---
-# Se a pasta do Colab existir, usa ela. Se não, usa a pasta atual (GitHub Actions)
 if os.path.exists("/content/drive/MyDrive/fathur_fc"):
     BASE_DIR = "/content/drive/MyDrive/fathur_fc"
 else:
-    BASE_DIR = os.getcwd() # Pega a pasta atual onde o script está rodando no GitHub
+    BASE_DIR = os.getcwd()
 # ---------------------------------------
 
 def carregar_json(nome_arquivo):
@@ -26,7 +24,6 @@ def gerar_html():
     analise_scouts = carregar_json("analise_scouts.json")
     top5_posicoes = carregar_json("top5_posicoes.json")
     
-    # Transforma os dicionários em strings JSON seguras para injetar no JS
     js_analise = json.dumps(analise_scouts, ensure_ascii=False)
     js_top5 = json.dumps(top5_posicoes, ensure_ascii=False)
 
@@ -88,7 +85,7 @@ def gerar_html():
         .tab-content {{ display: none; }}
         .tab-content.active {{ display: block; }}
         
-        /* Estilos para a Tabela de Scouts */
+        /* Estilos Tabela de Scouts */
         .filters {{
             display: flex;
             flex-wrap: wrap;
@@ -98,73 +95,42 @@ def gerar_html():
             padding: 15px;
             border-radius: 8px;
         }}
-        .filter-group {{
-            display: flex;
-            flex-direction: column;
-        }}
-        .filter-group label {{
-            font-size: 0.8rem;
-            color: #888;
-            margin-bottom: 5px;
-        }}
+        .filter-group {{ display: flex; flex-direction: column; }}
+        .filter-group label {{ font-size: 0.8rem; color: #888; margin-bottom: 5px; }}
         .filter-group select {{
-            background-color: #333;
-            color: white;
-            border: 1px solid #555;
-            padding: 8px;
-            border-radius: 4px;
+            background-color: #333; color: white; border: 1px solid #555;
+            padding: 8px; border-radius: 4px;
         }}
         
         table {{
-            width: 100%;
-            border-collapse: collapse;
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            overflow: hidden;
+            width: 100%; border-collapse: collapse; background-color: var(--card-bg);
+            border-radius: 8px; overflow: hidden;
         }}
-        th, td {{
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #333;
-        }}
-        th {{
-            background-color: #2c2c2c;
-            color: var(--accent);
-            font-weight: 600;
-        }}
+        th, td {{ padding: 12px; text-align: left; border-bottom: 1px solid #333; }}
+        th {{ background-color: #2c2c2c; color: var(--accent); font-weight: 600; }}
         tr:hover {{ background-color: #2a2a2a; }}
         
-        /* Estilos para os Cards Top 5 */
+        /* Estilos Top 5 */
         .top5-container {{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px;
         }}
         .top5-card {{
-            background-color: var(--card-bg);
-            padding: 15px;
-            border-radius: 8px;
+            background-color: var(--card-bg); padding: 15px; border-radius: 8px;
             border-left: 4px solid var(--accent);
         }}
-        .top5-card h3 {{ margin: 0 0 10px 0; font-size: 1rem; color: var(--accent); }}
-        .top5-card p {{ margin: 5px 0; font-size: 0.9rem; }}
+        .top5-card h3 {{ margin: 0 0 10px 0; font-size: 1.1rem; color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 5px; }}
+        .top5-card p {{ margin: 5px 0; font-size: 0.9rem; display: flex; justify-content: space-between; }}
         
-        /* Estilos para Classificação */
+        /* Estilos Classificação */
         #classificacao-container {{
-            background-color: var(--card-bg);
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
+            background-color: var(--card-bg); padding: 20px; border-radius: 8px; text-align: center;
         }}
         .live-badge {{
-            background-color: red;
-            color: white;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            animation: blink 1s infinite;
+            background-color: red; color: white; padding: 3px 8px; border-radius: 4px;
+            font-size: 0.8rem; animation: blink 1s infinite; margin-left: 10px; vertical-align: middle;
         }}
         @keyframes blink {{ 50% {{ opacity: 0; }} }}
+        .loading {{ color: var(--accent); font-style: italic; }}
     </style>
 </head>
 <body>
@@ -183,17 +149,16 @@ def gerar_html():
     <!-- ABA CLASSIFICAÇÃO -->
     <div id="classificacao" class="tab-content active">
         <div id="classificacao-container">
-            <h2>Campeonato Brasileiro 2026 <span class="live-badge">AO VIVO</span></h2>
-            <p style="color: #888;">A classificação está sendo carregada em tempo real...</p>
+            <h2>Campeonato Brasileiro Série A <span class="live-badge">AO VIVO</span></h2>
             <div id="tabela-classificacao">
-                <p><em>[Aqui será carregado o iframe/API de classificação]</em></p>
+                <p class="loading">Carregando classificação em tempo real...</p>
             </div>
         </div>
     </div>
 
     <!-- ABA TOP 5 -->
     <div id="top5" class="tab-content">
-        <h2>Top 5 Melhores Opções (Últimos 5 jogos)</h2>
+        <h2>Top 5 Melhores Opções (Média Últimos 5 jogos)</h2>
         <div id="top5-container" class="top5-container">
             <!-- Preenchido via JS -->
         </div>
@@ -234,12 +199,8 @@ def gerar_html():
         </div>
 
         <table>
-            <thead id="scouts-thead">
-                <!-- Preenchido via JS -->
-            </thead>
-            <tbody id="scouts-tbody">
-                <!-- Preenchido via JS -->
-            </tbody>
+            <thead id="scouts-thead"></thead>
+            <tbody id="scouts-tbody"></tbody>
         </table>
     </div>
 </div>
@@ -254,6 +215,43 @@ def gerar_html():
         document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
         document.getElementById(tabId).classList.add('active');
         if (event) event.target.classList.add('active');
+    }}
+
+    // ================= ABA CLASSIFICAÇÃO AO VIVO =================
+    async function carregarClassificacao() {{
+        const container = document.getElementById('tabela-classificacao');
+        try {
+            // API pública do campeonato brasileiro
+            const response = await fetch('https://campeonato-brasileiro-api.vercel.app/api/tabela');
+            const data = await response.json();
+            
+            let html = '<table><thead><tr><th>Pos</th><th>Time</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th><th>SG</th></tr></thead><tbody>';
+            
+            // A API retorna um array de objetos com a classificação
+            data.forEach(time => {{
+                let corPos = '';
+                if (time.posicao <= 4) corPos = 'border-left: 4px solid #00b894;'; // Libertadores
+                else if (time.posicao >= 17) corPos = 'border-left: 4px solid #d63031;'; // Rebaixamento
+                
+                html += `<tr style="${{corPos}}">
+                    <td>${{time.posicao}}</td>
+                    <td style="font-weight: bold;">${{time.time}}</td>
+                    <td style="color: var(--accent); font-weight: bold;">${{time.pontos}}</td>
+                    <td>${{time.jogos}}</td>
+                    <td>${{time.vitorias}}</td>
+                    <td>${{time.empates}}</td>
+                    <td>${{time.derrotas}}</td>
+                    <td>${{time.gols_pro}}</td>
+                    <td>${{time.gols_contra}}</td>
+                    <td>${{time.saldo_gols}}</td>
+                </tr>`;
+            }});
+            html += '</tbody></table>';
+            container.innerHTML = html;
+        }} catch (error) {{
+            container.innerHTML = '<p style="color: #d63031;">Não foi possível carregar a classificação ao vivo. Tente novamente mais tarde.</p>';
+            console.error(error);
+        }}
     }}
 
     // ================= ABA TOP 5 =================
@@ -271,7 +269,7 @@ def gerar_html():
             
             let html = `<div class="top5-card"><h3>${{posicoesNomes[pos] || pos}}</h3>`;
             jogadores.forEach((j, index) => {{
-                html += `<p><strong>${{index + 1}}º</strong> ${{j.nome}} (${{j.clube}}) - <span style="color: var(--accent)">${{j.media_ult5.toFixed(2)}} pts</span></p>`;
+                html += `<p><span><strong>${{index + 1}}º</strong> ${{j.nome}} <small>(${{j.clube}})</small></span> <span style="color: var(--accent)">${{j.media_ult5.toFixed(2)}}</span></p>`;
             }});
             html += `</div>`;
             container.innerHTML += html;
@@ -287,7 +285,6 @@ def gerar_html():
         const thead = document.getElementById('scouts-thead');
         const tbody = document.getElementById('scouts-tbody');
         
-        // Define quais scouts mostrar para cada posição
         const scoutsPorPosicao = {{
             'GOL': ['DE', 'SG', 'pontuacao'],
             'LAT': ['DS', 'FF', 'FD', 'FT', 'G', 'A', 'SG', 'pontuacao'],
@@ -299,13 +296,12 @@ def gerar_html():
         
         const colunas = scoutsPorPosicao[posicao] || [];
         const nomesColunas = {{
-            'DE': 'Defesas', 'SG': 'Saldo Gols', 'DS': 'Desarmes', 
-            'FF': 'Fin. Fora', 'FD': 'Fin. Defendidas', 
-            'FT': 'Fin. Trave', 'G': 'Gols', 'A': 'Assistências', 
-            'pontuacao': 'Pontuação'
+            'DE': 'Defesas', 'SG': 'SG', 'DS': 'Desarmes', 
+            'FF': 'Fin. Fora', 'FD': 'Fin. Def', 
+            'FT': 'Fin. Trave', 'G': 'Gols', 'A': 'Assist', 
+            'pontuacao': 'Pts Média'
         }};
 
-        // Monta o Cabeçalho
         let headerHtml = '<tr><th>Jogador</th><th>Clube</th>';
         colunas.forEach(c => {{
             headerHtml += `<th>${{nomesColunas[c] || c}}</th>`;
@@ -313,47 +309,48 @@ def gerar_html():
         headerHtml += '</tr>';
         thead.innerHTML = headerHtml;
 
-        // Filtra e ordena os jogadores
         let jogadoresFiltrados = [];
         for (const [id, data] of Object.entries(dadosScouts)) {{
             if (data.posicao !== posicao) continue;
             
-            // Pega os dados do período e mando selecionados
-            let dadosPeriodo = data[periodo];
-            if (mando !== 'total' && dadosPeriodo) {{
-                // Fallback: se tiver dados de mando específicos, usa eles
-                if (data[mando]) {{
-                    dadosPeriodo = data[mando]; 
-                }}
+            // Lógica para cruzar Mando (Casa/Fora) com Período (Últimos 3/5)
+            // Como o JSON original não tem o cruzamento "últimos 5 em casa", 
+            // usamos a média do período ou a média do mando como fallback.
+            let dadosFinais = data[periodo];
+            
+            if (mando !== 'total' && data[mando]) {{
+                // Se o mando for específico, priorizamos os dados do mando
+                // (O ideal seria o Python ter gerado "casa_ult5", mas usamos o que temos)
+                dadosFinais = data[mando]; 
             }}
             
-            if (dadosPeriodo && dadosPeriodo.pontuacao !== undefined) {{
+            if (dadosFinais && dadosFinais.pontuacao !== undefined) {{
                 jogadoresFiltrados.push({{
                     nome: data.nome,
                     clube: data.clube,
-                    dados: dadosPeriodo
+                    dados: dadosFinais
                 }});
             }}
         }}
 
-        // Ordena por pontuação (decrescente)
         jogadoresFiltrados.sort((a, b) => (b.dados.pontuacao || 0) - (a.dados.pontuacao || 0));
 
-        // Monta as Linhas
         let bodyHtml = '';
         jogadoresFiltrados.forEach(j => {{
-            bodyHtml += `<tr><td>${{j.nome}}</td><td>${{j.clube}}</td>`;
+            bodyHtml += `<tr><td style="font-weight:bold;">${{j.nome}}</td><td>${{j.clube}}</td>`;
             colunas.forEach(c => {{
                 const valor = j.dados[c] !== undefined ? j.dados[c] : '-';
-                bodyHtml += `<td>${{valor}}</td>`;
+                // Destaca a pontuação
+                const isPts = c === 'pontuacao' ? 'style="color: var(--accent); font-weight:bold;"' : '';
+                bodyHtml += `<td ${{isPts}}>${{valor}}</td>`;
             }});
             bodyHtml += '</tr>';
         }});
         tbody.innerHTML = bodyHtml;
     }}
 
-    // Inicializa as abas ao carregar a página
     window.onload = function() {{
+        carregarClassificacao();
         renderTop5();
         renderScouts();
     }};
@@ -363,22 +360,19 @@ def gerar_html():
 </html>
 """
     
-    # Salva o arquivo index.html na raiz do projeto
     caminho_html = os.path.join(BASE_DIR, "index.html")
     with open(caminho_html, "w", encoding="utf-8") as f:
         f.write(html_content)
     
     print(f"✅ Site gerado com sucesso em: {caminho_html}")
     
-    # Tenta fazer o push para o GitHub (só funciona se estiver rodando no Colab com token, 
-    # ou se o GitHub Actions já tiver permissão de push)
     try:
         subprocess.run(["git", "add", "index.html"], cwd=BASE_DIR, check=True)
-        subprocess.run(["git", "commit", "-m", "Atualização automática: Site Fathur FC"], cwd=BASE_DIR, check=True)
+        subprocess.run(["git", "commit", "-m", "Atualização automática: Classificação e Scouts"], cwd=BASE_DIR, check=True)
         subprocess.run(["git", "push"], cwd=BASE_DIR, check=True)
         print("✅ Site enviado para o GitHub com sucesso!")
     except Exception as e:
-        print(f"⚠️ Aviso: Push automático falhou (normal se estiver rodando no GitHub Actions). Erro: {e}")
+        print(f"⚠️ Aviso: Push automático falhou. Erro: {e}")
 
 if __name__ == "__main__":
     gerar_html()
