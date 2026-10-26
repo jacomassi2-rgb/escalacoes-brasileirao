@@ -1,7 +1,7 @@
 {
   "GOL": [
-    {"nome": "Weverton", "clube": "PAL", "media_ult5": 9.50},
-    {"nome": "Rossi", "clube": "FLA", "media_ult5": 8.90},
+    {"nome": "Rossi", "clube": "FLA", "media_ult5": 9.50},
+    {"nome": "Weverton", "clube": "GRE", "media_ult5": 8.90},
     {"nome": "Hugo Souza", "clube": "COR", "media_ult5": 8.05},
     {"nome": "Walter", "clube": "MIR", "media_ult5": 7.17},
     {"nome": "Rafael", "clube": "SAO", "media_ult5": 7.10}
@@ -29,7 +29,7 @@
   ],
   "ATA": [
     {"nome": "Arroyo", "clube": "CRU", "media_ult5": 13.42},
-    {"nome": "Hulk", "clube": "CAM", "media_ult5": 11.20},
+    {"nome": "Hulk", "clube": "FLU", "media_ult5": 11.20},
     {"nome": "Wallace Yan", "clube": "RBB", "media_ult5": 10.87},
     {"nome": "Viveros", "clube": "CAP", "media_ult5": 10.60},
     {"nome": "Pulgar", "clube": "CAP", "media_ult5": 10.50}
