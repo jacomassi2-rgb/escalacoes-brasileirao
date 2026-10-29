@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-29T13:38:46.151679-03:00",
+  "ts": "2026-10-29T18:27:16.007205-03:00",
   "rodada": 33,
   "atletas": {
     "100695": {
@@ -600,14 +600,14 @@
     },
     "111246": {
       "scout": {
-        "DS": 2,
+        "DS": 1,
         "FC": 2,
         "FD": 1,
         "SG": 1
       },
       "apelido": "Alix Vinicius",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/RBB/FORMATO.png",
-      "pontuacao": 8.6,
+      "pontuacao": 7.1,
       "posicao_id": 3,
       "clube_id": 280,
       "entrou_em_campo": true
@@ -1028,13 +1028,12 @@
       "scout": {
         "DS": 3,
         "FC": 1,
-        "FD": 1,
         "FF": 1,
         "FS": 1
       },
       "apelido": "David",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CHA/FORMATO.png",
-      "pontuacao": 6.7,
+      "pontuacao": 5.5,
       "posicao_id": 4,
       "clube_id": 315,
       "entrou_em_campo": true
@@ -1232,7 +1231,7 @@
       },
       "apelido": "Vagner Mancini",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/RBB/FORMATO.png",
-      "pontuacao": 10.85,
+      "pontuacao": 10.71,
       "posicao_id": 6,
       "clube_id": 280,
       "entrou_em_campo": true
@@ -1963,11 +1962,12 @@
     },
     "95332": {
       "scout": {
-        "FC": 2
+        "FC": 2,
+        "FD": 1
       },
       "apelido": "Marcinho",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CHA/FORMATO.png",
-      "pontuacao": -0.6,
+      "pontuacao": 0.6,
       "posicao_id": 5,
       "clube_id": 315,
       "entrou_em_campo": true
@@ -2370,11 +2370,11 @@
         "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/29-10-2026/atletico-mg-cruzeiro.ghtml?utm_source=cartolafc"
       },
       "local": "Arena MRV",
-      "status_transmissao_tr": "CRIADA",
+      "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "",
+      "periodo_tr": "PRE_JOGO",
       "partida_data": "2026-10-29 19:30:00",
-      "inicio_cronometro_tr": "",
+      "inicio_cronometro_tr": "2026-10-29T20:58:21.056Z",
       "placar_oficial_visitante": null,
       "placar_oficial_mandante": null,
       "partida_id": 346440,
