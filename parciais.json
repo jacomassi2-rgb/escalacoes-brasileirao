@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-30T08:24:32.906782-03:00",
+  "ts": "2026-10-30T13:34:53.012246-03:00",
   "rodada": 33,
   "atletas": {
     "100084": {
@@ -2098,13 +2098,13 @@
     },
     "71536": {
       "scout": {
-        "DS": 5,
+        "DS": 4,
         "FC": 1,
         "FS": 2
       },
       "apelido": "Luiz Gustavo",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
-      "pontuacao": 8.2,
+      "pontuacao": 6.7,
       "posicao_id": 4,
       "clube_id": 293,
       "entrou_em_campo": true
@@ -2861,7 +2861,7 @@
       "scout": {},
       "apelido": "Odair Hellmann",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
-      "pontuacao": 3.11,
+      "pontuacao": 2.97,
       "posicao_id": 6,
       "clube_id": 293,
       "entrou_em_campo": true
