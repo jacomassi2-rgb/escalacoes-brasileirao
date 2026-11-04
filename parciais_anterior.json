@@ -1,5 +1,5 @@
 {
-  "ts": "2026-11-04T08:43:48.325850-03:00",
+  "ts": "2026-11-04T13:42:30.706737-03:00",
   "rodada": 34,
   "atletas": {
     "101393": {
@@ -73,7 +73,7 @@
       },
       "apelido": "Rafael Guanaes",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/MIR/FORMATO.png",
-      "pontuacao": 6.35,
+      "pontuacao": 6.44,
       "posicao_id": 6,
       "clube_id": 2305,
       "entrou_em_campo": true
@@ -948,14 +948,13 @@
     },
     "97520": {
       "scout": {
-        "CA": 1,
         "DS": 3,
         "FC": 2,
         "G": 1
       },
       "apelido": "Shaylon",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/MIR/FORMATO.png",
-      "pontuacao": 10.9,
+      "pontuacao": 11.9,
       "posicao_id": 4,
       "clube_id": 2305,
       "entrou_em_campo": true
