@@ -1,5 +1,5 @@
 {
-  "ts": "2026-11-04T13:42:30.706737-03:00",
+  "ts": "2026-11-04T18:38:01.728041-03:00",
   "rodada": 34,
   "atletas": {
     "101393": {
@@ -1125,11 +1125,11 @@
         "url": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/04-11-2026/flamengo-gremio.ghtml?utm_source=cartolafc"
       },
       "local": "Maracanã",
-      "status_transmissao_tr": "CRIADA",
+      "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "",
+      "periodo_tr": "PRE_JOGO",
       "partida_data": "2026-11-04 19:30:00",
-      "inicio_cronometro_tr": "",
+      "inicio_cronometro_tr": "2026-11-04T21:25:45.230Z",
       "placar_oficial_visitante": null,
       "placar_oficial_mandante": null,
       "partida_id": 346391,
@@ -1161,11 +1161,11 @@
         "url": "https://ge.globo.com/pr/futebol/brasileirao-serie-a/jogo/04-11-2026/atletico-pr-vasco.ghtml?utm_source=cartolafc"
       },
       "local": "Arena da Baixada",
-      "status_transmissao_tr": "CRIADA",
+      "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "",
+      "periodo_tr": "PRE_JOGO",
       "partida_data": "2026-11-04 19:30:00",
-      "inicio_cronometro_tr": "",
+      "inicio_cronometro_tr": "2026-11-04T21:28:07.763Z",
       "placar_oficial_visitante": null,
       "placar_oficial_mandante": null,
       "partida_id": 346398,
