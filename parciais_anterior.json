@@ -1,5 +1,5 @@
 {
-  "ts": "2026-11-05T13:53:06.849218-03:00",
+  "ts": "2026-11-05T18:31:39.723184-03:00",
   "rodada": 34,
   "atletas": {
     "100596": {
@@ -2842,11 +2842,11 @@
         "url": "https://ge.globo.com/sp/futebol/brasileirao-serie-a/jogo/05-11-2026/palmeiras-remo.ghtml?utm_source=cartolafc"
       },
       "local": "Nubank Parque",
-      "status_transmissao_tr": "CRIADA",
+      "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "",
+      "periodo_tr": "PRE_JOGO",
       "partida_data": "2026-11-05 19:30:00",
-      "inicio_cronometro_tr": "",
+      "inicio_cronometro_tr": "2026-11-05T21:16:04.418Z",
       "placar_oficial_visitante": null,
       "placar_oficial_mandante": null,
       "partida_id": 346394,
