@@ -1,5 +1,5 @@
 {
-  "ts": "2026-11-22T22:14:37.164700-03:00",
+  "ts": "2026-11-23T19:18:57.177840-03:00",
   "rodada": 36,
   "atletas": {
     "100742": {
@@ -593,13 +593,13 @@
     "110668": {
       "scout": {
         "CA": 1,
-        "DS": 4,
+        "DS": 3,
         "FC": 1,
         "FS": 1
       },
       "apelido": "Esquivel",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
-      "pontuacao": 5.2,
+      "pontuacao": 3.7,
       "posicao_id": 2,
       "clube_id": 293,
       "entrou_em_campo": true
@@ -660,13 +660,13 @@
     },
     "112017": {
       "scout": {
-        "DS": 1,
+        "DS": 2,
         "FC": 1,
         "FS": 1
       },
       "apelido": "Felipinho",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
-      "pontuacao": 1.7,
+      "pontuacao": 3.2,
       "posicao_id": 4,
       "clube_id": 293,
       "entrou_em_campo": true
@@ -1134,13 +1134,13 @@
     },
     "125926": {
       "scout": {
-        "DS": 2,
+        "DS": 4,
         "FF": 1,
         "FS": 1
       },
       "apelido": "Zapelli",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
-      "pontuacao": 4.3,
+      "pontuacao": 7.3,
       "posicao_id": 4,
       "clube_id": 293,
       "entrou_em_campo": true
@@ -1634,13 +1634,13 @@
     },
     "71536": {
       "scout": {
-        "DS": 1,
+        "DS": 2,
         "FC": 2,
         "FS": 3
       },
       "apelido": "Luiz Gustavo",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
-      "pontuacao": 2.4,
+      "pontuacao": 3.9,
       "posicao_id": 4,
       "clube_id": 293,
       "entrou_em_campo": true
@@ -2126,7 +2126,7 @@
       },
       "apelido": "Odair Hellmann",
       "foto": "https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/clubes_2026/silhuetas/CAP/FORMATO.png",
-      "pontuacao": 8.83,
+      "pontuacao": 9.24,
       "posicao_id": 6,
       "clube_id": 293,
       "entrou_em_campo": true
@@ -2676,14 +2676,14 @@
         "v",
         "d",
         "v",
-        "e"
+        "d"
       ],
       "aproveitamento_mandante": [
         "e",
         "d",
         "d",
         "d",
-        "e"
+        "v"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -2712,14 +2712,14 @@
         "d",
         "v",
         "e",
-        "e"
+        "d"
       ],
       "aproveitamento_mandante": [
         "d",
         "v",
         "v",
         "v",
-        "e"
+        "v"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -2748,14 +2748,14 @@
         "v",
         "v",
         "v",
-        "e"
+        "d"
       ],
       "aproveitamento_mandante": [
         "d",
         "v",
         "v",
         "d",
-        "e"
+        "v"
       ],
       "transmissao": {
         "label": "saiba como foi",
@@ -2781,28 +2781,28 @@
     {
       "aproveitamento_visitante": [
         "e",
-        "e",
         "d",
         "d",
-        "v"
+        "v",
+        "e"
       ],
       "aproveitamento_mandante": [
-        "d",
         "v",
         "d",
         "v",
-        "d"
+        "d",
+        "e"
       ],
       "transmissao": {
-        "label": "fique por dentro",
+        "label": "ao vivo",
         "url": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/jogo/23-11-2026/internacional-vitoria.ghtml?utm_source=cartolafc"
       },
       "local": "Beira-Rio",
-      "status_transmissao_tr": "CRIADA",
+      "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "",
+      "periodo_tr": "PRE_JOGO",
       "partida_data": "2026-11-23 19:30:00",
-      "inicio_cronometro_tr": "",
+      "inicio_cronometro_tr": "2026-11-23T21:29:44.590Z",
       "placar_oficial_visitante": null,
       "placar_oficial_mandante": null,
       "partida_id": 346307,
@@ -2816,29 +2816,29 @@
     },
     {
       "aproveitamento_visitante": [
-        "v",
         "e",
         "d",
         "e",
-        "d"
+        "d",
+        "e"
       ],
       "aproveitamento_mandante": [
-        "v",
         "d",
         "d",
         "v",
-        "d"
+        "d",
+        "e"
       ],
       "transmissao": {
         "label": "fique por dentro",
         "url": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/jogo/23-11-2026/botafogo-sao-paulo.ghtml?utm_source=cartolafc"
       },
       "local": "Nilton Santos (Engenhão)",
-      "status_transmissao_tr": "CRIADA",
+      "status_transmissao_tr": "EM_ANDAMENTO",
       "status_cronometro_tr": "PAUSADO",
-      "periodo_tr": "",
+      "periodo_tr": "PRE_JOGO",
       "partida_data": "2026-11-23 20:00:00",
-      "inicio_cronometro_tr": "",
+      "inicio_cronometro_tr": "2026-11-23T21:56:17.240Z",
       "placar_oficial_visitante": null,
       "placar_oficial_mandante": null,
       "partida_id": 346302,
@@ -2852,18 +2852,18 @@
     },
     {
       "aproveitamento_visitante": [
-        "d",
         "v",
         "v",
         "d",
+        "e",
         "e"
       ],
       "aproveitamento_mandante": [
-        "v",
         "e",
         "e",
         "d",
-        "v"
+        "v",
+        "e"
       ],
       "transmissao": {
         "label": "fique por dentro",
@@ -2902,12 +2902,12 @@
         "e"
       ],
       "transmissao": {
-        "label": "",
-        "url": ""
+        "label": "fique por dentro",
+        "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/jogo/25-11-2026/atletico-mg-corinthians.ghtml?utm_source=cartolafc"
       },
       "local": "Arena MRV",
-      "status_transmissao_tr": "",
-      "status_cronometro_tr": "",
+      "status_transmissao_tr": "CRIADA",
+      "status_cronometro_tr": "PAUSADO",
       "periodo_tr": "",
       "partida_data": "2026-11-25 20:00:00",
       "inicio_cronometro_tr": "",
